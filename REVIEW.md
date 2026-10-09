@@ -38,12 +38,12 @@ Widths reviewed: **320, 360, 390, 430, 768, 1024, 1440 and 1920 px**. Home, dire
 - Campaign directory: `src/assets/qa/settled-campaigns-360.webp.asset.json`, `src/assets/qa/settled-campaigns-1440.webp.asset.json`
 - Rebranded Mateo detail: `src/assets/qa/settled-campaign-detail-mateo-360.webp.asset.json`, `src/assets/qa/settled-campaign-detail-mateo-1440.webp.asset.json`
 - Proposal form: `src/assets/qa/settled-start-yourself-360.webp.asset.json`, `src/assets/qa/settled-start-yourself-1440.webp.asset.json`
-- Navigation: `src/assets/qa/menu-360.webp.asset.json`, `src/assets/qa/menu-768.webp.asset.json`, `src/assets/qa/menu-1440.webp.asset.json`
+- Navigation: `src/assets/qa/menu-360-settled.webp.asset.json`, `src/assets/qa/menu-768.webp.asset.json`, `src/assets/qa/menu-1440.webp.asset.json`
 - Donation dialog: the five `src/assets/qa/donation-*.webp.asset.json` pointers.
 
 ## Tests and performance
 - Vitest: **2 files, 6 tests passed**. Assertions cover collection cardinality/uniqueness, exact categories, story/gallery completeness, funding snapshots, alternate surnames, filtering/sorting and routing.
-- Managed preview build: **build OK** after final fixes; no current runtime error log.
+- Managed preview build: **build OK** after final fixes; no current runtime error log. A separate manual typecheck/production build was not run because this environment delegates those checks to the managed harness; generated production output is not exposed for independent inspection.
 - Local unthrottled development observation: LCP entry about **104 ms**, CLS **0** on the homepage. This is useful only as a smoke signal. INP requires real interaction/event timing, and reliable Core Web Vitals require a published production origin with network/device conditions; none are claimed here.
 - Performance controls verified in source and network behavior: explicit image dimensions, optimized thumbnail/large variants, lazy below-fold artwork, selected-gallery-only loading, stable card/gallery geometry, reduced-motion support, prerender allowlist and immutable CDN assets.
 
