@@ -171,19 +171,6 @@
     ]
   },
   {
-    "slug": "help-save-gwen",
-    "originalFullName": "Gwen Rodriguez",
-    "displayFullName": "Gwen Rivera",
-    "originalSurname": "Rodriguez",
-    "displaySurname": "Rivera",
-    "changes": [
-      {
-        "field": "organizer",
-        "occurrences": 1
-      }
-    ]
-  },
-  {
     "slug": "kaleb",
     "originalFullName": "Kaleb Jones",
     "displayFullName": "Kaleb Collins",
