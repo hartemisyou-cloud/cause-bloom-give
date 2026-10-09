@@ -144,3 +144,37 @@ Lovable manages repository commits. Latest observed managed revision before this
 - Reference copy claiming donation protection, recent live gifts and a $50 share statistic is intentionally not reproduced. Hope Human colors/logo, changed beneficiary surname and honest previous-funding labels remain. Exact reference pixel identity is not claimed; mobile composition is intentionally stacked.
 - The attachments depict partial lower sections, so exact unseen page ordering and original viewport scale cannot be certified from them; implemented order is story/support → organizer/footer with rail → trust → sharing → related → footer.
 - Latest managed revision is recorded after the final verification in chat; no manual Git commit operation is permitted or used.
+
+
+## Campaign story rendering fix — October 9, 2026
+
+### Defect and scope
+The plain-text paragraph renderer displayed serialized `IMAGE:` path/caption markers literally. Confirmed nine visible markers on expanded `/campaign-detail?slug=help-graceline-now` before changes (1280×1800 screenshot). Audited all 54 stored stories: four contain 17 inline image markers (Graceline 9, Hilary 4, Adrieli 2, Arielle 2); 50 have no inline photos.
+
+### Fixed
+- Replaced paragraph-only rendering with a safe rich-text renderer: paragraphs, semantic existing section headings, emphasis, lists and blockquotes; raw HTML does not execute. Existing standalone heading labels are explicitly recognized rather than guessing that every short sentence is a heading. Graceline now has five semantic headings, including “The Agony of Relapse”. Text, first names, established alternate surnames and campaign JSON were not changed.
+- Added `src/data/story-artwork.json`: 17 exact original-relative-path → optimized CDN image mappings, preserving serialized source order and captions at the same prose positions. Seven photographs reuse previously audited artwork; ten actual missing public source files downloaded, optimized with complete uncropped aspect ratios and uploaded as immutable image pointers. Six new Graceline photos plus two Adrieli and two Arielle source assets; the latter campaigns deliberately share source supply photos, as in the reference. No unrelated replacements or visitor-facing old-domain hotlinks. `src/data/artwork-audit.csv` now includes the ten story-only asset entries; existing gallery mappings retained.
+- Each inline photo uses explicit width/height, full-width auto-height, lazy loading, async decoding, original English alt/caption, reference 12px rounded treatment and restrained token-based shadow. Portrait images are fully visible, not cropped. Existing collapse/expand and all lower-page sections preserved. Metadata descriptions are cleaned of formatting.
+
+### Actual verification
+- All 54 expanded detail routes × 390/768/1440×1800: **162 checks**, no horizontal overflow or raw serialization/markdown markers, exact expected image counts/caption order. All 17 inline photos scrolled into view and decoded at each width (51 image checks), with natural dimensions, correct responsive widths and lazy loading. **Zero page errors and zero failing CDN image responses**.
+- All 54 public reference query-detail pages inspected for inline `#storyBox` photo order. **54/54 match** the stored marker sequence: no additional photos missing from the other 50 stories. The attempted `.html` addresses returned 404; the correct public query addresses returned 200. One reference page (`help-save-fabi`) timed out waiting for network-idle; retry using DOM readiness confirmed its zero inline-photo sequence.
+- Expanded Graceline contains nine photos, five headings and “Graceline Bennett”; no technical markers. Read less returns to the original collapsed state. Actual screenshots visually inspected for mobile heading/photo flow, desktop first photo/story with preserved donation rail, and tablet final portrait/caption.
+- Regression tests: **4 files / 14 tests passed**, including all 54 stories, all 17 resolved source paths/captions, Graceline headings/photos/lazy attributes and safe markdown rendering. Automatic preview build reports build OK; no manual production build/typecheck run.
+- New image contact sheet visually inspected for all ten downloads: no old foundation logo/name/watermark visible. Original product labels on care supplies are retained; no beneficiary photo manipulation. This is a visual inspection, not a guarantee about every microscopic mark. Contact sheet/raw reference pages remain under `/tmp/browser/story-fix/source/`, not shipped.
+
+### Screenshot assets
+Ten real screenshot pointers under `src/assets/qa/stories/`: before at 1280; after first photo, heading and final photo at 390, 768 and 1440. No generated mockups.
+- `src/assets/qa/stories/before-1280.webp.asset.json` — `/__l5e/assets-v1/89893bb1-e90d-494a-b593-d4a4a1f96303/before-1280.webp`
+- `src/assets/qa/stories/graceline-heading-1440.webp.asset.json` — `/__l5e/assets-v1/494ff8f7-803b-48ef-b2de-556bcca4e271/graceline-heading-1440.webp`
+- `src/assets/qa/stories/graceline-heading-390.webp.asset.json` — `/__l5e/assets-v1/1501e415-3c5d-48e5-a211-1fdf4e778055/graceline-heading-390.webp`
+- `src/assets/qa/stories/graceline-heading-768.webp.asset.json` — `/__l5e/assets-v1/08f258e9-ccf0-4a97-8390-523375af29b4/graceline-heading-768.webp`
+- `src/assets/qa/stories/graceline-intro-1440.webp.asset.json` — `/__l5e/assets-v1/59c60ed6-019e-4c56-8c70-3d9a350c2db4/graceline-intro-1440.webp`
+- `src/assets/qa/stories/graceline-intro-390.webp.asset.json` — `/__l5e/assets-v1/333dafbb-fdd3-4165-b066-c187c89f0f82/graceline-intro-390.webp`
+- `src/assets/qa/stories/graceline-intro-768.webp.asset.json` — `/__l5e/assets-v1/4a5a222f-f176-40ee-8dfb-8902ebf635f7/graceline-intro-768.webp`
+- `src/assets/qa/stories/graceline-last-photo-1440.webp.asset.json` — `/__l5e/assets-v1/fe71bd0e-24d4-4ac9-8ab3-85aa6fe6f389/graceline-last-photo-1440.webp`
+- `src/assets/qa/stories/graceline-last-photo-390.webp.asset.json` — `/__l5e/assets-v1/7d0e9a1b-ede6-4350-a0ad-64508653fbb7/graceline-last-photo-390.webp`
+- `src/assets/qa/stories/graceline-last-photo-768.webp.asset.json` — `/__l5e/assets-v1/6dd7e297-d4a0-48cd-88e3-a0891d01743e/graceline-last-photo-768.webp`
+
+### Preserved / limitations
+Authentic Hope Human identity, reference visual rebuild, all existing 54 campaigns/galleries, English prose and changed surnames preserved. Payments remain disabled and unchanged; nothing published. Existing public-launch content rights, legal verification and real payment configuration blockers remain. No pixel-identical claim: this fix preserves source image positions/order and captions, and deliberately upgrades existing standalone labels to semantic headings. Raw source serialization remains in static campaign data as input, never visitor-visible output. Verification results/script reside under `/tmp/browser/story-fix/`; screenshot pointers and this report are durable project evidence.
