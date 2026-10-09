@@ -10,8 +10,8 @@
 - Public launch requires content/image permissions and confirmed operational/legal terms. Do not publish in this task.
 
 ## Comprehensive QA request
-- [ ] Sweep active identity and operational references.
-- [ ] Audit reference artwork, all image mappings and visual watermark coverage.
-- [ ] Crawl all routes at mobile, tablet and desktop; exercise interactions.
-- [ ] Fix observed defects and rerun relevant tests.
-- [ ] Save QA report and accessible screenshot evidence; do not publish.
+- [x] Sweep active identity and operational references.
+- [x] Audit reference artwork, all image mappings and visual watermark coverage.
+- [x] Crawl all routes at mobile, tablet and desktop; exercise interactions.
+- [x] Fix observed defects and rerun relevant tests.
+- [x] Save QA report and accessible screenshot evidence; do not publish.
