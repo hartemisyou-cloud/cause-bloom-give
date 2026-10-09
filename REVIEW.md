@@ -54,4 +54,4 @@ Widths reviewed: **320, 360, 390, 430, 768, 1024, 1440 and 1920 px**. Home, dire
 4. **Production verification:** after explicit publish approval, rerun broken-link checks and measure production LCP/CLS/INP. This review did **not** publish.
 
 ## Revision note
-Lovable manages repository commits. The latest visible managed revision before this QA was `acb9a83`; current QA edits are in the working project and intentionally were not committed with a manual stateful Git command.
+Lovable manages repository commits. Latest observed managed revision: `4f1aeab` (Changes); final report/evidence updates may receive a subsequent managed revision. No manual stateful Git command was used.
