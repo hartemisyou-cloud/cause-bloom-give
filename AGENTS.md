@@ -20,3 +20,5 @@
 - Prepare campaign proposals as explicit user-sent emails without pretending to store, submit or publish campaigns.
 - Keep analytics provider-free and consent-gated; preserve paid-traffic parameters within the same browser session.
 - Use per-leaf metadata with a configurable VITE_SITE_URL and omit image tags when only relative CDN asset URLs are available.
+
+- Implement reference-matched layouts through shared semantic CSS and design-system controls, with CDN-hosted public font subsets; this preserves consistent geometry without shipping archived source pages or scripts.
