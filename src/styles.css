@@ -19,3 +19,23 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 
 @media(max-width:1050px) { .campaign-grid.five .campaign-card:nth-child(n+4) {display:block;} }
 @media(max-width:767px) { .campaign-grid.five .campaign-card:nth-child(5) {display:block;} .header-action {min-height:44px;height:44px;} .hero-inner {padding-top:24px;gap:18px;} .hero-copy>p {margin:12px 0 14px;} .hero-note {margin-top:12px;} .hero h1 {font-size:40px;} .featured-image {height:140px;} .carousel-controls {margin-top:8px;} .hero-inner {padding-bottom:16px;} }
+.eyebrow {letter-spacing:0;}
+.carousel-controls {display:grid;grid-template-columns:1fr auto;gap:4px 10px;}
+.carousel-dots {gap:0;}
+.hero-caption {grid-row:2;grid-column:1 / -1;}
+@media(max-width:767px) {
+ .hero-inner {padding-top:20px;gap:14px;}
+ .hero .eyebrow {margin-bottom:12px;}
+ .hero h1 {font-size:36px;}
+ .hero-copy>p {font-size:12px;margin:10px 0 12px;}
+ .hero-note {margin-top:8px;}
+ .featured-image {height:130px;}
+ .featured-body {padding:14px;}
+ .featured-body .progress {margin-top:12px;}
+ .featured-bottom {margin-top:12px;}
+ .donation-modal {padding:20px;gap:10px;}
+ .donation-modal .eyebrow {margin-bottom:8px;font-size:9px;}
+ .donation-modal .preset-grid {margin:8px 0;}
+ .donation-modal label {margin-top:4px;}
+ .donation-modal .checkout-notice {padding:12px;font-size:11px;line-height:1.6;}
+}
