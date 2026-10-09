@@ -192,3 +192,15 @@ Authentic Hope Human identity, reference visual rebuild, all existing 54 campaig
   - Desktop 2460: `/__l5e/assets-v1/b6b6bbfb-46db-455f-a8e5-f8b4e2c19167/sharing-final-2460.png`
   - Normalized supplied-reference comparison: `/__l5e/assets-v1/e4b1844f-1230-4296-9067-07c9461f4656/sharing-final-comparison.png`
 - Latest observed managed revision before this report addition: `ebf65f5`; report changes may receive a subsequent managed revision.
+
+### Wide-screen sharing scale correction
+Supersedes the prior capped 2460 sizing. Above 1440px only, the entire verified 1296px sharing canvas uses `--sharing-scale: calc(100vw / 1440px)` and CSS zoom; section top/bottom whitespace uses the same multiplier. Removed the old sharing-specific 1920 caps, without touching other sections. Images, text, padding, rings, shadows, social controls, CTAs, rotation offsets and radii scale together. The 1440 and mobile layouts are unchanged.
+
+Browser verification on `/campaign-detail?slug=help-graceline-now`, at 1440/1920/2460/390×1800: composition widths **551.57 / 735.40 / 942.24 / 344.11px**; desktop composition stays **38.3%** of viewport. Central card widths **230 / 306.66 / 392.91px** and circles **74 / 98.66 / 126.41px** across desktop widths. Side-bottom difference remains under 0.4px desktop; headline stays two lines; no horizontal overflow or page errors. Actual normalized reference2 versus final 2460 was directly visually inspected: headline, circles and overall card composition are now comparable in scale, rather than materially smaller. Authorized palette/copy and side-card content differences remain; not a pixel-identity claim. Central Donate opens the unchanged checkout-not-configured notice and Escape closes it. Four sharing regression tests passed; managed preview build OK; nothing published.
+
+Fresh immutable evidence in `src/assets/qa/sharing-fluid/`:
+- 2460: `/__l5e/assets-v1/82894816-4620-4f58-a006-b833aa1a449f/sharing-fluid-2460.png`
+- Normalized comparison: `/__l5e/assets-v1/3abdbe85-d66e-4c9a-803e-cbc916ca47b4/sharing-fluid-comparison.png`
+- 1920: `/__l5e/assets-v1/c86ef40d-944f-4188-b5a2-5cf777add2c4/sharing-fluid-1920.png`
+- 1440: `/__l5e/assets-v1/9ec4aa52-3e7f-40c0-a1a5-4c663477a7ca/sharing-fluid-1440.png`
+- 390: `/__l5e/assets-v1/7d10f4fd-6656-4c4b-966a-79f894295bdc/sharing-fluid-390.png`
