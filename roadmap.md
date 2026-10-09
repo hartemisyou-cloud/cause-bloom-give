@@ -29,6 +29,6 @@
 - [x] Save accessible screenshots and a precise comparison report; keep payments disabled and do not publish.
 
 ## Campaign story rich rendering
-- [ ] Audit all 54 stories and resolve inline photos to exact optimized artwork.
-- [ ] Render paragraphs, headings and inline photos without raw formatting markers.
-- [ ] Verify expanded stories, responsive photos and save screenshot evidence/findings.
+- [x] Audit all 54 stories and resolve inline photos to exact optimized artwork.
+- [x] Render paragraphs, headings and inline photos without raw formatting markers.
+- [x] Verify expanded stories, responsive photos and save screenshot evidence/findings.
