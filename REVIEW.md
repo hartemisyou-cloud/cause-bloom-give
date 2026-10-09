@@ -69,3 +69,78 @@ Widths reviewed: **320, 360, 390, 430, 768, 1024, 1280, 1440 and 1920 px**. Home
 
 ## Revision note
 Lovable manages repository commits. Latest observed managed revision before this final report update: `f36f3c3`; the final report/evidence update may receive a subsequent managed revision. No manual stateful Git command was used.
+
+
+## Screenshot-authoritative campaign-detail correction — October 9, 2026
+
+**Starting revision:** `2e5fbeea92fc399d67ca2932f89fe602d13bda7a`, verified before changes. Existing user edits were retained; no checkout code, campaign JSON, surname audit, gallery photos or authentic logo were changed. No subagents or publication were used. This section supersedes earlier broad visual-completeness statements for the detail lower sections.
+
+### Missing → implemented
+- Organizer footer previously lacked the created month/category row, shield badge, report control and muted foundation disclaimer. Added genuine organizer/location/beneficiary metadata, creation month in UTC, pale-green transparency badge, dividers, flag Report fundraiser and Hope Human disclaimer.
+- Donation rail previously substituted support-message names for donor records and omitted organizer contact. Added a donor-sized empty-state area, two equal dark-green/outlined-star pill controls, divider, genuine organizer avatar/name, campaign creation month and full-width outlined Contact. The collection contains support names/messages only, **no individual donor amounts or activity timestamps**; neither is invented. Creation date is not described as account activity.
+- The trust block was previously a small text strip, placed after related cards. It is now a full-width mint band immediately after the story/organizer area, with the requested heading and three wide icon/text columns, outlined plane (gold accent), heart and shield, gray body text and a truthful foundation link.
+- The sharing block was missing. Added a white two-column section, bold two-line desktop headline, secondary truthful paragraph, five large circular social controls, and three overlapping ±10° campaign cards. All three use the **current campaign's same actual photo**, title/organizer, previous total/goal, circular progress and central gold Donate pill. Related campaigns follow sharing; the existing foundation footer follows related campaigns.
+- Widened the detail main/rail layout to 90% viewport (170:100 tracks with 5% gap; 4% gap at wide desktop), instead of the former 1040px cap; aligned lower typography and spacing with attachment proportions. At 390/768 the rail and trust/share blocks intentionally stack.
+- A new category link exposed that directory category URLs were previously ignored; optional category search validation and state synchronization now make that link actually select the category.
+
+### Comparison assessment (not an identical claim)
+- **Screenshot 3:** restored organizer hierarchy, spacing, created/category separator, green shield surface, report/disclaimer divider, rail equal pill buttons and outlined contact. Reference donor names/amounts/recent timestamps and protected guarantee are intentionally replaced by an honest empty state, creation month and transparency wording. Beneficiary information is retained as an additional concise line.
+- **Screenshot 1:** restored full-width mint surface, large heading above three horizontal icon/text columns, generous vertical padding, gray two-line text and underlined green foundation link. The thin outlined icon shapes were refined after the first visual pass. No undocumented donation-protection claim.
+- **Screenshot 2:** restored white composition, heading line break, larger social circles/shadows and same-photo angled cards with dark-green bodies and gold central pill. First mobile pass showed card-edge cropping; narrowed mobile cards from 172 to 158px and increased their composition height to retain their corners. The unsupported $50 sharing statistic is omitted. Amount formatting keeps the project's established whole-dollar display, not reference cents.
+- Plus Jakarta Sans confirmed through computed browser styles. Heading uses 800, donor/organizer controls 600–700; semantic Hope Human colors remain authoritative. Desktop headline: 48px at 1440, 64px at 2460; trust heading 23/28px. Desktop social circles 74/92px; stacked 390 circles 56px. Reference screenshots are context crops with no authoritative original viewport metadata; normalized labeled comparisons are **not pixel-diff certification**.
+- Screenshots directly inspected: before lower 390/1440; after trust/sharing 1440, lower 2460, sharing 390; final organizer/rail 1440, sharing 390/2460, trust 390. Screenshots were recorded at every requested width, not all repeatedly opened.
+
+### Actual verification
+- Primary route: `/campaign-detail?slug=help-graceline-now`; all **54** `/campaign-detail?slug=<slug>` pages crawled at **390×1800, 768×1800, 1440×1800** (162 route/width checks). Each checked overflow, genuine rail organizer, and current-photo binding. No overflow, page errors or failing asset requests.
+- Focused sections/actions at **390×1800, 768×1800, 1440×1800, 2460×1800**, plus donation dialog at **390×460**. Main run: **196 checks**, **0 page errors**, **0 failed asset requests**.
+- At every focused width: Contact/Report required-message validation, real support `mailto:` with campaign URL/organizer/message, focus containment through eight Tabs and Escape; See all/See top truthful dialogs; Instagram/TikTok clipboard and instructions; Facebook/WhatsApp URL construction; More real clipboard and stubbed native-share invocation; central-card amount flow rejects 0 and reviews $75 with “Nothing has been charged”; gallery next/dot photo decodes; story expand/collapse; image health; all internal footer destinations return 200.
+- Extra navigation run at all four widths: Health category link selects 42 campaigns; disaster empty and reset to 54; four sorts; desktop urgent filter; desktop dropdown navigation; mobile/tablet drawer, Escape and Blog navigation. Search populated/empty passed in the main run after waiting for hydration before typing.
+- `campaigns.html` redirect verified; unknown path and invalid campaign query return 404. `help-graceline-now.html` returns 404 because it is not a configured legacy reference alias. Campaign-specific details use the existing supported query URL. No tabs or donor sorting filters existed on the current detail; the new See all/See top actions show honest no-record states instead of fabricated sortable donors.
+- Vitest: **3 files / 10 tests passed**, including four new tests for genuine/nullable dates, clean sharing URLs, all three actual photo bindings and absence of fabricated donor activity. Managed typecheck/build signals were checked; nullable date and optional category search typing issues found during work were corrected. No manual build/typecheck command was run, as the harness owns those checks.
+- Case-insensitive source/public/docs identity sweep: no old foundation identity/domain, placeholder EIN or source pixel invocation matches. Existing leaf metadata retained; all content routes, including index, inspected for head declarations.
+
+### Evidence
+35 actual immutable screenshot pointers (8 before, 24 final section/dialog and 3 labeled supplied-reference comparisons) are stored in `src/assets/qa/detail-sections/`. These are real browser captures, not generated mockups. Before is available at identical 390/768/1440/2460 widths; final section captures include organizer, rail, trust, sharing, contact and donation at each width. Reference images themselves are not embedded in the visitor page.
+
+- `src/assets/qa/detail-sections/before-lower-1440.webp.asset.json` — `/__l5e/assets-v1/736bd1ab-6114-40d4-b9f6-fed3ae47d92c/before-lower-1440.webp`
+- `src/assets/qa/detail-sections/before-lower-2460.webp.asset.json` — `/__l5e/assets-v1/991da231-e541-4303-b01c-d278effebce9/before-lower-2460.webp`
+- `src/assets/qa/detail-sections/before-lower-390.webp.asset.json` — `/__l5e/assets-v1/6505bb96-b5bb-42e2-9a5a-fb0364fe1aa0/before-lower-390.webp`
+- `src/assets/qa/detail-sections/before-lower-768.webp.asset.json` — `/__l5e/assets-v1/bdaace7c-248a-46aa-a8d4-2857bbca9d9a/before-lower-768.webp`
+- `src/assets/qa/detail-sections/before-top-1440.webp.asset.json` — `/__l5e/assets-v1/4d81933f-dcb1-4179-a581-8536d16a5ce2/before-top-1440.webp`
+- `src/assets/qa/detail-sections/before-top-2460.webp.asset.json` — `/__l5e/assets-v1/db47e5b7-abd5-404d-a264-db82dcdb8f6c/before-top-2460.webp`
+- `src/assets/qa/detail-sections/before-top-390.webp.asset.json` — `/__l5e/assets-v1/6e06507c-3a28-4279-8c32-5651109172ff/before-top-390.webp`
+- `src/assets/qa/detail-sections/before-top-768.webp.asset.json` — `/__l5e/assets-v1/407f66f8-139d-4e41-a197-d696e2f3a152/before-top-768.webp`
+- `src/assets/qa/detail-sections/comparison-organizer.webp.asset.json` — `/__l5e/assets-v1/007163bd-6d3f-49d1-a785-1fcb6408cf7a/comparison-organizer.webp`
+- `src/assets/qa/detail-sections/comparison-sharing.webp.asset.json` — `/__l5e/assets-v1/957c23b3-e210-4a73-9439-3e8e0c77ecb8/comparison-sharing.webp`
+- `src/assets/qa/detail-sections/comparison-trust.webp.asset.json` — `/__l5e/assets-v1/16bdb550-14dc-4152-bad5-cbeec42446c1/comparison-trust.webp`
+- `src/assets/qa/detail-sections/final-contact-1440.webp.asset.json` — `/__l5e/assets-v1/3efc727d-5a4d-461d-ba8d-38f8d6772574/final-contact-1440.webp`
+- `src/assets/qa/detail-sections/final-contact-2460.webp.asset.json` — `/__l5e/assets-v1/6dee03c5-6d54-4733-9772-cbd6a174bd24/final-contact-2460.webp`
+- `src/assets/qa/detail-sections/final-contact-390.webp.asset.json` — `/__l5e/assets-v1/8b7fe1e4-50e4-4203-a50d-522282edf6e8/final-contact-390.webp`
+- `src/assets/qa/detail-sections/final-contact-768.webp.asset.json` — `/__l5e/assets-v1/2fef876f-784c-4766-85f3-d8be76cf4e18/final-contact-768.webp`
+- `src/assets/qa/detail-sections/final-donation-1440.webp.asset.json` — `/__l5e/assets-v1/1e597aea-2c08-4fc1-ad97-e0854a28ef0a/final-donation-1440.webp`
+- `src/assets/qa/detail-sections/final-donation-2460.webp.asset.json` — `/__l5e/assets-v1/65b6c1b2-62c5-406d-95f9-225420b670f6/final-donation-2460.webp`
+- `src/assets/qa/detail-sections/final-donation-390.webp.asset.json` — `/__l5e/assets-v1/319b0f25-e963-4724-9994-bba83dd68b1f/final-donation-390.webp`
+- `src/assets/qa/detail-sections/final-donation-768.webp.asset.json` — `/__l5e/assets-v1/cec8abff-21fc-4699-974a-498f2a9444a8/final-donation-768.webp`
+- `src/assets/qa/detail-sections/final-organizer-1440.webp.asset.json` — `/__l5e/assets-v1/0acda2f7-601a-43c4-b0e3-3cedf5dcfe6b/final-organizer-1440.webp`
+- `src/assets/qa/detail-sections/final-organizer-2460.webp.asset.json` — `/__l5e/assets-v1/6fb10541-ee1c-408e-8025-41a09cd78989/final-organizer-2460.webp`
+- `src/assets/qa/detail-sections/final-organizer-390.webp.asset.json` — `/__l5e/assets-v1/3824a80f-41f4-4753-841d-b47055f083d8/final-organizer-390.webp`
+- `src/assets/qa/detail-sections/final-organizer-768.webp.asset.json` — `/__l5e/assets-v1/209d81f8-b477-41cb-a9c6-485d3482fd66/final-organizer-768.webp`
+- `src/assets/qa/detail-sections/final-rail-1440.webp.asset.json` — `/__l5e/assets-v1/fe5c8082-5be9-46f1-a6ce-a7ddca5659dc/final-rail-1440.webp`
+- `src/assets/qa/detail-sections/final-rail-2460.webp.asset.json` — `/__l5e/assets-v1/2203e24d-bba2-4202-b497-c0d4fca51573/final-rail-2460.webp`
+- `src/assets/qa/detail-sections/final-rail-390.webp.asset.json` — `/__l5e/assets-v1/a0a1dd41-8748-42d9-a93a-e3a782c5adad/final-rail-390.webp`
+- `src/assets/qa/detail-sections/final-rail-768.webp.asset.json` — `/__l5e/assets-v1/20893d5f-3150-484f-a196-2c6076302229/final-rail-768.webp`
+- `src/assets/qa/detail-sections/final-sharing-1440.webp.asset.json` — `/__l5e/assets-v1/4a10ee2a-2519-4531-995c-7d74d73cee02/final-sharing-1440.webp`
+- `src/assets/qa/detail-sections/final-sharing-2460.webp.asset.json` — `/__l5e/assets-v1/6e41d0db-4761-4390-955e-8f79d24d93a3/final-sharing-2460.webp`
+- `src/assets/qa/detail-sections/final-sharing-390.webp.asset.json` — `/__l5e/assets-v1/cdbe584b-844d-43fe-bf7c-7d5b630adbc6/final-sharing-390.webp`
+- `src/assets/qa/detail-sections/final-sharing-768.webp.asset.json` — `/__l5e/assets-v1/0929591e-d3a3-41c3-9e25-b356eb260ead/final-sharing-768.webp`
+- `src/assets/qa/detail-sections/final-trust-1440.webp.asset.json` — `/__l5e/assets-v1/b0bc026b-f215-4a76-861f-bb414304ea49/final-trust-1440.webp`
+- `src/assets/qa/detail-sections/final-trust-2460.webp.asset.json` — `/__l5e/assets-v1/0a3b1654-1172-4c7c-b0c0-de98eefb36f6/final-trust-2460.webp`
+- `src/assets/qa/detail-sections/final-trust-390.webp.asset.json` — `/__l5e/assets-v1/2fbe4d51-3440-43f1-b948-2415ae1b38d7/final-trust-390.webp`
+- `src/assets/qa/detail-sections/final-trust-768.webp.asset.json` — `/__l5e/assets-v1/47b876d9-2258-4e50-99c4-bea9ce77be53/final-trust-768.webp`
+
+### Limitations and intentionally outstanding differences
+- No real donor amounts/activity or organizer email are available; donor-sized empty states remain and contact goes to foundation support. Email preparation and share URL/clipboard behavior were verified; sending email, opening external social account UI and the operating-system native share sheet are outside headless verification. Native-share API input was verified with a stub; clipboard fallback was real.
+- Payments remain unconfigured: no card collection, charges or success simulation; this task did not change payment setup. Existing rights/legal/current-campaign validation and production-performance launch blockers still apply.
+- Reference copy claiming donation protection, recent live gifts and a $50 share statistic is intentionally not reproduced. Hope Human colors/logo, changed beneficiary surname and honest previous-funding labels remain. Exact reference pixel identity is not claimed; mobile composition is intentionally stacked.
+- The attachments depict partial lower sections, so exact unseen page ordering and original viewport scale cannot be certified from them; implemented order is story/support → organizer/footer with rail → trust → sharing → related → footer.
+- Latest managed revision is recorded after the final verification in chat; no manual Git commit operation is permitted or used.

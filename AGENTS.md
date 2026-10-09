@@ -22,3 +22,4 @@
 - Use per-leaf metadata with a configurable VITE_SITE_URL and omit image tags when only relative CDN asset URLs are available.
 
 - Implement reference-matched layouts through shared semantic CSS and design-system controls, with CDN-hosted public font subsets; this preserves consistent geometry without shipping archived source pages or scripts.
+- Keep campaign-detail lower sections in a shared campaign-bound module with accessible action dialogs; absent donor records remain explicit empty states, social links use canonical campaign URLs, and contact/report only prepare user-sent support emails.

@@ -33,3 +33,99 @@
 .wizard-progress-bar{grid-column:1/-1;height:4px;background:var(--border);margin-top:18px;border-radius:4px;overflow:hidden}.wizard-progress-bar>span{display:block;height:100%;background:var(--primary)}
 @media(min-width:769px){.hero-copy{transform:translateY(-8px)}}
 @media(max-width:600px){body:has(.detail-page) .site-header{height:56px}}
+
+/* Screenshot-authoritative detail footer and sharing sections. */
+:root{--trust-surface:color-mix(in oklab,var(--muted) 24%,var(--card));--trust-badge:color-mix(in oklab,var(--muted) 78%,var(--card));--detail-muted:oklch(.55 .025 265);--detail-disclaimer:oklch(.68 .023 265);--social-facebook:oklch(.48 .10 155);--social-whatsapp:oklch(.74 .20 150);--social-tiktok:oklch(.06 0 0);--social-ink:oklch(1 0 0);--social-instagram:radial-gradient(circle at 30% 105%,oklch(.9 .15 85) 0%,oklch(.73 .19 40) 32%,oklch(.58 .24 350) 60%,oklch(.47 .19 305) 85%,var(--primary) 100%);--social-shadow:0 6px 18px color-mix(in oklab,var(--dark-green) 24%,transparent);--sharing-shadow:0 26px 46px color-mix(in oklab,var(--foreground) 30%,transparent)}
+.detail-page .detail-layout{width:90%;max-width:1800px;padding:42px 0 72px;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:5%}
+.detail-page .donation-panel{padding:28px;border-radius:18px;position:sticky;top:100px}
+.detail-wide-container{width:90%;max-width:2200px;margin:0 auto}
+.campaign-organizer-footer{padding-top:28px;color:var(--dark-green)}
+.campaign-organizer-footer>h2{font-size:18px;margin-bottom:24px}
+.footer-organizer{display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;align-items:center;min-width:0}
+.footer-organizer .organizer-avatar{width:56px;height:56px;font-size:18px}
+.footer-organizer strong{display:block;font-size:18px;line-height:1.4;overflow-wrap:anywhere;font-weight:700}
+.footer-organizer small{display:block;color:var(--detail-muted);font-size:16px;line-height:1.6;margin-top:3px}
+.footer-beneficiary{font-size:14px;color:var(--detail-muted);margin:18px 0 28px}
+.campaign-created{border-top:1px solid var(--border);padding:28px 0 30px;display:flex;flex-wrap:wrap;gap:10px;font-size:18px;color:var(--detail-muted)}
+.campaign-created a{color:var(--primary);font-weight:600;min-height:28px}
+.campaign-shield-badge{display:inline-flex;gap:10px;align-items:center;padding:12px 18px;border-radius:12px;background:var(--trust-badge);color:var(--primary);font-size:18px;line-height:1.4;font-weight:700;min-height:50px;margin-bottom:28px}
+.campaign-shield-badge svg{width:23px;height:23px}
+.campaign-report{border-top:1px solid var(--border);padding-top:20px}
+.campaign-report button{padding:0;min-height:44px;gap:12px;font-size:18px;color:var(--muted-foreground);font-weight:600;background:transparent}
+.campaign-report button svg{width:21px;height:21px}
+.campaign-report p{color:var(--detail-disclaimer);font-size:16px;line-height:1.65;margin-top:10px}
+.donor-records{border-top:1px solid var(--border);margin-top:24px;padding-top:20px}
+.donor-records h3{font-size:16px;color:var(--dark-green);font-weight:700}
+.donor-empty{display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;align-items:center;min-height:156px;padding:22px 0}
+.donor-empty-icon{width:48px;height:48px;border:1px solid var(--border);border-radius:50%;display:grid;place-items:center;background:var(--trust-surface);color:var(--primary)}
+.donor-empty strong{font-size:16px;color:var(--dark-green);font-weight:600}
+.donor-empty p{font-size:14px;color:var(--detail-muted);line-height:1.6;margin-top:6px}
+.donor-view-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.donor-view-actions button,.rail-organizer>button{border-radius:100px;min-height:50px;font-size:18px;font-weight:600;border-width:2px;background:var(--card);color:var(--dark-green);padding-left:12px;padding-right:12px}
+.donor-view-actions button:first-child{background:var(--dark-green);color:var(--primary-foreground);border-color:var(--dark-green)}
+.donor-view-actions button svg{width:20px;height:20px}
+.rail-organizer{border-top:1px solid var(--border);padding-top:20px;margin-top:0}
+.rail-organizer>button{width:100%;margin:18px 0 8px}
+.rail-organizer small{font-size:14px}
+.campaign-trust-band{background:var(--trust-surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:68px 0 72px;color:var(--dark-green)}
+.campaign-trust-band h2{font-size:23px;font-weight:800;line-height:1.4;margin-bottom:62px}
+.campaign-trust-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:50px}
+.campaign-trust-grid>div{display:grid;grid-template-columns:52px minmax(0,1fr);gap:28px;align-items:start}
+.campaign-trust-grid>div>svg{width:52px;height:52px;stroke-width:1.3;color:var(--primary)}
+.campaign-trust-grid h3{font-size:20px;font-weight:800;line-height:1.4;margin-bottom:12px}
+.campaign-trust-grid p{font-size:17px;line-height:1.75;color:var(--detail-muted)}
+.campaign-trust-grid a{color:var(--primary);text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.campaign-sharing-section{background:var(--card);padding:112px 0 96px;overflow:hidden}
+.sharing-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7%;align-items:center}
+.sharing-copy{min-width:0}
+.sharing-copy h2{font-size:48px;line-height:1.1;font-weight:800;color:var(--dark-green);margin-bottom:28px}
+.sharing-copy>p{font-size:20px;line-height:1.75;color:var(--muted-foreground);max-width:600px}
+.campaign-social-buttons{display:flex;gap:18px;margin-top:42px;align-items:center}
+.social-circle{width:74px;height:74px;min-height:74px;border:0;box-shadow:var(--social-shadow);color:var(--social-ink);background:var(--primary);flex-shrink:0;transition:transform .2s}
+.social-circle:hover{transform:translateY(-3px);background:var(--primary)}
+.social-circle svg{width:30px!important;height:30px!important}
+.social-facebook,.social-facebook:hover{background:var(--social-facebook)}
+.social-instagram,.social-instagram:hover{background:var(--social-instagram)}
+.social-tiktok,.social-tiktok:hover{background:var(--social-tiktok)}
+.social-whatsapp,.social-whatsapp:hover{background:var(--social-whatsapp)}
+.social-more,.social-more:hover{background:var(--trust-surface);border:2px solid var(--border);color:var(--detail-muted);box-shadow:0 3px 10px color-mix(in oklab,var(--foreground) 8%,transparent)}
+.sharing-card-composition{position:relative;width:100%;height:430px;min-width:0;isolation:isolate}
+.sharing-art-card{position:absolute;width:230px;height:400px;top:15px;left:50%;border-radius:30px;overflow:hidden;background:var(--dark-green);color:var(--primary-foreground);box-shadow:var(--sharing-shadow);transform-origin:center center}
+.sharing-art-card>img{width:100%;height:122px;object-fit:cover;object-position:center 35%}
+.sharing-art-body{padding:14px;display:flex;flex-direction:column;height:278px}
+.sharing-art-body h3{font-size:13px;line-height:1.25;font-weight:800;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:33px}
+.sharing-art-organizer{display:flex;gap:6px;align-items:center;font-size:10px;opacity:.85;white-space:nowrap;overflow:hidden;margin-top:6px}
+.sharing-art-organizer>span{width:20px;height:20px;border-radius:50%;background:var(--primary);font-size:8px;display:grid;place-items:center;flex-shrink:0}
+.sharing-art-funding{display:grid;grid-template-columns:minmax(0,1fr) 48px;gap:8px;align-items:center;margin-top:20px}
+.sharing-art-funding strong{font-size:15px;font-weight:800;white-space:nowrap}
+.sharing-art-funding small{display:block;font-size:9px;opacity:.55}
+.sharing-art-ring{position:relative;width:48px;height:48px}
+.sharing-art-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.sharing-art-ring .ring-track{stroke:color-mix(in oklab,var(--primary-foreground) 18%,transparent)}
+.sharing-art-ring .ring-value{stroke:var(--primary)}
+.sharing-art-ring b{position:absolute;inset:0;display:grid;place-items:center;font-size:12px}
+.sharing-art-goal{font-size:10px;opacity:.6;margin-top:12px}
+.sharing-art-body>button,.sharing-art-donate{margin-top:auto;border-radius:100px;min-height:44px;width:100%;color:var(--dark-green);font-weight:700;font-size:13px}
+.sharing-art-donate{display:grid;place-items:center;background:var(--primary);color:var(--primary-foreground)}
+.sharing-art-left{transform:translateX(-112%) rotate(-10deg);top:50px;z-index:0}
+.sharing-art-right{transform:translateX(12%) rotate(10deg);top:50px;z-index:0}
+.sharing-art-center{transform:translateX(-50%);z-index:2}
+.sharing-art-right>img{filter:brightness(.8)}
+.sharing-status{color:var(--primary);font-size:14px;padding-bottom:24px}
+.campaign-action-dialog{width:calc(100% - 32px);max-width:520px;max-height:90dvh;overflow-y:auto;border-radius:18px;padding:30px}
+.campaign-action-dialog h2{line-height:1.4;padding-right:24px}
+.campaign-action-dialog form{display:grid;gap:14px}
+.campaign-action-dialog label{font-weight:600;font-size:14px}
+.campaign-action-dialog textarea{border-radius:12px;resize:vertical}
+.action-note,.donor-dialog-empty p{color:var(--detail-muted);font-size:13px;line-height:1.7}
+.donor-dialog-empty{text-align:center;padding:28px 16px;background:var(--trust-surface);border-radius:12px}
+.donor-dialog-empty svg{margin:0 auto 14px;color:var(--primary)}
+.donor-dialog-empty h3{font-size:18px;margin-bottom:12px}
+@media(min-width:1920px){.detail-page .detail-layout{max-width:2200px;gap:4%}.detail-page .donation-panel{padding:40px}.footer-organizer{grid-template-columns:72px minmax(0,1fr);gap:20px}.footer-organizer .organizer-avatar{width:72px;height:72px;font-size:24px}.footer-organizer strong{font-size:24px}.footer-organizer small,.rail-organizer small{font-size:22px}.campaign-created,.campaign-shield-badge,.campaign-report button{font-size:24px}.campaign-created{padding:38px 0 44px}.campaign-shield-badge{padding:16px 24px;margin-bottom:36px}.campaign-report p{font-size:21px}.donor-view-actions button,.rail-organizer>button{min-height:66px;font-size:24px}.donor-empty{min-height:190px}.campaign-trust-band{padding:80px 0}.campaign-trust-band h2{font-size:28px;margin-bottom:74px}.campaign-trust-grid h3{font-size:24px}.campaign-trust-grid p{font-size:21px}.campaign-trust-grid>div{grid-template-columns:64px minmax(0,1fr);gap:36px}.campaign-trust-grid>div>svg{width:64px;height:64px}.sharing-copy h2{font-size:64px}.sharing-copy>p{font-size:24px;max-width:760px}.social-circle{width:92px;height:92px;min-height:92px}.social-circle svg{width:36px!important;height:36px!important}.campaign-social-buttons{gap:22px;margin-top:54px}.sharing-card-composition{height:550px}.sharing-art-card{width:300px;height:500px;border-radius:36px}.sharing-art-card>img{height:156px}.sharing-art-body{height:344px;padding:18px}.sharing-art-body h3{font-size:17px;min-height:42px}.sharing-art-organizer{font-size:13px}.sharing-art-funding strong{font-size:20px}.sharing-art-funding small,.sharing-art-goal{font-size:12px}.sharing-art-funding{grid-template-columns:minmax(0,1fr) 64px}.sharing-art-ring{width:64px;height:64px}.sharing-art-ring b{font-size:16px}.sharing-art-body>button,.sharing-art-donate{min-height:56px;font-size:17px}}
+@media(max-width:1100px){.sharing-copy h2{font-size:38px}.sharing-copy>p{font-size:17px}.campaign-social-buttons{gap:12px}.social-circle{width:56px;height:56px;min-height:56px}.sharing-art-card{width:190px;height:350px}.sharing-art-card>img{height:110px}.sharing-art-body{height:240px;padding:12px}.sharing-art-body h3{font-size:11px;min-height:28px}.sharing-art-funding strong{font-size:12px}.sharing-art-funding{margin-top:14px}.sharing-card-composition{height:410px}.campaign-trust-grid{gap:24px}.campaign-trust-grid>div{grid-template-columns:40px minmax(0,1fr);gap:16px}.campaign-trust-grid>div>svg{width:40px;height:40px}.campaign-trust-grid p{font-size:15px}.desktop-copy-break{display:none}}
+@media(max-width:800px){.detail-page .detail-layout{grid-template-columns:minmax(0,1fr);gap:32px;padding-bottom:48px}.detail-page .donation-panel{position:static;display:block}.detail-page .donation-panel>.raised-row,.detail-page .donation-panel>.goal,.detail-page .donation-panel>.donation-actions{display:none}.mobile-funding{display:block;padding:20px 0}.mobile-funding .donation-actions{grid-template-columns:1fr 1fr}.campaign-trust-band{padding:48px 0}.campaign-trust-band h2{font-size:22px;margin-bottom:36px}.campaign-trust-grid{grid-template-columns:1fr;gap:30px}.campaign-trust-grid>div{grid-template-columns:48px minmax(0,1fr);gap:24px}.campaign-trust-grid>div>svg{width:48px;height:48px}.campaign-trust-grid h3{margin-bottom:8px}.campaign-trust-grid p{font-size:16px}.sharing-layout{grid-template-columns:1fr;gap:42px}.campaign-sharing-section{padding:56px 0 64px}.sharing-copy h2{font-size:40px;max-width:620px}.sharing-copy>p{font-size:18px;max-width:600px}.sharing-card-composition{width:min(620px,100%);margin:auto;height:440px}.sharing-art-card{width:230px;height:400px}.sharing-art-card>img{height:122px}.sharing-art-body{height:278px;padding:14px}.sharing-art-body h3{font-size:13px;min-height:33px}.sharing-art-funding strong{font-size:15px}.campaign-social-buttons{gap:18px}.social-circle{width:68px;height:68px;min-height:68px}}
+@media(max-width:600px){.detail-page .detail-layout{width:100%;padding-top:0;gap:0}.campaign-organizer-footer{padding:28px 16px}.campaign-created{font-size:16px;padding:24px 0}.campaign-shield-badge{font-size:16px;padding:12px 16px}.campaign-report p{font-size:14px}.detail-page .donation-panel{margin:8px 16px 0;padding:22px;display:block}.footer-organizer small{font-size:14px}.campaign-trust-band h2{font-size:22px}.campaign-trust-band{padding:44px 0}.sharing-copy h2{font-size:34px;line-height:1.15}.sharing-heading-break{display:none}.sharing-copy>p{font-size:17px}.campaign-social-buttons{gap:12px;justify-content:space-between;margin-top:28px}.social-circle{width:56px;height:56px;min-height:56px}.social-circle svg{width:26px!important;height:26px!important}.sharing-card-composition{height:370px}.sharing-art-card{width:172px;height:315px;border-radius:24px}.sharing-art-card>img{height:102px}.sharing-art-body{height:213px;padding:10px}.sharing-art-body h3{font-size:10px;min-height:26px}.sharing-art-organizer{font-size:8px;gap:4px}.sharing-art-funding{grid-template-columns:minmax(0,1fr) 38px;margin-top:12px;gap:4px}.sharing-art-funding strong{font-size:11px}.sharing-art-funding small{font-size:7px}.sharing-art-ring{width:38px;height:38px}.sharing-art-ring b{font-size:10px}.sharing-art-goal{font-size:8px;margin-top:8px}.sharing-art-body>button,.sharing-art-donate{font-size:11px;min-height:44px}.sharing-art-left{transform:translateX(-99%) rotate(-10deg);top:46px}.sharing-art-right{transform:translateX(-1%) rotate(10deg);top:46px}.campaign-action-dialog{padding:24px}.gallery-dot-button{width:20px;height:28px;min-height:28px;display:grid;place-items:center}.gallery-footer{gap:0;padding:0 5px}.detail-page .mobile-funding{padding:20px 16px 4px}.detail-page .detail-related{padding-top:40px}.donor-view-actions button{font-size:16px}}
+@media(max-width:359px){.social-circle{width:48px;height:48px;min-height:48px}.campaign-social-buttons{gap:8px}.sharing-copy h2{font-size:30px}.sharing-art-card{width:150px}.sharing-art-funding strong{font-size:10px}}
+
+.trust-icon-accent{stroke:var(--gold)}
+@media(max-width:600px){.sharing-art-card{width:158px}.sharing-art-left{transform:translateX(-99%) rotate(-10deg)}.sharing-art-right{transform:translateX(-1%) rotate(10deg)}.sharing-card-composition{height:390px}}

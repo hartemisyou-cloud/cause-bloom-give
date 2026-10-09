@@ -21,3 +21,9 @@
 - [x] Rebuild home, directory, details, supporting pages and forms to match reference geometry and typography.
 - [x] Compare matching 390/1280/1440 screenshots, fix visual differences and rerun responsive/interaction tests.
 - [x] Update visual QA report and accessible screenshot evidence; remain unpublished.
+
+## Screenshot-authoritative campaign detail correction
+- [x] Rebuild organizer footer and donor/contact rail using genuine available metadata.
+- [x] Reproduce mint trust band and three-card social sharing composition.
+- [x] Verify page controls and before/after sections at 390, 768, 1440 and 2460 px.
+- [x] Save accessible screenshots and a precise comparison report; keep payments disabled and do not publish.
