@@ -12,6 +12,8 @@ export function preserveAttribution(){
 }
 export function analyticsConsent(accepted:boolean){localStorage.setItem('hope-analytics-consent',accepted?'yes':'no');}
 export function trackEvent(name:string,detail:Record<string,string|number>={}){
- if(localStorage.getItem('hope-analytics-consent')!=='yes')return;
- window.dispatchEvent(new CustomEvent('hope:analytics',{detail:{name,...detail,attribution:sessionStorage.getItem('hope-attribution')??''}}));
+ try {
+  if(localStorage.getItem('hope-analytics-consent')!=='yes')return;
+  window.dispatchEvent(new CustomEvent('hope:analytics',{detail:{name,...detail,attribution:sessionStorage.getItem('hope-attribution')??''}}));
+ } catch { /* Optional analytics must not interrupt giving when storage is blocked. */ }
 }

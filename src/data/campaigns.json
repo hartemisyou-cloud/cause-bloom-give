@@ -30,7 +30,7 @@
         "height": 405
       },
       {
-        "url": "/__l5e/assets-v1/84886586-86f6-4adc-aa62-0050476d16f3/uploads-campaigns-mateo-2-1200.webp",
+        "url": "/__l5e/assets-v1/39864f40-cc65-44fa-8c89-0a8347ddfa76/mateo-hope-human.webp",
         "width": 1200,
         "height": 670
       },
@@ -1710,18 +1710,18 @@
     "active": true,
     "createdAt": "2026-09-18T00:00:00Z",
     "image": {
-      "url": "/__l5e/assets-v1/2c260d48-3c88-440c-bc9b-3a4a2eaa7762/uploads-campaigns-help-emma-eb-emma-capa-1200.webp",
+      "url": "/__l5e/assets-v1/171800bc-1fc1-4d7f-8070-880acda0a294/emma-hope-human.webp",
       "width": 1200,
       "height": 670
     },
     "thumbnail": {
-      "url": "/__l5e/assets-v1/4d9429e2-4ef4-4c82-9d7c-e8f1997b430d/uploads-campaigns-help-emma-eb-emma-capa-640.webp",
+      "url": "/__l5e/assets-v1/f525554b-389d-45dc-ade0-92c7d912b0fe/emma-hope-human-thumb.webp",
       "width": 640,
       "height": 357
     },
     "gallery": [
       {
-        "url": "/__l5e/assets-v1/2c260d48-3c88-440c-bc9b-3a4a2eaa7762/uploads-campaigns-help-emma-eb-emma-capa-1200.webp",
+        "url": "/__l5e/assets-v1/171800bc-1fc1-4d7f-8070-880acda0a294/emma-hope-human.webp",
         "width": 1200,
         "height": 670
       }
