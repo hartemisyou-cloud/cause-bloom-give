@@ -17,7 +17,7 @@
 - [x] Save QA report and accessible screenshot evidence; do not publish.
 
 ## Faithful visual reproduction correction
-- [ ] Inspect actual reference styles, fonts, artwork and matching desktop/mobile pages.
-- [ ] Rebuild home, directory, details, supporting pages and forms to match reference geometry and typography.
-- [ ] Compare matching 390/1280/1440 screenshots, fix visual differences and rerun responsive/interaction tests.
-- [ ] Update visual QA report and accessible screenshot evidence; remain unpublished.
+- [x] Inspect actual reference styles, fonts, artwork and matching desktop/mobile pages.
+- [x] Rebuild home, directory, details, supporting pages and forms to match reference geometry and typography.
+- [x] Compare matching 390/1280/1440 screenshots, fix visual differences and rerun responsive/interaction tests.
+- [x] Update visual QA report and accessible screenshot evidence; remain unpublished.

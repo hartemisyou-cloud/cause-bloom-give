@@ -1,10 +1,10 @@
 # Hope Human Foundation — end-to-end QA report
 
 **Review date:** October 9, 2026  
-**Scope:** existing unpublished preview; 54 campaigns; active repository, visitor routes, imported artwork, responsive behavior and primary interactions.
+**Scope:** existing unpublished preview; 54 campaigns; source-faithful visual reconstruction, active repository, visitor routes, imported artwork, responsive behavior and primary interactions.
 
 ## Outcome
-The active site is Hope Human Foundation throughout. Campaign content, natural-English translations, alternate beneficiary surnames and the authentic supplied logo remain intact. The review found and fixed residual QA-test wording, two branded campaign graphics, missing supporting-page artwork, gallery state carried between query-string campaigns, incomplete legacy aliases, storage-error resilience, compact/mobile spacing and contrast on supporting-page buttons. Checkout remains intentionally disabled and honest.
+The active site is Hope Human Foundation throughout. Its visual system now closely reproduces the reference site rather than the earlier editorial redesign: Plus Jakarta Sans, matching 80px desktop/compact mobile headers, hero and featured-card proportions, directory toolbar/sidebar/grid, campaign-detail gallery and funding rail, responsive breakpoints, form wizard, section order, radii, shadows, controls and footer proportions. Campaign content, natural-English translations, alternate beneficiary surnames and the authentic supplied logo remain intact. Checkout remains intentionally disabled and honest.
 
 ## Brand and operational sweep
 A case-insensitive sweep covered source, routes, campaign JSON, metadata, accessible labels, manifest/public files, docs and tests. **No old-brand name/domain, placeholder EIN, source pixel script, tracking endpoint, provider credential or old operational endpoint remains in active or public project content.** The only `stripe_account_id` text is a negative regression-test pattern. No old-domain hotlinks remain. Per-route titles, descriptions and OpenGraph text identify Hope Human Foundation. All 18 leaf route files have route-specific metadata; the catch-all is `noindex`.
@@ -18,7 +18,15 @@ The old reference pages themselves used an old logo, social graphic, offline dat
 - Visual method: all 133 source rasters were inspected on seven numbered contact sheets; all 53 card thumbnail crops were inspected on a separate contact sheet; OCR was run across all 133; text-bearing/flagged images were opened larger. This is a comprehensive visual review, not a filename-only claim.
 - Embedded identity findings: Mateo photo 2 carried a Spanish foundation mark and Spanish campaign panel; Emma photo 1 carried a small organization mark. Both were replaced with English Hope Human graphics using the authentic logo, while leaving beneficiary photography untouched.
 - Retained documentary text: the Fabián certificate names a medical institution and another image contains a camera timestamp. These are source evidence, not fundraising-brand identity, and remain unaltered. Other visible source captions/signs are beneficiary-authored or documentary content.
-- Twelve supporting reference photographs were migrated as optimized immutable assets and used on Blog, Events and Contact. Old social artwork and avatars were not copied because the new site has no corresponding operational/social profiles.
+- Twelve supporting reference photographs were migrated as optimized immutable assets and used on Blog, Events and Contact. The reference mobile sunrise artwork was also imported, reduced from about 5.2 MB to about 28 KB and restored behind the mobile home introduction. Old social artwork and avatars were not copied because the new site has no corresponding operational/social profiles.
+
+## Source-faithful visual reconstruction
+- The public reference HTML, CSS, JavaScript and font declarations were examined for home, directory, representative campaign detail, About and campaign-proposal pages. Plus Jakarta Sans was identified as the actual family; its public Latin and Latin Extended WOFF2 resources are now self-hosted and used at the matching 400–800 weight range. The former Georgia/Arial treatment was removed.
+- Home now reproduces the reference 384px desktop feature card, 190px image, 20px radius, full-width Donate button, centered secondary link, 40px edge arrows and dots below. At 390px the source behavior is retained: compact header, text-led sunrise introduction, hidden desktop feature card and horizontal campaign rail.
+- Directory now reproduces the dark page introduction, desktop search bar, 240px sidebar, three-column cards and the source mobile stacked controls/cards. Detail now reproduces the 1040px two-column layout with 340px sticky funding panel and the mobile full-bleed gallery, title/organizer overlays, funding block and sticky Donate action.
+- About and the five-step proposal form were compared at 1280px. Their header heights, page bands, type hierarchy, centered form width, progress rail, field grid and surface treatment align with the reference structure.
+- Concrete corrections made after side-by-side review: heading family and weights; header/logo scale; home hero/card alignment; card crop, radius and shadow; Donate/link stacking; carousel arrow/dot positions; directory toolbar/sidebar/grid proportions; detail gallery/funding/sticky layouts; mobile title and organizer overlays; proposal-wizard progression; explainer color progression; mobile sunrise art; lower-page spacing and footer columns.
+- Intentional differences are limited to authorized or truthful changes: Hope Human identity and palette; authentic smaller-aspect logo; English translations; alternate beneficiary surnames; historical-snapshot labels instead of live donation/urgency claims; no fake recent-donation timestamps; no fake payment-success or SSL artwork; and no old operational/tracking/social endpoints. These alter some line wrapping and labels but not the structural layout.
 
 ## Routes, behavior and errors
 - Automated crawl: **245 route/viewport checks** covering all visitor-independent pages and all 54 campaign details at 360, 768 and 1440 px, plus focused 320, 390, 430, 1024 and 1920 px checks. Result: **0 horizontal overflows, 0 page errors, 0 broken image requests**.
@@ -32,7 +40,7 @@ The old reference pages themselves used an old logo, social graphic, offline dat
 - Consent decline/allow and `utm_source`/`gclid` preservation passed. Browser storage failures are now contained rather than interrupting navigation or giving controls.
 
 ## Responsive and visual evidence
-Widths reviewed: **320, 360, 390, 430, 768, 1024, 1440 and 1920 px**. Home, directory, campaign details, forms, navigation and donation dialog were inspected at representative mobile/tablet/desktop widths; 320×430 and 844×390 cover reduced-height/mobile-keyboard and landscape constraints. Long campaign titles, gallery dots, status controls, sticky desktop panel/mobile CTA, footer links and modal scrolling fit without clipping or overlap. Fully loaded evidence uses these project-accessible pointers:
+Widths reviewed: **320, 360, 390, 430, 768, 1024, 1280, 1440 and 1920 px**. Home, directory, campaign details, About, forms, navigation and donation dialog were inspected at representative mobile/tablet/desktop widths; 320×430 and 844×390 cover reduced-height/mobile-keyboard and landscape constraints. Long campaign titles, gallery dots, status controls, sticky desktop panel/mobile CTA, footer links and modal scrolling fit without clipping or overlap. Fully loaded evidence uses these project-accessible pointers:
 
 - Home: `src/assets/qa/settled-home-360.webp.asset.json`, `src/assets/qa/settled-home-1440.webp.asset.json`
 - Campaign directory: `src/assets/qa/settled-campaigns-360.webp.asset.json`, `src/assets/qa/settled-campaigns-1440.webp.asset.json`
@@ -40,10 +48,16 @@ Widths reviewed: **320, 360, 390, 430, 768, 1024, 1440 and 1920 px**. Home, dire
 - Proposal form: `src/assets/qa/settled-start-yourself-360.webp.asset.json`, `src/assets/qa/settled-start-yourself-1440.webp.asset.json`
 - Navigation: `src/assets/qa/menu-360-settled.webp.asset.json`, `src/assets/qa/menu-768.webp.asset.json`, `src/assets/qa/menu-1440.webp.asset.json`
 - Donation dialog: the five `src/assets/qa/donation-*.webp.asset.json` pointers.
+- Labeled same-width reference/Hope Human comparisons:
+  - Home: `src/assets/qa/visual-rebuild/compare-home-{390,1280,1440}.webp.asset.json`
+  - Directory: `src/assets/qa/visual-rebuild/compare-listing-{390,1280,1440}.webp.asset.json`
+  - Detail: `src/assets/qa/visual-rebuild/compare-detail-{390,1280,1440}.webp.asset.json`
+  - About: `src/assets/qa/visual-rebuild/compare-about-1280.webp.asset.json`
+  - Proposal form: `src/assets/qa/visual-rebuild/compare-start-yourself-1280.webp.asset.json`
 
 ## Tests and performance
 - Vitest: **2 files, 6 tests passed**. Assertions cover collection cardinality/uniqueness, exact categories, story/gallery completeness, funding snapshots, alternate surnames, filtering/sorting and routing.
-- Managed preview build: **build OK** after final fixes; no current runtime error log. A separate manual typecheck/production build was not run because this environment delegates those checks to the managed harness; generated production output is not exposed for independent inspection.
+- Managed preview build: **build OK** after final fixes; no current runtime error log. The TypeScript check completed cleanly. A separate manual production build was not run because this environment delegates builds to the managed harness; generated production output is not exposed for independent inspection.
 - Local unthrottled development observation: LCP entry about **104 ms**, CLS **0** on the homepage. This is useful only as a smoke signal. INP requires real interaction/event timing, and reliable Core Web Vitals require a published production origin with network/device conditions; none are claimed here.
 - Performance controls verified in source and network behavior: explicit image dimensions, optimized thumbnail/large variants, lazy below-fold artwork, selected-gallery-only loading, stable card/gallery geometry, reduced-motion support, prerender allowlist and immutable CDN assets.
 
@@ -54,4 +68,4 @@ Widths reviewed: **320, 360, 390, 430, 768, 1024, 1440 and 1920 px**. Home, dire
 4. **Production verification:** after explicit publish approval, rerun broken-link checks and measure production LCP/CLS/INP. This review did **not** publish.
 
 ## Revision note
-Lovable manages repository commits. Latest observed managed revision: `4f1aeab` (Changes); final report/evidence updates may receive a subsequent managed revision. No manual stateful Git command was used.
+Lovable manages repository commits. Latest observed managed revision before this final report update: `f36f3c3`; the final report/evidence update may receive a subsequent managed revision. No manual stateful Git command was used.
