@@ -15,6 +15,7 @@
 - Use TanStack leaf routes for supporting pages and query-compatible campaign details; the catch-all redirects legacy .html paths and returns real not-found responses for unknown paths.
 - Prerender only explicitly enumerated visitor-independent pages; campaign query-string details are rendered from bundled static data on demand.
 - Use optimized CDN-backed immutable image pointers, separate thumbnails, and load only the selected gallery photo to keep initial transfers small.
+- Keep campaign source-to-active image mappings in the artwork audit, with supporting imagery catalogued separately; this makes replacements and coverage traceable without shipping archived source websites.
 - Keep payment processing disabled until payments is enabled in the Lovable editor; selection UI must never collect card details or simulate success.
 - Prepare campaign proposals as explicit user-sent emails without pretending to store, submit or publish campaigns.
 - Keep analytics provider-free and consent-gated; preserve paid-traffic parameters within the same browser session.

@@ -20,6 +20,7 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 @media(max-width:1050px) { .campaign-grid.five .campaign-card:nth-child(n+4) {display:block;} }
 @media(max-width:767px) { .campaign-grid.five .campaign-card:nth-child(5) {display:block;} .header-action {min-height:44px;height:44px;} .hero-inner {padding-top:24px;gap:18px;} .hero-copy>p {margin:12px 0 14px;} .hero-note {margin-top:12px;} .hero h1 {font-size:40px;} .featured-image {height:140px;} .carousel-controls {margin-top:8px;} .hero-inner {padding-bottom:16px;} }
 .eyebrow {letter-spacing:0;}
+.content-page a.inline-flex {color:var(--primary-foreground);text-decoration:none;}
 .support-artwork-band {padding-top:28px;padding-bottom:36px;}
 .support-artwork-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
 .support-artwork-grid img {width:100%;aspect-ratio:1.5;object-fit:cover;border-radius:6px;}
