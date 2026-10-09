@@ -1,0 +1,11 @@
+import { useState } from 'react';
+import { Heart, CircleAlert } from 'lucide-react';
+import { Dialog,DialogContent,DialogTitle,DialogDescription } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { type Campaign,money } from '@/lib/campaigns';
+import { trackEvent } from '@/lib/site';
+export function DonationModal({campaign,open,onOpenChange}:{campaign:Campaign;open:boolean;onOpenChange:(v:boolean)=>void}) {
+ const [amount,setAmount]=useState('50');const [notice,setNotice]=useState(false);const [error,setError]=useState('');
+ function proceed(){const value=Number(amount);if(!Number.isFinite(value)||value<1||value>100000){setError('Enter a donation between $1 and $100,000.');return;}setError('');setNotice(true);trackEvent('donation_amount_selected',{slug:campaign.slug,amount:value});}
+ return <Dialog open={open} onOpenChange={onOpenChange}><DialogContent className="donation-modal"><div className="eyebrow"><Heart size={14}/>A little kindness goes a long way</div><DialogTitle>Choose your donation</DialogTitle><DialogDescription className="campaign-name">{campaign.title}</DialogDescription><div className="preset-grid">{[25,50,100,250,500,1000].map(n=><Button key={n} variant={amount===String(n)?'default':'outline'} aria-pressed={amount===String(n)} onClick={()=>{setAmount(String(n));setNotice(false);}}>{money(n)}</Button>)}</div><div><label htmlFor="donation-amount">Custom amount (USD)</label><input className="form-input" id="donation-amount" type="number" min="1" max="100000" step="1" value={amount} onChange={e=>{setAmount(e.target.value);setNotice(false);}} /></div>{error&&<p className="form-error" role="alert">{error}</p>}<div className="checkout-notice"><CircleAlert size={18}/><strong> Checkout is not yet configured.</strong><br/>Hope Human is not accepting payments through this preview. No card details are collected and no donation will be processed.</div><Button variant="pill" onClick={proceed}>Review {Number(amount)>0?money(Number(amount)):'amount'} donation <Heart size={15}/></Button>{notice&&<p className="checkout-notice" role="status">Your selected amount is {money(Number(amount))}. Payment setup is required before checkout can begin. Nothing has been charged.</p>}</DialogContent></Dialog>;
+}
