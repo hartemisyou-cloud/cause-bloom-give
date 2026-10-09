@@ -27,3 +27,8 @@
 - [x] Reproduce mint trust band and three-card social sharing composition.
 - [x] Verify page controls and before/after sections at 390, 768, 1440 and 2460 px.
 - [x] Save accessible screenshots and a precise comparison report; keep payments disabled and do not publish.
+
+## Campaign story rich rendering
+- [ ] Audit all 54 stories and resolve inline photos to exact optimized artwork.
+- [ ] Render paragraphs, headings and inline photos without raw formatting markers.
+- [ ] Verify expanded stories, responsive photos and save screenshot evidence/findings.
