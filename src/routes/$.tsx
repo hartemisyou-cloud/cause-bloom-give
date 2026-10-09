@@ -1,0 +1,4 @@
+import { createFileRoute,redirect,notFound } from '@tanstack/react-router';
+import { pageHead } from '@/lib/site';
+const aliases={'campaigns.html':'/campaigns','campaign-detail.html':'/campaign-detail','causes.html':'/causes','most-loved.html':'/most-loved','events.html':'/events','blog.html':'/blog','about.html':'/about','contact.html':'/contact','index.html':'/'} as const;
+export const Route=createFileRoute('/$')({beforeLoad:({params,location})=>{const target=aliases[params._splat as keyof typeof aliases];if(target){throw redirect({href:target+location.searchStr, statusCode:301});}throw notFound();},head:()=>({...pageHead('Page not found','This Hope Human page is unavailable. Return to the campaign directory.','/'),meta:[{title:'Page not found — Hope Human Foundation'},{name:'robots',content:'noindex'}]}),component:()=>null});

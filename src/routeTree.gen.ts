@@ -10,12 +10,36 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as CampaignDetailRouteImport } from './routes/campaign-detail'
 import { Route as CampaignsRouteImport } from './routes/campaigns'
+import { Route as CausesRouteImport } from './routes/causes'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as EventsRouteImport } from './routes/events'
+import { Route as GuaranteeRouteImport } from './routes/guarantee'
+import { Route as HelpCenterRouteImport } from './routes/help-center'
+import { Route as MostLovedRouteImport } from './routes/most-loved'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as RefundCancellationPolicyRouteImport } from './routes/refund-cancellation-policy'
+import { Route as StartBusinessRouteImport } from './routes/start-business'
+import { Route as StartFamilyRouteImport } from './routes/start-family'
+import { Route as StartYourselfRouteImport } from './routes/start-yourself'
+import { Route as TermsOfUseRouteImport } from './routes/terms-of-use'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CampaignDetailRoute = CampaignDetailRouteImport.update({
@@ -28,35 +52,204 @@ const CampaignsRoute = CampaignsRouteImport.update({
   path: '/campaigns',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CausesRoute = CausesRouteImport.update({
+  id: '/causes',
+  path: '/causes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsRoute = EventsRouteImport.update({
+  id: '/events',
+  path: '/events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuaranteeRoute = GuaranteeRouteImport.update({
+  id: '/guarantee',
+  path: '/guarantee',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HelpCenterRoute = HelpCenterRouteImport.update({
+  id: '/help-center',
+  path: '/help-center',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MostLovedRoute = MostLovedRouteImport.update({
+  id: '/most-loved',
+  path: '/most-loved',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundCancellationPolicyRoute =
+  RefundCancellationPolicyRouteImport.update({
+    id: '/refund-cancellation-policy',
+    path: '/refund-cancellation-policy',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const StartBusinessRoute = StartBusinessRouteImport.update({
+  id: '/start-business',
+  path: '/start-business',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartFamilyRoute = StartFamilyRouteImport.update({
+  id: '/start-family',
+  path: '/start-family',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartYourselfRoute = StartYourselfRouteImport.update({
+  id: '/start-yourself',
+  path: '/start-yourself',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsOfUseRoute = TermsOfUseRouteImport.update({
+  id: '/terms-of-use',
+  path: '/terms-of-use',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
   '/campaign-detail': typeof CampaignDetailRoute
   '/campaigns': typeof CampaignsRoute
+  '/causes': typeof CausesRoute
+  '/contact': typeof ContactRoute
+  '/events': typeof EventsRoute
+  '/guarantee': typeof GuaranteeRoute
+  '/help-center': typeof HelpCenterRoute
+  '/most-loved': typeof MostLovedRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/refund-cancellation-policy': typeof RefundCancellationPolicyRoute
+  '/start-business': typeof StartBusinessRoute
+  '/start-family': typeof StartFamilyRoute
+  '/start-yourself': typeof StartYourselfRoute
+  '/terms-of-use': typeof TermsOfUseRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
   '/campaign-detail': typeof CampaignDetailRoute
   '/campaigns': typeof CampaignsRoute
+  '/causes': typeof CausesRoute
+  '/contact': typeof ContactRoute
+  '/events': typeof EventsRoute
+  '/guarantee': typeof GuaranteeRoute
+  '/help-center': typeof HelpCenterRoute
+  '/most-loved': typeof MostLovedRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/refund-cancellation-policy': typeof RefundCancellationPolicyRoute
+  '/start-business': typeof StartBusinessRoute
+  '/start-family': typeof StartFamilyRoute
+  '/start-yourself': typeof StartYourselfRoute
+  '/terms-of-use': typeof TermsOfUseRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRoute
   '/campaign-detail': typeof CampaignDetailRoute
   '/campaigns': typeof CampaignsRoute
+  '/causes': typeof CausesRoute
+  '/contact': typeof ContactRoute
+  '/events': typeof EventsRoute
+  '/guarantee': typeof GuaranteeRoute
+  '/help-center': typeof HelpCenterRoute
+  '/most-loved': typeof MostLovedRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/refund-cancellation-policy': typeof RefundCancellationPolicyRoute
+  '/start-business': typeof StartBusinessRoute
+  '/start-family': typeof StartFamilyRoute
+  '/start-yourself': typeof StartYourselfRoute
+  '/terms-of-use': typeof TermsOfUseRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/campaign-detail' | '/campaigns'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/campaign-detail'
+    | '/campaigns'
+    | '/causes'
+    | '/contact'
+    | '/events'
+    | '/guarantee'
+    | '/help-center'
+    | '/most-loved'
+    | '/privacy-policy'
+    | '/refund-cancellation-policy'
+    | '/start-business'
+    | '/start-family'
+    | '/start-yourself'
+    | '/terms-of-use'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/campaign-detail' | '/campaigns'
-  id: '__root__' | '/' | '/campaign-detail' | '/campaigns'
+  to:
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/campaign-detail'
+    | '/campaigns'
+    | '/causes'
+    | '/contact'
+    | '/events'
+    | '/guarantee'
+    | '/help-center'
+    | '/most-loved'
+    | '/privacy-policy'
+    | '/refund-cancellation-policy'
+    | '/start-business'
+    | '/start-family'
+    | '/start-yourself'
+    | '/terms-of-use'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/blog'
+    | '/campaign-detail'
+    | '/campaigns'
+    | '/causes'
+    | '/contact'
+    | '/events'
+    | '/guarantee'
+    | '/help-center'
+    | '/most-loved'
+    | '/privacy-policy'
+    | '/refund-cancellation-policy'
+    | '/start-business'
+    | '/start-family'
+    | '/start-yourself'
+    | '/terms-of-use'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BlogRoute: typeof BlogRoute
   CampaignDetailRoute: typeof CampaignDetailRoute
   CampaignsRoute: typeof CampaignsRoute
+  CausesRoute: typeof CausesRoute
+  ContactRoute: typeof ContactRoute
+  EventsRoute: typeof EventsRoute
+  GuaranteeRoute: typeof GuaranteeRoute
+  HelpCenterRoute: typeof HelpCenterRoute
+  MostLovedRoute: typeof MostLovedRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  RefundCancellationPolicyRoute: typeof RefundCancellationPolicyRoute
+  StartBusinessRoute: typeof StartBusinessRoute
+  StartFamilyRoute: typeof StartFamilyRoute
+  StartYourselfRoute: typeof StartYourselfRoute
+  TermsOfUseRoute: typeof TermsOfUseRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -66,6 +259,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/campaign-detail': {
@@ -82,13 +289,111 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CampaignsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/causes': {
+      id: '/causes'
+      path: '/causes'
+      fullPath: '/causes'
+      preLoaderRoute: typeof CausesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events': {
+      id: '/events'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guarantee': {
+      id: '/guarantee'
+      path: '/guarantee'
+      fullPath: '/guarantee'
+      preLoaderRoute: typeof GuaranteeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/help-center': {
+      id: '/help-center'
+      path: '/help-center'
+      fullPath: '/help-center'
+      preLoaderRoute: typeof HelpCenterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/most-loved': {
+      id: '/most-loved'
+      path: '/most-loved'
+      fullPath: '/most-loved'
+      preLoaderRoute: typeof MostLovedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund-cancellation-policy': {
+      id: '/refund-cancellation-policy'
+      path: '/refund-cancellation-policy'
+      fullPath: '/refund-cancellation-policy'
+      preLoaderRoute: typeof RefundCancellationPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/start-business': {
+      id: '/start-business'
+      path: '/start-business'
+      fullPath: '/start-business'
+      preLoaderRoute: typeof StartBusinessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/start-family': {
+      id: '/start-family'
+      path: '/start-family'
+      fullPath: '/start-family'
+      preLoaderRoute: typeof StartFamilyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/start-yourself': {
+      id: '/start-yourself'
+      path: '/start-yourself'
+      fullPath: '/start-yourself'
+      preLoaderRoute: typeof StartYourselfRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms-of-use': {
+      id: '/terms-of-use'
+      path: '/terms-of-use'
+      fullPath: '/terms-of-use'
+      preLoaderRoute: typeof TermsOfUseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BlogRoute: BlogRoute,
   CampaignDetailRoute: CampaignDetailRoute,
   CampaignsRoute: CampaignsRoute,
+  CausesRoute: CausesRoute,
+  ContactRoute: ContactRoute,
+  EventsRoute: EventsRoute,
+  GuaranteeRoute: GuaranteeRoute,
+  HelpCenterRoute: HelpCenterRoute,
+  MostLovedRoute: MostLovedRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
+  RefundCancellationPolicyRoute: RefundCancellationPolicyRoute,
+  StartBusinessRoute: StartBusinessRoute,
+  StartFamilyRoute: StartFamilyRoute,
+  StartYourselfRoute: StartYourselfRoute,
+  TermsOfUseRoute: TermsOfUseRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
