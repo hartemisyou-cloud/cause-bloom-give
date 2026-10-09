@@ -178,3 +178,17 @@ Ten real screenshot pointers under `src/assets/qa/stories/`: before at 1280; aft
 
 ### Preserved / limitations
 Authentic Hope Human identity, reference visual rebuild, all existing 54 campaigns/galleries, English prose and changed surnames preserved. Payments remain disabled and unchanged; nothing published. Existing public-launch content rights, legal verification and real payment configuration blockers remain. No pixel-identical claim: this fix preserves source image positions/order and captions, and deliberately upgrades existing standalone labels to semantic headings. Raw source serialization remains in static campaign data as input, never visitor-visible output. Verification results/script reside under `/tmp/browser/story-fix/`; screenshot pointers and this report are durable project evidence.
+
+## Final sharing-only refinement — October 9, 2026
+- Changed only sharing CSS: side cards scale to 90%, retain ±10° rotation and rear layering, and move upward to align rotated bottoms with the central card. Before, sides extended 42–57px below center; after, difference is under 1px at 390/768/1160/1280/1440/2460. Center remains taller and prominent.
+- Central goal row is visually hidden; Previous fundraising remains. Funding moves upward, retaining open space above the bottom gold CTA. No campaign, story, payment, logo or data changes.
+- Desktop tracks changed from equal columns to 54:39 with the existing 7% gap; headline verified exactly two lines at 1160, 1280 and 1440 (44px at 1160–1400, existing 48px at 1440), with the requested break after “than”. Mobile/tablet intentionally remain stacked.
+- Actual card bounding width reduces from 754px to 716px at 2460, and 581px to 552px at 1440. The latter is 38.3% of viewport. At 2460 the existing fixed-card sizing yields 29.1%, **not a certified 37%**; supplied screenshot viewport/crop metadata remains unknown. Same-width normalized comparison was visually inspected, not treated as pixel identity. Remaining differences include original side-card content placement, truthful sharing copy, whole-dollar formatting and authorized Hope Human colors.
+- Browser before/after captures: `/campaign-detail?slug=help-graceline-now` at 390/768/1160/1280/1440/2460×1800. Zero horizontal overflow; center qualifier retained; center goal hidden; two headline lines at all tested sizes. Final desktop 1440/2460 and mobile 390 screenshots directly inspected alongside supplied reference2 and normalized comparison.
+- Central Donate opens the unchanged not-configured notice; Escape closes after its exit animation. Zero page errors. Sharing regression tests: 1 file / 4 tests passed. Managed preview log: build OK. No publication.
+- Durable final evidence under `src/assets/qa/sharing-final/`:
+  - Mobile: `/__l5e/assets-v1/18cb776a-71ad-4c46-963f-51b74f8519aa/sharing-final-390.png`
+  - Desktop 1440: `/__l5e/assets-v1/7675ea5d-5134-4829-b829-8bff712a8164/sharing-final-1440.png`
+  - Desktop 2460: `/__l5e/assets-v1/b6b6bbfb-46db-455f-a8e5-f8b4e2c19167/sharing-final-2460.png`
+  - Normalized supplied-reference comparison: `/__l5e/assets-v1/e4b1844f-1230-4296-9067-07c9461f4656/sharing-final-comparison.png`
+- Latest observed managed revision before this report addition: `ebf65f5`; report changes may receive a subsequent managed revision.
