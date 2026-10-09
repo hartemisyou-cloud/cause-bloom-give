@@ -16,3 +16,6 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } }
 
 @media(max-width:767px) { .hero-inner {padding-top:30px;gap:22px;} .hero h1 {font-size:42px;} .hero-copy>p {margin:15px 0 18px;} .hero-note {font-size:10px;margin-top:14px;} .featured-image {height:160px;} .featured-body {padding:17px;} .featured-body h2 {font-size:16px;} .featured-body p {font-size:11px;} .hero-copy>p {line-height:1.7;} }
+
+@media(max-width:1050px) { .campaign-grid.five .campaign-card:nth-child(n+4) {display:block;} }
+@media(max-width:767px) { .campaign-grid.five .campaign-card:nth-child(5) {display:block;} .header-action {min-height:44px;height:44px;} .hero-inner {padding-top:24px;gap:18px;} .hero-copy>p {margin:12px 0 14px;} .hero-note {margin-top:12px;} .hero h1 {font-size:40px;} .featured-image {height:140px;} .carousel-controls {margin-top:8px;} .hero-inner {padding-bottom:16px;} }

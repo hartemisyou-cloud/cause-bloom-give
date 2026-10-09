@@ -25,4 +25,4 @@ This is the new project. The source brand project was not checked out or modifie
 - Search, category empty state, most/least funded, smallest goal, urgent and fully funded filters exercised.
 - Home/detail checked at 360, 390, 768 and 1440 pixels with no horizontal overflow. Drawer, photo gallery, donation selection and proposal validation checked.
 - UTM and gclid preservation checked through navigation. No runtime errors observed.
-- Performance thresholds are targets, not verified paid-traffic guarantees. Published production measurements and third-party analytics are not available because this project has not been published.
+- Static prerendering is configured, but generated production HTML output is not exposed in this sandbox and has not been independently inspected. Performance thresholds are targets, not verified paid-traffic guarantees. Published production measurements and third-party analytics are not available because this project has not been published.
