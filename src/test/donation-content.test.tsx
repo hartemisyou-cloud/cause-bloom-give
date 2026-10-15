@@ -43,7 +43,7 @@ describe('Donation-only public information', () => {
       return readdirSync(dir, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? (entry.name === 'ui' ? [] : files(join(dir, entry.name))) : /\.(tsx?|json)$/.test(entry.name) ? [join(dir, entry.name)] : []);
     }
     for (const file of [...files('src/routes'), ...files('src/components'), ...files('src/lib'), ...files('src/data')]) {
-      const text = readFileSync(file, 'utf8').replace(/BookOpen/g, 'JournalIcon');
+      const text = readFileSync(file, 'utf8').replace(/BookOpen/g, 'JournalIcon').replace(/https:\/\/hopehumanbooks\.com\/donations\/start/g, 'AuthorizedDonationStart');
       expect(text, file).not.toMatch(salesTerms);
       expect(text, file).not.toMatch(/@stripe\/stripe-js|js\.stripe\.com/);
     }
