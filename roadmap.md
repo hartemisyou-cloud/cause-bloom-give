@@ -5,7 +5,7 @@
 - [x] Optimize imagery, metadata, prerendering, accessibility and attribution hooks.
 - [x] Verify data, routes, images, filters and desktop/mobile donation flows.
 ## External launch blockers (preview remains complete)
-- Payment integration must be enabled in the Lovable editor, with verified recipient configuration, before server-side checkout can be implemented.
+- External checkout owns payment processing; this site only navigates to the authorized amount-selection checkout.
 - Production performance metrics and generated prerender output require a production build/publish environment; automatic preview checks report build OK, but no generated production HTML is exposed in this sandbox.
 - Public launch requires content/image permissions and confirmed operational/legal terms. Do not publish in this task.
 
@@ -32,3 +32,9 @@
 - [x] Audit all 54 stories and resolve inline photos to exact optimized artwork.
 - [x] Render paragraphs, headings and inline photos without raw formatting markers.
 - [x] Verify expanded stories, responsive photos and save screenshot evidence/findings.
+
+## Current reference correction
+- [ ] Inspect all reference page families and document differences.
+- [ ] Update shared tokens/fonts, home panels, supporting layouts and donation navigation.
+- [ ] Verify routes, six checkout amounts, loaded assets, desktop/mobile comparisons and tests.
+- [ ] Save evidence and report remaining differences; do not publish.

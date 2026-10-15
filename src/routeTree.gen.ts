@@ -17,6 +17,7 @@ import { Route as CampaignDetailRouteImport } from './routes/campaign-detail'
 import { Route as CampaignsRouteImport } from './routes/campaigns'
 import { Route as CausesRouteImport } from './routes/causes'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DonateRouteImport } from './routes/donate'
 import { Route as EventsRouteImport } from './routes/events'
 import { Route as GuaranteeRouteImport } from './routes/guarantee'
 import { Route as HelpCenterRouteImport } from './routes/help-center'
@@ -66,6 +67,11 @@ const CausesRoute = CausesRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DonateRoute = DonateRouteImport.update({
+  id: '/donate',
+  path: '/donate',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EventsRoute = EventsRouteImport.update({
@@ -129,6 +135,7 @@ export interface FileRoutesByFullPath {
   '/campaigns': typeof CampaignsRoute
   '/causes': typeof CausesRoute
   '/contact': typeof ContactRoute
+  '/donate': typeof DonateRoute
   '/events': typeof EventsRoute
   '/guarantee': typeof GuaranteeRoute
   '/help-center': typeof HelpCenterRoute
@@ -149,6 +156,7 @@ export interface FileRoutesByTo {
   '/campaigns': typeof CampaignsRoute
   '/causes': typeof CausesRoute
   '/contact': typeof ContactRoute
+  '/donate': typeof DonateRoute
   '/events': typeof EventsRoute
   '/guarantee': typeof GuaranteeRoute
   '/help-center': typeof HelpCenterRoute
@@ -170,6 +178,7 @@ export interface FileRoutesById {
   '/campaigns': typeof CampaignsRoute
   '/causes': typeof CausesRoute
   '/contact': typeof ContactRoute
+  '/donate': typeof DonateRoute
   '/events': typeof EventsRoute
   '/guarantee': typeof GuaranteeRoute
   '/help-center': typeof HelpCenterRoute
@@ -192,6 +201,7 @@ export interface FileRouteTypes {
     | '/campaigns'
     | '/causes'
     | '/contact'
+    | '/donate'
     | '/events'
     | '/guarantee'
     | '/help-center'
@@ -212,6 +222,7 @@ export interface FileRouteTypes {
     | '/campaigns'
     | '/causes'
     | '/contact'
+    | '/donate'
     | '/events'
     | '/guarantee'
     | '/help-center'
@@ -232,6 +243,7 @@ export interface FileRouteTypes {
     | '/campaigns'
     | '/causes'
     | '/contact'
+    | '/donate'
     | '/events'
     | '/guarantee'
     | '/help-center'
@@ -253,6 +265,7 @@ export interface RootRouteChildren {
   CampaignsRoute: typeof CampaignsRoute
   CausesRoute: typeof CausesRoute
   ContactRoute: typeof ContactRoute
+  DonateRoute: typeof DonateRoute
   EventsRoute: typeof EventsRoute
   GuaranteeRoute: typeof GuaranteeRoute
   HelpCenterRoute: typeof HelpCenterRoute
@@ -321,6 +334,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/donate': {
+      id: '/donate'
+      path: '/donate'
+      fullPath: '/donate'
+      preLoaderRoute: typeof DonateRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/events': {
@@ -405,6 +425,7 @@ const rootRouteChildren: RootRouteChildren = {
   CampaignsRoute: CampaignsRoute,
   CausesRoute: CausesRoute,
   ContactRoute: ContactRoute,
+  DonateRoute: DonateRoute,
   EventsRoute: EventsRoute,
   GuaranteeRoute: GuaranteeRoute,
   HelpCenterRoute: HelpCenterRoute,
