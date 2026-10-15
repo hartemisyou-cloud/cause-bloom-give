@@ -28,3 +28,4 @@
 - Render campaign stories through a safe rich-text component and exact source-path artwork map; this preserves inline photo order/captions and prevents serialization markers from appearing as prose.
 
 - Render expanding campaign panels in a dedicated accessible presentation module, keeping campaign data immutable and navigation shared with leaf routes.
+- Keep image-led supporting page families in focused presentation modules; retain genuine content and explicit empty event records instead of importing unsupported reference claims.
