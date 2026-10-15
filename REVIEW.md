@@ -310,3 +310,14 @@ Fresh immutable evidence in `src/assets/qa/sharing-fluid/`:
 - 1920: `/__l5e/assets-v1/c86ef40d-944f-4188-b5a2-5cf777add2c4/sharing-fluid-1920.png`
 - 1440: `/__l5e/assets-v1/9ec4aa52-3e7f-40c0-a1a5-4c663477a7ca/sharing-fluid-1440.png`
 - 390: `/__l5e/assets-v1/7d10f4fd-6656-4c4b-966a-79f894295bdc/sharing-fluid-390.png`
+
+## Post-review fixes (independent review of 6e3fc1d)
+- Mobile menu: already full-screen grouped Help/Discover/Foundation (supplemental); unchanged.
+- Featured: removed 82% mobile rail; grid is 4 cols desktop, 2 cols (gap 12) <=768, 1 col <=480. Measured 1440: 4×310px, 768: 2×340px, 390: 1×351px.
+- Trending panels: roving tabindex with real focus transfer; Arrow keys/Home/End verified (1→2→3, End 4, Home 0, Left wraps to 4); Tab from active panel reaches its title link then Donate now without collapsing.
+- Campaigns: `q`, `category`, `sort` live in the URL; `/campaigns?q=Teddy` shows 1 result, survives reload with sort=goal.
+- Most Loved: hero stats (previous fundraising total, story count), top-3 band, search, category chips, "Your favorites" chip (device-only hearts) and full ranked grid by previous fundraising.
+- About: 4-step process; Guarantee: green hero, 3 overlapping pillar cards, 3 info cards using Hope's actual checkout facts.
+- How it works gradient/phone sizes already matched supplemental values (verified tokens).
+- Checks: no horizontal overflow at 390/768/1440 on /, /most-loved, /about, /guarantee, /campaigns?q=Teddy; no page errors; typecheck clean; 17 tests pass. Evidence: src/assets/qa/review2/desk.png, mob.png.
+- Remaining: Back after in-page search edits returns to the previous page (search updates replace history); no clean VERCEL=1 build rerun this pass.
