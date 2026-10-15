@@ -1,3 +1,72 @@
+# Latest verification — October 15, 2026
+
+This section supersedes earlier donation-modal, matte-palette and checkout-disabled descriptions below. Earlier sections are historical QA, not the current checkout specification.
+
+## Implemented correction
+- Exact measured reference palette in shared semantic OKLCH tokens: primary #08733D, dark #045C28, gold #F4B740, gold-dark #E5A62F, ink #16382A, slate #4F6F5D, muted #667085, line #DDE9E2, surface #F7FBF8.
+- Authentic existing Hope Human logo retained unmodified. Added genuine public Plus Jakarta Sans variable italic WOFF2 (29,524 bytes), uploaded pointer and byte-identical public mirror. Normal font remains local. Header 80px desktop/64px mobile, mobile logo max132px, desktop max210px; removed home copy margin offset and corrected hero type/card geometry.
+- Dedicated expanding home panels: desktop flex1/active3.6, full-cover photos, 520px maximum height, 18px corners, category/teaser/funding/CTA overlays and green see-all tile. Mobile vertical accordion uses 58px collapsed/330px active/64px CTA. Hover/focus and explicit 44px expansion controls work. The first invisible whole-panel control was replaced after browser clicks exposed interception by title links.
+- How-it-works remains a real interactive three-state visual; amount demonstration uses authorized presets and opens the real selection page. Featured mobile cards use an 82%-width horizontal rail.
+- Directory retains actual 54-row search/category/status/sort/favorites and reference sidebar/grid. Decimal abbreviated money now displays $611.4k/$377.5k rather than $611k/$378k.
+- Detail returns to centered reference-sized desktop title/gallery/sidebar with cover crop; preserves rich stories and the earlier organizer, donor-empty, trust and three-photo sharing composition. Added the missing story reactions/Donate/Share/compact sharing block. Reactions are local UI state, not fabricated public counts. Previous fundraising remains concise, without duplicate wording on the goal row.
+- Image-led Causes, Events and Journal restored in focused modules. Causes uses real existing category counts rather than invented partner organizations. Events uses genuine transferred photos, explicit no-confirmed-events states and idea/contact actions, not fake dates or results. Journal uses existing English guidance in image cards and working topic filters, not invented editorial authors/statistics.
+- About header now wraps in two desktop lines; six value slots use truthful copy; mission/values geometry and shared surfaces updated. Contact now matches two-column information/form layout but prepares a user-sent support email rather than false sent success. FAQ boxed accordions and policy reading width updated. Existing three five-step proposal flows preserved.
+- NEW `/donate?slug=…`: centered 832px two-column desktop composition (394px/414px at1280), campaign photo/summary, white selection card with green header, six amount buttons, $100 Suggested badge, gold Continue initially disabled, neutral checkout disclosure. Mobile uses integrated photograph/dark summary + selection card with info below, not a drawer. `/donate` redirects to directory; unknown slug404; `donate.html` redirects preserving query.
+- All existing Donate actions route to full page; removed `donation-modal.tsx` and its styling. Continue validates USD20/30/50/100/250/500 and navigates ONLY to `https://hopehumanfoundations.org/pay?amount=…&campaign=…`, carrying allow-listed attribution. This is the existing digital-book checkout owned by Hope Human Books. No card fields, processor SDK, keys, charges, simulated success or direct-beneficiary/refund promises introduced.
+- Canonical campaign sharing now defaults to singular `https://hopehumanfoundation.org`, not current preview origin. Updated outdated checkout help/policy copy and README. Vite prerender/compiled hook and vercel.json unchanged.
+
+## Route/page-family checklist
+All reference pages below fetched as actual HTML and screens at1280. Home/list/detail/donate reference captures additionally at390/768/1440. Every current row below visited at390/768/1280/1440, HTTP200, no horizontal overflow and no completed broken images.
+
+| Family | Routes | Scope/status |
+|---|---|---|
+| Home | `/` | Hero, panels, explainer, featured rail, start options, header/footer updated; comparison captured |
+| Directory | `/campaigns` | Search/filter/sort/favorite grid preserved; comparison captured |
+| Causes | `/causes` | Photo grid and working category tabs; 4 genuine categories, not 18 invented partners |
+| Most Loved | `/most-loved` | Existing actual-data campaign grid with updated shared styling |
+| Events | `/events` | Photo-led sections and honest unavailable event records |
+| Journal | `/blog` | Photo cards and working topic selection; genuine existing guidance |
+| About | `/about` | Two-line desktop header, mission, six values, how-it-works |
+| Contact | `/contact` | Two-column information/form; validated email preparation |
+| Help | `/help-center` | Boxed native accessible FAQ disclosures |
+| Transparency | `/guarantee` | Reference shared styling, truthful policies rather than transferred guarantee claims |
+| Proposals | `/start-yourself`, `/start-family`, `/start-business` | Existing five-step truthful email-proposal workflow preserved, shared styling |
+| Policies | `/privacy-policy`, `/terms-of-use`, `/refund-cancellation-policy` | Reading width and current external-checkout disclosures |
+| Details | `/campaign-detail?slug=mateo`, `…help-graceline-now` | Four-width full-page captures; all54 campaign titles/main photos additionally verified at390 |
+| Amount selection | `/donate?slug=mateo` | Four-width captures; all6 actual UI selections/navigation URLs intercepted |
+
+## Actual verification
+- 19 route visits ×4 widths =76 recorded checks at390/768/1280/1440×1800. All HTTP200 with intended titles; zero overflow or completed broken-image observations. No page errors in successful focused flow and 54-detail crawl.
+- All54 details independently visited at390, each expected campaign title checked and actual selected gallery image naturalWidth>0.
+- Mateo and Graceline detail200; unknown campaign and unknown donate slug404; donate without slug lands directory; legacy donate.html lands valid query page.
+- All6 UI amounts selected, Continue enabled, external navigation intercepted (no purchase): exact amount/campaign and utm_source=qa observed on correct HTTPS checkout host.
+- Mobile navigation opens, focus-visible close control shown, Escape dismisses. Desktop Discover dropdown and featured next arrow exercised. How step2 displays all6 authorized presets and checkout-review copy.
+- Mobile panel switched to Graceline with loaded campaign photo; directory search gives1 Mateo, meaningless query gives empty state, Clear filters resets, animal category gives1; sort selector changed.
+- Graceline expanded first story photograph naturalWidth1200. Selected gallery photo2 URL matches data, decodes naturalWidth554. Story photos were initially measured before lazy decode; waiting for real decode corrected verification, not source data.
+- Contact form valid input prepares actual mailto at foundation support; no send success. Contact action dialog opens and Escape dismisses; mobile sticky Donate reaches full page with zero dialogs.
+- `bunx vitest run`: **5 files /16 tests passed** after changes (collection/surnames/filtering, stories, detail sections, routing and new checkout validator). No test files suppressed.
+- Managed preview diagnostics newest checked entry: **build OK 2026-10-15T01:32:07Z**. No separate manual typecheck or clean VERCEL production build was executed this turn: environment instructions delegate those to the managed harness. Consequently final clean Vercel manifests/prerender output and standalone typecheck are **not independently verified for this revision**. Earlier Vercel QA is not evidence of a new production build.
+- Runtime delivery scan: **214 distinct files, 11,259,072 bytes, zero missing public mirrors**, including added italic font. QA pointers excluded. All existing campaign/gallery/story files retained, no campaign JSON or artwork mapping changes.
+- Active source/data sweep: no old-brand name/domain/contact endpoints, no payment SDK/keys, no old tracking vendor. Per-leaf route metadata retained; donate gets unique dynamic head. Reference archived HTML/CSS stays under /tmp, never shipped.
+
+## Visual comparison findings and honest limitations
+Directly inspected same-width actual/reference comparisons for home, directory, detail and donate. Mobile home introduction now closely tracks source typography, sunrise crop and geometry. Desktop donation photo/card x/y/width match closely; extra neutral checkout explanation increases right-card height. Detail main geometry aligns closely without source red fabricated urgency banner; English story length, empty donor records and additional transparency produce intentional section-height differences.
+
+Not pixel-identical: user explicitly requested mobile expanding accordion, but live public source currently shows a horizontal card rail in that slot; followed explicit accordion instruction. Source legal guarantees, fake-looking live donor/time/count records, event dates/partners, statistics, authors and direct-beneficiary checkout claims are NOT transferred. Footer has genuine Hope links and no invented social profile, so its grouping/height differs. Most Loved/proposal/policy families retain existing functional structures, not every source decoration. Reference explainer still differs in fine artwork/animation detail; no undocumented success animation was copied. No claims of comprehensive pixel identity.
+
+No live deployment, Vercel/DNS/settings/secrets modifications, central-project changes or purchase. This task updates the preview/repository only. Production build/typecheck and live Vercel rendering remain unverified; legal/content permissions and checkout business terms remain outside this visual task.
+
+## Fresh screenshot evidence
+
+[menu-390.webp](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/2eb85660-6a06-469e-bd8d-e8b9fafbea6a/menu-390.webp)
+
+[sharing-1440.webp](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/99ece7d9-42ab-4519-96df-e4632dd1265d/sharing-1440.webp)
+
+[compare-donate-mateo-1280.webp](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/186716a3-d867-443a-858e-20ca27fc26a0/compare-donate-mateo-1280.webp)
+
+[compare-home-390.webp](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/3c44cd38-a6e8-47d0-ba60-eddbc8a6c49e/compare-home-390.webp)
+31 immutable QA pointers under `src/assets/qa/reference-correction/`, excluded from runtime public mirrors. Sixteen comparisons: `compare-{home,campaigns,campaign-detail-mateo,donate-mateo}-{390,768,1280,1440}.webp.asset.json`. Actual home/donate at390/1440, menus390/1440, sharing1440, selected gallery1440, decoded story photo1440, contact/about/blog/events/causes/proposal1280 also saved.
+
 # Hope Human Foundation — end-to-end QA report
 
 **Review date:** October 9, 2026  

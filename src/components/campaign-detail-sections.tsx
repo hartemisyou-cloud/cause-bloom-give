@@ -7,7 +7,7 @@ import { type Campaign, categoryName, money, percentage } from '@/lib/campaigns'
 
 export function initials(name: string) { return name.split(' ').slice(0, 2).map(n => n[0]).join('').toUpperCase(); }
 export function campaignUrl(c: Campaign) {
-  const origin = import.meta.env['VITE_SITE_URL']?.replace(/\/$/, '') || window.location.origin;
+  const origin = import.meta.env['VITE_SITE_URL']?.replace(/\/$/, '') || 'https://hopehumanfoundation.org';
   return `${origin}/campaign-detail?slug=${encodeURIComponent(c.slug)}`;
 }
 export function campaignMonth(c: { createdAt: string | null }) {
