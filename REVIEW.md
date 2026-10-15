@@ -322,3 +322,9 @@ Fresh immutable evidence in `src/assets/qa/sharing-fluid/`:
 - Checks: no horizontal overflow at 390/768/1440 on /, /most-loved, /about, /guarantee, /campaigns?q=Teddy; no page errors; typecheck clean; 17 tests pass. Evidence: src/assets/qa/review2/desk.png, mob.png.
 - Remaining: Back after in-page search edits returns to the previous page (search updates replace history); no clean VERCEL=1 build rerun this pass.
 - Trending delta: category select moved below heading (left); collapsed desktop panels hide title/body; see-all arrow centred above vertical label; in-panel Donate button replaced by an accessible "Read the story" detail link; How-it-works eyebrow now ink, spaced uppercase. Evidence: src/assets/qa/review2/trend-1440.png, trend-390.png. No overflow at 1440/390.
+
+## Blog reference header (review 3)
+- Restored dark gradient Blog intro band ("Stories that move people to act.") above the topics bar, matching reference geometry (64px 5% 60px padding, max-width 780 inner, clamp h1, gold page-tag); mobile padding 36px 4% 32px.
+- Lead article demoted to h2 (single h1 per page); topic filters unchanged.
+- Verified 1440/390: header full-width dark gradient, no overflow, no page errors. Screenshots: src/assets/qa/review3/blog-desk.png, blog-mob.png.
+- tsgo clean; vitest 17/17 passing. Not published.
