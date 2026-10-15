@@ -5,7 +5,7 @@ import artwork from '@/data/support-artwork.json';
 const articles = [
   {title:'How to choose a campaign thoughtfully',topic:'Fundraising Tips',photo:5,text:'Start with the story. Look for who needs help, what the stated goal covers, and how the organizer is connected to the beneficiary. Medical claims have not been independently verified by Hope Human.'},
   {title:'Sharing a story with dignity',topic:'Stories',photo:6,text:'Share the campaign link rather than republishing personal details without permission. Avoid adding urgency or medical claims that the organizer has not stated.'},
-  {title:'A gift should be an informed choice',topic:'Fundraising Tips',photo:1,text:'Review the campaign, donation amount and payment terms at secure checkout. Processing requires fundraising approval and verified recipients. Choosing an amount does not complete a payment; funds are held pending approved release.'},
+  {title:'A gift should be an informed choice',topic:'Fundraising Tips',photo:1,text:'Review the campaign, donation amount and payment terms at secure checkout. Fundraising approval and payment-provider eligibility are required before donations can be received; recipient verification is required before funds are released. Choosing an amount does not complete a payment; funds are held pending approved release.'},
   {title:'People behind every campaign',topic:'Stories',photo:2,text:'A person is more than a diagnosis or a difficult moment. Read the full story and treat personal information with care and respect.'},
   {title:'Understanding a fundraising goal',topic:'Fundraising Tips',photo:0,text:'Compare the stated goal with the needs described. Previous fundraising totals do not establish what a beneficiary needs today.'},
 ];
