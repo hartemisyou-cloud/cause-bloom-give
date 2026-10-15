@@ -12,14 +12,14 @@ const staticPaths = ["/", "/campaigns", "/causes", "/most-loved", "/events", "/b
 // Outside Lovable, enabling TanStack prerender makes the config package install its own Nitro
 // `compiled` hook, which displaces the Vercel preset's hook (config.json + .vc-config.json).
 // Re-run the Vercel preset's `compiled` hook from the user hook the package still forwards to.
-const vercelNitro = process.env.VERCEL
+const vercelNitro = process.env['VERCEL']
   ? {
       nitro: {
         hooks: {
           async compiled(nitro: { options: { preset?: string } }) {
             const { loadOptions } = await import("nitro/builder");
             const presetOptions = await loadOptions({ preset: nitro.options.preset || "vercel" });
-            const presetCompiled = (presetOptions.hooks as Record<string, unknown> | undefined)?.compiled;
+            const presetCompiled = (presetOptions.hooks as Record<string, unknown> | undefined)?.['compiled'];
             if (typeof presetCompiled !== "function") throw new Error("Vercel preset compiled hook not found");
             await presetCompiled(nitro);
           },
