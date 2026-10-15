@@ -30,3 +30,4 @@
 - Render expanding campaign panels in a dedicated accessible presentation module, keeping campaign data immutable and navigation shared with leaf routes.
 - Keep image-led supporting page families in focused presentation modules; retain genuine content and explicit empty event records instead of importing unsupported reference claims.
 - Keep story reactions local to the current page without fabricated counts or persistence; sharing uses the canonical campaign link.
+- Keep the explainer timer browser-only, visibility-gated and reduced-motion aware; its states are illustrations, never payment confirmation.
