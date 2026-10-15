@@ -13,5 +13,23 @@ export function JournalPage() {
   const [topic,setTopic]=useState('All');
   const list=articles.filter(a=>topic==='All'||a.topic===topic);
   const lead=artwork[6];
-  return <><div className="journal-tabs">{['All','Stories','Fundraising Tips'].map(t=><Button variant="ghost" key={t} aria-pressed={topic===t} onClick={()=>setTopic(t)}>{t}</Button>)}</div><div className="journal-layout"><div><article className="journal-lead">{lead&&<img src={lead.url} alt={lead.alt} width={lead.width} height={lead.height}/>}<div><h1>Stories that move people to act.</h1><p>Thoughtful reading for people who want to help — with kindness, clarity and respect.</p><Link to="/campaigns" className="plain-link">Read the campaign stories →</Link></div></article><h2 className="journal-label">Latest articles</h2><div className="journal-articles">{list.map(a=>{const image=artwork[a.photo];return <article className="journal-item" key={a.title}>{image&&<img src={image.url} alt={image.alt} width={image.width} height={image.height} loading="lazy"/>}<div><span className="journal-topic">{a.topic}</span><h2>{a.title}</h2><p>{a.text}</p></div></article>;})}</div></div><aside className="journal-topics"><h2>Browse topics</h2>{['All','Stories','Fundraising Tips'].map(t=><Button variant="outline" key={t} aria-pressed={topic===t} onClick={()=>setTopic(t)}>{t}</Button>)}</aside></div><section className="reference-cta"><div className="container"><h2>Ready to start your own story?</h2><Button variant="gold" asChild className="gold-control"><Link to="/start-yourself">Start a campaign →</Link></Button></div></section></>;
+  return <>
+    <header className="journal-header">
+      <div className="journal-header-inner">
+        <div className="page-tag">The Hope Human journal</div>
+        <h1>Stories that move<br/>people to act.</h1>
+        <p>Real stories, fundraising tips, and community insights — everything you need to make a difference.</p>
+      </div>
+    </header>
+    <div className="journal-tabs">{['All','Stories','Fundraising Tips'].map(t=><Button variant="ghost" key={t} aria-pressed={topic===t} onClick={()=>setTopic(t)}>{t}</Button>)}</div>
+    <div className="journal-layout">
+      <div>
+        <article className="journal-lead">{lead&&<img src={lead.url} alt={lead.alt} width={lead.width} height={lead.height}/>}<div><h2>{articles[0].title}</h2><p>{articles[0].text}</p><Link to="/campaigns" className="plain-link">Read the campaign stories →</Link></div></article>
+        <h2 className="journal-label">Latest articles</h2>
+        <div className="journal-articles">{list.map(a=>{const image=artwork[a.photo];return <article className="journal-item" key={a.title}>{image&&<img src={image.url} alt={image.alt} width={image.width} height={image.height} loading="lazy"/>}<div><span className="journal-topic">{a.topic}</span><h2>{a.title}</h2><p>{a.text}</p></div></article>;})}</div>
+      </div>
+      <aside className="journal-topics"><h2>Browse topics</h2>{['All','Stories','Fundraising Tips'].map(t=><Button variant="outline" key={t} aria-pressed={topic===t} onClick={()=>setTopic(t)}>{t}</Button>)}</aside>
+    </div>
+    <section className="reference-cta"><div className="container"><h2>Ready to start your own story?</h2><Button variant="gold" asChild className="gold-control"><Link to="/start-yourself">Start a campaign →</Link></Button></div></section>
+  </>;
 }
