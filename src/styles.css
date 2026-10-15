@@ -239,3 +239,4 @@
 @media(max-width:620px){.rt-carousel{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:82%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:none}.rt-carousel::-webkit-scrollbar{display:none}.rt-card{scroll-snap-align:start}}
 @keyframes rt-fade{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.rt-carousel{animation:none}}
+@media(max-width:760px){.rt-carousel{align-items:stretch}.rt-image{overflow:hidden;flex:none}.rt-image img{position:absolute;inset:0;height:100%!important;max-height:none}.rt-body{flex:1 1 auto;justify-content:flex-start}.rt-body>*{flex:none}}
