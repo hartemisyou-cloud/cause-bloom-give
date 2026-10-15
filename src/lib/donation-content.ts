@@ -5,7 +5,7 @@ export const donationInformation = {
   approval: 'Fundraising approval and recipient verification are required before donations can be processed. Approval for this campaign is not confirmed here.',
   allocation: 'For confirmed, approved donations, the Foundation covers processing fees and allocates the full base-USD donation to the creator. Any optional local-currency conversion quote is separate from that allocation.',
   release: 'Funds remain held until manual release or campaign closure. Release requires recipient verification, approval and an eligible payout route; it is not an immediate transfer.',
-  availability: 'Donation checkout is being prepared. Processing remains subject to fundraising approval and verified recipients; continuing does not make a payment.',
+  availability: 'Secure checkout confirms campaign availability and recipient review, and shows the donation amount and terms before you confirm. Continuing does not make a payment.',
   countries: 'Creators can receive funds only through countries and payout routes permitted by Stripe and approved for the campaign.',
   receipt: 'An official donation receipt is issued only after payment is confirmed. Selecting an amount or opening checkout is not a receipt or payment confirmation.',
   refunds: 'To request a refund or report an incorrect donation, email support@hopehumanfoundation.org with the campaign link and any confirmed donation reference. Refunds are reviewed individually; no automatic refund or guaranteed reimbursement is promised. Do not send full card numbers or security codes.',
