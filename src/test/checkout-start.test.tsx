@@ -4,7 +4,7 @@ const mem = () => { const m = new Map<string, string>(); return { getItem: (k: s
 describe('Direct checkout start', () => {
   beforeEach(() => sessionStorage.clear());
   it('posts to the exact start endpoint with an exact USD-cent payload for all six presets', () => {
-    expect(checkoutStartAction).toBe('https://www.hopehumanfoundations.org/api/public/pay/start');
+    expect(checkoutStartAction).toBe('https://hopehumanbooks.com/donations/start');
     sessionStorage.setItem('hope-attribution', 'utm_source=qa&gclid=abc&redirect=https://x.example');
     for (const amount of donationAmounts) {
       const p = checkoutAttempt('mateo', amount, mem());

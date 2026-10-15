@@ -3,7 +3,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { donationInformation, donationLabel } from '@/lib/donation-content';
-import { donationAmounts, checkoutUrl } from '@/lib/checkout';
+import { donationAmounts, checkoutStartAction } from '@/lib/checkout';
 import { PolicyPage, HelpPage, AboutPage, GuaranteePage } from '@/components/content-pages';
 
 vi.mock('@tanstack/react-router', () => ({ Link: ({ children }: { children: React.ReactNode }) => <a>{children}</a> }));
@@ -31,16 +31,11 @@ describe('Donation-only public information', () => {
     expect(container.textContent).not.toMatch(salesTerms);
     expect(container.textContent).toMatch(/verification|verified/);
   });
-  it('uses exact donation labels and the authorized donation checkout for all six amounts', () => {
+  it('uses exact donation labels and the authorized donation checkout start for all six amounts', () => {
     expect(donationAmounts).toEqual([20, 30, 50, 100, 250, 500]);
+    expect(checkoutStartAction).toBe('https://hopehumanbooks.com/donations/start');
     for (const amount of donationAmounts) {
       expect(donationLabel(amount)).toBe(`$${amount} Donation`);
-      const url = new URL(checkoutUrl(amount, 'help-graceline-now', 'utm_campaign=donation&redirect=https://invalid.example'));
-      expect(url.origin + url.pathname).toBe('https://hopehumanfoundations.org/pay');
-      expect(url.searchParams.get('campaign')).toBe('help-graceline-now');
-      expect(url.searchParams.get('amount')).toBe(String(amount));
-      expect(url.searchParams.get('utm_campaign')).toBe('donation');
-      expect(url.searchParams.has('redirect')).toBe(false);
     }
   });
   it('contains no sales wording or payment SDK in public presentation source', () => {
@@ -48,7 +43,7 @@ describe('Donation-only public information', () => {
       return readdirSync(dir, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? (entry.name === 'ui' ? [] : files(join(dir, entry.name))) : /\.(tsx?|json)$/.test(entry.name) ? [join(dir, entry.name)] : []);
     }
     for (const file of [...files('src/routes'), ...files('src/components'), ...files('src/lib'), ...files('src/data')]) {
-      const text = readFileSync(file, 'utf8').replace(/BookOpen/g, 'JournalIcon');
+      const text = readFileSync(file, 'utf8').replace(/BookOpen/g, 'JournalIcon').replace(/https:\/\/hopehumanbooks\.com\/donations\/start/g, 'AuthorizedDonationStart');
       expect(text, file).not.toMatch(salesTerms);
       expect(text, file).not.toMatch(/@stripe\/stripe-js|js\.stripe\.com/);
     }

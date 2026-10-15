@@ -5,7 +5,7 @@ Main site: https://hopehumanfoundation.org
 ## Current presentation and checkout
 The reference-matched English campaign site preserves 54 campaign stories, their established display surnames and authentic Hope Human logo. Shared semantic tokens use the measured reference greens and gold, with locally served Plus Jakarta Sans normal and italic fonts.
 
-Every Donate action opens `/donate?slug=…`. Supported amounts are USD 20, 30, 50, 100, 250 and 500. Continue navigates to the existing `https://hopehumanfoundations.org/pay` with amount, campaign and available attribution. That separate checkout reviews a digital book, title and total and is owned by Hope Human Books. This site collects no card information, runs no payment processor and does not simulate payment success or guarantee direct beneficiary transfers/refunds.
+Every Donate action opens `/donate?slug=…`. Supported amounts are USD 20, 30, 50, 100, 250 and 500. Continue submits an ordinary same-tab native form POST (`target="_top"`) to `https://hopehumanbooks.com/donations/start` with the single urlencoded `payload` field containing `{campaignSlug, amountCents, idempotencyKey, attribution?}`. The Central route at Books resolves `/donations/pay/token` and redirects to Stripe; this site itself never fetches a session, collects card information, runs a payment processor or simulates payment success, and it does not guarantee direct beneficiary transfers or refunds.
 
 Campaign totals remain clearly labeled Previous fundraising. Proposals and contact messages prepare user-sent emails, not automatic submissions. No unverified event dates, legal registration, EIN or donor records are invented.
 
