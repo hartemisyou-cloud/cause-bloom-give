@@ -9,7 +9,6 @@ import { useFavorites } from '@/hooks/use-favorites';
 export function MostLovedPage() {
   const ranked = useMemo(() => [...campaigns].sort((a, b) => b.raised - a.raised), []);
   const raised = campaigns.reduce((sum, c) => sum + c.raised, 0);
-  const funded = campaigns.filter(c => c.raised >= c.goal).length;
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('all');
   const { favorites } = useFavorites();
@@ -20,7 +19,7 @@ export function MostLovedPage() {
   const chips = [...categories.map(c => ({ id: c.id, name: c.id === 'all' ? 'All' : c.name })), { id: 'saved', name: `Your favorites (${favorites.length})` }];
   return <>
     <section className="loved-hero"><div className="loved-intro"><div className="eyebrow">Most Loved</div><h1>Campaigns that move hearts &amp;<br/>inspire generosity</h1><p>These are the campaigns people have supported the most so far. Find a story that moves you.</p>
-      <div className="loved-stats"><div><strong>{shortMoney(raised)}</strong><span>Previous fundraising</span></div><div><strong>{campaigns.length}</strong><span>Campaign stories</span></div><div><strong>{funded}</strong><span>Reached their goal</span></div></div></div></section>
+      <div className="loved-stats"><div><strong>{shortMoney(raised)}</strong><span>Previous fundraising</span></div><div><strong>{campaigns.length}</strong><span>Campaign stories</span></div></div></div></section>
     <section className="loved-top"><div className="loved-band-heading"><div><div className="eyebrow">Most Loved</div><h2>Top 3 campaigns</h2><p>Ranked by each campaign’s previous fundraising total.</p></div><Button asChild variant="outline"><Link to="/campaigns">See all <ArrowRight size={14}/></Link></Button></div>
       <div className="campaign-grid">{ranked.slice(0, 3).map((c, i) => <div className="loved-ranked" key={c.slug}><span className="loved-rank">{i + 1}</span><CampaignCard campaign={c}/></div>)}</div></section>
     <section className="section container"><div className="section-heading"><h2>All campaigns, ranked</h2></div>
