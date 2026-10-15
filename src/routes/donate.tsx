@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound, redirect } from '@tanstack/react-router';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { LockKeyhole, ShieldCheck, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/campaign-card';
@@ -32,7 +32,7 @@ function DonatePage() {
     window.addEventListener('pageshow', reset);
     return () => window.removeEventListener('pageshow', reset);
   }, []);
-  function proceed(event: React.FormEvent<HTMLFormElement>) {
+  function proceed(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (amount === null || submittingRef.current || !formRef.current || !payloadRef.current) return;
     const payload = checkoutAttempt(c.slug, amount);
