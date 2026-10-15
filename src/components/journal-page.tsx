@@ -24,7 +24,7 @@ export function JournalPage() {
     <div className="journal-tabs">{['All','Stories','Fundraising Tips'].map(t=><Button variant="ghost" key={t} aria-pressed={topic===t} onClick={()=>setTopic(t)}>{t}</Button>)}</div>
     <div className="journal-layout">
       <div>
-        <article className="journal-lead">{lead&&<img src={lead.url} alt={lead.alt} width={lead.width} height={lead.height}/>}<div><h2>{articles[0].title}</h2><p>{articles[0].text}</p><Link to="/campaigns" className="plain-link">Read the campaign stories →</Link></div></article>
+        <article className="journal-lead">{lead&&<img src={lead.url} alt={lead.alt} width={lead.width} height={lead.height}/>}<div><h2>{articles[0]!.title}</h2><p>{articles[0]!.text}</p><Link to="/campaigns" className="plain-link">Read the campaign stories →</Link></div></article>
         <h2 className="journal-label">Latest articles</h2>
         <div className="journal-articles">{list.map(a=>{const image=artwork[a.photo];return <article className="journal-item" key={a.title}>{image&&<img src={image.url} alt={image.alt} width={image.width} height={image.height} loading="lazy"/>}<div><span className="journal-topic">{a.topic}</span><h2>{a.title}</h2><p>{a.text}</p></div></article>;})}</div>
       </div>
