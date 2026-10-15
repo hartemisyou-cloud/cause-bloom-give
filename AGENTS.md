@@ -20,7 +20,8 @@
 - Keep payment processing disabled until payments is enabled in the Lovable editor; selection UI must never collect card details or simulate success.
 - Prepare campaign proposals as explicit user-sent emails without pretending to store, submit or publish campaigns.
 - Keep analytics provider-free and consent-gated; preserve paid-traffic parameters within the same browser session.
-- Use per-leaf metadata with a configurable VITE_SITE_URL and omit image tags when only relative CDN asset URLs are available.
+- Use per-leaf metadata with VITE_SITE_URL (default canonical https://hopehumanfoundation.org) and omit image tags when only relative CDN asset URLs are available.
+- Mirror every runtime-referenced /__l5e/assets-v1 file byte-identically under public/ at the same path; non-Lovable hosts (Vercel) lack the Lovable asset route. Add new runtime assets there too (QA evidence excluded).
 
 - Implement reference-matched layouts through shared semantic CSS and design-system controls, with CDN-hosted public font subsets; this preserves consistent geometry without shipping archived source pages or scripts.
 - Keep campaign-detail lower sections in a shared campaign-bound module with accessible action dialogs; absent donor records remain explicit empty states, social links use canonical campaign URLs, and contact/report only prepare user-sent support emails.

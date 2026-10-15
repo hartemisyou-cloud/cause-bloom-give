@@ -21,7 +21,7 @@ Test build/type checks, all 54 detail routes, broken images/links, filtering/sor
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://cause-bloom-give.lovable.app
+**Main site**: https://hopehumanfoundation.org (Lovable preview: https://cause-bloom-give.lovable.app)
 
 ## Build with Lovable
 
