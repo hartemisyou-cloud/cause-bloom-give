@@ -321,3 +321,4 @@ Fresh immutable evidence in `src/assets/qa/sharing-fluid/`:
 - How it works gradient/phone sizes already matched supplemental values (verified tokens).
 - Checks: no horizontal overflow at 390/768/1440 on /, /most-loved, /about, /guarantee, /campaigns?q=Teddy; no page errors; typecheck clean; 17 tests pass. Evidence: src/assets/qa/review2/desk.png, mob.png.
 - Remaining: Back after in-page search edits returns to the previous page (search updates replace history); no clean VERCEL=1 build rerun this pass.
+- Trending delta: category select moved below heading (left); collapsed desktop panels hide title/body; see-all arrow centred above vertical label; in-panel Donate button replaced by an accessible "Read the story" detail link; How-it-works eyebrow now ink, spaced uppercase. Evidence: src/assets/qa/review2/trend-1440.png, trend-390.png. No overflow at 1440/390.
