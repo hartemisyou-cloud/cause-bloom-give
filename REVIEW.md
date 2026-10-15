@@ -1,3 +1,40 @@
+# Supplemental measured verification — October 15, 2026
+
+## Corrections applied
+- Donation campaign photo and gradient/title are now physically embedded inside the single mobile donation card; desktop summary and donation header hidden at860 and below. Maximum layout480px, photo64vw/max300px, -72px overlay with deep-green fade, 20px body at768, three columns retained at390 with7px gap (8px at768). Desktop layout960px with40px/5%/80px padding,1:1.05 grid and24px gap. Existing six authorized amounts, suggested100 and clicked-only external navigation unchanged.
+- Mobile menu now fills actual390/768 viewport rather than90vw drawer: genuine logo, grouped Help/Discover/Foundation links, measured header/body padding,48px close control and full-width CTA. Escape closes with focus management retained. Group letter-spacing remains zero under project typography rules.
+- Explainer now uses exact six-stop semantic gradient,300×480 desktop phone/268×430 mobile,9px deep-green border,36px corners,16px step corners and measured spacing. Browser-only4500ms cycle pauses offscreen, document-hidden and reduced motion; manual step selection remains functional. No payment-success state.
+- Footer now has2:1:1:1 desktop tracks,48px gap and margin, two columns below900, single column at768 and below with40px4%24px padding. Policies wrap vertically on mobile.
+- Completed additional missing page anatomy: Most Loved dark intro + genuine aggregate previous fundraising and54 stories, numbered top3 dark band and remaining story grid. No fabricated supporter count or current-week ranking. Help now grouped campaigns/checkout/support accordions. Transparency has reference-sized shield intro and three information pillars with truthful copy, no protection promise. Policy reading width/dividers and proposal-header gradient corrected. Existing Causes/Journal/Events/About/Contact structures checked, not skipped.
+- Detail title now uses measured20.8–28.8px scale instead of fixed28.8 on tablet; home category selector placed under section heading as reference.
+
+## Actual browser measurements/checklist
+Playwright Chromium, fresh navigation and explicit innerWidth assertion; actual **390/768/1440×1000**, not an external viewport emulator. All19 URLs in the previous route inventory revisited at each width (**57 successful page checks**), including both Mateo/Graceline details, donate and every supporting family. Each intended title, font readiness and visible-image decode/no-overflow signal checked. Zero page errors or failed visible images. Screenshots reset scroll to top; replaced early captures affected by restored scroll.
+
+| Measurement |390|768|1440|
+|---|---|---|---|
+| Donation layout width |390|480|960|
+| Donation photo height |249.59|300|desktop16:10|
+| Donation body padding |20|20|28|
+| Amount grid |3×100.94, gap7|3×120.19, gap8|3×107.88, gap12|
+| Menu width×height |390×1000|768×1000|desktop dropdown retained|
+| Explainer phone |268×430|268×430|300×480|
+| Footer columns |1|1|2:1:1:1|
+
+All six amounts clicked in actual mobile UI; external requests intercepted, no purchase. Correct `https://hopehumanfoundations.org/pay?amount={20,30,50,100,250,500}&campaign=mateo&utm_source=supplemental` observed. Continue disabled initially. Unknown donation/detail slug404.
+All three proposal families exercised end-to-end: invalid blank form blocked; genuine test input through5 steps; permission checkbox; review prepares foundation-support mailto and explicit not-submitted status. Nothing sent. FAQ opens, privacy consent state updates, Graceline expanded photo and gallery2 decode, Contact dialog opens and Escape closes.
+4500ms timer observed advancing when visible and staying unchanged offscreen; reduced-motion emulation stops it. New timer test verifies visible-only advance, offscreen pause and cleanup. **6 test files /17 tests passed.** Latest managed diagnostics checked **build OK 01:50:15 UTC**. Independent production/Vercel build and standalone typecheck remain unverified under managed-build-only sandbox instructions. No Vercel configuration, runtime assets or campaign data changed.
+
+## Evidence and remaining differences
+81 fresh QA screenshots/comparisons in `src/assets/qa/supplemental/`, including all19 routes at all3 widths,12 paired home/list/detail/donate comparisons, menus, footer, explainer, completed proposals and decoded story photo. Evidence stays excluded from runtime public asset mirrors. Reference captures use actual public source and same widths; source screens contain Spanish text. Matched mobile donate photo/overlay anatomy directly inspected. Fine height differences remain from English wrapping and neutral book-checkout disclosures. Footer lacks undocumented social profiles; empty events/donors, genuine categories, proposal/email-only behavior and no guarantees are intentional. All main families implemented and checked, but **not pixel-identical**: source decorative effects, unavailable article/event/partner facts and some supporting-section fine spacing remain different. No live deployment rendering or live payment verification. Nothing published.
+
+- [donate-mateo-390](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/26d67fca-d06f-4aaf-a1e0-18b0b1a3bfee/donate-mateo-390.webp)
+- [menu-390](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/af56cc18-f13f-4d38-967a-f8e5ec2e7243/menu-390.webp)
+- [how-768](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/02fa708f-9583-4c88-86d3-810dba57dcd6/how-768.webp)
+- [most-loved-1440](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/c4499e2b-8894-49e0-9a24-132665ae5c86/most-loved-1440.webp)
+- [guarantee-390](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/1f2dfb99-c966-4a79-8f5c-00f66ab76daa/guarantee-390.webp)
+- [compare-donate-mateo-390](https://id-preview--5dc3b815-88ea-4da6-b1d3-a58fa6079440.lovable.app/__l5e/assets-v1/9dc71796-b201-4265-bbca-f0cc79b77321/compare-donate-mateo-390.webp)
+
 # Latest verification — October 15, 2026
 
 This section supersedes earlier donation-modal, matte-palette and checkout-disabled descriptions below. Earlier sections are historical QA, not the current checkout specification.

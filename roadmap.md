@@ -42,6 +42,6 @@
 - [ ] Independently verify clean Vercel production output and standalone typecheck for this revision (blocked here by managed-build-only environment instructions).
 
 ## Supplemental measured correction
-- [ ] Correct integrated mobile donation summary, grouped full-screen navigation, footer breakpoints and explainer timing/geometry.
-- [ ] Measure and capture every page family at actual 390/768/1440 viewports; verify amount navigation and dialogs.
-- [ ] Save fresh evidence and report any remaining reference differences without publishing.
+- [x] Correct integrated mobile donation summary, grouped full-screen navigation, footer breakpoints and explainer timing/geometry.
+- [x] Measure and capture every page family at actual 390/768/1440 viewports; verify amount navigation and dialogs.
+- [x] Save fresh evidence and report any remaining reference differences without publishing.
