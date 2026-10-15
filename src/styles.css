@@ -219,7 +219,7 @@
 .trending-section .section-heading select{width:max-content;margin-top:0}
 .trending-see-all{flex-direction:column;gap:20px}
 .trending-see-all>.see-all-label{writing-mode:vertical-rl;font-weight:800;font-size:18px}
-.panel-read-more{display:inline-flex;align-items:center;gap:6px;margin-top:12px;min-height:44px;font-weight:700;font-size:14px;color:var(--gold);pointer-events:auto}
+.panel-read-more{display:flex;width:max-content;align-items:center;gap:6px;margin-top:12px;min-height:44px;font-weight:700;font-size:14px;color:var(--gold);pointer-events:auto}
 .how-section .how-heading .eyebrow{color:var(--foreground);font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 @media(min-width:761px){.trending-panel:not(.is-active) .trending-panel-body{display:none}}
 @media(max-width:760px){.trending-see-all{flex-direction:row}.trending-see-all>.see-all-label{writing-mode:initial;font-size:16px}}
