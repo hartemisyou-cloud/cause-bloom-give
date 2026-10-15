@@ -17,7 +17,7 @@
 - On Vercel builds, vite.config re-runs the Vercel preset compiled hook, because enabling prerender displaces it and drops .vercel/output config files.
 - Use optimized CDN-backed immutable image pointers, separate thumbnails, and load only the selected gallery photo to keep initial transfers small.
 - Keep campaign source-to-active image mappings in the artwork audit, with supporting imagery catalogued separately; this makes replacements and coverage traceable without shipping archived source websites.
-- Use the query-compatible donation leaf page for amount selection and validated external checkout navigation only; the campaign site never handles card data or simulates payment success.
+- Use the query-compatible donation leaf page for amount selection and validated external checkout navigation only; the campaign site never handles card data or simulates payment success. Keep donation-only public terms in a shared browser-safe copy module, describing intended allocation separately from unconfirmed approval or processing states.
 - Prepare campaign proposals as explicit user-sent emails without pretending to store, submit or publish campaigns.
 - Keep analytics provider-free and consent-gated; preserve paid-traffic parameters within the same browser session.
 - Use per-leaf metadata with VITE_SITE_URL (default canonical https://hopehumanfoundation.org) and omit image tags when only relative CDN asset URLs are available.
