@@ -45,3 +45,10 @@
 - [x] Correct integrated mobile donation summary, grouped full-screen navigation, footer breakpoints and explainer timing/geometry.
 - [x] Measure and capture every page family at actual 390/768/1440 viewports; verify amount navigation and dialogs.
 - [x] Save fresh evidence and report any remaining reference differences without publishing.
+
+## Donation-only reformulation
+- [x] Replace public sales copy and policies with donation-specific purpose, approval, allocation, release and refund terms.
+- [x] Preserve authorized external navigation, visual design, historical campaigns and assets.
+- [ ] Verify tests, public route sweep, focused viewports and one immutable desktop screenshot.
+- [ ] Production build/typecheck for this revision: manual execution prohibited by managed harness instructions.
+- [ ] Central fundraising approval and recipient/payout verification: outside this website, pending.

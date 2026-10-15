@@ -259,3 +259,5 @@
 }
 /* Featured: source auto-fill grid on desktop only */
 @media(min-width:769px){.featured-section .campaign-grid.four{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}}
+
+.donate-amount-label{display:block;font-size:10px;line-height:1.2;font-weight:600}
