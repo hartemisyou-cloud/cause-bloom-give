@@ -25,7 +25,8 @@ const vercelNitro = process.env.VERCEL
           },
         },
       },
-    }
+      // Nitro accepts hooks; the config package's narrower option type omits them.
+    } as unknown as { nitro: { preset?: string } }
   : {};
 
 export default defineConfig({
