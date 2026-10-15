@@ -49,6 +49,6 @@
 ## Donation-only reformulation
 - [x] Replace public sales copy and policies with donation-specific purpose, approval, allocation, release and refund terms.
 - [x] Preserve authorized external navigation, visual design, historical campaigns and assets.
-- [ ] Verify tests, public route sweep, focused viewports and one immutable desktop screenshot.
+- [x] Verify tests, public route sweep, focused viewports and one immutable desktop screenshot.
 - [ ] Production build/typecheck for this revision: manual execution prohibited by managed harness instructions.
 - [ ] Central fundraising approval and recipient/payout verification: outside this website, pending.

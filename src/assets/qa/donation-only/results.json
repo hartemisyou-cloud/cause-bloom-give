@@ -1,0 +1,250 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/",
+      "sales_terms": 0
+    },
+    {
+      "route": "/campaigns",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/campaigns",
+      "sales_terms": 0
+    },
+    {
+      "route": "/causes",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/causes",
+      "sales_terms": 0
+    },
+    {
+      "route": "/most-loved",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/most-loved",
+      "sales_terms": 0
+    },
+    {
+      "route": "/events",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/events",
+      "sales_terms": 0
+    },
+    {
+      "route": "/blog",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/blog",
+      "sales_terms": 0
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/about",
+      "sales_terms": 0
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/contact",
+      "sales_terms": 0
+    },
+    {
+      "route": "/help-center",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/help-center",
+      "sales_terms": 0
+    },
+    {
+      "route": "/guarantee",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/guarantee",
+      "sales_terms": 0
+    },
+    {
+      "route": "/privacy-policy",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/privacy-policy",
+      "sales_terms": 0
+    },
+    {
+      "route": "/terms-of-use",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/terms-of-use",
+      "sales_terms": 0
+    },
+    {
+      "route": "/refund-cancellation-policy",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/refund-cancellation-policy",
+      "sales_terms": 0
+    },
+    {
+      "route": "/start-yourself",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/start-yourself",
+      "sales_terms": 0
+    },
+    {
+      "route": "/start-family",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/start-family",
+      "sales_terms": 0
+    },
+    {
+      "route": "/start-business",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/start-business",
+      "sales_terms": 0
+    },
+    {
+      "route": "/donate?slug=mateo",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/donate?slug=mateo",
+      "sales_terms": 0
+    },
+    {
+      "route": "/campaign-detail?slug=mateo",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/campaign-detail?slug=mateo",
+      "sales_terms": 0
+    },
+    {
+      "route": "/campaign-detail?slug=help-graceline-now",
+      "status": 200,
+      "canonical": "https://hopehumanfoundation.org/campaign-detail?slug=help-graceline-now",
+      "sales_terms": 0
+    }
+  ],
+  "all_campaigns": 54,
+  "layouts": [
+    {
+      "width": 390,
+      "route": "/",
+      "overflow": false,
+      "images": 14,
+      "font_loaded": true
+    },
+    {
+      "width": 390,
+      "route": "/donate?slug=mateo",
+      "overflow": false,
+      "images": 3,
+      "font_loaded": true
+    },
+    {
+      "width": 390,
+      "route": "/help-center",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 390,
+      "route": "/privacy-policy",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 390,
+      "route": "/terms-of-use",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 390,
+      "route": "/refund-cancellation-policy",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "overflow": false,
+      "images": 13,
+      "font_loaded": true
+    },
+    {
+      "width": 768,
+      "route": "/donate?slug=mateo",
+      "overflow": false,
+      "images": 3,
+      "font_loaded": true
+    },
+    {
+      "width": 768,
+      "route": "/help-center",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 768,
+      "route": "/privacy-policy",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 768,
+      "route": "/terms-of-use",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 768,
+      "route": "/refund-cancellation-policy",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "overflow": false,
+      "images": 14,
+      "font_loaded": true
+    },
+    {
+      "width": 1280,
+      "route": "/donate?slug=mateo",
+      "overflow": false,
+      "images": 3,
+      "font_loaded": true
+    },
+    {
+      "width": 1280,
+      "route": "/help-center",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 1280,
+      "route": "/privacy-policy",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 1280,
+      "route": "/terms-of-use",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    },
+    {
+      "width": 1280,
+      "route": "/refund-cancellation-policy",
+      "overflow": false,
+      "images": 2,
+      "font_loaded": true
+    }
+  ],
+  "six_checkout_navigations": "intercepted; no external request or charge",
+  "unknown_slugs": 404,
+  "page_errors": []
+}

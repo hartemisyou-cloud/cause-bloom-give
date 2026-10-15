@@ -328,3 +328,36 @@ Fresh immutable evidence in `src/assets/qa/sharing-fluid/`:
 - Lead article demoted to h2 (single h1 per page); topic filters unchanged.
 - Verified 1440/390: header full-width dark gradient, no overflow, no page errors. Screenshots: src/assets/qa/review3/blog-desk.png, blog-mob.png.
 - tsgo clean; vitest 17/17 passing. Not published.
+
+
+## Donation-only reformulation — October 15, 2026
+Supersedes earlier descriptions of an ebook checkout. The independent central storefront is not part of this campaign website. No other project, payment system, deployment setting, DNS or secret was modified; no publication tool was invoked.
+
+### Exact public changes
+- `/donate`: six accessible labels `$20 Donation`, `$30 Donation`, `$50 Donation`, `$100 Donation`, `$250 Donation`, `$500 Donation`; unchanged amount selection and `/pay?amount=<USD>&campaign=<slug>` external navigation. Purpose, donation review and pending approval disclosure replace digital-goods wording. Existing expandable information explains fees, base-USD allocation and held-fund release.
+- `/`: only the explainer's old purchase disclosure changed; desktop panels, mobile white card rail, Featured grid, hero and interaction layout preserved.
+- `/campaign-detail`: donation sidebar note now concerns campaign/payment review and required approval; all 54 immutable stories, photos, surnames and previous fundraising totals preserved.
+- `/about`: retained four-step layout; added the user-described US 501(c) NGO purpose with required review and no tax-deductibility promise.
+- `/guarantee`: retained hero/pillar/card layout; donation review, required verification and held funds replace storefront references and unsupported reassurance.
+- `/help-center`: approval, fees, eligible payout countries, held funds, confirmed receipts and refund request FAQs; existing campaign/proposal explanations retained.
+- `/contact`: donation/receipt/refund support wording and subject option; email remains user-prepared and user-sent.
+- `/blog`: existing article wording changed to donation review; intro band, filters, genuine articles and imagery retained.
+- `/privacy-policy`, `/terms-of-use`, `/refund-cancellation-policy`: donation-specific policies, updated October 15; no invented EIN, 501(c)(3), IRS determination, tax deductibility, guaranteed refund or universal safety. Privacy explains existing browser preferences/session attribution and explicit email workflow. Terms/refunds distinguish confirmed receipts, full base-USD allocation, processor fees, optional donor currency conversion and manual/campaign-end release subject to approval.
+- `/start-yourself`, `/start-family`, `/start-business`: proposal-email note explicitly excludes automatic approval and explains required fundraising/recipient review.
+- Leaf descriptions updated for Donate, Help and all three policy pages. Remaining leaf metadata inspected and verified on rendered pages; canonical stays `https://hopehumanfoundation.org`.
+- Shared browser-safe `src/lib/donation-content.ts` keeps terms consistent without inventing live campaign approval states. Supporting photo's alt caption changed from "Books and reading" to "Reading materials on library shelves"; image itself unchanged.
+
+### Actual verification
+- All **25 tests in 7 files passed**, including 8 new donation-copy/policy/navigation tests and existing story, routing, campaign, sharing and timing regressions.
+- Browser sweep: **19 visitor routes plus all 54 expanded campaign details** return 200 with no ebook/book/shipping/download terms in rendered text. The 19 route headers/meta also contain no sales terms and use the singular canonical domain. Source regression additionally scans routes, presentation modules, library and runtime data for sales wording and Stripe SDK imports.
+- Unknown campaign slug returns **404** on both detail and Donate.
+- All **six amounts** selected through real UI; Continue disabled initially; external navigation intercepted and aborted before any request, validating exact plural `/pay` origin/path, USD amount, campaign and safe attribution. No transaction, card entry or simulated payment success.
+- **18 responsive checks**: home, Donate, Help and all three policies at **390/768/1280**. No horizontal overflow; all visible images decoded (`naturalWidth > 0`) after scrolling; actual Plus Jakarta Sans loaded; zero page errors.
+- Portable runtime assets: **214/214** referenced images/fonts persist under `public/__l5e/assets-v1`, **11,259,072 bytes**, no missing files. No runtime media added, replaced or removed.
+- Latest managed preview build log: **build OK**. Standalone typecheck and clean Vercel production build were **not manually run**, as current sandbox instructions reserve builds/typechecks for the managed harness. No independent typecheck result or final Vercel-output verification is claimed.
+
+### Evidence and real blockers
+- One actual updated desktop Donate screenshot, 1280×1000, `$100 Donation` selected: `src/assets/qa/donation-only/donate-desktop.png.asset.json`. Directly visually inspected: unchanged two-column page, authentic logo/photo, six donation choices, readable pending-approval note, no overlap. Screenshot is immutable QA evidence, not a runtime asset.
+- Durable structured browser results: `src/assets/qa/donation-only/results.json`.
+- Central donation-only Checkout, actual fundraising approval, verified recipients and eligible payout/release decisions remain **pending and outside this site**. Website navigation is not proof these services are active; donor-facing copy explicitly says checkout is being prepared. No central/Stripe functionality tested or changed.
+- Legal/operational validation of user-described NGO status and final donation terms remains the Foundation's responsibility; no IRS documentation or tax classification beyond the user's description was invented.
