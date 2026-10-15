@@ -34,7 +34,9 @@
 - [x] Verify expanded stories, responsive photos and save screenshot evidence/findings.
 
 ## Current reference correction
-- [ ] Inspect all reference page families and document differences.
-- [ ] Update shared tokens/fonts, home panels, supporting layouts and donation navigation.
-- [ ] Verify routes, six checkout amounts, loaded assets, desktop/mobile comparisons and tests.
-- [ ] Save evidence and report remaining differences; do not publish.
+- [x] Inspect all reference page families and document differences.
+- [x] Update shared tokens/fonts, home panels, supporting layouts and donation navigation.
+- [x] Verify routes, six checkout amounts, loaded assets, desktop/mobile comparisons and tests.
+- [x] Save evidence and report remaining differences; do not publish.
+
+- [ ] Independently verify clean Vercel production output and standalone typecheck for this revision (blocked here by managed-build-only environment instructions).
