@@ -1,6 +1,5 @@
 import { useFavorites } from '@/hooks/use-favorites';
 import { Link } from '@tanstack/react-router';
-import { useState } from 'react';
 import { Heart, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { type Campaign, categoryName, percentage, shortMoney } from '@/lib/campaigns';
