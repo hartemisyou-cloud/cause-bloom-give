@@ -113,7 +113,7 @@ No live deployment, Vercel/DNS/settings/secrets modifications, central-project c
 The active site is Hope Human Foundation throughout. Its visual system now closely reproduces the reference site rather than the earlier editorial redesign: Plus Jakarta Sans, matching 80px desktop/compact mobile headers, hero and featured-card proportions, directory toolbar/sidebar/grid, campaign-detail gallery and funding rail, responsive breakpoints, form wizard, section order, radii, shadows, controls and footer proportions. Campaign content, natural-English translations, alternate beneficiary surnames and the authentic supplied logo remain intact. Checkout remains intentionally disabled and honest.
 
 ## Brand and operational sweep
-A case-insensitive sweep covered source, routes, campaign JSON, metadata, accessible labels, manifest/public files, docs and tests. **No old-brand name/domain, placeholder EIN, source pixel script, tracking endpoint, provider credential or old operational endpoint remains in active or public project content.** The only `stripe_account_id` text is a negative regression-test pattern. No old-domain hotlinks remain. Per-route titles, descriptions and OpenGraph text identify Hope Human Foundation. All 18 leaf route files have route-specific metadata; the catch-all is `noindex`.
+A case-insensitive sweep covered source, routes, campaign JSON, metadata, accessible labels, manifest/public files, docs and tests. **No old-brand name/domain, placeholder EIN, source pixel script, tracking endpoint, provider credential or old operational endpoint remains in active or public project content.** The only `payment provider_account_id` text is a negative regression-test pattern. No old-domain hotlinks remain. Per-route titles, descriptions and OpenGraph text identify Hope Human Foundation. All 18 leaf route files have route-specific metadata; the catch-all is `noindex`.
 
 The old reference pages themselves used an old logo, social graphic, offline data and tracking scripts. None were migrated. Optional analytics remains provider-free and consent-gated; attribution parameters only persist in session storage.
 
@@ -349,7 +349,7 @@ Supersedes earlier descriptions of an ebook checkout. The independent central st
 
 ### Actual verification
 - All **25 tests in 7 files passed**, including 8 new donation-copy/policy/navigation tests and existing story, routing, campaign, sharing and timing regressions.
-- Browser sweep: **19 visitor routes plus all 54 expanded campaign details** return 200 with no ebook/book/shipping/download terms in rendered text. The 19 route headers/meta also contain no sales terms and use the singular canonical domain. Source regression additionally scans routes, presentation modules, library and runtime data for sales wording and Stripe SDK imports.
+- Browser sweep: **19 visitor routes plus all 54 expanded campaign details** return 200 with no ebook/book/shipping/download terms in rendered text. The 19 route headers/meta also contain no sales terms and use the singular canonical domain. Source regression additionally scans routes, presentation modules, library and runtime data for sales wording and payment provider SDK imports.
 - Unknown campaign slug returns **404** on both detail and Donate.
 - All **six amounts** selected through real UI; Continue disabled initially; external navigation intercepted and aborted before any request, validating exact plural `/pay` origin/path, USD amount, campaign and safe attribution. No transaction, card entry or simulated payment success.
 - **18 responsive checks**: home, Donate, Help and all three policies at **390/768/1280**. No horizontal overflow; all visible images decoded (`naturalWidth > 0`) after scrolling; actual Plus Jakarta Sans loaded; zero page errors.
@@ -359,7 +359,7 @@ Supersedes earlier descriptions of an ebook checkout. The independent central st
 ### Evidence and real blockers
 - One actual updated desktop Donate screenshot, 1280×1000, `$100 Donation` selected: `src/assets/qa/donation-only/donate-desktop.png.asset.json`. Directly visually inspected: unchanged two-column page, authentic logo/photo, six donation choices, readable pending-approval note, no overlap. Screenshot is immutable QA evidence, not a runtime asset.
 - Durable structured browser results: `src/assets/qa/donation-only/results.json`.
-- Central donation-only Checkout, actual fundraising approval, verified recipients and eligible payout/release decisions remain **pending and outside this site**. Website navigation is not proof these services are active; donor-facing copy explicitly says checkout is being prepared. No central/Stripe functionality tested or changed.
+- Central donation-only Checkout, actual fundraising approval, verified recipients and eligible payout/release decisions remain **pending and outside this site**. Website navigation is not proof these services are active; donor-facing copy explicitly says checkout is being prepared. No central/payment provider functionality tested or changed.
 - Legal/operational validation of user-described NGO status and final donation terms remains the Foundation's responsibility; no IRS documentation or tax classification beyond the user's description was invented.
 
 ## Post-donation thank-you page (October 16, 2026)

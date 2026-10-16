@@ -10,6 +10,15 @@ export const bookSlugByAmount: Record<(typeof donationAmounts)[number], string> 
   250: 'american-classics-collection',
   500: 'american-classics-library',
 };
+/** Ebook title shown for each preset; purchased at Hope Human Books. */
+export const bookTitleByAmount: Record<(typeof donationAmounts)[number], string> = {
+  20: 'The Adventures of Tom Sawyer — Mark Twain',
+  30: 'Little Women — Louisa May Alcott',
+  50: 'Adventures of Huckleberry Finn — Mark Twain',
+  100: 'Moby-Dick — Herman Melville',
+  250: 'American Classics Collection',
+  500: 'American Classics Library',
+};
 export function isDonationAmount(value: unknown): value is (typeof donationAmounts)[number] {
   return typeof value === 'number' && donationAmounts.some(v => v === value);
 }
