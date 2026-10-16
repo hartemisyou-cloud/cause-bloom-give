@@ -43,7 +43,7 @@ describe('Donation-only public information', () => {
       return readdirSync(dir, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? (entry.name === 'ui' ? [] : files(join(dir, entry.name))) : /\.(tsx?|json)$/.test(entry.name) ? [join(dir, entry.name)] : []);
     }
     for (const file of [...files('src/routes'), ...files('src/components'), ...files('src/lib'), ...files('src/data')]) {
-      const text = readFileSync(file, 'utf8').replace(/BookOpen/g, 'JournalIcon').replace(/https:\/\/hopehumanbooks\.com\/comprar/g, 'AuthorizedBookPurchase').replace(/This takes you to Hope Human Books, where you'll complete a real purchase of the ebook above\./g, 'AuthorizedDisclosure').replace(/Buy the ebook/g, 'AuthorizedCta').replace(/Secure checkout at Hope Human Books/g, 'AuthorizedCheckoutNote').replace(/Continue to Hope Human Books/g, 'AuthorizedContinue').replace(/your digital edition from Hope Human Books is on its way to your inbox\./g, 'AuthorizedEditionNote');
+      const text = readFileSync(file, 'utf8').replace(/BookOpen/g, 'JournalIcon').replace(/https:\/\/hopehumanbooks\.com\/comprar/g, 'AuthorizedBookPurchase').replace(/This takes you to Hope Human Books, where you'll complete a real purchase of the ebook above\./g, 'AuthorizedDisclosure').replace(/Buy the ebook/g, 'AuthorizedCta').replace(/Secure checkout at Hope Human Books/g, 'AuthorizedCheckoutNote').replace(/Continue to Hope Human Books/g, 'AuthorizedContinue');
       expect(text, file).not.toMatch(salesTerms);
       expect(text, file).not.toMatch(new RegExp(['@'+'str'+'ipe', 'js\\.'+'str'+'ipe'].join('|')));
     }
