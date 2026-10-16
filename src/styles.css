@@ -261,7 +261,7 @@
 /* Featured: source auto-fill grid on desktop only */
 @media(min-width:769px){.featured-section .campaign-grid.four{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}}
 
-.donate-amount{min-height:104px;height:auto;white-space:normal}.donate-amount>span{min-width:0}.donate-amount-label{display:block;font-size:10px;line-height:1.4;font-weight:600;margin-top:5px;overflow-wrap:anywhere}
+.donate-amount-label{display:block;font-size:10px;line-height:1.2;font-weight:600}
 .donate-note{font-size:11px;line-height:1.5;color:var(--muted-foreground);text-align:center;margin:2px 0 0}
 /* Post-donation confirmation */
 .thank-you-page{background:var(--hero-wash);display:flex;align-items:center;min-height:66vh;padding:76px 0 92px}

@@ -10,15 +10,6 @@ export const bookSlugByAmount: Record<(typeof donationAmounts)[number], string> 
   250: 'american-classics-collection',
   500: 'american-classics-library',
 };
-export const bookTitleByAmount: Record<(typeof donationAmounts)[number], string> = {
-  20: 'The Adventures of Tom Sawyer',
-  30: 'Little Women',
-  50: 'Adventures of Huckleberry Finn',
-  100: 'Moby-Dick',
-  250: 'American Classics Collection',
-  500: 'American Classics Library',
-};
-export const bookPurchaseDisclosure = "This takes you to Hope Human Books, where you'll complete a real purchase of the ebook above. Your purchase supports this campaign.";
 export function isDonationAmount(value: unknown): value is (typeof donationAmounts)[number] {
   return typeof value === 'number' && donationAmounts.some(v => v === value);
 }
