@@ -34,7 +34,6 @@ function ThankYouPage() {
         <div className="eyebrow">With gratitude</div>
         <h1>Thank You for Your Donation!</h1>
         <p className="thank-you-sub">{amount === undefined ? 'Your gift has been received.' : `Your gift of ${usdLabel(amount)} has been received.`}</p>
-        <p className="thank-you-body">Your support goes straight to the people and communities we serve. As a token of gratitude, your digital edition from Hope Human Books is on its way to your inbox.</p>
         <Button variant="outline" asChild className="thank-you-back"><Link to="/campaigns">Back to campaigns <ArrowLeft size={15} /></Link></Button>
       </div>
     </div>

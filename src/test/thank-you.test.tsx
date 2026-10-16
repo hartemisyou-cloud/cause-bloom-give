@@ -33,14 +33,10 @@ describe('Thank you page', () => {
   });
 
   it('names the gift amount when ?amount is present', async () => {
-    await renderAt('/thank-you?amount=20');
+    const { container } = await renderAt('/thank-you?amount=20');
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Thank You for Your Donation!');
     expect(screen.getByText('Your gift of $20.00 has been received.')).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        'Your support goes straight to the people and communities we serve. As a token of gratitude, your digital edition from Hope Human Books is on its way to your inbox.',
-      ),
-    ).toBeInTheDocument();
+    expect(container.textContent).not.toMatch(/\bebooks?\b|\be-books?\b|\bbooks?\b|\bdownloads?\b|hopehumanbooks|digital edition/i);
     expect(screen.getByRole('link', { name: /Back to campaigns/i })).toHaveAttribute('href', '/campaigns');
   });
 

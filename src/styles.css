@@ -269,7 +269,6 @@
 .thank-you-mark{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--primary);box-shadow:var(--soft-shadow);margin-bottom:20px}
 .thank-you-page h1{font-size:clamp(1.85rem,4vw,2.4rem);line-height:1.15;margin-bottom:12px}
 .thank-you-sub{font-size:17px;font-weight:700;color:var(--primary);margin-bottom:14px}
-.thank-you-body{font-size:14.7px;line-height:1.75;color:var(--muted-foreground);max-width:470px;margin-bottom:28px}
 .thank-you-back{min-height:44px;padding:11px 24px;font-size:13px;font-weight:700}
-@media(max-width:600px){.thank-you-page{padding:48px 0 64px;min-height:60vh}.thank-you-sub{font-size:15.5px}.thank-you-body{font-size:14px}}
+@media(max-width:600px){.thank-you-page{padding:48px 0 64px;min-height:60vh}.thank-you-sub{font-size:15.5px}}
 
