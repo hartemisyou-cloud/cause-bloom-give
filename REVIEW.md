@@ -365,7 +365,7 @@ Supersedes earlier descriptions of an ebook checkout. The independent central st
 ## Post-donation thank-you page (October 16, 2026)
 - New route `src/routes/thank-you.tsx`: `/thank-you` reads only `?amount` (plain USD number, tolerant of quoted numeric strings) and renders it as `$X.XX`. No form, no fetch, no payment-provider code.
 - `?amount=20` renders "Your gift of $20.00 has been received."; with no amount it renders "Your gift has been received." and shows no figure anywhere.
-- Copy: headline "Thank You for Your Donation!", the requested support/digital-edition paragraph, and a discreet "Back to campaigns" button to `/campaigns`.
+- Copy: headline "Thank You for Your Donation!", the amount line ("Your gift of $X.XX has been received." / generic without `?amount`), and a discreet "Back to campaigns" button to `/campaigns`. Per owner decision the earlier support/digital-edition paragraph was removed, so the page carries no book, ebook, download or bookstore wording.
 - `src/styles.css`: `.thank-you-*` block built from existing design tokens; `/thank-you` added to the enumerated visitor-independent prerender list in `vite.config.ts` (query variants stay on-demand).
 - Tests: `src/test/thank-you.test.tsx` (5) plus one authorized-copy allowance in `src/test/donation-content.test.tsx`.
 - Checks: 30/30 tests pass; managed build log "build OK". Browser: HTTP 200 at 1440×900 and 390×844 for both variants, 0 `<form>` elements, 0 non-GET requests, no horizontal overflow, `robots` = `noindex`. Screenshots in `src/assets/qa/thank-you/`.
