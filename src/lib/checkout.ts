@@ -10,7 +10,7 @@ export const bookSlugByAmount: Record<(typeof donationAmounts)[number], string> 
   250: 'american-classics-collection',
   500: 'american-classics-library',
 };
-/** Ebook title shown for each preset; purchased at Hope Human Books. */
+/** Title shown for each preset on the purchase step. */
 export const bookTitleByAmount: Record<(typeof donationAmounts)[number], string> = {
   20: 'The Adventures of Tom Sawyer — Mark Twain',
   30: 'Little Women — Louisa May Alcott',
