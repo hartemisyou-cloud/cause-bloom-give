@@ -7,7 +7,7 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // Visitor-independent pages only. Campaign query-string details are server-rendered on demand.
-const staticPaths = ["/", "/campaigns", "/causes", "/most-loved", "/events", "/blog", "/about", "/contact", "/help-center", "/guarantee", "/privacy-policy", "/terms-of-use", "/refund-cancellation-policy", "/start-yourself", "/start-family", "/start-business"];
+const staticPaths = ["/", "/campaigns", "/causes", "/most-loved", "/events", "/blog", "/about", "/contact", "/help-center", "/guarantee", "/privacy-policy", "/terms-of-use", "/refund-cancellation-policy", "/start-yourself", "/start-family", "/start-business", "/thank-you"];
 
 // Outside Lovable, enabling TanStack prerender makes the config package install its own Nitro
 // `compiled` hook, which displaces the Vercel preset's hook (config.json + .vc-config.json).
