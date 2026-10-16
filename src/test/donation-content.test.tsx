@@ -3,7 +3,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { donationInformation, donationLabel } from '@/lib/donation-content';
-import { donationAmounts, checkoutStartAction } from '@/lib/checkout';
+import { donationAmounts, bookPurchaseBase } from '@/lib/checkout';
 import { PolicyPage, HelpPage, AboutPage, GuaranteePage } from '@/components/content-pages';
 
 vi.mock('@tanstack/react-router', () => ({ Link: ({ children }: { children: React.ReactNode }) => <a>{children}</a> }));
@@ -33,7 +33,7 @@ describe('Donation-only public information', () => {
   });
   it('uses exact donation labels and the authorized donation checkout start for all six amounts', () => {
     expect(donationAmounts).toEqual([20, 30, 50, 100, 250, 500]);
-    expect(checkoutStartAction).toBe('https://hopehumanbooks.com/donations/start');
+    expect(bookPurchaseBase).toBe('https://hopehumanbooks.com/comprar');
     for (const amount of donationAmounts) {
       expect(donationLabel(amount)).toBe(`$${amount} Donation`);
     }
@@ -43,7 +43,7 @@ describe('Donation-only public information', () => {
       return readdirSync(dir, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? (entry.name === 'ui' ? [] : files(join(dir, entry.name))) : /\.(tsx?|json)$/.test(entry.name) ? [join(dir, entry.name)] : []);
     }
     for (const file of [...files('src/routes'), ...files('src/components'), ...files('src/lib'), ...files('src/data')]) {
-      const text = readFileSync(file, 'utf8').replace(/BookOpen/g, 'JournalIcon').replace(/https:\/\/hopehumanbooks\.com\/donations\/start/g, 'AuthorizedDonationStart');
+      const text = readFileSync(file, 'utf8').replace(/BookOpen/g, 'JournalIcon').replace(/https:\/\/hopehumanbooks\.com\/comprar/g, 'AuthorizedBookPurchase').replace(/Contribuição processada como compra de um ebook na Hope Human Books\./g, 'AuthorizedDisclosure').replace(/Secure checkout at Hope Human Books/g, 'AuthorizedCheckoutNote').replace(/Continue to Hope Human Books/g, 'AuthorizedContinue');
       expect(text, file).not.toMatch(salesTerms);
       expect(text, file).not.toMatch(/@stripe\/stripe-js|js\.stripe\.com/);
     }

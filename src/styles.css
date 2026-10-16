@@ -262,3 +262,4 @@
 @media(min-width:769px){.featured-section .campaign-grid.four{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}}
 
 .donate-amount-label{display:block;font-size:10px;line-height:1.2;font-weight:600}
+.donate-note{font-size:11px;line-height:1.5;color:var(--muted-foreground);text-align:center;margin:2px 0 0}
