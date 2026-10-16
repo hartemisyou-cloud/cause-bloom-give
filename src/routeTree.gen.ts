@@ -28,6 +28,7 @@ import { Route as StartBusinessRouteImport } from './routes/start-business'
 import { Route as StartFamilyRouteImport } from './routes/start-family'
 import { Route as StartYourselfRouteImport } from './routes/start-yourself'
 import { Route as TermsOfUseRouteImport } from './routes/terms-of-use'
+import { Route as ThankYouRouteImport } from './routes/thank-you'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -125,6 +126,11 @@ const TermsOfUseRoute = TermsOfUseRouteImport.update({
   path: '/terms-of-use',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ThankYouRoute = ThankYouRouteImport.update({
+  id: '/thank-you',
+  path: '/thank-you',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -146,6 +152,7 @@ export interface FileRoutesByFullPath {
   '/start-family': typeof StartFamilyRoute
   '/start-yourself': typeof StartYourselfRoute
   '/terms-of-use': typeof TermsOfUseRoute
+  '/thank-you': typeof ThankYouRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -167,6 +174,7 @@ export interface FileRoutesByTo {
   '/start-family': typeof StartFamilyRoute
   '/start-yourself': typeof StartYourselfRoute
   '/terms-of-use': typeof TermsOfUseRoute
+  '/thank-you': typeof ThankYouRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -189,6 +197,7 @@ export interface FileRoutesById {
   '/start-family': typeof StartFamilyRoute
   '/start-yourself': typeof StartYourselfRoute
   '/terms-of-use': typeof TermsOfUseRoute
+  '/thank-you': typeof ThankYouRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -212,6 +221,7 @@ export interface FileRouteTypes {
     | '/start-family'
     | '/start-yourself'
     | '/terms-of-use'
+    | '/thank-you'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -233,6 +243,7 @@ export interface FileRouteTypes {
     | '/start-family'
     | '/start-yourself'
     | '/terms-of-use'
+    | '/thank-you'
   id:
     | '__root__'
     | '/'
@@ -254,6 +265,7 @@ export interface FileRouteTypes {
     | '/start-family'
     | '/start-yourself'
     | '/terms-of-use'
+    | '/thank-you'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -276,6 +288,7 @@ export interface RootRouteChildren {
   StartFamilyRoute: typeof StartFamilyRoute
   StartYourselfRoute: typeof StartYourselfRoute
   TermsOfUseRoute: typeof TermsOfUseRoute
+  ThankYouRoute: typeof ThankYouRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -413,6 +426,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TermsOfUseRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/thank-you': {
+      id: '/thank-you'
+      path: '/thank-you'
+      fullPath: '/thank-you'
+      preLoaderRoute: typeof ThankYouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -436,6 +456,7 @@ const rootRouteChildren: RootRouteChildren = {
   StartFamilyRoute: StartFamilyRoute,
   StartYourselfRoute: StartYourselfRoute,
   TermsOfUseRoute: TermsOfUseRoute,
+  ThankYouRoute: ThankYouRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
