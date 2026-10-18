@@ -30,7 +30,7 @@ export function parseDonationAmount(raw: unknown): number | undefined {
 /** Referral code per campaign slug. Configure once per campaign; campaigns without a code navigate unchanged. */
 export const campaignRefCodes: Record<string, string> = {};
 /** Destination for a selected amount; the foundation site only redirects, never calls a payment provider. */
-export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; fbclid?: string; refCodes?: Record<string, string> } = {}): string {
+export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; fbclid?: string | undefined; refCodes?: Record<string, string> } = {}): string {
   if (!isDonationAmount(amount)) throw new Error('Select a supported amount.');
   const base = `${bookPurchaseBase}/${bookSlugByAmount[amount]}`;
   const ref = opts.campaignSlug ? (opts.refCodes ?? campaignRefCodes)[opts.campaignSlug] : undefined;
