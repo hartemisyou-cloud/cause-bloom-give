@@ -27,8 +27,15 @@ export function parseDonationAmount(raw: unknown): number | undefined {
   const n = typeof raw === 'number' ? raw : typeof raw === 'string' ? Number(raw.replace(/^"|"$/g, '')) : NaN;
   return isDonationAmount(n) ? n : undefined;
 }
+/** Referral code per campaign slug. Configure once per campaign; campaigns without a code navigate unchanged. */
+export const campaignRefCodes: Record<string, string> = {};
 /** Destination for a selected amount; the foundation site only redirects, never calls a payment provider. */
-export function bookPurchaseUrl(amount: number): string {
+export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; fbclid?: string; refCodes?: Record<string, string> } = {}): string {
   if (!isDonationAmount(amount)) throw new Error('Select a supported amount.');
-  return `${bookPurchaseBase}/${bookSlugByAmount[amount]}`;
+  const base = `${bookPurchaseBase}/${bookSlugByAmount[amount]}`;
+  const ref = opts.campaignSlug ? (opts.refCodes ?? campaignRefCodes)[opts.campaignSlug] : undefined;
+  if (!ref) return base;
+  const q = new URLSearchParams({ ref });
+  if (opts.fbclid) q.set('fbclid', opts.fbclid);
+  return `${base}?${q.toString()}`;
 }
