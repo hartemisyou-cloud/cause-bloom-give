@@ -8,8 +8,16 @@ declare global { interface Window { fbq?: Fbq; _fbq?: Fbq } }
 
 export const metaPixelId = ((import.meta.env['VITE_META_PIXEL_ID'] as string | undefined)?.trim()) || '1456212949742348';
 let initialized = false;
+/** Visitors whose browser time zone is in Europe (EEA/UK/CH) are not measured: those regions require prior opt-in and the site shows no consent prompt. */
+function consentRegion(): boolean {
+  try { const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; return tz.startsWith('Europe/') || ['Atlantic/Reykjavik','Atlantic/Canary','Atlantic/Madeira','Atlantic/Azores'].includes(tz); } catch { return false; }
+}
+/** No consent prompt: measurement is on by default; an explicit Decline on the privacy page is still honored. */
 function consented(): boolean {
-  try { return localStorage.getItem('hope-analytics-consent') === 'yes'; } catch { return false; }
+  let choice: string | null = null;
+  try { choice = localStorage.getItem('hope-analytics-consent'); } catch { /* storage blocked */ }
+  if (choice === 'no') return false;
+  return !consentRegion();
 }
 
 function ensurePixel(): Fbq | null {
