@@ -4,8 +4,9 @@ import { ShieldCheck, ArrowRight, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/campaign-card';
 import { getCampaign, categoryName, shortMoney, money } from '@/lib/campaigns';
-import { pageHead, trackEvent } from '@/lib/site';
-import { bookPurchaseUrl, donationAmounts, parseDonationAmount } from '@/lib/checkout';
+import { pageHead, trackEvent, currentFbclid } from '@/lib/site';
+import { pixelTrack } from '@/lib/meta-pixel';
+import { bookPurchaseUrl, bookSlugByAmount, donationAmounts, isDonationAmount, parseDonationAmount } from '@/lib/checkout';
 import { donationInformation } from '@/lib/donation-content';
 
 export const Route = createFileRoute('/donate')({
