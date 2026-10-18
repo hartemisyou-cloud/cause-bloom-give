@@ -20,17 +20,15 @@ describe('Book purchase redirect', () => {
     expect(parseDonationAmount('"250"')).toBe(250);
     expect(parseDonationAmount(25)).toBeUndefined();
   });
-  const refCodes = { mateo: 'MAT01' };
-  it('appends ref and fbclid when the campaign has a configured code', () => {
-    expect(bookPurchaseUrl(30, { campaignSlug: 'mateo', fbclid: 'abc123', refCodes }))
-      .toBe('https://hopehumanbooks.com/comprar/little-women?ref=MAT01&fbclid=abc123');
+  it('forwards encoded attribution from the current URL', () => {
+    expect(bookPurchaseUrl(30, { search: '?utm_source=facebook&utm_medium=paid_social&utm_campaign=demo%20%C3%A1&utm_content=c1&fbclid=abc123&x=1' }))
+      .toBe('https://hopehumanbooks.com/comprar/little-women?utm_source=facebook&utm_medium=paid_social&utm_campaign=demo%20%C3%A1&utm_content=c1&fbclid=abc123');
   });
-  it('appends only ref when there is no fbclid', () => {
-    expect(bookPurchaseUrl(20, { campaignSlug: 'mateo', refCodes }))
-      .toBe('https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?ref=MAT01');
+  it('keeps the plain URL without attribution or ref', () => {
+    expect(bookPurchaseUrl(100, { search: '?utm_source=&other=1' })).toBe('https://hopehumanbooks.com/comprar/moby-dick');
   });
-  it('navigates unchanged when the campaign has no ref code', () => {
-    expect(bookPurchaseUrl(100, { campaignSlug: 'unknown', fbclid: 'abc123', refCodes }))
-      .toBe('https://hopehumanbooks.com/comprar/moby-dick');
+  it('appends ref first when configured', () => {
+    expect(bookPurchaseUrl(20, { campaignSlug: 'mateo', search: '?gclid=g1', refCodes: { mateo: 'MAT01' } }))
+      .toBe('https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?ref=MAT01&gclid=g1');
   });
 });
