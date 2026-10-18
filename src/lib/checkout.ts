@@ -29,13 +29,18 @@ export function parseDonationAmount(raw: unknown): number | undefined {
 }
 /** Referral code per campaign slug. Configure once per campaign; campaigns without a code navigate unchanged. */
 export const campaignRefCodes: Record<string, string> = {};
+/** Attribution keys forwarded from the donate page URL to the store. */
+export const forwardedAttributionKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'] as const;
 /** Destination for a selected amount; the foundation site only redirects, never calls a payment provider. */
-export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; fbclid?: string | undefined; refCodes?: Record<string, string> } = {}): string {
+export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; search?: string; refCodes?: Record<string, string> } = {}): string {
   if (!isDonationAmount(amount)) throw new Error('Select a supported amount.');
   const base = `${bookPurchaseBase}/${bookSlugByAmount[amount]}`;
+  const parts: string[] = [];
+  const used = new Set<string>();
+  const add = (k: string, v: string | null | undefined) => { if (!v || used.has(k)) return; used.add(k); parts.push(`${k}=${encodeURIComponent(v)}`); };
   const ref = opts.campaignSlug ? (opts.refCodes ?? campaignRefCodes)[opts.campaignSlug] : undefined;
-  if (!ref) return base;
-  const q = new URLSearchParams({ ref });
-  if (opts.fbclid) q.set('fbclid', opts.fbclid);
-  return `${base}?${q.toString()}`;
+  add('ref', ref);
+  const current = new URLSearchParams(opts.search ?? '');
+  for (const k of forwardedAttributionKeys) add(k, current.get(k)?.trim());
+  return parts.length ? `${base}?${parts.join('&')}` : base;
 }
