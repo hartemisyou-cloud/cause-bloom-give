@@ -27,8 +27,9 @@ function ensurePixel(): Fbq | null {
 
 export function pixelPageView() { ensurePixel()?.('track', 'PageView'); }
 
-export function pixelTrack(event: 'ViewContent' | 'InitiateCheckout', params: { value: number; currency: 'USD'; content_ids: string[] }) {
-  try { ensurePixel()?.('track', event, { ...params, content_type: 'product' }); } catch { /* never block giving */ }
+/** Donation funnel event; contents id is donation-<USD>. Sent only when consent allows the Pixel. */
+export function pixelDonationEvent(event: 'AddToCart' | 'InitiateCheckout', amount: number) {
+  try { ensurePixel()?.('track', event, { contents: [{ id: `donation-${amount}`, quantity: 1 }], value: amount, currency: 'USD', num_items: 1 }); } catch { /* never block giving */ }
 }
 
 /** Called when the visitor changes their preference on the privacy page. */
