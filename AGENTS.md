@@ -36,3 +36,4 @@
 - Keep favorites deduplicated in browser storage with a synchronized memory fallback; no public heart or donor counts are inferred from device-local preferences.
 - Observe primary donation controls before showing the mobile floating action; this avoids duplicate visible controls while preserving access lower on the page.
 - Keep the institutional footer in a dedicated shared presentation component with footer-scoped semantic tokens and the authentic logo as its decorative watermark; this isolates visual updates from navigation, payment logic and page content.
+- Use the shared decorative Lucide subject-icon resolver for heading and category cues, with scoped size/stroke rules; this keeps icon meanings consistent without changing accessible text or business behavior.

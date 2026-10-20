@@ -316,3 +316,20 @@
 @media(max-width:600px){.detail-metadata{padding:12px 16px;margin-bottom:0}.gallery-left,.gallery-right{display:inline-flex;z-index:4;width:44px;height:44px}.mobile-donate{padding-bottom:calc(10px + env(safe-area-inset-bottom))}.donation-actions>.donate-note{grid-column:1/-1}}
 @media(prefers-reduced-motion:reduce){.campaign-card,.campaign-card-image img{transition:none}.campaign-card:hover{transform:none}.campaign-card:hover .campaign-card-image img{transform:none}}
 
+
+/* Shared Lucide rhythm: heading cues stay inline so long titles wrap naturally. */
+.title-icon{display:inline-block;width:20px;height:20px;vertical-align:-3px;margin-right:8px;stroke-width:1.8;flex-shrink:0;color:inherit}
+h1>.title-icon{width:26px;height:26px;vertical-align:-2px;margin-right:10px}
+h2>.title-icon{width:22px;height:22px}
+.campaign-card h3 .title-icon,.rt-body h3 .title-icon,.sharing-art-body h3 .title-icon{width:16px;height:16px;vertical-align:-2px;margin-right:5px}
+.sharing-art-body h3 .title-icon{width:12px;height:12px;margin-right:3px}
+.campaign-category .title-icon,.panel-category .title-icon,.rt-pill .title-icon{width:13px;height:13px;vertical-align:-2px;margin-right:5px}
+.category-filter>span:first-child{display:flex;align-items:center;min-width:0}.category-filter>span:first-child::before{display:none}.category-filter .title-icon{width:16px;height:16px;margin-right:8px}
+.detail-metadata>span{display:inline-flex;align-items:center;gap:6px}.detail-metadata svg{width:15px;height:15px;stroke-width:1.8}.detail-metadata .title-icon{margin:0}
+.site-footer .title-icon{width:17px;height:17px;color:var(--footer-highlight);margin-right:7px}
+.site-header .lucide,.story-action-buttons .lucide,.story-reactions .lucide,.gold-control .lucide,.donor-view-actions .lucide{stroke-width:1.8}
+.featured-bottom svg,.header-action svg,.donation-actions button:first-child svg{display:inline-block}
+@media(max-width:600px){h1>.title-icon{width:23px;height:23px}h2>.title-icon{width:20px;height:20px}.footer-column .title-icon{width:15px;height:15px;margin-right:5px}}
+
+.story-heading{display:flex;align-items:baseline;gap:8px;margin:24px 0 14px}.story-heading .title-icon{margin:0}.story-body .story-heading h2,.story-body .story-heading h3,.story-body .story-heading h4{margin:0;min-width:0}
+.consent-controls>button{white-space:normal;height:auto;min-height:44px;max-width:100%;text-align:center}
