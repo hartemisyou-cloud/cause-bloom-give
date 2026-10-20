@@ -359,7 +359,7 @@ h2>.title-icon{width:22px;height:22px}
 }
 
 .donate-page .donate-amount[aria-pressed=true]>span{color:var(--primary-foreground)}
-@media(max-width:860px){.donate-mobile-campaign .amount-row>span:last-child{color:var(--primary-foreground)}.donate-page .donate-layout{padding-top:12px}.donate-body-intro{margin-bottom:14px}.donate-selection-body{padding-top:16px}.donate-page .donate-amount-grid{margin-bottom:14px}.donate-page .selected-purchase{margin-bottom:14px}.donate-page .donate-checkout-actions{padding-top:12px}}
+@media(max-width:860px){.donate-mobile-campaign .amount-row>span:last-child{color:var(--primary-foreground)}.donate-page .donate-layout{padding-top:12px}.donate-body-intro{margin-bottom:14px}.donate-selection-body{padding-top:16px}.donate-page .donate-amount-grid{margin-bottom:14px}.donate-page .donate-checkout-actions{padding-top:12px}}
 
 /* Homepage-only reference rhythm: Hope Human identity and panels remain intact. */
 .home-page{--home-intro-surface:color-mix(in oklab,var(--gold) 5%,var(--card));--home-campaign-surface:color-mix(in oklab,var(--muted) 50%,var(--card));--home-start-surface:color-mix(in oklab,var(--gold) 8%,var(--card))}
