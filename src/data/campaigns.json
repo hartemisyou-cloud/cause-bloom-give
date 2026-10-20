@@ -3559,5 +3559,49 @@
     "sourceGoal": null,
     "fxDate": null,
     "surnameChange": null
+  },
+  {
+    "slug": "help-cassiel",
+    "title": "Help Cassiel fight stage 4 neuroblastoma",
+    "story": "My name is Sandra, and I am Cassiel's mom. I am writing this from a hospital chair that has become my bed, my desk, and my prayer bench.\n\nA few months ago, my biggest worry was whether Cassiel would walk before his first birthday. He was still so little — wobbly on his feet, falling after one or two steps, giggling when I caught him. He could not even run. He was just learning what it meant to be a big boy.\n\nThen the screaming started.\n\nHe cried like he was being hurt, but I could not find the wound. His tiny belly grew hard and swollen. He stopped wanting his bottle. He stopped smiling. He stopped trying to stand.\n\nDoctor after doctor. ER after ER. Every test came back with the same confused faces — until the scans came back. Stage 4 neuroblastoma. A tumor wrapped around his abdomen. Cancer already spreading through a body that has only been on this earth a short time.\n\nIMAGE:uploads/campaigns/help-cassiel/story-01.jpg|Cassiel during treatment\n\nThose words split my life in half. Before them, I was a mother worrying about diapers, first steps, and lullabies. After them, I became a mother begging strangers to help me save my baby.\n\nCassiel has already started chemotherapy. He is brave beyond words. But he is still so small. He does not understand why his body hurts. Why nurses wake him up. Why I cry when I think he is asleep.\n\nNeuroblastoma does not give families time. The treatment plan ahead is brutal and expensive: more chemo, possible surgery, stem-cell transplant, radiation, and immunotherapy that can cost hundreds of thousands of dollars.\n\nInsurance helps, but it does not cover everything. It does not cover the trips to the specialist center. It does not cover the hotel rooms when we cannot go home between treatments. It does not cover the experimental options that might become his only hope when standard treatment stops working.\n\nWe are not asking for luxury. We are asking for time. Every dollar here buys another day of treatment, another chance for the medicine to work, another week that Cassiel gets to be a baby instead of a patient number.\n\nI have heard people say, 'I only have $20.' To you I say: $20 is medicine. $50 is a meal when I cannot leave his bedside. $100 is gas to get him to the hospital for a scan that decides what happens next. $250 is a night in the room near treatment when he is too weak to travel home.\n\nAnd if you cannot give, please share. One share reached the person who gave us our first $500. One share might reach the doctor, the survivor, the miracle we are praying for.\n\nCassiel is still fighting. When he is not in pain, he reaches for my hand. He tries to smile at the nurses. He is still learning to trust a world that keeps hurting him. But he trusts me — and I am asking you, with everything I have, not to let him down.\n\nPlease, help us stand with Cassiel. Every donation, every prayer, every share is a step toward healing. One act of kindness really can change everything. It might be the one that saves him. 🙏💛",
+    "organizer": "Sandra Vargas",
+    "beneficiary": "Cassiel Vargas",
+    "location": "Miami, FL",
+    "category": "children",
+    "raised": 24750,
+    "goal": 100000,
+    "currency": "USD",
+    "urgent": true,
+    "active": true,
+    "createdAt": "2026-08-14T00:00:00Z",
+    "image": {
+      "url": "/__l5e/assets-v1/14adc381-afe8-48a4-9b89-2fde55adbb9c/uploads-campaigns-cassiel-1-1200.webp",
+      "width": 870,
+      "height": 1200
+    },
+    "thumbnail": {
+      "url": "/__l5e/assets-v1/05c3df55-789e-4799-94f7-a1ebc3d9db8f/uploads-campaigns-cassiel-1-640.webp",
+      "width": 464,
+      "height": 640
+    },
+    "gallery": [
+      {
+        "url": "/__l5e/assets-v1/14adc381-afe8-48a4-9b89-2fde55adbb9c/uploads-campaigns-cassiel-1-1200.webp",
+        "width": 870,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/3b4d5b58-21ef-42aa-8189-6e4dc60f97be/uploads-campaigns-cassiel-2-1200.webp",
+        "width": 1007,
+        "height": 1007
+      }
+    ],
+    "support": [],
+    "snapshotDate": "2026-10-20",
+    "sourceCurrency": "USD",
+    "sourceRaised": 24750,
+    "sourceGoal": 100000,
+    "fxDate": "2026-10-20",
+    "surnameChange": null
   }
 ]

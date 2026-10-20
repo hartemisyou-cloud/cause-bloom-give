@@ -5,7 +5,7 @@ import { parseCampaignStory, storyDescription } from '@/lib/campaign-story';
 import { CampaignStory } from '@/components/campaign-story';
 
 describe('All campaign stories', () => {
-  it('resolves all 17 inline markers in original order to exact optimized photos', () => {
+  it('resolves all 18 inline markers in original order to exact optimized photos', () => {
     let count = 0;
     for (const campaign of campaigns) {
       const markers = [...campaign.story.matchAll(/IMAGE:([^|\n]+)\|([^\n]*)/g)];
@@ -19,7 +19,7 @@ describe('All campaign stories', () => {
       }
       count += photos.length;
     }
-    expect(count).toBe(17);
+    expect(count).toBe(18);
   });
   it('renders every campaign without technical markers, preserving prose and surnames', () => {
     for (const campaign of campaigns) {
