@@ -24,7 +24,7 @@ export function MostLovedPage() {
       <div className="campaign-grid">{ranked.slice(0, 3).map((c, i) => <div className="loved-ranked" key={c.slug}><span className="loved-rank">{i + 1}</span><CampaignCard campaign={c}/></div>)}</div></section>
     <section className="section container"><div className="section-heading"><h2>All campaigns, ranked</h2></div>
       <div className="loved-tools"><div className="input-wrap"><Search/><input className="form-input" placeholder="Search campaigns…" aria-label="Search ranked campaigns" value={query} onChange={e => setQuery(e.target.value)}/></div></div>
-      <div className="loved-chips" role="group" aria-label="Filter by category">{chips.map(ch => <button type="button" key={ch.id} aria-pressed={category === ch.id} onClick={() => setCategory(ch.id)}>{ch.name}</button>)}</div>
+      <div className="loved-chips" role="group" aria-label="Filter by category">{chips.map(ch => <Button variant="outline" type="button" key={ch.id} aria-pressed={category === ch.id} onClick={() => setCategory(ch.id)}>{ch.name}</Button>)}</div>
       <p className="result-count" role="status">Showing {list.length} campaigns</p>
       <div className="campaign-grid loved-grid">{list.map(({ c, rank }) => <div className="loved-ranked" key={c.slug}><span className="loved-rank">{rank}</span><CampaignCard campaign={c}/></div>)}</div>
       {!list.length && <div className="empty-state"><h2>No campaigns found</h2><p>{category === 'saved' ? 'Tap the heart on any campaign to save it here. Favorites stay on this device.' : 'Try another search or category.'}</p></div>}

@@ -31,4 +31,9 @@ describe('Book purchase redirect', () => {
     expect(bookPurchaseUrl(20, { campaignSlug: 'mateo', search: '?gclid=g1', refCodes: { mateo: 'MAT01' } }))
       .toBe('https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?ref=MAT01&gclid=g1');
   });
+  it('forwards only the seven allowed nonempty keys, once each, without replacing the campaign UTM',()=>{
+    const url=new URL(bookPurchaseUrl(50,{campaignSlug:'mateo',search:'?utm_source=first&utm_source=second&utm_medium=paid&utm_campaign=original&utm_content=creative&utm_term=term&fbclid=f&gclid=g&amount=500&campaign=fake&csid=untrusted&ref=fake'}));
+    expect([...url.searchParams.keys()]).toEqual(['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid']);
+    expect(url.searchParams.getAll('utm_source')).toEqual(['first']);expect(url.searchParams.get('utm_campaign')).toBe('original');expect(url.pathname).toBe('/comprar/adventures-of-huckleberry-finn');
+  });
 });

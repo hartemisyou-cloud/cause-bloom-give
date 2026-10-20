@@ -19,7 +19,7 @@ export const Route = createFileRoute('/thank-you')({
     return amount === undefined ? {} : { amount };
   },
   head: () => {
-    const head = pageHead('Thank you', 'Confirmation page shown after a donation to a Hope Human Foundation campaign.', '/thank-you');
+    const head = pageHead('Thank you', 'A message of gratitude from Hope Human Foundation; this page does not verify a payment.', '/thank-you');
     return { ...head, meta: [...head.meta, { name: 'robots', content: 'noindex' }] };
   },
   component: ThankYouPage,
@@ -32,8 +32,9 @@ function ThankYouPage() {
       <div className="container thank-you-inner">
         <span className="thank-you-mark" aria-hidden="true"><CircleCheck size={34} /></span>
         <div className="eyebrow">With gratitude</div>
-        <h1>Thank You for Your Donation!</h1>
-        <p className="thank-you-sub">{amount === undefined ? 'Your gift has been received.' : `Your gift of ${usdLabel(amount)} has been received.`}</p>
+        <h1>Thank You for Your Support!</h1>
+        <p className="thank-you-sub">{amount === undefined ? 'Thank you for caring about these campaigns.' : `Thank you for choosing to support a campaign with ${usdLabel(amount)}.`}</p>
+        <p className="checkout-description">This page does not confirm a payment. Refer to the store confirmation for any completed purchase.</p>
         <Button variant="outline" asChild className="thank-you-back"><Link to="/campaigns">Back to campaigns <ArrowLeft size={15} /></Link></Button>
       </div>
     </div>
