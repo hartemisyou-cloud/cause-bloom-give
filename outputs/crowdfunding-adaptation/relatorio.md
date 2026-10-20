@@ -19,7 +19,7 @@ Most Loved continua ordenado por arrecadação anterior. As informações de cam
 Pagamentos, recibos, comprovação de alocação/ref por campanha, verificação e liberação de fundos dependem da operação externa. Nenhum checkout foi aberto, preenchido ou pago, e nenhuma transação foi certificada. Outros projetos não foram modificados. Não houve publicação ou mudanças em credenciais, hospedagem ou integrações financeiras. Assets públicos, configuração Vercel e prerender foram preservados.
 
 ## Verificações
-- Suíte completa: 53 testes passaram antes do teste adicional da barra; resultado final registrado no encerramento.
+- Suíte completa: 54 testes cobrindo campanhas, progresso/status, favoritos, barra mobile, histórias, rotas, atribuição e ausência de confirmação financeira; resultado final verificado no encerramento.
 - Navegador em 375 e 1280px: favorito independente, escolha US$20, título correspondente, botão habilitado, ausência de formulário financeiro, galeria com foto carregada e nenhuma rolagem horizontal; zero pageErrors.
 - Barra mobile oculta quando o painel principal está visível, exibida na região inferior. SDK/eventos Meta não receberam nova integração e Test Events externos não foram certificados.
 - Todos os arquivos de páginas inspecionados têm metadados próprios via pageHead; fallback de campanha indisponível também atualizado.
