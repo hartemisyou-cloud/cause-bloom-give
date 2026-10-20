@@ -14,7 +14,7 @@ export function CampaignStory({ story, expanded }: { story: string; expanded: bo
         </figure>;
       }
       return <ReactMarkdown key={index} skipHtml allowedElements={['p', 'h2', 'h3', 'h4', 'strong', 'em', 'ul', 'ol', 'li', 'blockquote', 'br', 'hr', 'a']} unwrapDisallowed
-        components={{ h1: ({ children }) => <h2><TitleIcon topic="Campaign story" />{children}</h2>, h2: ({ children }) => <h2><TitleIcon topic="Campaign story" />{children}</h2>, h3: ({ children }) => <h3><TitleIcon topic="Campaign story" />{children}</h3>, h4: ({ children }) => <h4><TitleIcon topic="Campaign story" />{children}</h4>, a: ({ children, href }) => <a href={href} rel="noopener noreferrer">{children}</a> }}>
+        components={{ h1: ({ children }) => <div className="story-heading"><TitleIcon topic="Campaign story" /><h2>{children}</h2></div>, h2: ({ children }) => <div className="story-heading"><TitleIcon topic="Campaign story" /><h2>{children}</h2></div>, h3: ({ children }) => <div className="story-heading"><TitleIcon topic="Campaign story" /><h3>{children}</h3></div>, h4: ({ children }) => <div className="story-heading"><TitleIcon topic="Campaign story" /><h4>{children}</h4></div>, a: ({ children, href }) => <a href={href} rel="noopener noreferrer">{children}</a> }}>
         {block.markdown}
       </ReactMarkdown>;
     })}

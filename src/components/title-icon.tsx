@@ -29,7 +29,7 @@ function topicIcon(topic: string): LucideIcon {
 }
 
 /** Decorative subject cue: the surrounding text remains the accessible label. */
-export function TitleIcon({ topic = '', category, className = '' }: { topic?: string; category?: string; className?: string }) {
+export function TitleIcon({ topic = '', category, className = '' }: { topic?: string | undefined; category?: string | undefined; className?: string }) {
   const Icon = category ? categoryIcons[category] ?? Compass : topicIcon(topic);
   return <Icon className={`title-icon ${className}`} size={20} strokeWidth={1.8} aria-hidden="true" focusable="false" />;
 }
