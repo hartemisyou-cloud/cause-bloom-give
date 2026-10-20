@@ -70,3 +70,8 @@
 - [x] Verify tests, public route sweep, focused viewports and one immutable desktop screenshot.
 - [ ] Production build/typecheck for this revision: manual execution prohibited by managed harness instructions.
 - [ ] Central fundraising approval and recipient/payout verification: outside this website, pending.
+
+## Homepage campaign variety and navigation
+- [x] Distribute all 54 genuine campaigns across distinct homepage collections, keeping current visual blocks and existing destinations.
+- [x] Expand visible featured options, add accessible group navigation, search and populated-category filters.
+- [ ] Verify collection rules, responsive layout, filters and campaign navigation without checkout or publishing.
