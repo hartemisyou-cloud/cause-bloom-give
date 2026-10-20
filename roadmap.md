@@ -1,4 +1,8 @@
 # Hope Human website
+## Footer-only visual adaptation
+- [x] Apply the uploaded composition using only existing Hope Human identity, copy and links.
+- [x] Verify the footer at 375px, 768px and desktop without publishing (54 tests passed, preview build OK, no overflow or browser errors).
+
 ## Crowdfunding specification adapted to Hope Human
 - [x] Preserve current Hope Human appearance, authentic identity, 54 campaigns and full-page amount selection.
 - [x] Improve safe progress/status calculations, complete categories and campaign-card navigation/actions.
