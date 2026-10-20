@@ -79,3 +79,7 @@
 ## Donation selection simplification
 - [x] Remove the selected-amount product card (ebook title and "Ebook purchase") shown after choosing a value, keeping the preset highlight, "Donate US$ <amount>" label and truthful purchase disclosure.
 - [x] Verified 826px and 390px selection with 58 tests passed, automatic build OK, no overflow or browser errors. No checkout or publishing.
+
+## Amount labels without USD
+- [x] Show the six presets and the continuation button with the plain "$" prefix ($20 … $500) and rename the section heading to "Select amount", removing "(USD)".
+- [x] Verified 1280px and 390px: presets render $20/$30/$50 (Suggested)/$100/$250/$500, the button reads "Donate $20" after selection, no overflow or browser errors; 58 tests passed and automatic build OK. No checkout or publishing.
