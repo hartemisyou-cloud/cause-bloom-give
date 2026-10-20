@@ -3568,8 +3568,8 @@
     "beneficiary": "Cassiel Vargas",
     "location": "Miami, FL",
     "category": "children",
-    "raised": 2475000,
-    "goal": 10000000,
+    "raised": 24750,
+    "goal": 100000,
     "currency": "USD",
     "urgent": true,
     "active": true,
@@ -3599,8 +3599,8 @@
     "support": [],
     "snapshotDate": "2026-10-20",
     "sourceCurrency": "USD",
-    "sourceRaised": 2475000,
-    "sourceGoal": 10000000,
+    "sourceRaised": 24750,
+    "sourceGoal": 100000,
     "fxDate": "2026-10-20",
     "surnameChange": null
   }
