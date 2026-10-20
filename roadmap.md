@@ -1,4 +1,7 @@
 # Hope Human website
+## Homepage reference refinement
+- [ ] Harmonize homepage surfaces and spacing without importing reference branding or claims; retain expanding Trending panels.
+- [ ] Verify desktop/mobile layout and Trending interactions without payments or publishing.
 ## Site-wide intuitive icons
 - [x] Add standardized Lucide icons to headings, categories and relevant controls without changing copy or behavior.
 - [x] Verify 19 page families at 375px and 1280px, reactions and amount selection; 54 tests passed, no browser errors or horizontal overflow, automatic build OK. No payment or publishing.
