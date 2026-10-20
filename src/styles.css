@@ -360,3 +360,36 @@ h2>.title-icon{width:22px;height:22px}
 
 .donate-page .donate-amount[aria-pressed=true]>span{color:var(--primary-foreground)}
 @media(max-width:860px){.donate-mobile-campaign .amount-row>span:last-child{color:var(--primary-foreground)}.donate-page .donate-layout{padding-top:12px}.donate-body-intro{margin-bottom:14px}.donate-selection-body{padding-top:16px}.donate-page .donate-amount-grid{margin-bottom:14px}.donate-page .selected-purchase{margin-bottom:14px}.donate-page .donate-checkout-actions{padding-top:12px}}
+
+/* Homepage-only reference rhythm: Hope Human identity and panels remain intact. */
+.home-page{--home-intro-surface:color-mix(in oklab,var(--gold) 5%,var(--card));--home-campaign-surface:color-mix(in oklab,var(--muted) 50%,var(--card));--home-start-surface:color-mix(in oklab,var(--gold) 8%,var(--card))}
+.home-page>.hero{background:var(--home-intro-surface)}
+.home-page>.hero .hero-inner{max-width:1248px;padding:48px 40px;gap:72px;height:auto;min-height:540px}
+.home-page .hero h1{font-size:46px;line-height:1.16}.home-page .hero-copy{max-width:520px}.home-page .hero-feature{width:370px}
+.home-page .hero-copy>p{line-height:1.7;margin-bottom:24px}.home-page .hero .eyebrow{display:inline-block;padding:5px 10px;border-radius:100px;background:var(--muted);color:var(--primary);font-size:11px;margin-bottom:18px}
+.home-page .hero-note{display:flex;align-items:center;gap:7px;margin-top:16px;font-size:11px;color:var(--slate)}
+.home-page>.trending-section{background:var(--home-campaign-surface);border-top:1px solid var(--border);padding-top:52px;padding-bottom:48px}
+.home-page>.trending-section,.home-page>.featured-section{padding-left:max(32px,calc((100% - 1184px)/2));padding-right:max(32px,calc((100% - 1184px)/2))}
+.home-page .trending-section .section-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:26px}
+.home-page .section-heading .eyebrow{font-size:12px;text-transform:uppercase;margin-bottom:8px;color:var(--primary)}.home-page .section-heading h2{font-size:27px;line-height:1.3}
+.home-page>.featured-section{background:var(--card);padding-top:60px;padding-bottom:60px}
+.home-page>.how-section{padding-top:64px;padding-bottom:64px}.home-page .how-heading{margin-bottom:32px}
+.home-page>.start-section{background:var(--home-start-surface);padding-top:64px;padding-bottom:64px}.home-page .start-option{background:var(--card)}
+@media(min-width:761px){
+ .home-page .trending-panels{height:460px;gap:12px}.home-page .trending-panel,.home-page .trending-see-all{border-radius:14px;min-width:64px}
+ .home-page .trending-panel.is-active{flex:3.8 1 0}.home-page .trending-panel-body{padding:22px}
+ .home-page .trending-panel-body h3{font-size:23px;line-height:1.25}.home-page .panel-expanded p{font-size:13px;line-height:1.6;margin-bottom:14px}
+ .home-page .panel-expanded .amount-row{font-size:12px;gap:12px;flex-wrap:wrap}.home-page .panel-expanded small{font-size:10px}
+ .home-page .panel-category{font-size:10px;top:16px;left:14px;padding:5px 9px;max-width:calc(100% - 24px);white-space:normal;line-height:1.3}
+ .home-page .trending-see-all{gap:20px}.home-page .see-all-label{font-size:15px}.home-page .see-all-arrow{width:46px;height:46px}
+ .home-page .rt-see-all{display:none}
+}
+@media(min-width:769px) and (max-width:1000px){.home-page>.hero .hero-inner{gap:32px;padding:40px 32px}.home-page .hero-feature{width:320px}.home-page .hero h1{font-size:38px}.home-page .trending-panel-body{padding:16px}.home-page .trending-panel-body h3{font-size:19px}}
+@media(max-width:768px){
+ .home-page>.hero .hero-inner{min-height:560px;padding:32px 24px 40px}.home-page .hero h1{font-size:38px;line-height:1.14}.home-page .hero h1 em{font-size:40px;line-height:1.14}
+ .home-page .hero .eyebrow{font-size:12px;text-transform:uppercase;line-height:1.5}.home-page .hero-copy>p{font-size:16px;max-width:330px}.home-page .hero-note{display:none}
+ .home-page>.trending-section,.home-page>.featured-section{padding-left:20px;padding-right:20px;padding-top:36px;padding-bottom:36px}
+ .home-page .trending-section .section-heading{display:grid;gap:16px;align-items:start}.home-page .section-heading h2{font-size:22px}.home-page .section-heading .eyebrow{font-size:11px}
+ .home-page>.how-section,.home-page>.start-section{padding-top:48px;padding-bottom:48px}
+}
+@media(prefers-reduced-motion:reduce){.home-page .trending-panel{transition:none}}
