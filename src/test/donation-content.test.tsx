@@ -3,7 +3,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { donationInformation, donationLabel } from '@/lib/donation-content';
-import { donationAmounts, bookPurchaseBase } from '@/lib/checkout';
+import { donationAmounts, checkoutStartAction } from '@/lib/checkout';
 import { PolicyPage, HelpPage, AboutPage, GuaranteePage } from '@/components/content-pages';
 
 vi.mock('@tanstack/react-router', () => ({ Link: ({ children }: { children: React.ReactNode }) => <a>{children}</a> }));
