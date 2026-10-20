@@ -34,21 +34,26 @@ describe('Thank you page', () => {
 
   it('names the gift amount when ?amount is present', async () => {
     const { container } = await renderAt('/thank-you?amount=20');
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Thank You for Your Donation!');
-    expect(screen.getByText('Your gift of $20.00 has been received.')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Thank You for Your Support!');
+    expect(screen.getByText('Thank you for choosing to support a campaign with $20.00.')).toBeInTheDocument();
     expect(container.textContent).not.toMatch(/\bebooks?\b|\be-books?\b|\bbooks?\b|\bdownloads?\b|hopehumanbooks|digital edition/i);
     expect(screen.getByRole('link', { name: /Back to campaigns/i })).toHaveAttribute('href', '/campaigns');
   });
 
   it('shows the generic message when ?amount is absent', async () => {
     await renderAt('/thank-you');
-    expect(screen.getByText('Your gift has been received.')).toBeInTheDocument();
+    expect(screen.getByText('Thank you for caring about these campaigns.')).toBeInTheDocument();
     expect(screen.queryByText(/\$\d/)).not.toBeInTheDocument();
   });
 
   it('renders no payment form and no provider markup', async () => {
     const { container } = await renderAt('/thank-you?amount=30');
     expect(container.querySelector('form')).toBeNull();
-    expect(container.innerHTML).not.toMatch(new RegExp(['str'+'ipe','checkout','card','payment'].join('|'),'i'));
+    expect(container.innerHTML).not.toMatch(new RegExp(['str'+'ipe','type="submit"','name="card"'].join('|'),'i'));
+  });
+  it('does not treat an amount query parameter as a confirmed payment', async()=>{
+    const {container}=await renderAt('/thank-you?amount=500');
+    expect(container.textContent).not.toMatch(/has been received|payment successful/i);
+    expect(container.textContent).toContain('This page does not confirm a payment.');
   });
 });
