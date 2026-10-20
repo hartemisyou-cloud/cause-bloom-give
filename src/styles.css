@@ -272,3 +272,28 @@
 .thank-you-back{min-height:44px;padding:11px 24px;font-size:13px;font-weight:700}
 @media(max-width:600px){.thank-you-page{padding:48px 0 64px;min-height:60vh}.thank-you-sub{font-size:15.5px}}
 
+/* Compatible crowdfunding additions retain the Hope Human design tokens. */
+:root{--status-urgent:var(--destructive);--status-funded:var(--primary);--category-health:var(--dark-green);--category-children:var(--dark-green);--category-animals:var(--dark-green);--category-disaster:var(--dark-green);--category-education:var(--dark-green);--category-community:var(--dark-green);--category-environment:var(--dark-green);--category-emergency:var(--dark-green);--category-housing:var(--dark-green)}
+.campaign-card{display:flex;flex-direction:column;transition:transform 250ms,box-shadow 250ms}
+.campaign-card:hover{transform:translateY(-4px);box-shadow:var(--soft-shadow)}
+.campaign-card-image{aspect-ratio:16/10;height:auto;flex:none}
+.campaign-card-image img{transition:transform 500ms}
+.campaign-card:hover .campaign-card-image img{transform:scale(1.05)}
+.campaign-card .campaign-card-image .campaign-category{top:10px;bottom:auto;max-width:calc(100% - 58px);background:var(--category-color,var(--dark-green))}
+.category-health{--category-color:var(--category-health)}.category-children{--category-color:var(--category-children)}.category-animals{--category-color:var(--category-animals)}.category-disaster{--category-color:var(--category-disaster)}.category-education{--category-color:var(--category-education)}.category-community{--category-color:var(--category-community)}.category-environment{--category-color:var(--category-environment)}.category-emergency{--category-color:var(--category-emergency)}.category-housing{--category-color:var(--category-housing)}
+.campaign-status{position:absolute;bottom:10px;left:10px;display:flex;align-items:center;gap:5px;border-radius:8px;padding:4px 8px;font-size:11px;font-weight:700;color:var(--primary-foreground)}
+.status-urgent{background:var(--status-urgent)}.status-funded{background:var(--status-funded)}
+.campaign-card-body{display:flex;flex-direction:column;flex:1}
+.campaign-card h3{-webkit-line-clamp:2;min-height:42px}
+.card-main-link::after{content:'';position:absolute;inset:0;z-index:1}
+.card-save,.card-donate{z-index:2;position:relative}.card-save{position:absolute}
+.card-summary{font-size:12px;line-height:1.6;color:var(--muted-foreground);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:38px;margin-bottom:14px}
+.card-meta>span{margin-left:auto}.card-location{display:flex;gap:5px;align-items:center;font-size:11px;color:var(--muted-foreground);margin:10px 0 16px}
+.card-donate{margin-top:auto;width:100%;min-height:44px;white-space:normal;text-align:center}
+.detail-metadata{display:flex;flex-wrap:wrap;gap:8px 16px;color:var(--muted-foreground);font-size:12px;margin-bottom:16px}
+.selected-purchase{min-height:64px;text-align:center;display:grid;align-content:center;gap:4px;margin-bottom:12px;color:var(--foreground);overflow-wrap:anywhere}
+.selected-purchase strong{font-size:13px;line-height:1.5}.selected-purchase span{font-size:11px;color:var(--muted-foreground)}
+.mobile-donate[hidden]{display:none}
+@media(max-width:600px){.detail-metadata{padding:12px 16px;margin-bottom:0}.gallery-left,.gallery-right{display:inline-flex;z-index:4;width:44px;height:44px}.mobile-donate{padding-bottom:calc(10px + env(safe-area-inset-bottom))}.donation-actions>.donate-note{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){.campaign-card,.campaign-card-image img{transition:none}.campaign-card:hover{transform:none}.campaign-card:hover .campaign-card-image img{transform:none}}
+
