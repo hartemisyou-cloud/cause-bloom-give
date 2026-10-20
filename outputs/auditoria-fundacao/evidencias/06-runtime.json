@@ -1,0 +1,404 @@
+{
+  "start_utc": "2026-10-20T20:25:11.184446+00:00",
+  "seed": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+  "viewport": {
+    "width": 1280,
+    "height": 1800
+  },
+  "timezone": "America/Bahia",
+  "requests": [
+    {
+      "utc": "2026-10-20T20:25:12.313840+00:00",
+      "page_url": "about:blank",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/",
+      "resource_type": "document",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.832746+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/48bd9da7-fcfd-4aff-975f-d04afa35f809/hope-human-logo.png",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.835081+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/88e4b287-4b2c-4626-af3b-1bc398ce87e0/uploads-campaigns-mateo-1-640.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.836932+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/styles-CeLNXWAw.css",
+      "resource_type": "stylesheet",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.839669+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/index-wlkyiNL0.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.841155+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/button-DU6qLQSe.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.842843+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/not-found-i5RsCZif.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.844512+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/routes-DvC5fp_G.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.845672+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/arrow-right-ByUk_6v7.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.846830+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/users-8AzHrUiX.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:12.848089+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/share-2-B7TU4AY_.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.456769+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/41075344-7d7b-49e4-b6a5-16b75b1f8b96/jakarta-latin.woff2",
+      "resource_type": "font",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.463504+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/4397ec8e-b63d-4a6d-a479-f6bdb6416fcd/jakarta-italic.woff2",
+      "resource_type": "font",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.465715+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/d09ad95d-4c88-4566-b680-8e8d45f70238/uploads-campaigns-mateo-1-1200.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.471215+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/66fa23e4-3132-4de2-897d-e1ab146c1047/uploads-campaigns-help-graceline-now-hero-1200.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.472808+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/9d6598f9-f215-48a1-8fc0-ca2d700a98ef/uploads-campaigns-help-save-fabi-1-1200.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.474868+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/5245dc72-77d8-4985-b9cd-45abf032ab9e/uploads-campaigns-jazzy-103899599_1779234005640833_r-rplmicoip1ycmc2pbpq8czukv23cl8snk7h6qrb5qk-1200.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.476423+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/06e96738-045c-44e4-b49d-59dfede16502/uploads-campaigns-help-teddy-1-1200.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.478221+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/32391367-bb19-435a-a427-61eda62404c0/uploads-campaigns-help-teddy-1-640.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.479828+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/aa6b8034-c014-4da8-a6cb-538b90aaa21c/uploads-campaigns-help-emma-1-640.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.481407+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/0ef7de04-5ee6-46cc-b93f-04058adf5246/uploads-campaigns-help-daniel-1-640.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.482951+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/9022095b-445d-4b1e-8256-4e5c9818834c/uploads-campaigns-help-vexanna-1784260940-712b8a84-640.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.729228+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "connect.facebook.net",
+      "path": "/en_US/fbevents.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:13.923932+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "connect.facebook.net",
+      "path": "/signals/config/1456212949742348",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:21.239801+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/campaign-detail-DmfI85ZI.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:21.242846+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/mail-CwGiW2Jm.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:21.245174+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/shield-check-C3-D834t.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:21.485313+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/d09ad95d-4c88-4566-b680-8e8d45f70238/uploads-campaigns-mateo-1-1200.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:21.891913+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/88e4b287-4b2c-4626-af3b-1bc398ce87e0/uploads-campaigns-mateo-1-640.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:21.893844+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/f525554b-389d-45dc-ade0-92c7d912b0fe/emma-hope-human-thumb.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:21.897541+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/aeb14f40-9c2b-4d34-90ea-7995f1c5a99d/uploads-campaigns-help-isa-isa-capa-640.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:21.898703+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/fc89be21-a80e-41a6-bb80-639d07b10ba2/uploads-campaigns-help-laura-cancer-laura-640.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:25.535161+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/donate?slug=mateo",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/donate-CUQseavo.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:25.544811+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/donate?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/assets/donation-content-BFb1F5Ng.js",
+      "resource_type": "script",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:25.708252+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/donate?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "www.hopehumanfoundation.org",
+      "path": "/__l5e/assets-v1/d09ad95d-4c88-4566-b680-8e8d45f70238/uploads-campaigns-mateo-1-1200.webp",
+      "resource_type": "image",
+      "method": "GET",
+      "blocked": null
+    },
+    {
+      "utc": "2026-10-20T20:25:31.797683+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/donate?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "hopehumanbooks.com",
+      "path": "/comprar/the-adventures-of-tom-sawyer",
+      "resource_type": "document",
+      "method": "GET",
+      "blocked": "Store navigation blocked before loading checkout",
+      "destination_url": "https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020"
+    }
+  ],
+  "failures": [
+    {
+      "host": "hopehumanbooks.com",
+      "path": "/comprar/the-adventures-of-tom-sawyer",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "http_errors": [],
+  "console_errors": [],
+  "steps": [
+    {
+      "step": "03-P1-home",
+      "utc": "2026-10-20T20:25:21.082074+00:00",
+      "url": "https://www.hopehumanfoundation.org/?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "title": "Find a cause that moves you — Hope Human Foundation",
+      "forms": [],
+      "pixel": {
+        "exists": true,
+        "queue": [],
+        "sdkReady": true
+      }
+    },
+    {
+      "step": "04-P2-mateo",
+      "utc": "2026-10-20T20:25:25.443681+00:00",
+      "url": "https://www.hopehumanfoundation.org/campaign-detail?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "title": "Mateo is 8 months old and fighting stage four cancer — Hope Human Foundation",
+      "forms": [],
+      "pixel": {
+        "exists": true,
+        "queue": [],
+        "sdkReady": true
+      }
+    },
+    {
+      "step": "05-P2-selected20",
+      "utc": "2026-10-20T20:25:31.758410+00:00",
+      "url": "https://www.hopehumanfoundation.org/donate?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "title": "Choose an amount for Mateo is 8 months old and fighting stage four cancer — Hope Human Foundation",
+      "forms": [],
+      "pixel": {
+        "exists": true,
+        "queue": [],
+        "sdkReady": true
+      }
+    }
+  ],
+  "safety": "No store/checkout loaded. Stripe, store, non-GET, and Meta event transmissions blocked. No fields filled.",
+  "initial_status": 200,
+  "mateo_link_count": 14,
+  "mateo_href": "/campaign-detail?slug=mateo",
+  "selected_20": "true",
+  "cta_text": "Donate US$ 20",
+  "cta_enabled": true,
+  "store_navigation": [
+    {
+      "utc": "2026-10-20T20:25:31.797683+00:00",
+      "page_url": "https://www.hopehumanfoundation.org/donate?slug=mateo&utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020",
+      "host": "hopehumanbooks.com",
+      "path": "/comprar/the-adventures-of-tom-sawyer",
+      "resource_type": "document",
+      "method": "GET",
+      "blocked": "Store navigation blocked before loading checkout",
+      "destination_url": "https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020"
+    }
+  ],
+  "P3": "Click executed with store request aborted before load; no checkout opened.",
+  "end_utc": "2026-10-20T20:25:34.337761+00:00"
+}
