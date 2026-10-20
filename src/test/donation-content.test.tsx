@@ -3,7 +3,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { donationInformation, donationLabel } from '@/lib/donation-content';
-import { donationAmounts, bookPurchaseBase } from '@/lib/checkout';
+import { donationAmounts, checkoutStartAction } from '@/lib/checkout';
 import { PolicyPage, HelpPage, AboutPage, GuaranteePage } from '@/components/content-pages';
 
 vi.mock('@tanstack/react-router', () => ({ Link: ({ children }: { children: React.ReactNode }) => <a>{children}</a> }));
@@ -33,7 +33,11 @@ describe('Donation-only public information', () => {
   });
   it('uses exact donation labels and the authorized donation checkout start for all six amounts', () => {
     expect(donationAmounts).toEqual([20, 30, 50, 100, 250, 500]);
-    expect(bookPurchaseBase).toBe('https://hopehumanbooks.com/comprar');
+    expect(checkoutStartAction).toBe('https://hopehumanbooks.com/donations/start');
+    const donateText = readFileSync('src/routes/donate.tsx', 'utf8');
+    expect(donateText).toContain('method="post"');
+    expect(donateText).toContain('action={checkoutStartAction}');
+    expect(donateText).toContain('target="_top"');
     for (const amount of donationAmounts) {
       expect(donationLabel(amount)).toBe(`$${amount} Donation`);
     }

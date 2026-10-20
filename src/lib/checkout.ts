@@ -1,24 +1,9 @@
+// ============= Full file contents =============
 export const donationAmounts = [20, 30, 50, 100, 250, 500] as const;
-/** Purchase route on the Hope Human bookstore; secure checkout opens from there. */
-export const bookPurchaseBase = 'https://hopehumanbooks.com/comprar';
-/** Maps each donation preset (USD) to the matching store product slug. */
-export const bookSlugByAmount: Record<(typeof donationAmounts)[number], string> = {
-  20: 'the-adventures-of-tom-sawyer',
-  30: 'little-women',
-  50: 'adventures-of-huckleberry-finn',
-  100: 'moby-dick',
-  250: 'american-classics-collection',
-  500: 'american-classics-library',
-};
-/** Title shown for each preset on the purchase step. */
-export const bookTitleByAmount: Record<(typeof donationAmounts)[number], string> = {
-  20: 'The Adventures of Tom Sawyer — Mark Twain',
-  30: 'Little Women — Louisa May Alcott',
-  50: 'Adventures of Huckleberry Finn — Mark Twain',
-  100: 'Moby-Dick — Herman Melville',
-  250: 'American Classics Collection',
-  500: 'American Classics Library',
-};
+/** Authorized checkout start endpoint on Hope Human Books; it responds 303 to official checkout. */
+export const checkoutStartAction = 'https://hopehumanbooks.com/donations/start';
+const attributionKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'] as const;
+export type CheckoutPayload = { campaignSlug: string; amountCents: number; idempotencyKey: string; attribution?: Record<string, string> };
 export function isDonationAmount(value: unknown): value is (typeof donationAmounts)[number] {
   return typeof value === 'number' && donationAmounts.some(v => v === value);
 }
@@ -27,20 +12,33 @@ export function parseDonationAmount(raw: unknown): number | undefined {
   const n = typeof raw === 'number' ? raw : typeof raw === 'string' ? Number(raw.replace(/^"|"$/g, '')) : NaN;
   return isDonationAmount(n) ? n : undefined;
 }
-/** Referral code per campaign slug. Configure once per campaign; campaigns without a code navigate unchanged. */
-export const campaignRefCodes: Record<string, string> = {};
-/** Attribution keys forwarded from the donate page URL to the store. */
-export const forwardedAttributionKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'] as const;
-/** Destination for a selected amount; the foundation site only redirects, never calls a payment provider. */
-export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; search?: string; refCodes?: Record<string, string> } = {}): string {
-  if (!isDonationAmount(amount)) throw new Error('Select a supported amount.');
-  const base = `${bookPurchaseBase}/${bookSlugByAmount[amount]}`;
-  const parts: string[] = [];
-  const used = new Set<string>();
-  const add = (k: string, v: string | null | undefined) => { if (!v || used.has(k)) return; used.add(k); parts.push(`${k}=${encodeURIComponent(v)}`); };
-  const ref = opts.campaignSlug ? (opts.refCodes ?? campaignRefCodes)[opts.campaignSlug] : undefined;
-  add('ref', ref);
-  const current = new URLSearchParams(opts.search ?? '');
-  for (const k of forwardedAttributionKeys) add(k, current.get(k)?.trim());
-  return parts.length ? `${base}?${parts.join('&')}` : base;
+function snapshotAttribution(raw: string) {
+  const saved = new URLSearchParams(raw); const out: Record<string, string> = {};
+  for (const key of attributionKeys) { const v = saved.get(key); if (v) out[key] = v.slice(0, 200); }
+  return Object.keys(out).length ? out : undefined;
+}
+function newKey() {
+  const bytes = new Uint8Array(16); crypto.getRandomValues(bytes);
+  return Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
+}
+const memoryAttempts = new Map<string, string>();
+type AttemptStore = Pick<Storage, 'getItem' | 'setItem'>;
+function store(): AttemptStore {
+  try { const s = window.sessionStorage; s.setItem('hope-probe', '1'); s.removeItem('hope-probe'); return s; }
+  catch { return { getItem: k => memoryAttempts.get(k) ?? null, setItem: (k, v) => { memoryAttempts.set(k, v); } }; }
+}
+/** Returns the persisted attempt for this campaign+amount, creating it once. Retries reuse the same payload and key. */
+export function checkoutAttempt(slug: string, amount: number, s: AttemptStore = store()): CheckoutPayload {
+  if (!isDonationAmount(amount) || !slug) throw new Error('Select a supported amount and campaign.');
+  const id = `hope-checkout:${slug}:${amount}`;
+  try {
+    const existing = JSON.parse(s.getItem(id) ?? 'null') as CheckoutPayload | null;
+    if (existing && existing.campaignSlug === slug && existing.amountCents === amount * 100 && typeof existing.idempotencyKey === 'string') return existing;
+  } catch { /* Corrupt record: replace below. */ }
+  let rawAttribution = '';
+  try { rawAttribution = window.sessionStorage.getItem('hope-attribution') ?? ''; } catch { /* Attribution is optional. */ }
+  const attribution = snapshotAttribution(rawAttribution);
+  const payload: CheckoutPayload = { campaignSlug: slug, amountCents: amount * 100, idempotencyKey: newKey(), ...(attribution ? { attribution } : {}) };
+  s.setItem(id, JSON.stringify(payload));
+  return payload;
 }
