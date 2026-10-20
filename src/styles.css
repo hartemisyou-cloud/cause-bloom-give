@@ -309,8 +309,6 @@
 .card-meta>span{margin-left:auto}.card-location{display:flex;gap:5px;align-items:center;font-size:11px;color:var(--muted-foreground);margin:10px 0 16px}
 .card-donate{margin-top:auto;width:100%;min-height:44px;white-space:normal;text-align:center}
 .detail-metadata{display:flex;flex-wrap:wrap;gap:8px 16px;color:var(--muted-foreground);font-size:12px;margin-bottom:16px}
-.selected-purchase{min-height:64px;text-align:center;display:grid;align-content:center;gap:4px;margin-bottom:12px;color:var(--foreground);overflow-wrap:anywhere}
-.selected-purchase strong{font-size:13px;line-height:1.5}.selected-purchase span{font-size:11px;color:var(--muted-foreground)}
 .donate-amount[aria-pressed=true],.donate-amount[aria-pressed=true]:hover{color:var(--primary-foreground)}
 .mobile-donate[hidden]{display:none}
 @media(max-width:600px){.detail-metadata{padding:12px 16px;margin-bottom:0}.gallery-left,.gallery-right{display:inline-flex;z-index:4;width:44px;height:44px}.mobile-donate{padding-bottom:calc(10px + env(safe-area-inset-bottom))}.donation-actions>.donate-note{grid-column:1/-1}}
@@ -339,9 +337,6 @@ h2>.title-icon{width:22px;height:22px}
 .donate-selection-body{padding:22px}.donate-body-title{display:none}.donate-body-intro{display:none}
 .donate-page .donate-amount-grid{gap:10px;margin:0 0 18px}.donate-page .donate-amount{border-radius:100px;min-height:44px;padding:10px 4px;font-size:15px}
 .donate-page .suggested-badge{background:var(--gold-gradient);color:var(--foreground);font-size:8px;padding:4px 7px;top:-10px}
-.donate-page .selected-purchase{min-height:52px;border:1px solid var(--border);border-radius:8px;background:var(--muted);padding:12px;gap:3px;margin-bottom:18px;text-align:left;position:relative;padding-left:42px}
-.donate-page .selected-purchase>svg{position:absolute;top:15px;left:13px;color:var(--primary)}
-.donate-page .selected-purchase:has(>svg:only-child){display:none}
 .donate-page .checkout-continue{min-height:50px;padding:12px;font-size:14px;box-shadow:none}.donate-checkout-actions{border-top:1px solid var(--border);padding-top:16px}
 .donate-page .donate-note{margin:10px 0;font-size:11px;line-height:1.55}.donate-page .secure-checkout{margin:10px 0 6px;font-size:11px}.donate-page .checkout-description{font-size:10px;line-height:1.55;margin-top:5px}
 .donate-close{position:absolute;z-index:5;right:12px;top:12px;width:40px;height:40px;border:1px solid var(--primary-foreground);background:var(--overlay);color:var(--primary-foreground)}.donate-close:hover{background:var(--dark-green);color:var(--primary-foreground)}
@@ -359,7 +354,7 @@ h2>.title-icon{width:22px;height:22px}
 }
 
 .donate-page .donate-amount[aria-pressed=true]>span{color:var(--primary-foreground)}
-@media(max-width:860px){.donate-mobile-campaign .amount-row>span:last-child{color:var(--primary-foreground)}.donate-page .donate-layout{padding-top:12px}.donate-body-intro{margin-bottom:14px}.donate-selection-body{padding-top:16px}.donate-page .donate-amount-grid{margin-bottom:14px}.donate-page .selected-purchase{margin-bottom:14px}.donate-page .donate-checkout-actions{padding-top:12px}}
+@media(max-width:860px){.donate-mobile-campaign .amount-row>span:last-child{color:var(--primary-foreground)}.donate-page .donate-layout{padding-top:12px}.donate-body-intro{margin-bottom:14px}.donate-selection-body{padding-top:16px}.donate-page .donate-amount-grid{margin-bottom:14px}.donate-page .donate-checkout-actions{padding-top:12px}}
 
 /* Homepage-only reference rhythm: Hope Human identity and panels remain intact. */
 .home-page{--home-intro-surface:color-mix(in oklab,var(--gold) 5%,var(--card));--home-campaign-surface:color-mix(in oklab,var(--muted) 50%,var(--card));--home-start-surface:color-mix(in oklab,var(--gold) 8%,var(--card))}
