@@ -1,0 +1,38 @@
+{
+  "map": [
+    {
+      "amount": 20,
+      "plain": "https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer",
+      "seed": "https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020"
+    },
+    {
+      "amount": 30,
+      "plain": "https://hopehumanbooks.com/comprar/little-women",
+      "seed": "https://hopehumanbooks.com/comprar/little-women?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020"
+    },
+    {
+      "amount": 50,
+      "plain": "https://hopehumanbooks.com/comprar/adventures-of-huckleberry-finn",
+      "seed": "https://hopehumanbooks.com/comprar/adventures-of-huckleberry-finn?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020"
+    },
+    {
+      "amount": 100,
+      "plain": "https://hopehumanbooks.com/comprar/moby-dick",
+      "seed": "https://hopehumanbooks.com/comprar/moby-dick?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020"
+    },
+    {
+      "amount": 250,
+      "plain": "https://hopehumanbooks.com/comprar/american-classics-collection",
+      "seed": "https://hopehumanbooks.com/comprar/american-classics-collection?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020"
+    },
+    {
+      "amount": 500,
+      "plain": "https://hopehumanbooks.com/comprar/american-classics-library",
+      "seed": "https://hopehumanbooks.com/comprar/american-classics-library?utm_source=test&utm_medium=manual&utm_campaign=livecheck-20261020"
+    }
+  ],
+  "empty": "https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer",
+  "encoded": "https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?utm_source=test%20x&fbclid=abc%2B123",
+  "refCapability": "https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?ref=example",
+  "configuredRefs": {}
+}
