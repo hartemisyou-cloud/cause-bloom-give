@@ -1,0 +1,24 @@
+0001 import { pixelConsentChanged } from './meta-pixel';
+0002 export const siteName='Hope Human Foundation';
+0003 export function pageHead(title:string,description:string,path:string) {
+0004  const domain=(import.meta.env['VITE_SITE_URL']??'https://hopehumanfoundation.org').replace(/\/$/,'');
+0005  const url=domain?`${domain}${path}`:path;
+0006  return {meta:[{title:`${title} — ${siteName}`},{name:'description',content:description},{property:'og:title',content:`${title} — ${siteName}`},{property:'og:description',content:description},{property:'og:type',content:'website'},{property:'og:url',content:url},{name:'twitter:card',content:'summary_large_image'}],links:[{rel:'canonical',href:url}]};
+0007 }
+0008 const attributionKeys=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'];
+0009 export function preserveAttribution(){
+0010  const url=new URL(window.location.href);const saved=new URLSearchParams(sessionStorage.getItem('hope-attribution')??'');
+0011  attributionKeys.forEach(key=>{const value=url.searchParams.get(key);if(value)saved.set(key,value);else if(saved.has(key))url.searchParams.set(key,saved.get(key)??'');});
+0012  sessionStorage.setItem('hope-attribution',saved.toString());if(url.href!==window.location.href)window.history.replaceState(window.history.state,'',url);
+0013 }
+0014 export function analyticsConsent(accepted:boolean){localStorage.setItem('hope-analytics-consent',accepted?'yes':'no');pixelConsentChanged(accepted);}
+0015 /** fbclid from the current URL, falling back to the session attribution saved by preserveAttribution. */
+0016 export function currentFbclid():string|undefined{
+0017  try{const fromUrl=new URL(window.location.href).searchParams.get('fbclid');if(fromUrl)return fromUrl;return new URLSearchParams(sessionStorage.getItem('hope-attribution')??'').get('fbclid')??undefined;}catch{return undefined;}
+0018 }
+0019 export function trackEvent(name:string,detail:Record<string,string|number>={}){
+0020  try {
+0021   if(localStorage.getItem('hope-analytics-consent')!=='yes')return;
+0022   window.dispatchEvent(new CustomEvent('hope:analytics',{detail:{name,...detail,attribution:sessionStorage.getItem('hope-attribution')??''}}));
+0023  } catch { /* Optional analytics must not interrupt giving when storage is blocked. */ }
+0024 }

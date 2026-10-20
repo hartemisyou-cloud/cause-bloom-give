@@ -1,0 +1,46 @@
+0001 export const donationAmounts = [20, 30, 50, 100, 250, 500] as const;
+0002 /** Purchase route on the Hope Human bookstore; secure checkout opens from there. */
+0003 export const bookPurchaseBase = 'https://hopehumanbooks.com/comprar';
+0004 /** Maps each donation preset (USD) to the matching store product slug. */
+0005 export const bookSlugByAmount: Record<(typeof donationAmounts)[number], string> = {
+0006   20: 'the-adventures-of-tom-sawyer',
+0007   30: 'little-women',
+0008   50: 'adventures-of-huckleberry-finn',
+0009   100: 'moby-dick',
+0010   250: 'american-classics-collection',
+0011   500: 'american-classics-library',
+0012 };
+0013 /** Title shown for each preset on the purchase step. */
+0014 export const bookTitleByAmount: Record<(typeof donationAmounts)[number], string> = {
+0015   20: 'The Adventures of Tom Sawyer — Mark Twain',
+0016   30: 'Little Women — Louisa May Alcott',
+0017   50: 'Adventures of Huckleberry Finn — Mark Twain',
+0018   100: 'Moby-Dick — Herman Melville',
+0019   250: 'American Classics Collection',
+0020   500: 'American Classics Library',
+0021 };
+0022 export function isDonationAmount(value: unknown): value is (typeof donationAmounts)[number] {
+0023   return typeof value === 'number' && donationAmounts.some(v => v === value);
+0024 }
+0025 /** Parses a search value (number or numeric string, possibly quoted) into a preset USD amount. */
+0026 export function parseDonationAmount(raw: unknown): number | undefined {
+0027   const n = typeof raw === 'number' ? raw : typeof raw === 'string' ? Number(raw.replace(/^"|"$/g, '')) : NaN;
+0028   return isDonationAmount(n) ? n : undefined;
+0029 }
+0030 /** Referral code per campaign slug. Configure once per campaign; campaigns without a code navigate unchanged. */
+0031 export const campaignRefCodes: Record<string, string> = {};
+0032 /** Attribution keys forwarded from the donate page URL to the store. */
+0033 export const forwardedAttributionKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'] as const;
+0034 /** Destination for a selected amount; the foundation site only redirects, never calls a payment provider. */
+0035 export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; search?: string; refCodes?: Record<string, string> } = {}): string {
+0036   if (!isDonationAmount(amount)) throw new Error('Select a supported amount.');
+0037   const base = `${bookPurchaseBase}/${bookSlugByAmount[amount]}`;
+0038   const parts: string[] = [];
+0039   const used = new Set<string>();
+0040   const add = (k: string, v: string | null | undefined) => { if (!v || used.has(k)) return; used.add(k); parts.push(`${k}=${encodeURIComponent(v)}`); };
+0041   const ref = opts.campaignSlug ? (opts.refCodes ?? campaignRefCodes)[opts.campaignSlug] : undefined;
+0042   add('ref', ref);
+0043   const current = new URLSearchParams(opts.search ?? '');
+0044   for (const k of forwardedAttributionKeys) add(k, current.get(k)?.trim());
+0045   return parts.length ? `${base}?${parts.join('&')}` : base;
+0046 }
