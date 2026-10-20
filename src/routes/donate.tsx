@@ -6,7 +6,7 @@ import { Progress } from '@/components/campaign-card';
 import { getCampaign, categoryName, shortMoney } from '@/lib/campaigns';
 import { pageHead, trackEvent } from '@/lib/site';
 import { pixelDonationEvent } from '@/lib/meta-pixel';
-import { bookPurchaseUrl, donationAmounts, parseDonationAmount, bookTitleByAmount } from '@/lib/checkout';
+import { bookPurchaseUrl, donationAmounts, parseDonationAmount, bookTitleByAmount, isDonationAmount } from '@/lib/checkout';
 import { donationInformation } from '@/lib/donation-content';
 
 export const Route = createFileRoute('/donate')({
@@ -26,6 +26,7 @@ function DonatePage() {
   const checkoutSent = useRef(false);
   const [opening, setOpening] = useState(false);
   const [error, setError] = useState('');
+  const selectedTitle = isDonationAmount(amount) ? bookTitleByAmount[amount] : '';
   useEffect(() => { const restore = () => { checkoutSent.current = false; setOpening(false); }; window.addEventListener('pageshow', restore); return () => window.removeEventListener('pageshow', restore); }, []);
   function select(value: number) { if (checkoutSent.current) return; setAmount(value); try { pixelDonationEvent('AddToCart', value); } catch { /* Selection remains available without analytics. */ } }
   function proceed() {
