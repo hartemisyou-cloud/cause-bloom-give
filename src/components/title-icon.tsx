@@ -5,9 +5,9 @@ const categoryIcons: Record<string, LucideIcon> = { all: LayoutGrid, health: Ste
 function topicIcon(topic: string): LucideIcon {
   const text = topic.toLowerCase();
   if (/refund|currency|fees|amount|checkout|allocation|funds|donation/.test(text)) return Wallet;
-  if (/privacy|policy|terms|rights|claim|approval|review|information/.test(text)) return FileText;
+  if (/privacy|polic|terms|rights|claim|approval|review|information/.test(text)) return FileText;
   if (/contact|email|message|support emails/.test(text)) return Mail;
-  if (/question|help center|support$|confidence|clarity|trusted/.test(text)) return CircleHelp;
+  if (/question|help|support$|confidence|clarity|trusted/.test(text)) return CircleHelp;
   if (/sharing|share/.test(text)) return Share2;
   if (/words of support/.test(text)) return MessageCircle;
   if (/organizer|yourself|your info/.test(text)) return UserRound;
