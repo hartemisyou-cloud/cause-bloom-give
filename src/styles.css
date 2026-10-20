@@ -293,6 +293,7 @@
 .detail-metadata{display:flex;flex-wrap:wrap;gap:8px 16px;color:var(--muted-foreground);font-size:12px;margin-bottom:16px}
 .selected-purchase{min-height:64px;text-align:center;display:grid;align-content:center;gap:4px;margin-bottom:12px;color:var(--foreground);overflow-wrap:anywhere}
 .selected-purchase strong{font-size:13px;line-height:1.5}.selected-purchase span{font-size:11px;color:var(--muted-foreground)}
+.donate-amount[aria-pressed=true],.donate-amount[aria-pressed=true]:hover{color:var(--primary-foreground)}
 .mobile-donate[hidden]{display:none}
 @media(max-width:600px){.detail-metadata{padding:12px 16px;margin-bottom:0}.gallery-left,.gallery-right{display:inline-flex;z-index:4;width:44px;height:44px}.mobile-donate{padding-bottom:calc(10px + env(safe-area-inset-bottom))}.donation-actions>.donate-note{grid-column:1/-1}}
 @media(prefers-reduced-motion:reduce){.campaign-card,.campaign-card-image img{transition:none}.campaign-card:hover{transform:none}.campaign-card:hover .campaign-card-image img{transform:none}}

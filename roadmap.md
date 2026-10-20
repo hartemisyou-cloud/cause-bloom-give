@@ -1,10 +1,10 @@
 # Hope Human website
 ## Crowdfunding specification adapted to Hope Human
-- [ ] Preserve current Hope Human appearance, authentic identity, 54 campaigns and full-page amount selection.
-- [ ] Improve safe progress/status calculations, complete categories and campaign-card navigation/actions.
-- [ ] Strengthen device-local favorites, gallery controls and visibility-aware mobile donation bar.
-- [ ] Disclose the existing ebook-purchase destination, retain six presets/attribution, and prevent duplicate navigation.
-- [ ] Run focused and full tests, verify desktop/mobile interactions without payment, and document scope/limitations.
+- [x] Preserve current Hope Human appearance, authentic identity, 54 campaigns and full-page amount selection.
+- [x] Improve safe progress/status calculations, complete categories and campaign-card navigation/actions.
+- [x] Strengthen device-local favorites, gallery controls and visibility-aware mobile donation bar.
+- [x] Disclose the existing ebook-purchase destination, retain six presets/attribution, and prevent duplicate navigation.
+- [x] Run focused and full tests, verify desktop/mobile interactions without payment, and document scope/limitations.
 
 - [x] Import all 54 campaigns, full English stories, galleries and auditable surname changes.
 - [x] Build branded homepage, searchable campaign directory and every detail page.
