@@ -7,9 +7,11 @@ export function pageHead(title:string,description:string,path:string) {
 }
 const attributionKeys=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'];
 export function preserveAttribution(){
+ try {
  const url=new URL(window.location.href);const saved=new URLSearchParams(sessionStorage.getItem('hope-attribution')??'');
  attributionKeys.forEach(key=>{const value=url.searchParams.get(key);if(value)saved.set(key,value);else if(saved.has(key))url.searchParams.set(key,saved.get(key)??'');});
  sessionStorage.setItem('hope-attribution',saved.toString());if(url.href!==window.location.href)window.history.replaceState(window.history.state,'',url);
+ } catch { /* Current URL attribution still works when browser storage is blocked. */ }
 }
 export function analyticsConsent(accepted:boolean){localStorage.setItem('hope-analytics-consent',accepted?'yes':'no');pixelConsentChanged(accepted);}
 /** fbclid from the current URL, falling back to the session attribution saved by preserveAttribution. */
