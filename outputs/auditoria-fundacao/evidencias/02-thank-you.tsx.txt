@@ -1,0 +1,41 @@
+0001 import { createFileRoute, Link } from '@tanstack/react-router';
+0002 import { ArrowLeft, CircleCheck } from 'lucide-react';
+0003 import { Button } from '@/components/ui/button';
+0004 import { pageHead } from '@/lib/site';
+0005 
+0006 /** Reads ?amount as a plain USD number; TanStack can hand numeric search values back as quoted strings. */
+0007 export function thankYouAmount(raw: unknown): number | undefined {
+0008   const n = typeof raw === 'number' ? raw : typeof raw === 'string' ? Number(raw.replace(/^"|"$/g, '')) : NaN;
+0009   return Number.isFinite(n) && n > 0 ? n : undefined;
+0010 }
+0011 /** US dollar label with cents, e.g. 20 → "$20.00". */
+0012 export function usdLabel(amount: number): string {
+0013   return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(amount);
+0014 }
+0015 
+0016 export const Route = createFileRoute('/thank-you')({
+0017   validateSearch: (s: Record<string, unknown>): { amount?: number } => {
+0018     const amount = thankYouAmount(s['amount']);
+0019     return amount === undefined ? {} : { amount };
+0020   },
+0021   head: () => {
+0022     const head = pageHead('Thank you', 'Confirmation page shown after a donation to a Hope Human Foundation campaign.', '/thank-you');
+0023     return { ...head, meta: [...head.meta, { name: 'robots', content: 'noindex' }] };
+0024   },
+0025   component: ThankYouPage,
+0026 });
+0027 
+0028 function ThankYouPage() {
+0029   const { amount } = Route.useSearch();
+0030   return (
+0031     <div className="thank-you-page">
+0032       <div className="container thank-you-inner">
+0033         <span className="thank-you-mark" aria-hidden="true"><CircleCheck size={34} /></span>
+0034         <div className="eyebrow">With gratitude</div>
+0035         <h1>Thank You for Your Donation!</h1>
+0036         <p className="thank-you-sub">{amount === undefined ? 'Your gift has been received.' : `Your gift of ${usdLabel(amount)} has been received.`}</p>
+0037         <Button variant="outline" asChild className="thank-you-back"><Link to="/campaigns">Back to campaigns <ArrowLeft size={15} /></Link></Button>
+0038       </div>
+0039     </div>
+0040   );
+0041 }

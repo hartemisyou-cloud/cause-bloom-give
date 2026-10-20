@@ -1,0 +1,47 @@
+0001 /**
+0002  * Meta Pixel (browser). Loads only when VITE_META_PIXEL_ID is set AND the visitor
+0003  * allowed optional analytics/advertising measurement. Purchase is never sent from
+0004  * the browser — it is reported exclusively by the Conversions API on the store side.
+0005  */
+0006 type Fbq = ((...args: unknown[]) => void) & { callMethod?: (...args: unknown[]) => void; queue: unknown[]; push: Fbq; loaded: boolean; version: string };
+0007 declare global { interface Window { fbq?: Fbq; _fbq?: Fbq } }
+0008 
+0009 export const metaPixelId = ((import.meta.env['VITE_META_PIXEL_ID'] as string | undefined)?.trim()) || '1456212949742348';
+0010 let initialized = false;
+0011 /** Visitors whose browser time zone is in Europe (EEA/UK/CH) are not measured: those regions require prior opt-in and the site shows no consent prompt. */
+0012 function consentRegion(): boolean {
+0013   try { const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; return tz.startsWith('Europe/') || ['Atlantic/Reykjavik','Atlantic/Canary','Atlantic/Madeira','Atlantic/Azores'].includes(tz); } catch { return false; }
+0014 }
+0015 /** No consent prompt: measurement is on by default; an explicit Decline on the privacy page is still honored. */
+0016 function consented(): boolean {
+0017   let choice: string | null = null;
+0018   try { choice = localStorage.getItem('hope-analytics-consent'); } catch { /* storage blocked */ }
+0019   if (choice === 'no') return false;
+0020   return !consentRegion();
+0021 }
+0022 
+0023 function ensurePixel(): Fbq | null {
+0024   if (typeof window === 'undefined' || !metaPixelId || !consented()) return null;
+0025   if (!window.fbq) {
+0026     const n = function (...args: unknown[]) { if (n.callMethod) n.callMethod.apply(n, args); else n.queue.push(args); } as Fbq;
+0027     n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+0028     window.fbq = n; if (!window._fbq) window._fbq = n;
+0029     const s = document.createElement('script'); s.async = true; s.src = 'https://connect.facebook.net/en_US/fbevents.js';
+0030     document.head.appendChild(s);
+0031   }
+0032   if (!initialized) { window.fbq('init', metaPixelId); initialized = true; }
+0033   return window.fbq;
+0034 }
+0035 
+0036 export function pixelPageView() { ensurePixel()?.('track', 'PageView'); }
+0037 
+0038 /** Donation funnel event; contents id is donation-<USD>. Sent only when consent allows the Pixel. */
+0039 export function pixelDonationEvent(event: 'AddToCart' | 'InitiateCheckout', amount: number) {
+0040   try { ensurePixel()?.('track', event, { contents: [{ id: `donation-${amount}`, quantity: 1 }], value: amount, currency: 'USD', num_items: 1 }); } catch { /* never block giving */ }
+0041 }
+0042 
+0043 /** Called when the visitor changes their preference on the privacy page. */
+0044 export function pixelConsentChanged(accepted: boolean) {
+0045   if (accepted) { const f = ensurePixel(); if (f) { f('consent', 'grant'); f('track', 'PageView'); } }
+0046   else window.fbq?.('consent', 'revoke');
+0047 }

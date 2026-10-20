@@ -1,0 +1,37 @@
+0001 import { createFileRoute, Link, notFound, redirect } from '@tanstack/react-router';
+0002 import { useRef, useState } from 'react';
+0003 import { ShieldCheck, ArrowRight, Lock } from 'lucide-react';
+0004 import { Button } from '@/components/ui/button';
+0005 import { Progress } from '@/components/campaign-card';
+0006 import { getCampaign, categoryName, shortMoney, money } from '@/lib/campaigns';
+0007 import { pageHead, trackEvent } from '@/lib/site';
+0008 import { pixelDonationEvent } from '@/lib/meta-pixel';
+0009 import { bookPurchaseUrl, donationAmounts, parseDonationAmount } from '@/lib/checkout';
+0010 import { donationInformation } from '@/lib/donation-content';
+0011 
+0012 export const Route = createFileRoute('/donate')({
+0013   validateSearch: (s: Record<string, unknown>): { slug: string; amount?: number } => {
+0014     const amount = parseDonationAmount(s['amount']);
+0015     return { slug: typeof s['slug'] === 'string' ? s['slug'] : '', ...(amount !== undefined ? { amount } : {}) };
+0016   },
+0017   loaderDeps: ({ search }) => ({ slug: search.slug }),
+0018   loader: ({ deps }) => { if (!deps.slug) throw redirect({ to: '/campaigns', search: { category: 'all' } }); const campaign = getCampaign(deps.slug); if (!campaign) throw notFound(); return campaign; },
+0019   head: ({ loaderData }) => pageHead(loaderData ? `Choose an amount for ${loaderData.title}` : 'Choose your amount', 'Choose a donation supporting the selected campaign and review the amount and payment terms at secure checkout.', `/donate${loaderData ? `?slug=${loaderData.slug}` : ''}`),
+0020   component: DonatePage,
+0021 });
+0022 function DonatePage() {
+0023   const c = Route.useLoaderData();
+0024   const search = Route.useSearch();
+0025   const [amount, setAmount] = useState<number | null>(search.amount ?? null);
+0026   const checkoutSent = useRef(false);
+0027   function select(value: number) { setAmount(value); pixelDonationEvent('AddToCart', value); }
+0028   function proceed() {
+0029     if (amount === null) return;
+0030     const url = bookPurchaseUrl(amount, { campaignSlug: c.slug, search: window.location.search });
+0031     if (!checkoutSent.current) { checkoutSent.current = true; pixelDonationEvent('InitiateCheckout', amount); }
+0032     trackEvent('checkout_navigation', { slug: c.slug, amount });
+0033     window.location.replace(url);
+0034   }
+0035   const summary = <><span className="donate-category">{categoryName(c.category)}</span><h1>{c.title}</h1><Progress campaign={c} /><div className="amount-row"><strong>{shortMoney(c.raised)}</strong><span>of {shortMoney(c.goal)} goal</span></div><p className="donate-previous">Previous fundraising</p></>;
+0036   return <div className="donate-page"><div className="donate-layout"><div className="donate-campaign-column"><article className="donate-campaign-card"><Link to="/campaign-detail" search={{ slug: c.slug }}><img src={c.image.url} width={c.image.width} height={c.image.height} alt={c.title} fetchPriority="high" /></Link><div className="donate-campaign-body">{summary}</div></article><details className="donate-info"><summary><ShieldCheck />Clear information before payment</summary><p>{donationInformation.approval}</p><p>{donationInformation.allocation}</p><p>{donationInformation.release}</p><Link to="/refund-cancellation-policy">Review payment and refund information <ArrowRight size={14} /></Link></details></div><section className="donate-selection" aria-label="Choose your donation"><div className="donate-mobile-campaign"><Link to="/campaign-detail" search={{slug:c.slug}}><img src={c.image.url} width={c.image.width} height={c.image.height} alt={c.title}/></Link><div className="donate-campaign-body">{summary}</div></div><header><h2 id="donate-title">Choose your donation</h2><p>A little kindness goes a long way.</p></header><div className="donate-selection-body"><h3>Select amount (USD)</h3><div className="donate-amount-grid">{donationAmounts.map(value => <Button variant="outline" className="donate-amount" key={value} type="button" aria-pressed={amount === value} onClick={() => select(value)} aria-label={`US$ ${value}`}><span>US$ {value}</span>{value === 100 && <span className="suggested-badge">Suggested</span>}</Button>)}</div><Button type="button" variant="gold" className="gold-control checkout-continue" disabled={amount === null} onClick={proceed}><span>{amount !== null ? `Donate US$ ${amount}` : 'Donate'}<ArrowRight size={18} /></span></Button><p className="donate-note">Your donation is processed securely.</p><p className="secure-checkout"><Lock size={14} />Secure checkout</p><p className="checkout-description">{donationInformation.purpose} {donationInformation.review}</p><p className="checkout-description">{donationInformation.availability}</p></div></section></div></div>;
+0037 }
