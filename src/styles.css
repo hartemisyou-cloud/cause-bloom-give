@@ -330,3 +330,6 @@ h2>.title-icon{width:22px;height:22px}
 .site-header .lucide,.story-action-buttons .lucide,.story-reactions .lucide,.gold-control .lucide,.donor-view-actions .lucide{stroke-width:1.8}
 .featured-bottom svg,.header-action svg,.donation-actions button:first-child svg{display:inline-block}
 @media(max-width:600px){h1>.title-icon{width:23px;height:23px}h2>.title-icon{width:20px;height:20px}.footer-column .title-icon{width:15px;height:15px;margin-right:5px}}
+
+.story-heading{display:flex;align-items:baseline;gap:8px;margin:24px 0 14px}.story-heading .title-icon{margin:0}.story-body .story-heading h2,.story-body .story-heading h3,.story-body .story-heading h4{margin:0;min-width:0}
+.consent-controls>button{white-space:normal;height:auto;min-height:44px;max-width:100%;text-align:center}
