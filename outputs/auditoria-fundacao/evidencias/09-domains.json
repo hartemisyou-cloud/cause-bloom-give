@@ -1,0 +1,12 @@
+{
+  "attempted": {
+    "www.hopehumanfoundation.org": 33,
+    "connect.facebook.net": 2,
+    "hopehumanbooks.com": 1
+  },
+  "allowed": {
+    "www.hopehumanfoundation.org": 33,
+    "connect.facebook.net": 2
+  },
+  "stripe_attempts": 0
+}
