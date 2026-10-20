@@ -14,14 +14,14 @@
 - Preserve reference funding totals only as clearly identified imported snapshots, never as new institution receipts.
 - Use TanStack leaf routes for supporting pages and query-compatible campaign details; the catch-all redirects legacy .html paths and returns real not-found responses for unknown paths.
 - Prerender only explicitly enumerated visitor-independent pages with link crawling off and failures fatal; campaign and donation query-string pages render on demand (crawling them broke external builds).
-- On Vercel builds, vite.config re-runs the Vercel preset compiled hook, because enabling prerender displaces it and drops .vercel/output config files.
+- On Vercel builds, vite.config re-runs the Vercel preset compiled hook: enabling prerender displaces it and drops .vercel/output config files.
 - Use optimized CDN-backed immutable image pointers, separate thumbnails, and load only the selected gallery photo to keep initial transfers small.
 - Keep campaign source-to-active image mappings in the artwork audit, with supporting imagery catalogued separately; this makes replacements and coverage traceable without shipping archived source websites.
 - Use the query-compatible donation leaf page for amount selection and transparent ebook-purchase navigation via window.location.replace to the configured product map; never submit a payment form, create sessions or collect card data on this site. Keep public foundation terms separate from unconfirmed store allocation or approval states, and never treat a thank-you URL as proof of payment.
 - Prepare campaign proposals as explicit user-sent emails without pretending to store, submit or publish campaigns.
 - Meta Pixel is the only analytics vendor: loaded for every visitor without a prompt, except Europe-timezone browsers and an explicit Decline; browser sends PageView/AddToCart/InitiateCheckout (once per page) only, Purchase stays server-side (CAPI) to avoid duplicates. Preserve paid-traffic parameters within the session; store ref codes per campaign in checkout.ts.
 - Use per-leaf metadata with VITE_SITE_URL (default canonical https://hopehumanfoundation.org) and omit image tags when only relative CDN asset URLs are available.
-- Mirror every runtime-referenced /__l5e/assets-v1 file byte-identically under public/ at the same path; non-Lovable hosts (Vercel) lack the Lovable asset route. Add new runtime assets there too (QA evidence excluded).
+- Mirror every runtime-referenced /__l5e/assets-v1 file byte-identically under public/ (non-Lovable hosts lack that route); add new runtime assets there too (QA evidence excluded).
 
 - Implement reference-matched layouts through shared semantic CSS and design-system controls, with CDN-hosted public font subsets; this preserves consistent geometry without shipping archived source pages or scripts.
 - Keep campaign-detail lower sections in a shared campaign-bound module with accessible action dialogs; absent donor records remain explicit empty states, social links use canonical campaign URLs, and contact/report only prepare user-sent support emails.
