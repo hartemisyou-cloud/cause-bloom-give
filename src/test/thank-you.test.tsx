@@ -35,14 +35,14 @@ describe('Thank you page', () => {
   it('names the confirmed gift amount when ?amount is present', async () => {
     const { container } = await renderAt('/thank-you?amount=20');
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Thank You for Your Support!');
-    expect(screen.getByText('Your donation of $20.00 to Hope Human Foundation has been confirmed.')).toBeInTheDocument();
-    expect(container.textContent).toContain('With appreciation — the Hope Human Foundation team');
+    expect(screen.getByText('Your donation of $20.00 has been confirmed.')).toBeInTheDocument();
+    expect(container.textContent).toContain('With appreciation — the Hope Human Foundation');
     expect(container.textContent).not.toMatch(/\bebooks?\b|\be-books?\b|\bbooks?\b|\bdownloads?\b|hopehumanbooks|digital edition/i);
   });
 
   it('shows the generic confirmed message when ?amount is absent', async () => {
     await renderAt('/thank-you');
-    expect(screen.getByText('Your donation to Hope Human Foundation has been confirmed.')).toBeInTheDocument();
+    expect(screen.getByText('Your donation has been confirmed.')).toBeInTheDocument();
     expect(screen.queryByText(/\$\d/)).not.toBeInTheDocument();
   });
 
