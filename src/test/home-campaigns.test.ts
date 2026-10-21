@@ -3,11 +3,11 @@ import { campaigns } from '@/lib/campaigns';
 import { campaignPage, diversifyCampaigns, homepageCollections } from '@/lib/home-campaigns';
 
 describe('Homepage campaign discovery', () => {
-  it('makes all 55 real campaigns reachable without duplicates across collections', () => {
+  it('makes all 56 real campaigns reachable without duplicates across collections', () => {
     const { hero, trending, featured } = homepageCollections();
     const all = [...hero, ...trending, ...featured];
-    expect(all).toHaveLength(55);
-    expect(new Set(all.map(c => c.slug)).size).toBe(55);
+    expect(all).toHaveLength(56);
+    expect(new Set(all.map(c => c.slug)).size).toBe(56);
     expect(all.map(c => c.slug).sort()).toEqual(campaigns.map(c => c.slug).sort());
   });
   it('includes all three populated categories in the first trending group', () => {
