@@ -1,7 +1,7 @@
 # Hope Human website
 ## Jazlyn campaign migration
-- [ ] Import the authorized campaign story, authentic photos and source funding snapshot, retaining Hope Human identity.
-- [ ] Verify discovery, gallery, donation selection and data tests without payments or publishing.
+- [x] Import Liam's seven story paragraphs, four gallery photos and two inline photos; retain the $4,298/$7,500 source snapshot and audit Carter → Bennett display surnames. Acervo: 56 campaigns.
+- [x] Verify directory search, gallery, expanded story and $20 selection at 390px/1280px; no overflow or browser errors, five assets mirrored byte-identically, 61 tests passed and automatic build OK. No payments or publishing.
 ## Homepage reference refinement
 - [x] Harmonize homepage surfaces and spacing without importing reference branding or claims; retain expanding Trending panels.
 - [x] Verify 1546/1280/760/392px, keyboard expansion and category filter: no overflow or page errors; 54 tests passed and automatic build OK. No payments or publishing.
