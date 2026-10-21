@@ -10,7 +10,7 @@
 <!-- LOVABLE:END -->
 
 ## Hope Human architecture
-- Store the imported campaign collection as versioned static JSON with a separate surname audit; read-heavy content does not need a database.
+- Store campaigns as static JSON with a surname audit; derive UI totals and metadata counts from its length to prevent stale import counts.
 - Preserve reference funding totals only as clearly identified imported snapshots, never as new institution receipts.
 - Use TanStack leaf routes for supporting pages and query-compatible campaign details; the catch-all redirects legacy .html paths and returns real not-found responses for unknown paths.
 - Prerender only explicitly enumerated visitor-independent pages with link crawling off and failures fatal; campaign and donation query-string pages render on demand (crawling them broke external builds).
