@@ -1,4 +1,7 @@
 # Hope Human website
+## Jazlyn campaign migration
+- [ ] Import the authorized campaign story, authentic photos and source funding snapshot, retaining Hope Human identity.
+- [ ] Verify discovery, gallery, donation selection and data tests without payments or publishing.
 ## Homepage reference refinement
 - [x] Harmonize homepage surfaces and spacing without importing reference branding or claims; retain expanding Trending panels.
 - [x] Verify 1546/1280/760/392px, keyboard expansion and category filter: no overflow or page errors; 54 tests passed and automatic build OK. No payments or publishing.
