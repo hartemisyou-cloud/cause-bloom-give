@@ -20,6 +20,13 @@ describe('Donation-only public information', () => {
       expect(container.textContent).toContain('full base-USD donation');
     }
   });
+  it('promises a full refund when a campaign misses its goal or is found fraudulent', () => {
+    expect(donationInformation.guarantee).toBe('Your donation is 100% secure. If the campaign does not reach its goal or is found to be fraudulent, you will receive a full refund.');
+    const { container } = render(<PolicyPage kind="refund" />);
+    expect(container.textContent).toContain('you will receive a full refund');
+    expect(container.textContent).toContain('does not reach its goal');
+    expect(container.textContent).not.toContain('no automatic refund');
+  });
   it('explains approval, fees, eligible countries, receipts and refund requests in Help', () => {
     const { container } = render(<HelpPage />);
     expect(container.textContent).not.toMatch(salesTerms);
