@@ -3603,5 +3603,62 @@
     "sourceGoal": 100000,
     "fxDate": "2026-10-20",
     "surnameChange": null
+  },
+  {
+    "slug": "help-jazlyns-baby-boy-fight-cystic-fibrosis",
+    "title": "Help baby Liam fight lifelong medical issues!",
+    "story": "Hello, my name is Jazlyn Bennett. I am raising money for my baby boy Liam's treatments and his battle against cystic fibrosis.\n\nLiam is a 6-month-old twin — he has a twin sister and two older siblings. Travel is incredibly hard with three other little ones and no reliable transportation, and his appointments never stop.\n\nThis little boy has been through so much in his short almost 7 months of life. Hospital stays, tubes, tests, breathing treatments, and medications that have to be given on time, every single day, without fail.\n\nIMAGE:uploads/campaigns/help-jazlyns-baby-boy-fight-cystic-fibrosis/story-02.jpg|\n\nCystic fibrosis is lifelong. It means daily airway clearance, enzymes with every feeding, constant infection risk, and specialist visits hours away from home. Missing one is not an option for him.\n\nI want to be able to make sure Liam gets the care he needs, to keep him safe and at home with his brothers and sister — not stuck in a hospital because we couldn't get there in time.\n\nIMAGE:uploads/campaigns/help-jazlyns-baby-boy-fight-cystic-fibrosis/story-03.jpg|\n\nThis fund goes straight to Liam's cystic fibrosis care, the equipment and supplies we need to keep him safe at home, and the cost of getting him to every appointment.\n\nIf you can give anything at all, it goes directly to keeping my son breathing and thriving. If you can't, please share his story or say a prayer for him. Thank you from the bottom of my heart. 🙏",
+    "organizer": "Jazlyn Bennett",
+    "beneficiary": "Liam Bennett",
+    "location": "Rosedale, IN",
+    "category": "children",
+    "raised": 4298,
+    "goal": 7500,
+    "currency": "USD",
+    "urgent": true,
+    "active": true,
+    "createdAt": "2026-06-03",
+    "image": {
+      "url": "/__l5e/assets-v1/9574ff15-f05a-4182-b503-fd7352c44bb9/uploads-campaigns-help-jazlyns-baby-boy-1-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumbnail": {
+      "url": "/__l5e/assets-v1/ae0071bf-8d80-4efb-b947-98b4aa8d2a64/uploads-campaigns-help-jazlyns-baby-boy-1-640.webp",
+      "width": 640,
+      "height": 360
+    },
+    "gallery": [
+      {
+        "url": "/__l5e/assets-v1/9574ff15-f05a-4182-b503-fd7352c44bb9/uploads-campaigns-help-jazlyns-baby-boy-1-1200.webp",
+        "width": 1200,
+        "height": 675
+      },
+      {
+        "url": "/__l5e/assets-v1/6de37157-e1ea-47e5-ab53-3256cf80771c/uploads-campaigns-help-jazlyns-baby-boy-2-1200.webp",
+        "width": 675,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/033ac47c-f612-40ec-9a31-51f2b6caa1e9/uploads-campaigns-help-jazlyns-baby-boy-3-1200.webp",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/c0c04cc2-ef73-4bf1-92b0-7f21677643b4/uploads-campaigns-help-jazlyns-baby-boy-4-1200.webp",
+        "width": 900,
+        "height": 1200
+      }
+    ],
+    "support": [],
+    "snapshotDate": "2026-10-21",
+    "sourceCurrency": "USD",
+    "sourceRaised": 4298,
+    "sourceGoal": 7500,
+    "fxDate": null,
+    "surnameChange": {
+      "original": "Liam Carter",
+      "display": "Liam Bennett"
+    }
   }
 ]
