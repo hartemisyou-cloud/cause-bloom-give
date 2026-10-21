@@ -1,6 +1,5 @@
-import { createFileRoute, Link } from '@tanstack/react-router';
-import { ArrowLeft, CircleCheck } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { createFileRoute } from '@tanstack/react-router';
+import { CircleCheck } from 'lucide-react';
 import { pageHead } from '@/lib/site';
 
 /** Reads ?amount as a plain USD number; TanStack can hand numeric search values back as quoted strings. */
@@ -19,7 +18,7 @@ export const Route = createFileRoute('/thank-you')({
     return amount === undefined ? {} : { amount };
   },
   head: () => {
-    const head = pageHead('Thank you', 'A message of gratitude from Hope Human Foundation; this page does not verify a payment.', '/thank-you');
+    const head = pageHead('Thank you', 'A message of gratitude and donation confirmation from Hope Human Foundation.', '/thank-you');
     return { ...head, meta: [...head.meta, { name: 'robots', content: 'noindex' }] };
   },
   component: ThankYouPage,
@@ -33,9 +32,16 @@ function ThankYouPage() {
         <span className="thank-you-mark" aria-hidden="true"><CircleCheck size={34} /></span>
         <div className="eyebrow">With gratitude</div>
         <h1>Thank You for Your Support!</h1>
-        <p className="thank-you-sub">{amount === undefined ? 'Thank you for caring about these campaigns.' : `Thank you for choosing to support a campaign with ${usdLabel(amount)}.`}</p>
-        <p className="checkout-description">This page does not confirm a payment. Refer to the store confirmation for any completed purchase.</p>
-        <Button variant="outline" asChild className="thank-you-back"><Link to="/campaigns">Back to campaigns <ArrowLeft size={15} /></Link></Button>
+        <p className="thank-you-sub">
+          {amount === undefined
+            ? 'Your donation to Hope Human Foundation has been confirmed.'
+            : `Your donation of ${usdLabel(amount)} to Hope Human Foundation has been confirmed.`}
+        </p>
+        <p className="thank-you-body">
+          Your generosity helps the families behind our campaigns move forward. Every gift is handled with care,
+          transparency, and gratitude on behalf of the people it supports.
+        </p>
+        <p className="thank-you-signature">With appreciation — the Hope Human Foundation team</p>
       </div>
     </div>
   );

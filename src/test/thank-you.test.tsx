@@ -32,28 +32,24 @@ describe('Thank you page', () => {
     expect(thankYouAmount(-20)).toBeUndefined();
   });
 
-  it('names the gift amount when ?amount is present', async () => {
+  it('names the confirmed gift amount when ?amount is present', async () => {
     const { container } = await renderAt('/thank-you?amount=20');
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Thank You for Your Support!');
-    expect(screen.getByText('Thank you for choosing to support a campaign with $20.00.')).toBeInTheDocument();
+    expect(screen.getByText('Your donation of $20.00 to Hope Human Foundation has been confirmed.')).toBeInTheDocument();
+    expect(container.textContent).toContain('With appreciation — the Hope Human Foundation team');
     expect(container.textContent).not.toMatch(/\bebooks?\b|\be-books?\b|\bbooks?\b|\bdownloads?\b|hopehumanbooks|digital edition/i);
-    expect(screen.getByRole('link', { name: /Back to campaigns/i })).toHaveAttribute('href', '/campaigns');
   });
 
-  it('shows the generic message when ?amount is absent', async () => {
+  it('shows the generic confirmed message when ?amount is absent', async () => {
     await renderAt('/thank-you');
-    expect(screen.getByText('Thank you for caring about these campaigns.')).toBeInTheDocument();
+    expect(screen.getByText('Your donation to Hope Human Foundation has been confirmed.')).toBeInTheDocument();
     expect(screen.queryByText(/\$\d/)).not.toBeInTheDocument();
   });
 
-  it('renders no payment form and no provider markup', async () => {
+  it('offers no back link, payment form, or provider markup', async () => {
     const { container } = await renderAt('/thank-you?amount=30');
     expect(container.querySelector('form')).toBeNull();
+    expect(screen.queryByRole('link', { name: /Back to campaigns/i })).toBeNull();
     expect(container.innerHTML).not.toMatch(new RegExp(['str'+'ipe','type="submit"','name="card"'].join('|'),'i'));
-  });
-  it('does not treat an amount query parameter as a confirmed payment', async()=>{
-    const {container}=await renderAt('/thank-you?amount=500');
-    expect(container.textContent).not.toMatch(/has been received|payment successful/i);
-    expect(container.textContent).toContain('This page does not confirm a payment.');
   });
 });
