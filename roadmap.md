@@ -95,3 +95,7 @@
 ## Owner-adopted refund guarantee
 - [x] Apply the reference guarantee wording with the Hope Human name on the donation screen and rewrite the refund policy, terms and guarantee page so no page still denies an automatic or full refund.
 - [x] Verified the exact sentence renders on the donation card at 393px and appears on the guarantee, refund, terms and help pages with no browser errors; 58 tests passed and automatic build OK. No publishing.
+
+## Assurance card alignment
+- [x] Put the shield tile inline with the guarantee title, let the guarantee sentence span the full card width and keep the paragraph, divider and terms row on one shared left edge, with balanced title wrapping.
+- [x] Verified 393px and 1280px: icon centred on the title, title breaks "Protected by Hope Human" / "Foundation Guarantee", divider measured full card width, no overflow or browser errors; 58 tests passed and automatic build OK. No publishing.
