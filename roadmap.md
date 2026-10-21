@@ -91,3 +91,7 @@
 ## Donation screen assurance card
 - [x] Replace the collapsed "Clear information before payment" block with a branded card (shield tile, bold title naming Hope Human Foundation, short supporting line), keeping the full donation terms and refund link in a secondary disclosure.
 - [x] Verified 393px and 1280px: card renders proportionally with no clipping, overflow or browser errors; 57 tests passed and automatic build OK. No guarantee, refund-promise or publishing.
+
+## Owner-adopted refund guarantee
+- [x] Apply the reference guarantee wording with the Hope Human name on the donation screen and rewrite the refund policy, terms and guarantee page so no page still denies an automatic or full refund.
+- [x] Verified the exact sentence renders on the donation card at 393px and appears on the guarantee, refund, terms and help pages with no browser errors; 58 tests passed and automatic build OK. No publishing.
