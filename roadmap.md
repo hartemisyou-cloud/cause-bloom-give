@@ -87,3 +87,7 @@
 ## Thank-you confirmation wording
 - [x] Shorten the confirmation to "Your donation has been confirmed." (with amount: "Your donation of $20.00 has been confirmed.") and sign off as "the Hope Human Foundation" without "team".
 - [x] Verified 393px with and without ?amount: expected text only, no "team", no browser errors; 57 tests passed and automatic build OK. No checkout or publishing.
+
+## Donation screen assurance card
+- [x] Replace the collapsed "Clear information before payment" block with a branded card (shield tile, bold title naming Hope Human Foundation, short supporting line), keeping the full donation terms and refund link in a secondary disclosure.
+- [x] Verified 393px and 1280px: card renders proportionally with no clipping, overflow or browser errors; 57 tests passed and automatic build OK. No guarantee, refund-promise or publishing.
