@@ -83,3 +83,7 @@
 ## Amount labels without USD
 - [x] Show the six presets and the continuation button with the plain "$" prefix ($20 … $500) and rename the section heading to "Select amount", removing "(USD)".
 - [x] Verified 1280px and 390px: presets render $20/$30/$50 (Suggested)/$100/$250/$500, the button reads "Donate $20" after selection, no overflow or browser errors; 58 tests passed and automatic build OK. No checkout or publishing.
+
+## Thank-you confirmation wording
+- [x] Shorten the confirmation to "Your donation has been confirmed." (with amount: "Your donation of $20.00 has been confirmed.") and sign off as "the Hope Human Foundation" without "team".
+- [x] Verified 393px with and without ?amount: expected text only, no "team", no browser errors; 57 tests passed and automatic build OK. No checkout or publishing.

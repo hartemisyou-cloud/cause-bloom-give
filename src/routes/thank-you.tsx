@@ -34,14 +34,14 @@ function ThankYouPage() {
         <h1>Thank You for Your Support!</h1>
         <p className="thank-you-sub">
           {amount === undefined
-            ? 'Your donation to Hope Human Foundation has been confirmed.'
-            : `Your donation of ${usdLabel(amount)} to Hope Human Foundation has been confirmed.`}
+            ? 'Your donation has been confirmed.'
+            : `Your donation of ${usdLabel(amount)} has been confirmed.`}
         </p>
         <p className="thank-you-body">
           Your generosity helps the families behind our campaigns move forward. Every gift is handled with care,
           transparency, and gratitude on behalf of the people it supports.
         </p>
-        <p className="thank-you-signature">With appreciation — the Hope Human Foundation team</p>
+        <p className="thank-you-signature">With appreciation — the Hope Human Foundation</p>
       </div>
     </div>
   );
