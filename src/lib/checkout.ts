@@ -1,5 +1,5 @@
 export const donationAmounts = [20, 30, 50, 100, 250, 500] as const;
-/** Purchase route on the Hope Human bookstore; secure checkout opens from there. */
+/** Secure checkout route; donation navigation opens from there. */
 export const bookPurchaseBase = 'https://hopehumanbooks.com/comprar';
 /** Maps each donation preset (USD) to the matching store product slug. */
 export const bookSlugByAmount: Record<(typeof donationAmounts)[number], string> = {
