@@ -13,7 +13,7 @@ import { storyDescription } from '@/lib/campaign-story';
 import { campaigns,categories,categoryName,percentage,shortMoney } from '@/lib/campaigns';
 import { pageHead } from '@/lib/site';
 import sunrise from '@/assets/hope-community-sunrise-mobile.webp.asset.json';
-export const Route=createFileRoute('/')({head:()=>pageHead('Find a cause that moves you','Explore all 54 campaigns with Hope Human Foundation. Discover stories, support a cause and bring hope to someone’s tomorrow.','/'),component:Home});
+export const Route=createFileRoute('/')({head:()=>pageHead('Find a cause that moves you',`Explore all ${campaigns.length} campaigns with Hope Human Foundation. Discover stories, support a cause and bring hope to someone’s tomorrow.`,'/'),component:Home});
 const collections = homepageCollections();
 const featureSlugs = collections.hero.map(c => c.slug);
 function Home(){
