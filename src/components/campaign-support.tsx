@@ -4,9 +4,8 @@ import { Button } from '@/components/ui/button';
 import { TitleIcon } from '@/components/title-icon';
 import { initials } from '@/components/campaign-detail-sections';
 import { visibleSupport } from '@/lib/campaign-activity';
-import { type Campaign } from '@/lib/campaigns';
 
-export function CampaignSupport({ campaign }: { campaign: Campaign }) {
+export function CampaignSupport({ campaign }: { campaign: { support: readonly { name: string; message: string }[] } }) {
   const [page, setPage] = useState(1);
   const messages = visibleSupport(campaign.support, page);
   return <section className="story-section campaign-support" aria-labelledby="campaign-support-title">
