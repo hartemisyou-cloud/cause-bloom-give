@@ -51,8 +51,8 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
     <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link><ChevronRight aria-hidden="true" size={12} /><Link to="/campaigns">Campaigns</Link><ChevronRight aria-hidden="true" size={12} /><span>{c.title}</span></nav>
     <div className="detail-layout">
       <div className="detail-main">
-        <h1 className="detail-title"><TitleIcon category={c.category} />{c.title}</h1>
         <CampaignGallery campaign={c} onReadStory={readStory} />
+        <h1 className="detail-title"><TitleIcon category={c.category} />{c.title}</h1>
         <div className="mobile-funding"><CampaignFunding campaign={c} />{actions}</div>
         <div className="organizer-row"><span className="organizer-avatar">{initials(c.organizer)}</span><div><strong>{c.organizer}</strong> is organizing this fundraiser.</div></div>
         <section className="story-section first-story" ref={storyRef} tabIndex={-1} aria-label="Campaign story">
