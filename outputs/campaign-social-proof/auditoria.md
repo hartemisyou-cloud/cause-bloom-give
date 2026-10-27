@@ -41,3 +41,14 @@ Requested reference: https://us.solenari-care.com/campaign-detail?slug=help-emma
 - All 54 page fetches succeeded. The 40 nonempty live message lists match their archived names/text exactly. The 14 empty source lists instead render 104 synthetic fallback cards. Complete rendered-page extraction and provenance are saved in `solenari-page-audit.json`; these 104 cards were not imported.
 - Browser verification opened all 56 current campaign pages, expanded all available message lists and read back all 237 messages with zero page errors. Emma's eight messages were also captured visually. No public content or payment flow was changed because no missing source-backed message was found.
 - Validation: 25 focused tests passed, including source preservation and campaign binding; latest automatic preview diagnostic reports build OK. No publication or transactions.
+
+## All-campaign recent-donation synchronization — October 27, 2026
+
+Coverage: all 54 original campaign objects and previously fetched successful page responses, including Jazzy and ayuda-ollie. Per-campaign results are recorded in `solenari-donation-provenance-coverage.json`. The freshly downloaded data asset is byte-identical to the archive, SHA-256 `598c942cf802b8584dc5a6db047d18b33ea4a7be4a00b26ffcd24fe3d129bf32`; all 54 responses reference this asset version. The gateway Jazzy response was cached, so this is not a claim of an uncached current-instant page rendering.
+
+- Zero of the 54 campaign objects contains a `donors` field. `adaptCampaign` overwrites donors with an empty array (fresh HTML lines 2627–2655).
+- Every page contains the shared renderer that calls `genDonors`, combines `realDonors` with `fakeDonors`, and displays their generated list (fresh HTML lines 3195–3212). Names, amounts and relative time labels are random; amounts are constrained by a budget derived from historical fundraising, not a transaction ledger (lines 2541–2563).
+- There are 237 stored support messages across 40 campaigns, 231 with nonempty amount strings. These remain separate source-reported support metadata: they contain no absolute donation timestamps or confirmation statuses and must not be reclassified as confirmed recent donations.
+- No genuine recent-donation list was found to synchronize. The two Free Hearts additions are outside this 54-campaign Solenari source coverage. No generated records, donor totals, public content, payment logic or integrations were changed; no transaction or publication occurred.
+
+Next required input: an authoritative campaign-bound donation export or documented read-only source containing public-display choices, confirmed status and absolute timestamps. Existing campaign sections can consume eligible records without a parallel payment system.
