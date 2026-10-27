@@ -1,0 +1,758 @@
+{
+  "home": {
+    "backblue.gif": {
+      "bytes": 4243,
+      "sha256": "5ecd3c65a71650f10ddc799403b682af2d866e50fc1ea30e972fd8c7df3f77e7"
+    },
+    "fade.gif": {
+      "bytes": 828,
+      "sha256": "90d1006a9e216e01d7c5abc9fd812ee537b8caedc55a1ad885dded4e6520a5a1"
+    },
+    "hts-log.txt": {
+      "bytes": 2317,
+      "sha256": "856ed5b57ead5a5c5db5a7cddf4b99bd7a5ef5ac6fe9fc6378266416e264290f"
+    },
+    "index.html": {
+      "bytes": 5245,
+      "sha256": "edff0444818cc2c14f2d8d9c88a544a1cdeae52b6ae00a856c0ba5a457fe9d72"
+    },
+    "hts-cache/doit.log": {
+      "bytes": 684,
+      "sha256": "6873d48642ba8826e2c3aa7fea9211ba19477c482e4f8f8d1aa476f45ead4a20"
+    },
+    "hts-cache/new.lst": {
+      "bytes": 4378,
+      "sha256": "3f4831060014f3307afd4d7bafc61b86a89e2f517a80aad899957e881cf2228f"
+    },
+    "hts-cache/new.txt": {
+      "bytes": 51740,
+      "sha256": "bdec1b659bd63f8d1e74a2bbabe7f522a7f803e0b459043c1a3fc27aaea66c57"
+    },
+    "hts-cache/new.zip": {
+      "bytes": 492061,
+      "sha256": "95eb3d9f6dc0a67e9918e23709d2acd77710dca014bda914470559b96d2b9b12"
+    },
+    "hts-cache/readme.txt": {
+      "bytes": 614,
+      "sha256": "b8054a1bd2d97d85aa5149052277eb443d6b9c1a6cc7b76fa261f3486374792d"
+    },
+    "hts-cache/winprofile.ini": {
+      "bytes": 1311,
+      "sha256": "820de9411ebc1af5f7ea5a39bbcac96f1ff3b0897a497163e610281fab92aeaa"
+    },
+    "us.solenari-care.com/${imgs[0]}.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/${optimizeImg(_imgUrl,600.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/${optimizeImg(_imgUrl,760.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/about.html": {
+      "bytes": 47609,
+      "sha256": "684c86cf58096a65a782f4092f4a41c33b1a91d56fe9a825a49184d6f5465f80"
+    },
+    "us.solenari-care.com/blog.html": {
+      "bytes": 69246,
+      "sha256": "c66dcfc0a444e857264aff754d0a03837a537859e4dc50d6da13fa452fdec7df"
+    },
+    "us.solenari-care.com/campaign-detail02ee.html": {
+      "bytes": 177323,
+      "sha256": "23dba21eed74350a8670e268870c63b4a505b0ddc81003a6741c88dfdd6e991c"
+    },
+    "us.solenari-care.com/campaign-detail5445.html": {
+      "bytes": 177319,
+      "sha256": "361219c11bba6d8854e02044e05985659e4b851c62bfb0f92503f21fb1acd910"
+    },
+    "us.solenari-care.com/campaign-media2fdd.js": {
+      "bytes": 10357,
+      "sha256": "4b7f7101e617aeb88876ee2f5316eb17f41ae8801d9d97f3e63e2f4e0aad1116"
+    },
+    "us.solenari-care.com/campaign-mediafdfe.css": {
+      "bytes": 4464,
+      "sha256": "9f3980d0f95ed6e2346333940c40453eef3759a17d7a4cb304a7f7814ca567d8"
+    },
+    "us.solenari-care.com/campaigns.html": {
+      "bytes": 48339,
+      "sha256": "3c31e9772eadc48f6481229fc89f8a9c977e5852fd7375a2aad06e208d8f5847"
+    },
+    "us.solenari-care.com/campaigns03d2.html": {
+      "bytes": 48345,
+      "sha256": "e6d526ae129ca41aa72238674794b24236669bb6c1199a7c8a843cd831ec904e"
+    },
+    "us.solenari-care.com/campaigns2b32.html": {
+      "bytes": 48367,
+      "sha256": "517a7a27600f60eb50fa5035b633cd756c926f319b31c4680bc49fa9ce749014"
+    },
+    "us.solenari-care.com/campaigns40ef.html": {
+      "bytes": 48371,
+      "sha256": "f4312d15f665c7728898b01818f8d644614245208196aaa17725845393edb581"
+    },
+    "us.solenari-care.com/campaigns8676.html": {
+      "bytes": 48363,
+      "sha256": "8da4fed71ac6f86059d36877fb7a5bb86ccd2ea0b8fb13db37248752641e7335"
+    },
+    "us.solenari-care.com/campaignsa1dd.html": {
+      "bytes": 48373,
+      "sha256": "5e8acc199f99b7432dae48514aec2d565c67fb6e5bb2aedb60c784358038a95a"
+    },
+    "us.solenari-care.com/causes.html": {
+      "bytes": 55897,
+      "sha256": "cad29b60fa3ad46ebe885b8f9eb0392680bd8eb0bb4ddf93805b2df171f17e0e"
+    },
+    "us.solenari-care.com/checkoutUrl, window.location.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/contact.html": {
+      "bytes": 39450,
+      "sha256": "9bc5b6cbf97b3c527e8ab913d175d1cb3d34b695bbf23db067175a48525d51a5"
+    },
+    "us.solenari-care.com/donate.html": {
+      "bytes": 67997,
+      "sha256": "786364764cd00e550bbd82c18ddaeb11f71ce5e462b7d6a90a42373e0a721c1d"
+    },
+    "us.solenari-care.com/events.html": {
+      "bytes": 55797,
+      "sha256": "dc71ed36e069aa1f4131ebbd3cc8c5486bf1323194f1982a8397da8526a4c833"
+    },
+    "us.solenari-care.com/guarantee.html": {
+      "bytes": 40404,
+      "sha256": "6f0563e9f9e374a8fa30c97467407c314be52a5753cb43140d97ac78c8788f6f"
+    },
+    "us.solenari-care.com/help-center.html": {
+      "bytes": 43458,
+      "sha256": "31fd9fcfc1acdedf2a21055fb275dfb80b62e1a4864d7f80ec7603875e41991f"
+    },
+    "us.solenari-care.com/hero-mobile.webp": {
+      "bytes": 5176846,
+      "sha256": "191fea4fe17c9bdc0f690fa81bc3543fd481f74d4f333380c3b16cf7563243b1"
+    },
+    "us.solenari-care.com/index.html": {
+      "bytes": 116686,
+      "sha256": "85045636ae45949cab020f2d48e4a8ef2f14ac5cf1788231528d407074423763"
+    },
+    "us.solenari-care.com/most-loved.html": {
+      "bytes": 55302,
+      "sha256": "f5eccf28cbc8cc430395590f7bab580d8da171b4547640de25e3161f5a52737b"
+    },
+    "us.solenari-care.com/my-donations.js": {
+      "bytes": 3477,
+      "sha256": "42efebf298510c151cff6f0af6991923771c8afc124a5b8945f9a4678a359f59"
+    },
+    "us.solenari-care.com/offline-data8611.js": {
+      "bytes": 204857,
+      "sha256": "598c942cf802b8584dc5a6db047d18b33ea4a7be4a00b26ffcd24fe3d129bf32"
+    },
+    "us.solenari-care.com/pagefly-bridge.js": {
+      "bytes": 9564,
+      "sha256": "28958f22356efddb8ed2098a4ecefa3aa8515751c216089f62380a5842c7caf0"
+    },
+    "us.solenari-care.com/privacy-policy.html": {
+      "bytes": 33454,
+      "sha256": "a87c9bf0691a5db181879b192f75fc17f220cf592efbd11478325b2864f892f2"
+    },
+    "us.solenari-care.com/refund-cancellation-policy.html": {
+      "bytes": 29987,
+      "sha256": "c6db16e06dfa2ffa525b9fe321d257d70771d18807be6843ce2e2e2d4f454382"
+    },
+    "us.solenari-care.com/social-instagram.webp": {
+      "bytes": 10978,
+      "sha256": "eb7ea86a7a7cd0fdded8ba8cacc48d858ba0a3b5d1e38134af0cb313228c048c"
+    },
+    "us.solenari-care.com/solenari-attribution7606.js": {
+      "bytes": 10125,
+      "sha256": "4f06c200efb8f113294f855a23460710ea71376a73ec790925b6f57b22ac613a"
+    },
+    "us.solenari-care.com/solenari-care-favicon.ico": {
+      "bytes": 16958,
+      "sha256": "ad6286eb0bc10894e21b27ebd689b8fa1a9b754c342278c0928e2b82e490a7ac"
+    },
+    "us.solenari-care.com/solenari-care-logo.png": {
+      "bytes": 10942,
+      "sha256": "9edd59cedc4b2c7154c6ffb9b9cb71afad36d394fd1c017ca04d1930b80cced5"
+    },
+    "us.solenari-care.com/solenari-care-security-shield.png": {
+      "bytes": 34815,
+      "sha256": "3476f3f4257c3c7fcc7d386e8bc3a7395eb29f1d6134c6d966b58ba5d7768e0e"
+    },
+    "us.solenari-care.com/start-business.html": {
+      "bytes": 77600,
+      "sha256": "f7c64c29a38d2857a478077aaf0d2d296b77f88ea599fa188b6f00a8e171460d"
+    },
+    "us.solenari-care.com/start-family.html": {
+      "bytes": 77273,
+      "sha256": "129de6009ca9474da0d653a2b381b5a703546b7090acfc8ed514aba8dbdfb4dd"
+    },
+    "us.solenari-care.com/start-yourself.html": {
+      "bytes": 76857,
+      "sha256": "47fc935e2fa08a091602591d1a2aaadd7cd98a219b00d37c83427a99430c2765"
+    },
+    "us.solenari-care.com/terms-of-use.html": {
+      "bytes": 31377,
+      "sha256": "58732a4d3f265b1570d0def0fe85780e46a8437c44c3eb1cf14d30b438d1df2a"
+    },
+    "us.solenari-care.com/tracking-bootstrap7deb.js": {
+      "bytes": 1108,
+      "sha256": "604109f94151b5c305b5a3bb76fbc5cd07dabe89a388a0c02b9bb5fd61311b9a"
+    },
+    "us.solenari-care.com/utm-tracker.js": {
+      "bytes": 520,
+      "sha256": "3ed382e807ad9c4311e56d654476682f5408ecb0ca64708136a97e163ef5653b"
+    },
+    "us.solenari-care.com/window.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/window.location.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/api/site-config.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/storage/v1/object/public/index.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/assets/fonts/05cf802c73c174d1.woff2": {
+      "bytes": 19044,
+      "sha256": "46dd4cdca58c26ae87cc6927657bf83b2e8abfc39ffd0ab176e301a8d28d22bf"
+    },
+    "us.solenari-care.com/assets/fonts/06c520b639412ce9.woff2": {
+      "bytes": 9028,
+      "sha256": "d0e436354c1d942a46d4e40fa6a1005b35889f38a32ed613a42e3f4f854f308f"
+    },
+    "us.solenari-care.com/assets/fonts/1193e553c652e86b.woff2": {
+      "bytes": 21688,
+      "sha256": "0303e02b53b0298fb26a0193941a2e8754f0f9a9fce50d90b178d8da3424873f"
+    },
+    "us.solenari-care.com/assets/fonts/2b2f25a453b4fdfb.woff2": {
+      "bytes": 10280,
+      "sha256": "8db00ff46c67b22cda8bed865acf7077651cac8d2841d5b40980556b48961931"
+    },
+    "us.solenari-care.com/assets/fonts/314e666fecb973ef.woff2": {
+      "bytes": 1768,
+      "sha256": "d68a324be8ffcb8b21734398f8419885b526a3cc8443786dcdacff5fb0560727"
+    },
+    "us.solenari-care.com/assets/fonts/4052f929a0f276ef.woff2": {
+      "bytes": 23140,
+      "sha256": "00b9920a831136ed75903abbc3011a69071dca7397493e944576fa70da89b0e9"
+    },
+    "us.solenari-care.com/assets/fonts/467acc7aa76b62d6.woff2": {
+      "bytes": 18744,
+      "sha256": "aebf2ab4a4ce6810d73c1ac7be7cafb4e5ec4cee2d6db5fb3e09691747ec4bd6"
+    },
+    "us.solenari-care.com/assets/fonts/472c813e86e3bfe0.woff2": {
+      "bytes": 1748,
+      "sha256": "cc79c219f6d0ba881f471300c96d5e5ff9359b25c0128173a71c79bf208e4bc6"
+    },
+    "us.solenari-care.com/assets/fonts/53307795c130d02f.woff2": {
+      "bytes": 44028,
+      "sha256": "d0edd1c6d7e0e0cd8b9146888db311e0472e09be88faf70bb01ad57e17316551"
+    },
+    "us.solenari-care.com/assets/fonts/54c568346773433d.woff2": {
+      "bytes": 30624,
+      "sha256": "2d4c25a2a206d16537302b054f6a3b847ff79175207963a5fed6e12af26dd8e0"
+    },
+    "us.solenari-care.com/assets/fonts/61f3d372952e3dd5.woff2": {
+      "bytes": 27272,
+      "sha256": "cd8db90cd950e26bc8761f65d323588bd5cd112d326d6d322bc7c8ea86771215"
+    },
+    "us.solenari-care.com/assets/fonts/65300b8225d376de.woff2": {
+      "bytes": 13608,
+      "sha256": "3e8f4b311fef0dc52856f9bee03af7ef4f8bdaa26e4bfb8a0a766b79e5351bc4"
+    },
+    "us.solenari-care.com/assets/fonts/6e85163c68a33810.woff2": {
+      "bytes": 25844,
+      "sha256": "fccca918fea40089dacadc7045861314d1a6bc91f1f323cc1eeb22ebcdb321b5"
+    },
+    "us.solenari-care.com/assets/fonts/7048add3bf7c79c5.woff2": {
+      "bytes": 85272,
+      "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2"
+    },
+    "us.solenari-care.com/assets/fonts/74276ca9731a5891.woff2": {
+      "bytes": 1716,
+      "sha256": "a16f29d7d2a21a4f9b3249a82eb2725ed5bdb91500dfb5c4758977de27477f20"
+    },
+    "us.solenari-care.com/assets/fonts/75b80269c909945a.woff2": {
+      "bytes": 46884,
+      "sha256": "4f0cad5800eed7600b524be7d5b99a5510a792ba8f83427a4a2c553fc49164ec"
+    },
+    "us.solenari-care.com/assets/fonts/92395c3860ed9c81.woff2": {
+      "bytes": 12960,
+      "sha256": "f49cd0972b92df6ad4d34589333df653d9fcedcf3ecb71cf8191441b4e1a6081"
+    },
+    "us.solenari-care.com/assets/fonts/9be0371ef54b377a.woff2": {
+      "bytes": 11272,
+      "sha256": "a2e2c783ca6f9c20486e81e72a279203e86730bbf8f01ff6a5ee9dbd09e1c271"
+    },
+    "us.solenari-care.com/assets/fonts/9ef4e5b1ae110868.woff2": {
+      "bytes": 22836,
+      "sha256": "01978402fabbdca7d046ebda60da8bae6ea9b5420e58af6350bcbeffc74af097"
+    },
+    "us.solenari-care.com/assets/fonts/a28b7e319024809f.woff2": {
+      "bytes": 48432,
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+    },
+    "us.solenari-care.com/assets/fonts/b6548330f42a55cc.woff2": {
+      "bytes": 8292,
+      "sha256": "5c913fc1b1f86f4b475e5df45a796aa480d1f7f0891ed6f1a5991d6d1be887c3"
+    },
+    "us.solenari-care.com/assets/fonts/bb91024cf81b81a8.woff2": {
+      "bytes": 29524,
+      "sha256": "f7f3c763fa6749357a187418d736aab5b2acdd1d0a83a408631382bcfd80d141"
+    },
+    "us.solenari-care.com/assets/fonts/f3042a5b6cb40481.woff2": {
+      "bytes": 17708,
+      "sha256": "206b8987ebc5510c1f3add37d9dd1f308559224fa9b45805d024eebf7425e90c"
+    },
+    "us.solenari-care.com/assets/fonts/fa0402f8df04c54e.woff2": {
+      "bytes": 22680,
+      "sha256": "c9d43888d70004923f98079bd0e68cabec6275d22829ef4fe9c12a71b4c336a4"
+    },
+    "us.solenari-care.com/assets/fonts/fc0528d1f755a522.woff2": {
+      "bytes": 42964,
+      "sha256": "441af0def989ebfdbd6ad85ffaed85e967ab21a05f1dd342f16259464a206dd0"
+    },
+    "us.solenari-care.com/assets/fonts/plus-jakarta-sans.css": {
+      "bytes": 60237,
+      "sha256": "fea20275731c2451921e235b823325e2ceb63d5c2ac7df5bd6570682a4c55d3d"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1497366216548-37526070297c.jpg": {
+      "bytes": 206362,
+      "sha256": "86acdff134ecad6333d796b8f2f6a9101077ece57e3e41d8ce8e8fa9a485fb50"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1517457373958-b7bdd4587205.jpg": {
+      "bytes": 227440,
+      "sha256": "d0dd7c729db42d0038508166789f42c2a18edcb9ae0315c5ceae673ffbaae67d"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1521791136064-7986c2920216.jpg": {
+      "bytes": 221534,
+      "sha256": "667c301c55b2b0ed00c4a323291f3dd358c750c2273be2efab034f68dcc9a967"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1529156069898-49953e39b3ac.jpg": {
+      "bytes": 223985,
+      "sha256": "4cda941c130403edf6d065799e9a867e640de972a4eecbb1d48df56ceed01332"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1548199973-03cce0bbc87b.jpg": {
+      "bytes": 182583,
+      "sha256": "0d5c30e5f869d232c841ee0aa5e6a4037e91c66d2db2a5f696b1d0bc3a4ebf10"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1559027615-cd4628902d4a.jpg": {
+      "bytes": 241144,
+      "sha256": "aa2f5590c632c6015359ddcd470b098b6c39cb43207599cdfa4a923668a75801"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1576091160399-112ba8d25d1d.jpg": {
+      "bytes": 171861,
+      "sha256": "29380774c60ef32aee88dd8d062c77763c779bb401762dd6580ef515464cdcb7"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1587300003388-59208cc962cb.jpg": {
+      "bytes": 179574,
+      "sha256": "7cc92f559d38018fb8047e7bda5e54633d264bdedc3e61931faa43350820cfca"
+    }
+  },
+  "campaign": {
+    "backblue.gif": {
+      "bytes": 4243,
+      "sha256": "5ecd3c65a71650f10ddc799403b682af2d866e50fc1ea30e972fd8c7df3f77e7"
+    },
+    "fade.gif": {
+      "bytes": 828,
+      "sha256": "90d1006a9e216e01d7c5abc9fd812ee537b8caedc55a1ad885dded4e6520a5a1"
+    },
+    "hts-log.txt": {
+      "bytes": 2509,
+      "sha256": "c2f563bc78a86f7ee991f1176c1c2a7565882ff4fe0b8c8d49b172944206c4ae"
+    },
+    "index.html": {
+      "bytes": 5257,
+      "sha256": "e483ccc98fc560bc68cfc801d7d83bbe23b053f163cb7f4929e94e7a357aa62b"
+    },
+    "hts-cache/doit.log": {
+      "bytes": 728,
+      "sha256": "655424562317769ce1e05087971612f2b960c913c1e5e14d8ddaf6ae33ab6d88"
+    },
+    "hts-cache/new.lst": {
+      "bytes": 4427,
+      "sha256": "6ac45a860c398976a334c02ec4a30f4fb1b8c372c569c5f845f24bd85f306bb6"
+    },
+    "hts-cache/new.txt": {
+      "bytes": 33275,
+      "sha256": "96479cc06c8ed001c00a3b99470c816393f6614168df343c509bfc274154f31f"
+    },
+    "hts-cache/new.zip": {
+      "bytes": 502071,
+      "sha256": "9d72b59dbe8f10da93d04bf15838f9aea1115ad1d17cda5107bf23eaec10059f"
+    },
+    "hts-cache/readme.txt": {
+      "bytes": 614,
+      "sha256": "b8054a1bd2d97d85aa5149052277eb443d6b9c1a6cc7b76fa261f3486374792d"
+    },
+    "hts-cache/winprofile.ini": {
+      "bytes": 1349,
+      "sha256": "b0ad177a996ae9241eb4a0cc1b27ab0e1fef5a08b6ab3cc36833eeeb1285d8e6"
+    },
+    "us.solenari-care.com/${imgs[0]}.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/${optimizeImg(_imgUrl,600.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/${optimizeImg(_imgUrl,760.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/about.html": {
+      "bytes": 47609,
+      "sha256": "7b7ce6811d0d2f75d48a6251dec67184e9a6e63ecc3790b0bd75a5720697af2c"
+    },
+    "us.solenari-care.com/blog.html": {
+      "bytes": 69246,
+      "sha256": "7bce699a83a22c90cf2fa3017c9a03784a41735df87cf648c7901787ae4a6297"
+    },
+    "us.solenari-care.com/campaign-detail02ee.html": {
+      "bytes": 177323,
+      "sha256": "26c9167989f25772371ce7ede16a823386a2fd314b5ffc8ea62ea7aadf16890d"
+    },
+    "us.solenari-care.com/campaign-detail5445.html": {
+      "bytes": 177319,
+      "sha256": "7f3540371b7848c2a880820303d829401c4ae191033037d70361ba66c404ca41"
+    },
+    "us.solenari-care.com/campaign-detaild512.html": {
+      "bytes": 177351,
+      "sha256": "543ce3e6de2b54470fb8067953bf6a6be46d678f1afeda19de752b99f2e9f0cc"
+    },
+    "us.solenari-care.com/campaign-media2fdd.js": {
+      "bytes": 10357,
+      "sha256": "4b7f7101e617aeb88876ee2f5316eb17f41ae8801d9d97f3e63e2f4e0aad1116"
+    },
+    "us.solenari-care.com/campaign-mediafdfe.css": {
+      "bytes": 4464,
+      "sha256": "9f3980d0f95ed6e2346333940c40453eef3759a17d7a4cb304a7f7814ca567d8"
+    },
+    "us.solenari-care.com/campaigns.html": {
+      "bytes": 48339,
+      "sha256": "978a4a8b298f97c0da5d3d0146980045e8f0101046ae1d72f3774c343023f191"
+    },
+    "us.solenari-care.com/campaigns03d2.html": {
+      "bytes": 48345,
+      "sha256": "b0f072c90a8c67b2d424f1418a2f9dcd04ed35ee2a6bbc05e4b587e39e040c73"
+    },
+    "us.solenari-care.com/campaigns2b32.html": {
+      "bytes": 48367,
+      "sha256": "61e9daf5b35ac8ec49b85f9e73f417a51203b1b9a3db1b676fcfe0de7e0ae45b"
+    },
+    "us.solenari-care.com/campaigns40ef.html": {
+      "bytes": 48371,
+      "sha256": "2013a79730767c7aa9047d3735be80728cd32f5443945ab96720d930b9d9142b"
+    },
+    "us.solenari-care.com/campaigns8676.html": {
+      "bytes": 48363,
+      "sha256": "567119d0f60438c533bd09741d0d85d57b9e0f56e142ddc04f52a201dff93815"
+    },
+    "us.solenari-care.com/campaignsa1dd.html": {
+      "bytes": 48373,
+      "sha256": "c04670981887f65ffc8fe994a511b184332ad2a1a3b6332c7089e9a0293112d7"
+    },
+    "us.solenari-care.com/causes.html": {
+      "bytes": 55897,
+      "sha256": "3fb2da1898dd5b55762844752a397b3a72880e54bd610afe3d412668032befba"
+    },
+    "us.solenari-care.com/checkoutUrl, window.location.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/contact.html": {
+      "bytes": 39450,
+      "sha256": "7090a142af6dfe5bbead895884ebf45af0efb1fadf602befa18c9754bc244889"
+    },
+    "us.solenari-care.com/donate.html": {
+      "bytes": 67997,
+      "sha256": "607cf3d1646dc77d06b35a02b6a49f045a4fece3d13017f7c7f34c327c514e9c"
+    },
+    "us.solenari-care.com/events.html": {
+      "bytes": 55797,
+      "sha256": "d2719315206462fbea6f6e253fba6ba8f15651b90b4626b986a2820ea9a0ccb2"
+    },
+    "us.solenari-care.com/guarantee.html": {
+      "bytes": 40404,
+      "sha256": "f9619e622a1b4d598b963e0aac364113d2bd6012555c277a0e9cf270ee8899ca"
+    },
+    "us.solenari-care.com/help-center.html": {
+      "bytes": 43458,
+      "sha256": "31c1e4bfda33690c0ccff9549177a76c878d322a5a8d7e44ed6e3cbda2ab71f7"
+    },
+    "us.solenari-care.com/hero-mobile.webp": {
+      "bytes": 5176846,
+      "sha256": "191fea4fe17c9bdc0f690fa81bc3543fd481f74d4f333380c3b16cf7563243b1"
+    },
+    "us.solenari-care.com/index.html": {
+      "bytes": 116686,
+      "sha256": "1db6eabbc9399228086dd304ffd3974570689d3e80490084822c0957162a0e44"
+    },
+    "us.solenari-care.com/most-loved.html": {
+      "bytes": 55302,
+      "sha256": "228b045012333ac72d8446837be4fb157c46f9acd5c369bb14daf57dccefaa82"
+    },
+    "us.solenari-care.com/my-donations.js": {
+      "bytes": 3477,
+      "sha256": "42efebf298510c151cff6f0af6991923771c8afc124a5b8945f9a4678a359f59"
+    },
+    "us.solenari-care.com/offline-data8611.js": {
+      "bytes": 204857,
+      "sha256": "598c942cf802b8584dc5a6db047d18b33ea4a7be4a00b26ffcd24fe3d129bf32"
+    },
+    "us.solenari-care.com/pagefly-bridge.js": {
+      "bytes": 9564,
+      "sha256": "28958f22356efddb8ed2098a4ecefa3aa8515751c216089f62380a5842c7caf0"
+    },
+    "us.solenari-care.com/privacy-policy.html": {
+      "bytes": 33454,
+      "sha256": "44a18a0c194920a30276fec41528ed1b76e00c1129a438f669bc9c5339563985"
+    },
+    "us.solenari-care.com/refund-cancellation-policy.html": {
+      "bytes": 29987,
+      "sha256": "0d1095a7d30e3e1cbe3fa660dab61faa6f838b8919c1b03774a5c992bef0a36a"
+    },
+    "us.solenari-care.com/social-instagram.webp": {
+      "bytes": 10978,
+      "sha256": "eb7ea86a7a7cd0fdded8ba8cacc48d858ba0a3b5d1e38134af0cb313228c048c"
+    },
+    "us.solenari-care.com/solenari-attribution7606.js": {
+      "bytes": 10125,
+      "sha256": "4f06c200efb8f113294f855a23460710ea71376a73ec790925b6f57b22ac613a"
+    },
+    "us.solenari-care.com/solenari-care-favicon.ico": {
+      "bytes": 16958,
+      "sha256": "ad6286eb0bc10894e21b27ebd689b8fa1a9b754c342278c0928e2b82e490a7ac"
+    },
+    "us.solenari-care.com/solenari-care-logo.png": {
+      "bytes": 10942,
+      "sha256": "9edd59cedc4b2c7154c6ffb9b9cb71afad36d394fd1c017ca04d1930b80cced5"
+    },
+    "us.solenari-care.com/solenari-care-security-shield.png": {
+      "bytes": 34815,
+      "sha256": "3476f3f4257c3c7fcc7d386e8bc3a7395eb29f1d6134c6d966b58ba5d7768e0e"
+    },
+    "us.solenari-care.com/start-business.html": {
+      "bytes": 77600,
+      "sha256": "adb7d1ac22f9a52ef8ceccb5f4be22eb3ea116dda392820ecac83f13917edb16"
+    },
+    "us.solenari-care.com/start-family.html": {
+      "bytes": 77273,
+      "sha256": "0cb1cac8651d8becf3f0fa374e900116b7a24e79b673bf7e3d59a72cd791fdb3"
+    },
+    "us.solenari-care.com/start-yourself.html": {
+      "bytes": 76857,
+      "sha256": "ac2efe60ec85327e56974cf8c315db1147aa544c5ec5eb8135c0fb260400372e"
+    },
+    "us.solenari-care.com/terms-of-use.html": {
+      "bytes": 31377,
+      "sha256": "d99d2f106751e133dbccbf58aefb28d24ab0b22c3cc34bd8c54945cb3fbfe950"
+    },
+    "us.solenari-care.com/tracking-bootstrap7deb.js": {
+      "bytes": 1108,
+      "sha256": "604109f94151b5c305b5a3bb76fbc5cd07dabe89a388a0c02b9bb5fd61311b9a"
+    },
+    "us.solenari-care.com/utm-tracker.js": {
+      "bytes": 520,
+      "sha256": "3ed382e807ad9c4311e56d654476682f5408ecb0ca64708136a97e163ef5653b"
+    },
+    "us.solenari-care.com/window.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/window.location.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/api/site-config.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/storage/v1/object/public/index.html": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "us.solenari-care.com/assets/fonts/05cf802c73c174d1.woff2": {
+      "bytes": 19044,
+      "sha256": "46dd4cdca58c26ae87cc6927657bf83b2e8abfc39ffd0ab176e301a8d28d22bf"
+    },
+    "us.solenari-care.com/assets/fonts/06c520b639412ce9.woff2": {
+      "bytes": 9028,
+      "sha256": "d0e436354c1d942a46d4e40fa6a1005b35889f38a32ed613a42e3f4f854f308f"
+    },
+    "us.solenari-care.com/assets/fonts/1193e553c652e86b.woff2": {
+      "bytes": 21688,
+      "sha256": "0303e02b53b0298fb26a0193941a2e8754f0f9a9fce50d90b178d8da3424873f"
+    },
+    "us.solenari-care.com/assets/fonts/2b2f25a453b4fdfb.woff2": {
+      "bytes": 10280,
+      "sha256": "8db00ff46c67b22cda8bed865acf7077651cac8d2841d5b40980556b48961931"
+    },
+    "us.solenari-care.com/assets/fonts/314e666fecb973ef.woff2": {
+      "bytes": 1768,
+      "sha256": "d68a324be8ffcb8b21734398f8419885b526a3cc8443786dcdacff5fb0560727"
+    },
+    "us.solenari-care.com/assets/fonts/4052f929a0f276ef.woff2": {
+      "bytes": 23140,
+      "sha256": "00b9920a831136ed75903abbc3011a69071dca7397493e944576fa70da89b0e9"
+    },
+    "us.solenari-care.com/assets/fonts/467acc7aa76b62d6.woff2": {
+      "bytes": 18744,
+      "sha256": "aebf2ab4a4ce6810d73c1ac7be7cafb4e5ec4cee2d6db5fb3e09691747ec4bd6"
+    },
+    "us.solenari-care.com/assets/fonts/472c813e86e3bfe0.woff2": {
+      "bytes": 1748,
+      "sha256": "cc79c219f6d0ba881f471300c96d5e5ff9359b25c0128173a71c79bf208e4bc6"
+    },
+    "us.solenari-care.com/assets/fonts/53307795c130d02f.woff2": {
+      "bytes": 44028,
+      "sha256": "d0edd1c6d7e0e0cd8b9146888db311e0472e09be88faf70bb01ad57e17316551"
+    },
+    "us.solenari-care.com/assets/fonts/54c568346773433d.woff2": {
+      "bytes": 30624,
+      "sha256": "2d4c25a2a206d16537302b054f6a3b847ff79175207963a5fed6e12af26dd8e0"
+    },
+    "us.solenari-care.com/assets/fonts/61f3d372952e3dd5.woff2": {
+      "bytes": 27272,
+      "sha256": "cd8db90cd950e26bc8761f65d323588bd5cd112d326d6d322bc7c8ea86771215"
+    },
+    "us.solenari-care.com/assets/fonts/65300b8225d376de.woff2": {
+      "bytes": 13608,
+      "sha256": "3e8f4b311fef0dc52856f9bee03af7ef4f8bdaa26e4bfb8a0a766b79e5351bc4"
+    },
+    "us.solenari-care.com/assets/fonts/6e85163c68a33810.woff2": {
+      "bytes": 25844,
+      "sha256": "fccca918fea40089dacadc7045861314d1a6bc91f1f323cc1eeb22ebcdb321b5"
+    },
+    "us.solenari-care.com/assets/fonts/7048add3bf7c79c5.woff2": {
+      "bytes": 85272,
+      "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2"
+    },
+    "us.solenari-care.com/assets/fonts/74276ca9731a5891.woff2": {
+      "bytes": 1716,
+      "sha256": "a16f29d7d2a21a4f9b3249a82eb2725ed5bdb91500dfb5c4758977de27477f20"
+    },
+    "us.solenari-care.com/assets/fonts/75b80269c909945a.woff2": {
+      "bytes": 46884,
+      "sha256": "4f0cad5800eed7600b524be7d5b99a5510a792ba8f83427a4a2c553fc49164ec"
+    },
+    "us.solenari-care.com/assets/fonts/92395c3860ed9c81.woff2": {
+      "bytes": 12960,
+      "sha256": "f49cd0972b92df6ad4d34589333df653d9fcedcf3ecb71cf8191441b4e1a6081"
+    },
+    "us.solenari-care.com/assets/fonts/9be0371ef54b377a.woff2": {
+      "bytes": 11272,
+      "sha256": "a2e2c783ca6f9c20486e81e72a279203e86730bbf8f01ff6a5ee9dbd09e1c271"
+    },
+    "us.solenari-care.com/assets/fonts/9ef4e5b1ae110868.woff2": {
+      "bytes": 22836,
+      "sha256": "01978402fabbdca7d046ebda60da8bae6ea9b5420e58af6350bcbeffc74af097"
+    },
+    "us.solenari-care.com/assets/fonts/a28b7e319024809f.woff2": {
+      "bytes": 48432,
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+    },
+    "us.solenari-care.com/assets/fonts/b6548330f42a55cc.woff2": {
+      "bytes": 8292,
+      "sha256": "5c913fc1b1f86f4b475e5df45a796aa480d1f7f0891ed6f1a5991d6d1be887c3"
+    },
+    "us.solenari-care.com/assets/fonts/bb91024cf81b81a8.woff2": {
+      "bytes": 29524,
+      "sha256": "f7f3c763fa6749357a187418d736aab5b2acdd1d0a83a408631382bcfd80d141"
+    },
+    "us.solenari-care.com/assets/fonts/f3042a5b6cb40481.woff2": {
+      "bytes": 17708,
+      "sha256": "206b8987ebc5510c1f3add37d9dd1f308559224fa9b45805d024eebf7425e90c"
+    },
+    "us.solenari-care.com/assets/fonts/fa0402f8df04c54e.woff2": {
+      "bytes": 22680,
+      "sha256": "c9d43888d70004923f98079bd0e68cabec6275d22829ef4fe9c12a71b4c336a4"
+    },
+    "us.solenari-care.com/assets/fonts/fc0528d1f755a522.woff2": {
+      "bytes": 42964,
+      "sha256": "441af0def989ebfdbd6ad85ffaed85e967ab21a05f1dd342f16259464a206dd0"
+    },
+    "us.solenari-care.com/assets/fonts/plus-jakarta-sans.css": {
+      "bytes": 60237,
+      "sha256": "fea20275731c2451921e235b823325e2ceb63d5c2ac7df5bd6570682a4c55d3d"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1497366216548-37526070297c.jpg": {
+      "bytes": 206362,
+      "sha256": "86acdff134ecad6333d796b8f2f6a9101077ece57e3e41d8ce8e8fa9a485fb50"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1517457373958-b7bdd4587205.jpg": {
+      "bytes": 227440,
+      "sha256": "d0dd7c729db42d0038508166789f42c2a18edcb9ae0315c5ceae673ffbaae67d"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1521791136064-7986c2920216.jpg": {
+      "bytes": 221534,
+      "sha256": "667c301c55b2b0ed00c4a323291f3dd358c750c2273be2efab034f68dcc9a967"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1529156069898-49953e39b3ac.jpg": {
+      "bytes": 223985,
+      "sha256": "4cda941c130403edf6d065799e9a867e640de972a4eecbb1d48df56ceed01332"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1548199973-03cce0bbc87b.jpg": {
+      "bytes": 182583,
+      "sha256": "0d5c30e5f869d232c841ee0aa5e6a4037e91c66d2db2a5f696b1d0bc3a4ebf10"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1559027615-cd4628902d4a.jpg": {
+      "bytes": 241144,
+      "sha256": "aa2f5590c632c6015359ddcd470b098b6c39cb43207599cdfa4a923668a75801"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1576091160399-112ba8d25d1d.jpg": {
+      "bytes": 171861,
+      "sha256": "29380774c60ef32aee88dd8d062c77763c779bb401762dd6580ef515464cdcb7"
+    },
+    "us.solenari-care.com/assets/external/unsplash/photo-1587300003388-59208cc962cb.jpg": {
+      "bytes": 179574,
+      "sha256": "7cc92f559d38018fb8047e7bda5e54633d264bdedc3e61931faa43350820cfca"
+    }
+  },
+  "added": [
+    "us.solenari-care.com/campaign-detaild512.html"
+  ],
+  "changed": [
+    "hts-cache/doit.log",
+    "hts-cache/new.lst",
+    "hts-cache/new.txt",
+    "hts-cache/new.zip",
+    "hts-cache/winprofile.ini",
+    "hts-log.txt",
+    "index.html",
+    "us.solenari-care.com/about.html",
+    "us.solenari-care.com/blog.html",
+    "us.solenari-care.com/campaign-detail02ee.html",
+    "us.solenari-care.com/campaign-detail5445.html",
+    "us.solenari-care.com/campaigns.html",
+    "us.solenari-care.com/campaigns03d2.html",
+    "us.solenari-care.com/campaigns2b32.html",
+    "us.solenari-care.com/campaigns40ef.html",
+    "us.solenari-care.com/campaigns8676.html",
+    "us.solenari-care.com/campaignsa1dd.html",
+    "us.solenari-care.com/causes.html",
+    "us.solenari-care.com/contact.html",
+    "us.solenari-care.com/donate.html",
+    "us.solenari-care.com/events.html",
+    "us.solenari-care.com/guarantee.html",
+    "us.solenari-care.com/help-center.html",
+    "us.solenari-care.com/index.html",
+    "us.solenari-care.com/most-loved.html",
+    "us.solenari-care.com/privacy-policy.html",
+    "us.solenari-care.com/refund-cancellation-policy.html",
+    "us.solenari-care.com/start-business.html",
+    "us.solenari-care.com/start-family.html",
+    "us.solenari-care.com/start-yourself.html",
+    "us.solenari-care.com/terms-of-use.html"
+  ]
+}
