@@ -68,6 +68,7 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
         <div className="mobile-recent-donations"><RecentDonations activity={activity}/></div>
         <CampaignSocialProof activity={activity} />
         <CampaignSupport campaign={c} activity={activity} />
+        <CampaignStoryActions campaign={c} onShare={share} part="share" />
         <OrganizerFooter campaign={c} onAction={setAction} />
       </div>
       <aside className="donation-panel" aria-label="Support this campaign"><CampaignGivePanel campaign={c} onShare={share} /><RecentDonations activity={activity}/><div className="proof-organizer"><span className="organizer-avatar" aria-hidden="true">{initials(c.organizer)}</span><div><strong>{c.organizer}</strong><small>Campaign organizer</small></div><Button variant="outline" onClick={() => setAction('contact')}>Contact</Button></div></aside>
