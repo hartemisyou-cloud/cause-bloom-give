@@ -10,9 +10,11 @@ import { getCampaign, categoryName, type Campaign } from '@/lib/campaigns';
 import { pageHead } from '@/lib/site';
 import { useDonationBar } from '@/hooks/use-donation-bar';
 import { CampaignStoryActions } from '@/components/campaign-story-actions';
+import { CampaignSocialProof, RecentDonations } from '@/components/campaign-social-proof';
+import { campaignActivity } from '@/lib/campaign-social-proof';
 import { CampaignStory } from '@/components/campaign-story';
 import { storyDescription } from '@/lib/campaign-story';
-import { OrganizerFooter, DonorOrganizerRail, CampaignTrustBand, CampaignSharingSection, CampaignActionDialog, campaignUrl, initials } from '@/components/campaign-detail-sections';
+import { OrganizerFooter, CampaignTrustBand, CampaignSharingSection, CampaignActionDialog, campaignUrl, initials } from '@/components/campaign-detail-sections';
 export const Route=createFileRoute('/campaign-detail')({validateSearch:(s:Record<string,unknown>)=>({slug:typeof s['slug']==='string'?s['slug']:''}),loaderDeps:({search})=>({slug:search.slug}),loader:({deps})=>{const c=getCampaign(deps['slug']);if(!c)throw notFound();return c;},head:({loaderData})=>loaderData?pageHead(loaderData.title,storyDescription(loaderData.story),`/campaign-detail?slug=${loaderData.slug}`):{...pageHead('Campaign not found','The requested Hope Human Foundation campaign is unavailable.','/campaign-detail'),meta:[...pageHead('Campaign not found','The requested Hope Human Foundation campaign is unavailable.','/campaign-detail').meta,{name:'robots',content:'noindex'}]},component:CampaignDetail});
 function CampaignDetail() {
   const c = Route.useLoaderData();
@@ -27,6 +29,7 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
   const [shared, setShared] = useState('');
   const [action, setAction] = useState<'contact' | 'report' | 'all' | 'top' | 'instagram' | 'tiktok' | null>(null);
   const navigate = useNavigate();
+  const activity = campaignActivity(c);
   const donate = () => navigate({ to: '/donate', search: { slug: c.slug } });
   function readStory() {
     setExpanded(true);
@@ -62,11 +65,11 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
           <details className="snapshot-note"><summary>Campaign information</summary><p>Source medical statements have not been independently verified. Beneficiary surnames are alternate display names; first names and story facts are retained.</p></details>
         </section>
         <CampaignStoryActions campaign={c} onShare={share} />
-        <CampaignSupport campaign={c} />
+        <CampaignSocialProof activity={activity} />
+        <CampaignSupport campaign={c} activity={activity} />
         <OrganizerFooter campaign={c} onAction={setAction} />
-        <div className="mobile-campaign-rail"><DonorOrganizerRail campaign={c} onAction={setAction} /></div>
       </div>
-      <aside className="donation-panel" aria-label="Support this campaign"><CampaignGivePanel campaign={c} onShare={share} /></aside>
+      <aside className="donation-panel" aria-label="Support this campaign"><CampaignGivePanel campaign={c} onShare={share} /><RecentDonations activity={activity}/><div className="proof-organizer"><span className="organizer-avatar" aria-hidden="true">{initials(c.organizer)}</span><div><strong>{c.organizer}</strong><small>Campaign organizer</small></div><Button variant="outline" onClick={() => setAction('contact')}>Contact</Button></div></aside>
     </div>
     <CampaignTrustBand />
     <CampaignSharingSection campaign={c} onDonate={donate} onAction={setAction} onShare={share} />
