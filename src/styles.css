@@ -672,7 +672,8 @@ body{background:var(--background)}
   .detail-page .proof-entry{padding:12px 0;gap:12px}
   .detail-page .proof-avatar{width:38px;height:38px;font-size:13px}
   .detail-page .proof-entry-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
-  .detail-page .proof-highlights{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .detail-page .proof-highlights{display:grid;gap:10px}
+  .detail-page .story-actions{padding-top:6px}
   .detail-page .proof-highlight{margin:0}
   .detail-page .support-word{padding:14px 0}
   .detail-page .support-word p{margin-left:0;margin-top:8px;color:var(--foreground);font-size:15px;line-height:1.65}
