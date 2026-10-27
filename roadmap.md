@@ -1,4 +1,8 @@
 # Hope Human website
+## Campaign social proof and recent donations
+- [ ] Audit authentic donation/support sources and document a minimal nonfinancial extension proposal if absent.
+- [ ] Add campaign-bound recent donations, highlights and improved support states; preserve checkout and global presentation.
+- [ ] Add isolated labelled development fixtures; verify sorting, privacy, pagination, empty/loading/error states and responsive layouts.
 ## Campaign engagement alignment
 - [x] Group reactions and donation/share actions in a compact toolbar; align preview and social controls without changing data or destinations.
 - [x] Verified nine widths with no overflow or browser errors; reactions, canonical link copying and Donate navigation passed. 22 focused tests and automatic build OK; no transactions or publication.
