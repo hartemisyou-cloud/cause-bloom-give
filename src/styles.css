@@ -161,11 +161,7 @@
 @media(max-width:800px){.sharing-layout{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:600px){.sharing-art-left{transform:translateX(-99%) scale(.9) rotate(-10deg);top:20px}.sharing-art-right{transform:translateX(-1%) scale(.9) rotate(10deg);top:20px}}
 
-/* Scale the verified 1440px sharing canvas as one unit, including type and shadows. */
-@media(min-width:1441px){
- .campaign-sharing-section{--sharing-scale:calc(100vw / 1440px);padding:calc(112px * var(--sharing-scale)) 0 calc(96px * var(--sharing-scale))}
- .campaign-sharing-section .sharing-layout{width:1296px;max-width:none;zoom:var(--sharing-scale)}
-}
+/* Campaign sections retain bounded typography on wide screens. */
 
 @font-face{font-family:"Plus Jakarta Sans";font-style:italic;font-weight:300 800;font-display:swap;src:url("/__l5e/assets-v1/4397ec8e-b63d-4a6d-a479-f6bdb6416fcd/jakarta-italic.woff2") format("woff2")}
 
@@ -408,3 +404,96 @@ h2>.title-icon{width:22px;height:22px}
 .checkout-trust-sub{font-size:11px;line-height:1.55;text-wrap:balance}
 .checkout-trust-sub svg{color:var(--primary)}
 .checkout-trust-badge{display:inline-block;margin-left:2px;padding:2px 9px;border-radius:999px;background:color-mix(in oklab,var(--accent) 35%,var(--background));border:1px solid var(--border);color:var(--foreground);font-weight:700;font-size:11px}
+
+/* HTTrack-measured campaign geometry; these rules never affect the homepage. */
+.detail-page{--detail-story-ink:color-mix(in oklab,var(--foreground) 72%,var(--slate));--detail-summary-back:linear-gradient(145deg,var(--dark-green),var(--primary));--detail-action-shadow:0 2px 10px color-mix(in oklab,var(--gold) 35%,transparent)}
+.detail-page .detail-layout{width:100%;max-width:1040px;padding:36px 4% 0;grid-template-columns:minmax(0,1fr) 340px;gap:44px}
+.detail-page .detail-title{font-size:28.8px}
+.detail-page .donation-panel{padding:22px;border-radius:12px;top:88px}
+.detail-page .raised-row{grid-template-columns:80px minmax(0,1fr);gap:14px;margin-bottom:18px}
+.detail-page .funding-ring{width:80px;height:80px}.detail-page .ring-track,.detail-page .ring-value{stroke-width:3}
+.detail-page .raised{font-size:27.2px}.detail-page .raised-label{font-size:11.52px;line-height:1.5}.detail-page .goal{font-size:13.12px;margin:3px 0 0}
+.detail-page .detail-gallery{margin-bottom:18px}.detail-page .detail-gallery>img.gallery-portrait{object-fit:contain}
+.detail-page .gallery-footer{position:absolute;bottom:0;top:auto;left:50%;right:auto;transform:translateX(-50%);gap:0;padding:0;background:transparent;flex-wrap:nowrap;max-width:100%}
+.detail-page .gallery-dot-button{width:24px;height:44px;min-height:44px;display:grid;place-items:center;padding:0}
+.detail-page .gallery-dot-button .dot.active{width:10px;height:10px}
+.detail-page .gallery-summary{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:14px;padding:24px 28px;background:var(--detail-summary-back);color:var(--primary-foreground)}
+.detail-page .gallery-summary>.title-icon{width:28px;height:28px;margin:0}
+.detail-page .gallery-summary p{font-size:14.4px;line-height:1.65;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.detail-page .gallery-summary button{width:100%;border-radius:100px;color:var(--foreground)}
+.detail-page .is-summary .gallery-left,.detail-page .is-summary .gallery-right{display:none}
+.detail-page .gallery-image-error{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:var(--detail-summary-back);color:var(--primary-foreground)}
+.detail-page .story-section{scroll-margin-top:96px}.detail-page .story-body p{color:var(--detail-story-ink)}
+.detail-page .story-body.collapsed{max-height:220px}
+.detail-page .mobile-campaign-rail{display:none}
+.detail-page .mobile-organizer-contact{display:none}
+.detail-page .campaign-organizer-footer{padding-top:24px;padding-bottom:24px}
+.detail-page .campaign-organizer-footer>h2{font-size:14px;margin-bottom:14px}
+.detail-page .footer-organizer{grid-template-columns:40px minmax(0,1fr);gap:12px}
+.detail-page .footer-organizer .organizer-avatar{width:40px;height:40px;font-size:12.8px}
+.detail-page .footer-organizer strong{font-size:14.4px}.detail-page .footer-organizer small{font-size:12.48px;margin-top:2px}
+.detail-page .footer-beneficiary{font-size:12.48px;margin:12px 0 16px}
+.detail-page .campaign-created{font-size:13.12px;padding:16px 0;gap:6px}
+.detail-page .campaign-shield-badge{font-size:13.28px;padding:7px 13px;border-radius:8px;min-height:36px;margin-bottom:16px}
+.detail-page .campaign-shield-badge svg{width:18px;height:18px}
+.detail-page .campaign-report{padding-top:16px}.detail-page .campaign-report button{font-size:13.44px;gap:9px}.detail-page .campaign-report p{font-size:12.16px;margin-top:8px}
+.detail-page .donor-records{margin-top:16px;padding-top:12px}.detail-page .donor-records h3{font-size:13px}
+.detail-page .donor-empty{grid-template-columns:36px minmax(0,1fr);gap:10px;min-height:104px;padding:18px 0}
+.detail-page .donor-empty-icon{width:36px;height:36px}.detail-page .donor-empty strong{font-size:13.44px}.detail-page .donor-empty p{font-size:12px}
+.detail-page .donor-view-actions{gap:8px}.detail-page .donor-view-actions button,.detail-page .rail-organizer>button{min-height:44px;font-size:13px;border-width:1.5px}
+.detail-page .rail-organizer{padding-top:16px;margin-top:14px}.detail-page .rail-organizer>button{margin:12px 0 0}
+.detail-page .donation-actions>button{font-size:14.72px;min-height:48px}.detail-page .donation-actions .gold-control{box-shadow:var(--detail-action-shadow)}
+.detail-page .campaign-trust-band{background:var(--background);padding:60px 5%;margin-top:36px}
+.detail-page .campaign-trust-band .detail-wide-container{width:100%;max-width:1040px}
+.detail-page .campaign-trust-band h2{font-size:17.92px;margin-bottom:48px}
+.detail-page .campaign-trust-grid{gap:56px}.detail-page .campaign-trust-grid>div{grid-template-columns:52px minmax(0,1fr);gap:22px}
+.detail-page .campaign-trust-grid>div>svg{width:52px;height:52px}.detail-page .campaign-trust-grid h3{font-size:15.52px;margin-bottom:8px}.detail-page .campaign-trust-grid p{font-size:13.44px;line-height:1.72}
+.detail-page .campaign-sharing-section{padding:72px 5%}.detail-page .sharing-layout{width:100%;max-width:1100px;grid-template-columns:1fr 1fr;gap:80px;zoom:1}
+.detail-page .sharing-copy h2{font-size:44px;line-height:1.12;margin-bottom:18px}.detail-page .sharing-copy>p{font-size:16px;max-width:430px;line-height:1.75}
+.detail-page .sharing-heading-break{display:none}
+.detail-page .campaign-social-buttons{gap:14px;margin-top:36px;flex-wrap:wrap}.detail-page .social-circle{width:64px;height:64px;min-height:64px}
+.detail-page .sharing-card-composition{height:360px;width:100%}
+.detail-page .sharing-art-card{width:156px;height:268px;top:auto;bottom:18px;border-radius:26px;transform-origin:bottom center}
+.detail-page .sharing-art-center{width:188px;height:312px;bottom:0;left:50%;transform:translateX(-50%)}
+.detail-page .sharing-art-left{left:calc(50% - 192px);transform:rotate(-9deg);z-index:1}.detail-page .sharing-art-right{left:auto;right:calc(50% - 192px);transform:rotate(9deg);z-index:1}
+.detail-page .sharing-art-card>img{height:100px}.detail-page .sharing-art-center>img{height:114px}
+.detail-page .sharing-art-body{height:calc(100% - 100px);padding:10px}.detail-page .sharing-art-center .sharing-art-body{height:198px;padding:12px}
+.detail-page .sharing-art-body h3{font-size:11.2px;min-height:28px}.detail-page .sharing-art-organizer{font-size:9px;margin-top:4px}.detail-page .sharing-art-organizer>span{width:18px;height:18px}
+.detail-page .sharing-art-funding{grid-template-columns:minmax(0,1fr) 40px;margin:8px 0;gap:5px}.detail-page .sharing-art-funding strong{font-size:11px}.detail-page .sharing-art-ring{width:40px;height:40px}.detail-page .sharing-art-ring b{font-size:10px}
+.detail-page .sharing-art-body>button,.detail-page .sharing-art-donate{font-size:11px;min-height:36px;padding:6px;width:100%}
+.detail-page .sharing-art-left .sharing-art-ring{display:none}.detail-page .sharing-art-left .sharing-art-funding{grid-template-columns:1fr}
+.detail-page .sharing-art-right .sharing-art-organizer{display:none}.detail-page .sharing-art-goal{font-size:9px;margin-top:0}
+.detail-page .sharing-art-right .sharing-art-funding{grid-template-columns:minmax(0,1fr)}.detail-page .sharing-art-right .sharing-art-ring{display:none}
+.detail-page .detail-related{max-width:1200px}
+@media(max-width:1100px){.detail-page .detail-layout{gap:28px}.detail-page .sharing-layout{gap:40px}.detail-page .sharing-copy h2{font-size:36px}.detail-page .campaign-social-buttons{gap:10px}.detail-page .social-circle{width:52px;height:52px;min-height:52px}}
+@media(max-width:860px){
+ .detail-page .detail-layout{grid-template-columns:minmax(0,1fr);gap:24px}.detail-page .donation-panel{display:none}
+ .detail-page .mobile-funding{display:block;padding:20px 0}.detail-page .mobile-funding .donation-actions{grid-template-columns:1fr 1fr}
+ .detail-page .mobile-campaign-rail{display:block;margin-bottom:24px}.detail-page .mobile-campaign-rail .rail-organizer{display:none}
+ .detail-page .mobile-organizer-contact{display:inline-flex;border-radius:100px;margin-top:14px;min-height:44px;font-size:13px}
+ .detail-page .campaign-trust-grid{grid-template-columns:1fr;gap:32px}.detail-page .campaign-trust-band h2{margin-bottom:32px}
+ .detail-page .sharing-layout{grid-template-columns:minmax(0,1fr);gap:44px}.detail-page .sharing-card-composition{height:290px;max-width:450px;margin:auto}
+ .detail-page .sharing-art-center{width:158px;height:262px}.detail-page .sharing-art-left,.detail-page .sharing-art-right{width:130px;height:224px}
+ .detail-page .sharing-art-left{left:calc(50% - 162px)}.detail-page .sharing-art-right{right:calc(50% - 162px)}
+ .detail-page .sharing-art-card>img{height:82px}.detail-page .sharing-art-center>img{height:96px}
+ .detail-page .sharing-art-body{height:calc(100% - 82px);padding:8px}.detail-page .sharing-art-center .sharing-art-body{height:166px;padding:10px}
+ .detail-page .sharing-art-body h3{font-size:10px;min-height:25px}.detail-page .sharing-art-organizer{font-size:8px}.detail-page .sharing-art-funding{grid-template-columns:minmax(0,1fr) 32px;margin:4px 0}.detail-page .sharing-art-ring{width:32px;height:32px}.detail-page .sharing-art-funding strong{font-size:10px}
+ .detail-page .sharing-art-body>button,.detail-page .sharing-art-donate{font-size:10px;min-height:32px}.detail-page .sharing-art-left .sharing-art-goal,.detail-page .sharing-art-right .sharing-art-goal{display:none}
+}
+@media(max-width:600px){
+ .detail-page .detail-layout{padding:0;width:100%}.detail-page .detail-title{display:block;position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .detail-page .detail-gallery{height:82vw;max-height:480px;margin:0;border-radius:22px 22px 0 0}.detail-page .gallery-left,.detail-page .gallery-right{display:none}
+ .detail-page .gallery-footer{top:6px;bottom:auto;right:10px;left:auto;transform:none;padding:0 4px;max-width:55%;background:color-mix(in oklab,var(--gallery-back) 38%,transparent);border-radius:100px;overflow-x:auto}
+ .detail-page .gallery-dot-button{flex:0 0 22px}.detail-page .gallery-summary{padding:48px 20px 24px}.detail-page .gallery-summary p{-webkit-line-clamp:3}
+ .detail-page .mobile-funding{padding:20px 16px 4px}.detail-page .mobile-funding .raised-row{grid-template-columns:68px minmax(0,1fr);gap:14px;margin-bottom:18px}
+ .detail-page .mobile-funding .funding-ring{width:68px;height:68px}.detail-page .mobile-funding .raised{font-size:24px}
+ .detail-page .mobile-funding .raised-label{display:block;font-size:10px}.detail-page .mobile-funding .goal{position:static;margin-top:2px;font-size:13px}
+ .detail-page .mobile-funding .donation-actions>button{min-height:52px;font-size:16px}
+ .detail-page .story-share-block{display:none}.detail-page .campaign-organizer-footer{padding:24px 16px}.detail-page .mobile-campaign-rail{padding:0 16px}
+ .detail-page .campaign-trust-band{padding:36px 18px}.detail-page .campaign-trust-band h2{font-size:17.92px}
+ .detail-page .campaign-sharing-section{padding:44px 18px}.detail-page .sharing-copy h2{font-size:28.8px}
+ .detail-page .social-circle{width:48px;height:48px;min-height:48px}.detail-page .campaign-social-buttons{gap:10px;justify-content:flex-start;margin-top:24px}
+ .detail-page .mobile-donate{left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));border:1px solid var(--border);border-radius:18px;padding:12px;gap:8px}
+ .detail-page .mobile-donate .raised-row{grid-template-columns:40px minmax(0,1fr);gap:8px;margin:0}.detail-page .mobile-donate .funding-ring{width:40px;height:40px}.detail-page .mobile-donate .funding-ring span{font-size:10px}.detail-page .mobile-donate .raised{font-size:15px}.detail-page .mobile-donate .goal{font-size:9px}.detail-page .mobile-donate .raised-label{font-size:8px}
+ .detail-page .mobile-donate>button{font-size:13px;padding:10px 12px;min-height:44px}
+}
