@@ -1,7 +1,7 @@
 # Hope Human website
 ## Campaign engagement alignment
 - [x] Group reactions and donation/share actions in a compact toolbar; align preview and social controls without changing data or destinations.
-- [ ] Verify Fabi campaign interactions across nine widths without transactions or publishing.
+- [x] Verified nine widths with no overflow or browser errors; reactions, canonical link copying and Donate navigation passed. 22 focused tests and automatic build OK; no transactions or publication.
 ## Gallery thumbnail regression
 - [x] Replace photo placeholders with 139 optimized real thumbnails across every campaign; preserve selected-only full-size loading and mirrored assets.
 - [x] Verify initial thumbnails and photo selection at 390/1280px with no page errors; 21 campaign/gallery tests passed, automatic build OK.
