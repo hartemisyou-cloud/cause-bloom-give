@@ -1,5 +1,5 @@
 import { TitleIcon } from '@/components/title-icon';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from '@tanstack/react-router';
 import { Flag, ShieldCheck, Heart, Star, Instagram, MoreHorizontal, Copy, Mail, Send, HandHeart, CircleHelp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -20,6 +20,7 @@ export function campaignMonth(c: { createdAt: string | null }) {
 type Action = 'contact' | 'report' | 'all' | 'top' | 'instagram' | 'tiktok' | null;
 
 export function CampaignActionDialog({ campaign: c, action, onClose }: { campaign: Campaign; action: Action; onClose: () => void }) {
+  const returnFocus = useRef<HTMLElement | null>(null);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
@@ -28,7 +29,7 @@ export function CampaignActionDialog({ campaign: c, action, onClose }: { campaig
   const isSocial = action === 'instagram' || action === 'tiktok';
   const title = action === 'contact' ? `Contact about this fundraiser` : action === 'report' ? 'Report fundraiser' : action === 'top' ? 'Top donations' : action === 'all' ? 'All donations' : `Share on ${action === 'instagram' ? 'Instagram' : 'TikTok'}`;
   const emailHref = () => `mailto:support@hopehumanfoundation.org?subject=${encodeURIComponent(`${action === 'report' ? 'Fundraiser report' : 'Organizer contact request'}: ${c.title}`)}&body=${encodeURIComponent(`Campaign: ${campaignUrl(c)}\nOrganizer: ${c.organizer}\n\n${message.trim()}`)}`;
-  return <Dialog open={action !== null} onOpenChange={v => { if (!v) onClose(); }}><DialogContent className="campaign-action-dialog"><DialogTitle>{title}</DialogTitle><DialogDescription>{isEmail ? `Your email will go to Hope Human Foundation support about ${c.organizer}'s campaign.` : isSocial ? 'Copy the campaign link, then add it to your post, story or profile in the app.' : 'Individual donor records and donation amounts are not available for this campaign.'}</DialogDescription>
+  return <Dialog open={action !== null} onOpenChange={v => { if (!v) onClose(); }}><DialogContent className="campaign-action-dialog" onOpenAutoFocus={() => { if (document.activeElement instanceof HTMLElement) returnFocus.current = document.activeElement; }} onCloseAutoFocus={event => { event.preventDefault(); returnFocus.current?.focus(); }}><DialogTitle>{title}</DialogTitle><DialogDescription>{isEmail ? `Your email will go to Hope Human Foundation support about ${c.organizer}'s campaign.` : isSocial ? 'Copy the campaign link, then add it to your post, story or profile in the app.' : 'Individual donor records and donation amounts are not available for this campaign.'}</DialogDescription>
     {isEmail && <form onSubmit={e => { e.preventDefault(); if (message.trim().length < 10) { setError('Please write at least 10 characters so support can help.'); return; } setError(''); setPrepared(emailHref()); }}><label htmlFor="campaign-message">{action === 'report' ? 'What would you like to report?' : 'Your message'}</label><textarea id="campaign-message" className="form-input" rows={5} value={message} onChange={e => { setMessage(e.target.value); setPrepared(''); }} required minLength={10} />{error && <p role="alert" className="form-error">{error}</p>}<p className="action-note">Nothing is sent automatically; include your reply address in your email.</p><Button variant="pill" type="submit"><Mail />Prepare email</Button>{prepared && <Button variant="outline" asChild><a href={prepared}><Mail />Open email app</a></Button>}</form>}
     {isSocial && <><Button variant="pill" onClick={async () => { try { await navigator.clipboard.writeText(campaignUrl(c)); setCopied(true); } catch { setError('Copy the campaign link below.'); } }}><Copy />Copy campaign link</Button><input aria-label="Campaign sharing link" className="form-input" readOnly value={action ? campaignUrl(c) : ''} onFocus={e => e.target.select()} />{copied && <p role="status">Link copied. No post has been published.</p>}{error && <p role="status">{error}</p>}</>}
     {!isEmail && !isSocial && <div className="donor-dialog-empty"><Heart /><h3><TitleIcon topic="No donor records available" />No donor records available</h3><p>Words of support remain available on the campaign page. Previous fundraising totals do not establish individual donation records.</p></div>}
