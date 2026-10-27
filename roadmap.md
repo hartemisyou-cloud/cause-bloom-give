@@ -1,4 +1,8 @@
 # Hope Human website
+## Campaign screenshot refinement
+- [ ] Compare the new screenshots against recovered HTTrack styles and checkpoint the current source.
+- [ ] Refine campaign funding, inline sharing, support pagination and the related-campaign rail without changing homepage, payment integrations or source records.
+- [ ] Exercise isolated 10/30/100-message fixtures, nine widths and real campaign navigation; document unavailable live activity and production performance checks. Do not publish.
 ## HTTrack campaign-page reconstruction
 - [x] Inventory both uploaded archives and compare their campaign HTML, CSS, JavaScript and assets with the current page; present the mapping and prioritized differences before implementation.
 - [x] Apply reference-backed campaign-page corrections only, preserving Hope Human identity, homepage, campaign data and existing integrations.

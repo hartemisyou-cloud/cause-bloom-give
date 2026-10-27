@@ -3,10 +3,11 @@ import { createFileRoute, Link, notFound, useNavigate } from '@tanstack/react-ro
 import { useState, useRef } from 'react';
 import { ChevronRight, Share2, HandHeart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { CampaignCard } from '@/components/campaign-card';
+import { CampaignRelated } from '@/components/campaign-related';
+import { CampaignSupport } from '@/components/campaign-support';
 import { CampaignGallery } from '@/components/campaign-gallery';
 import { CampaignFunding } from '@/components/campaign-funding';
-import { getCampaign, campaigns, type Campaign } from '@/lib/campaigns';
+import { getCampaign, type Campaign } from '@/lib/campaigns';
 import { pageHead } from '@/lib/site';
 import { useDonationBar } from '@/hooks/use-donation-bar';
 import { CampaignStoryActions } from '@/components/campaign-story-actions';
@@ -25,11 +26,9 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
   const showDonationBar = useDonationBar(pageRef, c.slug, '.campaign-sharing-section, .detail-related');
   const [expanded, setExpanded] = useState(false);
   const [shared, setShared] = useState('');
-  const [allSupport, setAllSupport] = useState(false);
   const [action, setAction] = useState<'contact' | 'report' | 'all' | 'top' | 'instagram' | 'tiktok' | null>(null);
   const navigate = useNavigate();
   const donate = () => navigate({ to: '/donate', search: { slug: c.slug } });
-  const related = campaigns.filter(v => v.category === c.category && v.slug !== c.slug).slice(0, 3);
   function readStory() {
     setExpanded(true);
     requestAnimationFrame(() => {
@@ -62,11 +61,7 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
           <details className="snapshot-note"><summary>Campaign information</summary><p>Source medical statements have not been independently verified. Beneficiary surnames are alternate display names; first names and story facts are retained.</p></details>
         </section>
         <CampaignStoryActions campaign={c} onShare={share} />
-        <section className="story-section"><h2><TitleIcon topic="Words of support" />Words of support <span>({c.support.length})</span></h2>
-          {(allSupport ? c.support : c.support.slice(0, 6)).map((w, i) => <div className="support-word" key={i}><div className="organizer-row"><span className="organizer-avatar">{initials(w.name)}</span><strong>{w.name}</strong></div><p>{w.message}</p></div>)}
-          {!c.support.length && <p className="snapshot-note">No messages yet.</p>}
-          {c.support.length > 6 && <Button variant="link" onClick={() => setAllSupport(!allSupport)}>{allSupport ? 'Show fewer messages' : `See all ${c.support.length} messages`}</Button>}
-        </section>
+        <CampaignSupport campaign={c} />
         <OrganizerFooter campaign={c} onAction={setAction} />
         <div className="mobile-campaign-rail"><DonorOrganizerRail campaign={c} onAction={setAction} /></div>
       </div>
@@ -75,7 +70,7 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
     <CampaignTrustBand />
     <CampaignSharingSection campaign={c} onDonate={donate} onAction={setAction} onShare={share} />
     {shared && <p className="sharing-status detail-wide-container" role="status">{shared}</p>}
-    <section className="section container detail-related"><div className="section-heading"><h2><TitleIcon topic="Related campaigns" />Related campaigns</h2><Link className="plain-link" to="/campaigns">See all campaigns <ChevronRight aria-hidden="true" size={14} /></Link></div><div className="campaign-grid">{related.map(v => <CampaignCard key={v.slug} campaign={v} />)}</div></section>
+    <CampaignRelated campaign={c} />
     <div className="mobile-donate" hidden={!showDonationBar}><CampaignFunding campaign={c} /><Button variant="gold" className="gold-control" onClick={donate}><HandHeart aria-hidden="true" />Donate now</Button></div>
     <CampaignActionDialog key={`${c.slug}-${action}`} campaign={c} action={action} onClose={() => setAction(null)} />
   </div>;
