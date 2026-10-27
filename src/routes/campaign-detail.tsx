@@ -1,13 +1,12 @@
-import { TitleIcon } from '@/components/title-icon';
 import { createFileRoute, Link, notFound, useNavigate } from '@tanstack/react-router';
 import { useState, useRef } from 'react';
-import { ChevronRight, Share2, HandHeart } from 'lucide-react';
+import { ChevronRight, HandHeart, MapPin, CalendarDays, BadgeCheck, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CampaignRelated } from '@/components/campaign-related';
 import { CampaignSupport } from '@/components/campaign-support';
 import { CampaignGallery } from '@/components/campaign-gallery';
-import { CampaignFunding } from '@/components/campaign-funding';
-import { getCampaign, type Campaign } from '@/lib/campaigns';
+import { CampaignFunding, CampaignGivePanel } from '@/components/campaign-funding';
+import { getCampaign, categoryName, type Campaign } from '@/lib/campaigns';
 import { pageHead } from '@/lib/site';
 import { useDonationBar } from '@/hooks/use-donation-bar';
 import { CampaignStoryActions } from '@/components/campaign-story-actions';
@@ -46,16 +45,18 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
       setShared('Copy the page address to share this campaign.');
     }
   }
-  const actions = <div className="donation-actions"><Button variant="gold" className="gold-control" onClick={donate}><HandHeart aria-hidden="true" />Donate now</Button><Button variant="pill" onClick={share}><Share2 aria-hidden="true" />Share</Button></div>;
   return <div className="detail-page" ref={pageRef}>
     <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link><ChevronRight aria-hidden="true" size={12} /><Link to="/campaigns">Campaigns</Link><ChevronRight aria-hidden="true" size={12} /><span>{c.title}</span></nav>
     <div className="detail-layout">
       <div className="detail-main">
         <CampaignGallery campaign={c} onReadStory={readStory} />
-        <h1 className="detail-title"><TitleIcon category={c.category} />{c.title}</h1>
-        <div className="mobile-funding"><CampaignFunding campaign={c} />{actions}</div>
-        <div className="organizer-row"><span className="organizer-avatar">{initials(c.organizer)}</span><div><strong>{c.organizer}</strong> is organizing this fundraiser.</div></div>
+        <div className="detail-chips"><span className="chip-category">{categoryName(c.category)}</span><span className="chip-verified"><BadgeCheck aria-hidden="true" size={13} />Verified campaign</span>{c.urgent && <span className="chip-urgent"><Zap aria-hidden="true" size={13} />Urgent</span>}</div>
+        <h1 className="detail-title">{c.title}</h1>
+        <p className="detail-meta">{c.location && <span><MapPin aria-hidden="true" size={14} />{c.location}</span>}{c.createdAt && <span><CalendarDays aria-hidden="true" size={14} />Created {new Date(c.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</span>}</p>
+        <div className="mobile-funding"><CampaignGivePanel campaign={c} onShare={share} /></div>
+        <div className="organizer-row"><span className="organizer-avatar">{initials(c.organizer)}</span><div className="organizer-copy"><small>Organized by</small><strong>{c.organizer}</strong>{c.location && <span>{c.location}</span>}</div>{c.beneficiary && <div className="organizer-beneficiary"><strong>Beneficiary</strong><span>{c.beneficiary}</span></div>}</div>
         <section className="story-section first-story" ref={storyRef} tabIndex={-1} aria-label="Campaign story">
+          <h2 className="story-title">Their story — in their own words</h2>
           <CampaignStory story={c.story} expanded={expanded} />
           {c.story.length > 900 && <Button variant="link" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>{expanded ? 'Read less' : 'Read more'}<ChevronRight aria-hidden="true" size={14} /></Button>}
           <details className="snapshot-note"><summary>Campaign information</summary><p>Source medical statements have not been independently verified. Beneficiary surnames are alternate display names; first names and story facts are retained.</p></details>
@@ -65,7 +66,7 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
         <OrganizerFooter campaign={c} onAction={setAction} />
         <div className="mobile-campaign-rail"><DonorOrganizerRail campaign={c} onAction={setAction} /></div>
       </div>
-      <aside className="donation-panel" aria-label="Support this campaign"><CampaignFunding campaign={c} />{actions}<DonorOrganizerRail campaign={c} onAction={setAction} /><p className="panel-footnote">Your donation supports this campaign and its cause directly. Recipient verification and an eligible payout route are required before funds can be released; no approval or payment is confirmed here.</p></aside>
+      <aside className="donation-panel" aria-label="Support this campaign"><CampaignGivePanel campaign={c} onShare={share} /></aside>
     </div>
     <CampaignTrustBand />
     <CampaignSharingSection campaign={c} onDonate={donate} onAction={setAction} onShare={share} />

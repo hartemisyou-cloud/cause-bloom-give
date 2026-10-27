@@ -1,4 +1,7 @@
 # Hope Human website
+## Campaign screenshot alignment
+- [x] Align campaign gallery, compact amount panel, metadata and organizer/story hierarchy with the latest reference without changing checkout, records or homepage.
+- [x] Verify campaign interactions and nine widths; 73 tests passed, automatic build OK, no overflow or browser errors. No publication or transactions.
 ## Full frontend source migration
 - [x] Audit uploaded Free Hearts source and map equivalent pages, data adapters and protected Hope Human integration boundaries.
 - [x] Adapt shared presentation, homepage, campaign pages, donation appearance and compatible supporting pages in controlled stages.
