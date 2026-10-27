@@ -1,5 +1,6 @@
 # Hope Human website
 ## Campaign social proof and recent donations
+- [ ] Audit the owner's Free Hearts public reviews and donations; migrate only authentic records to the matching campaign with original dates and provenance, never distribute activity to unrelated campaigns.
 - [x] Audited static campaign/support sources; no donor ledger found. Minimal safe upstream read proposal documented in outputs/campaign-social-proof/auditoria.md.
 - [x] Added campaign-bound recent donations, highlights, organizer contact and improved support states; checkout and global presentation preserved.
 - [x] Verified labelled DEV-only fixtures, nine public widths and 16 demo width/scenario combinations, privacy/filter/pagination/loading/error states; 87 tests and automatic build OK. No transactions or publication.
