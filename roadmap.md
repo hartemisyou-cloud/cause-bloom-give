@@ -1,4 +1,7 @@
 # Hope Human website
+## Gallery thumbnail regression
+- [ ] Replace photo placeholders with optimized real thumbnails across every campaign; preserve selected-only full-size loading.
+- [ ] Verify initial thumbnails and photo selection in the browser; run gallery tests.
 ## Subtle surfaces and reference-like headings
 - [x] Apply a subtle site-wide background, contrasted white cards and refined heading/CTA hierarchy without changing campaign facts or integrations.
 - [x] Check 19 pages across nine widths (171 checks) and 73 existing tests; no overflow or page errors, automatic build OK. No publication.
