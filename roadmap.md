@@ -1,4 +1,7 @@
 # Hope Human website
+## Subtle surfaces and reference-like headings
+- [x] Apply a subtle site-wide background, contrasted white cards and refined heading/CTA hierarchy without changing campaign facts or integrations.
+- [x] Check 19 pages across nine widths (171 checks) and 73 existing tests; no overflow or page errors, automatic build OK. No publication.
 ## Campaign screenshot alignment
 - [x] Align campaign gallery, compact amount panel, metadata and organizer/story hierarchy with the latest reference without changing checkout, records or homepage.
 - [x] Verify campaign interactions and nine widths; 73 tests passed, automatic build OK, no overflow or browser errors. No publication or transactions.
