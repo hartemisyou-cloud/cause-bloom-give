@@ -15,7 +15,7 @@
 - Use TanStack leaf routes for supporting pages and query-compatible campaign details; the catch-all redirects legacy .html paths and returns real not-found responses for unknown paths.
 - Prerender only explicitly enumerated visitor-independent pages with link crawling off and failures fatal; campaign and donation query-string pages render on demand (crawling them broke external builds).
 - On Vercel builds, vite.config re-runs the Vercel preset compiled hook, because enabling prerender displaces it and drops .vercel/output config files.
-- Use optimized CDN-backed immutable image pointers, separate thumbnails, and load only the selected gallery photo to keep initial transfers small.
+- Use optimized CDN-backed immutable image pointers and source-URL-keyed gallery thumbnails; render all small photo previews but load only the selected full-size gallery photo to keep initial transfers small.
 - Keep campaign source-to-active image mappings in the artwork audit, with supporting imagery catalogued separately; this makes replacements and coverage traceable without shipping archived source websites.
 - Use the query-compatible donation leaf page for amount selection and transparent ebook-purchase navigation via window.location.replace to the configured product map; never submit a payment form, create sessions or collect card data on this site. Keep public foundation terms separate from unconfirmed store allocation or approval states, and never treat a thank-you URL as proof of payment.
 - Prepare campaign proposals as explicit user-sent emails without pretending to store, submit or publish campaigns.

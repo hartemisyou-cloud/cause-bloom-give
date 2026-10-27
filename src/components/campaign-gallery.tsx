@@ -6,6 +6,7 @@ import { initials } from '@/components/campaign-detail-sections';
 import { type Campaign } from '@/lib/campaigns';
 import { storyDescription } from '@/lib/campaign-story';
 import { galleryIndex, gallerySwipeDirection } from '@/lib/campaign-gallery';
+import thumbnails from '@/data/gallery-thumbnails.json';
 
 export function CampaignGallery({ campaign: c, onReadStory }: { campaign: Campaign; onReadStory: () => void }) {
   const [slide, setSlide] = useState(0);
@@ -30,7 +31,7 @@ export function CampaignGallery({ campaign: c, onReadStory }: { campaign: Campai
       <Button className="gallery-right" variant="circle" size="icon" aria-label="Next campaign photo" onClick={() => move(1)}><ChevronRight /></Button>
       <div className="gallery-footer">{Array.from({ length: count }, (_, index) => <Button variant="ghost" size="icon" className="gallery-dot-button" key={index} aria-label={index === photos.length ? 'Show story summary' : `Show photo ${index + 1}`} aria-pressed={index === slide} onClick={() => setSlide(index)}><span className={`dot ${slide === index ? 'active' : ''}`} /></Button>)}</div>
     </div>
-    <div className="gallery-thumbnails" role="group" aria-label="Choose campaign photo">{photos.map((photo, index) => <Button key={`${photo.url}-${index}`} variant="outline" className="gallery-thumbnail" aria-label={`View campaign photo ${index + 1}`} aria-pressed={slide === index} onClick={() => setSlide(index)}>{index === 0 || index === slide ? <img src={index === 0 ? c.thumbnail.url : photo.url} width={photo.width} height={photo.height} alt="" loading="lazy" decoding="async"/> : <><FileText size={20} aria-hidden="true"/><span>Photo {index + 1}</span></>}</Button>)}<Button variant="outline" className="gallery-thumbnail" aria-label="View story summary" aria-pressed={summary} onClick={() => setSlide(photos.length)}><FileText size={24} aria-hidden="true"/></Button></div>
+    <div className="gallery-thumbnails" role="group" aria-label="Choose campaign photo">{photos.map((photo, index) => { const thumb = thumbnails[photo.url as keyof typeof thumbnails]; return <Button key={`${photo.url}-${index}`} variant="outline" className="gallery-thumbnail" aria-label={`View campaign photo ${index + 1}`} aria-pressed={slide === index} onClick={() => setSlide(index)}><img src={thumb?.url ?? c.thumbnail.url} width={224} height={160} alt="" loading="eager" decoding="async"/></Button>; })}<Button variant="outline" className="gallery-thumbnail" aria-label="View story summary" aria-pressed={summary} onClick={() => setSlide(photos.length)}><FileText size={24} aria-hidden="true"/></Button></div>
     <span className="sr-only" aria-live="polite" aria-atomic="true">{summary ? 'Story summary' : `Photo ${slide + 1} of ${photos.length}`}</span>
   </section>;
 }
