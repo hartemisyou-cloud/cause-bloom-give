@@ -1,12 +1,12 @@
 import { TitleIcon } from '@/components/title-icon';
 import { createFileRoute, Link, notFound, useNavigate } from '@tanstack/react-router';
 import { useState, useRef } from 'react';
-import { ChevronRight, Share2, HandHeart, MapPin } from 'lucide-react';
+import { ChevronRight, Share2, HandHeart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CampaignCard } from '@/components/campaign-card';
 import { CampaignGallery } from '@/components/campaign-gallery';
 import { CampaignFunding } from '@/components/campaign-funding';
-import { getCampaign, campaigns } from '@/lib/campaigns';
+import { getCampaign, campaigns, type Campaign } from '@/lib/campaigns';
 import { pageHead } from '@/lib/site';
 import { useDonationBar } from '@/hooks/use-donation-bar';
 import { CampaignStoryActions } from '@/components/campaign-story-actions';
@@ -19,10 +19,10 @@ function CampaignDetail() {
   return <CampaignDetailContent key={c.slug} campaign={c} />;
 }
 
-function CampaignDetailContent({ campaign: c }: { campaign: ReturnType<typeof Route.useLoaderData> }) {
+function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
   const pageRef = useRef<HTMLDivElement>(null);
   const storyRef = useRef<HTMLElement>(null);
-  const showDonationBar = useDonationBar(pageRef, c.slug);
+  const showDonationBar = useDonationBar(pageRef, c.slug, '.campaign-sharing-section, .detail-related');
   const [expanded, setExpanded] = useState(false);
   const [shared, setShared] = useState('');
   const [allSupport, setAllSupport] = useState(false);

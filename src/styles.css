@@ -450,6 +450,7 @@ h2>.title-icon{width:22px;height:22px}
 .detail-page .campaign-trust-grid>div>svg{width:52px;height:52px}.detail-page .campaign-trust-grid h3{font-size:15.52px;margin-bottom:8px}.detail-page .campaign-trust-grid p{font-size:13.44px;line-height:1.72}
 .detail-page .campaign-sharing-section{padding:72px 5%}.detail-page .sharing-layout{width:100%;max-width:1100px;grid-template-columns:1fr 1fr;gap:80px;zoom:1}
 .detail-page .sharing-copy h2{font-size:44px;line-height:1.12;margin-bottom:18px}.detail-page .sharing-copy>p{font-size:16px;max-width:430px;line-height:1.75}
+.detail-page .sharing-heading-break{display:none}
 .detail-page .campaign-social-buttons{gap:14px;margin-top:36px;flex-wrap:wrap}.detail-page .social-circle{width:64px;height:64px;min-height:64px}
 .detail-page .sharing-card-composition{height:360px;width:100%}
 .detail-page .sharing-art-card{width:156px;height:268px;top:auto;bottom:18px;border-radius:26px;transform-origin:bottom center}
