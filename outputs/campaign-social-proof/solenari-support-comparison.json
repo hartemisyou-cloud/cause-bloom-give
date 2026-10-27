@@ -1,0 +1,3655 @@
+{
+  "sourceDatasetUrl": "https://us.solenari-care.com/offline-data.js?v=598c942cf802",
+  "capturedAt": "2026-10-27",
+  "campaigns": [
+    {
+      "slug": "mateo",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=mateo",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:54.247960+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "es",
+          "title": "Mateo tiene 8 meses y lucha contra un cáncer en etapa cuatro — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-d9da-762f-ac3d-7d722c00e868",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=mateo",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=mateo",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "7ee5728b-b5c7-4c3f-a940-ca48783bc2c9",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-graceline-now",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-graceline-now",
+      "sourceMessages": [
+        {
+          "name": "Anonymous",
+          "message": "Stay strong, Graceline. Praying for you."
+        },
+        {
+          "name": "Sarah M.",
+          "message": "From one mother to another — holding you in my heart."
+        },
+        {
+          "name": "James K.",
+          "message": "For the second transplant. You've got this."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Anonymous",
+          "message": "Stay strong, Graceline. Praying for you."
+        },
+        {
+          "name": "Sarah M.",
+          "message": "From one mother to another — holding you in my heart."
+        },
+        {
+          "name": "James K.",
+          "message": "For the second transplant. You've got this."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:54.248743+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "title": "Urgent Help Needed for Graceline's Second Bone Marrow Transplant — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-d9d6-755f-8d80-8a000d1e861f",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-graceline-now",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-graceline-now",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "0db9b4e6-6724-4c0c-a2a9-f63ed093c80d",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-save-fabi",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-save-fabi",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:54.249456+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Make a donation to ease Fabi's severe pain and help save her life! — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-d9f6-75fc-8e5c-867ff26c7c35",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-save-fabi",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-save-fabi",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "a1b95b7b-97e1-4b89-bfb0-fb67e48c9d15",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "jazzy",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=jazzy",
+      "sourceMessages": [
+        {
+          "name": "Jonathan Sherlock",
+          "message": "Just made my donation. No child should ever have to go through something like this. I'm praying that you get the treatment you need and make a full recovery. Stay strong, Jazzy!"
+        },
+        {
+          "name": "Jim Fulsher",
+          "message": "Donated and shared. I truly hope more people see this because every single contribution brings Jazzy one step closer to the treatment she desperately needs. We're all behind you!"
+        },
+        {
+          "name": "Luciana Cardoso",
+          "message": "Your strength is absolutely incredible. I made my donation today and will continue praying for you and your family. Keep fighting, sweet girl—you have so many people cheering you on."
+        },
+        {
+          "name": "Wilson Sants",
+          "message": "Just donated. We may not be able to take away everything she's been through, but together we can give her another chance. Please keep sharing and donating if you're able.🙏"
+        },
+        {
+          "name": "Philip Ayers",
+          "message": "Every child deserves hope. My donation may be small, but when thousands of people come together, miracles can happen. Praying Jazzy gets the life-saving treatment she deserves. ❤️"
+        },
+        {
+          "name": "United Lodge of Prudednce No.83",
+          "message": "Just donated. My heart breaks for everything Jazzy and her family have endured. I'm praying this campaign reaches the people who can help make her treatment possible. Stay strong, sweet girl!"
+        },
+        {
+          "name": "Victoria Jones",
+          "message": "Donation sent. I can't imagine what your family is going through, but I hope this small contribution helps in some way. Wishing Jazzy strength, healing, and many brighter days ahead.\""
+        },
+        {
+          "name": "Sophie Agnew",
+          "message": "I just gave what I could and shared this with my friends and family. Let's all come together to give Jazzy the chance she deserves. Every donation and every share truly matters."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jonathan Sherlock",
+          "message": "Just made my donation. No child should ever have to go through something like this. I'm praying that you get the treatment you need and make a full recovery. Stay strong, Jazzy!"
+        },
+        {
+          "name": "Jim Fulsher",
+          "message": "Donated and shared. I truly hope more people see this because every single contribution brings Jazzy one step closer to the treatment she desperately needs. We're all behind you!"
+        },
+        {
+          "name": "Luciana Cardoso",
+          "message": "Your strength is absolutely incredible. I made my donation today and will continue praying for you and your family. Keep fighting, sweet girl—you have so many people cheering you on."
+        },
+        {
+          "name": "Wilson Sants",
+          "message": "Just donated. We may not be able to take away everything she's been through, but together we can give her another chance. Please keep sharing and donating if you're able.🙏"
+        },
+        {
+          "name": "Philip Ayers",
+          "message": "Every child deserves hope. My donation may be small, but when thousands of people come together, miracles can happen. Praying Jazzy gets the life-saving treatment she deserves. ❤️"
+        },
+        {
+          "name": "United Lodge of Prudednce No.83",
+          "message": "Just donated. My heart breaks for everything Jazzy and her family have endured. I'm praying this campaign reaches the people who can help make her treatment possible. Stay strong, sweet girl!"
+        },
+        {
+          "name": "Victoria Jones",
+          "message": "Donation sent. I can't imagine what your family is going through, but I hope this small contribution helps in some way. Wishing Jazzy strength, healing, and many brighter days ahead.\""
+        },
+        {
+          "name": "Sophie Agnew",
+          "message": "I just gave what I could and shared this with my friends and family. Let's all come together to give Jazzy the chance she deserves. Every donation and every share truly matters."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:54.250214+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Save Jazzy's life from brain cancer & being homeless — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-d9dd-71ed-b436-502ef1113f91",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=jazzy",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=jazzy",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "b553c243-e966-4f50-be1b-ec0314ce67f5",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-teddy",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-teddy",
+      "sourceMessages": [
+        {
+          "name": "Emily R.",
+          "message": "Just donated. Sixty days isn't long, but hopefully together we can get Teddy to the USA in time. ❤️"
+        },
+        {
+          "name": "Michael & Jennifer",
+          "message": "My daughter was treated in America years ago. Please don't give up. Donated and shared."
+        },
+        {
+          "name": "Daniel W.",
+          "message": "$20 donated. I hope thousands of others do the same. Let's get Teddy to Pennsylvania."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Emily R.",
+          "message": "Just donated. Sixty days isn't long, but hopefully together we can get Teddy to the USA in time. ❤️"
+        },
+        {
+          "name": "Michael & Jennifer",
+          "message": "My daughter was treated in America years ago. Please don't give up. Donated and shared."
+        },
+        {
+          "name": "Daniel W.",
+          "message": "$20 donated. I hope thousands of others do the same. Let's get Teddy to Pennsylvania."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:54.250850+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help 5-year-old Teddy Beat Brain Cancer — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-d9de-772e-810b-c0e7bd48abf0",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-teddy",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-teddy",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "3c4b69f3-77d9-4a71-a477-c6afa1cf64c5",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-emma",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-emma",
+      "sourceMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "God bless you and your family! You video touched my heart! Please stay strong and know people are praying for you and thinking of you everyday!"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Don't give up"
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "In memory of my Husband Matthew who passed from cancer. Keep fighting and living each day - you get through it"
+        },
+        {
+          "name": "William Gomes",
+          "message": "God is with you, we are with you, we'll keep you in our prayers❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "A mother's strength is powerful—keep fighting, you're surrounded by love .God is with you every step covering you in strength and healing"
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "On behalf of our Worshipful Master, Steve Pallett, and all the Brethren of the Lodge, we wish you well"
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "God bless you"
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "We are praying for you, my friend, stay strong during this difficult time. We're in this together."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "God bless you and your family! You video touched my heart! Please stay strong and know people are praying for you and thinking of you everyday!"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Don't give up"
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "In memory of my Husband Matthew who passed from cancer. Keep fighting and living each day - you get through it"
+        },
+        {
+          "name": "William Gomes",
+          "message": "God is with you, we are with you, we'll keep you in our prayers❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "A mother's strength is powerful—keep fighting, you're surrounded by love .God is with you every step covering you in strength and healing"
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "On behalf of our Worshipful Master, Steve Pallett, and all the Brethren of the Lodge, we wish you well"
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "God bless you"
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "We are praying for you, my friend, stay strong during this difficult time. We're in this together."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:54.251789+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Support Emma Davis Fight Against Metastatic Melanoma — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-d9f7-745c-8d9c-12158e08e85b",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-emma",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-emma",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "proxyUsed": "basic",
+          "cacheState": "hit",
+          "cachedAt": "2026-10-27T04:57:05.409Z",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-daniel",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-daniel",
+      "sourceMessages": [
+        {
+          "name": "Emma Richardson",
+          "message": "My dad had a liver transplant in 2019 and he's still here with us today. A living donor gave him that second chance. Praying you get yours in Turkey soon, Daniel. Don't lose hope."
+        },
+        {
+          "name": "Jacob Hoffmann",
+          "message": "The fact that you kept fighting through fifteen rounds of immunotherapy says everything about the kind of man you are. Turkey is the right move if it means moving faster. Wishing you strength. 💚"
+        },
+        {
+          "name": "Michael Brooks",
+          "message": "I don't know you, but I read your whole story and had to donate. Nobody should lose the chance at a transplant because the system moves too slowly. Sharing this everywhere I can."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Emma Richardson",
+          "message": "My dad had a liver transplant in 2019 and he's still here with us today. A living donor gave him that second chance. Praying you get yours in Turkey soon, Daniel. Don't lose hope."
+        },
+        {
+          "name": "Jacob Hoffmann",
+          "message": "The fact that you kept fighting through fifteen rounds of immunotherapy says everything about the kind of man you are. Turkey is the right move if it means moving faster. Wishing you strength. 💚"
+        },
+        {
+          "name": "Michael Brooks",
+          "message": "I don't know you, but I read your whole story and had to donate. Nobody should lose the chance at a transplant because the system moves too slowly. Sharing this everywhere I can."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:56.305052+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Help Daniel Get a Life-Saving Liver Transplant — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e1cd-753f-b6dd-9c7433619d27",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-daniel",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-daniel",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "3805226e-9a0e-4846-8c66-575aff33151b",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-vexanna",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-vexanna",
+      "sourceMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "Praying for you, sweet Vexanna. No child should have to endure so much pain. I hope this donation helps bring you the care and comfort you deserve. ❤️🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Your story broke my heart. I'm sending my donation today and praying that God surrounds your family with strength, hope, and healing. ❤️"
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "Stay strong, little angel. Your beautiful smile is stronger than this disease. May God bless you and your amazing mom. 🙏💚"
+        },
+        {
+          "name": "William Gomes",
+          "message": "Every child deserves the chance to live without pain. I hope many people see your story and come together to help. Sending love from my family. ❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "I can't imagine what your mother has gone through. No parent should ever face something like this alone. Praying for miracles and brighter days ahead. 🙏"
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "Just made a donation. It's not much, but I hope it helps. Wishing Vexanna a future filled with healing, peace, and happiness. ❤️"
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "Your courage is truly inspiring. May God continue watching over you and bless everyone who helps your family through this difficult journey. 🙏💕"
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "I have children, and your story brought tears to my eyes. I'm praying that compassionate people around the world come together to help Vexanna. ❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "Praying for you, sweet Vexanna. No child should have to endure so much pain. I hope this donation helps bring you the care and comfort you deserve. ❤️🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Your story broke my heart. I'm sending my donation today and praying that God surrounds your family with strength, hope, and healing. ❤️"
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "Stay strong, little angel. Your beautiful smile is stronger than this disease. May God bless you and your amazing mom. 🙏💚"
+        },
+        {
+          "name": "William Gomes",
+          "message": "Every child deserves the chance to live without pain. I hope many people see your story and come together to help. Sending love from my family. ❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "I can't imagine what your mother has gone through. No parent should ever face something like this alone. Praying for miracles and brighter days ahead. 🙏"
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "Just made a donation. It's not much, but I hope it helps. Wishing Vexanna a future filled with healing, peace, and happiness. ❤️"
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "Your courage is truly inspiring. May God continue watching over you and bless everyone who helps your family through this difficult journey. 🙏💕"
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "I have children, and your story brought tears to my eyes. I'm praying that compassionate people around the world come together to help Vexanna. ❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:56.305716+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help Save My Daughter Vexanna — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e1e3-77ba-a1e2-55ee8af4723a",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-vexanna",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-vexanna",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "cdb40a21-f012-4b58-ac1b-4078e9fa679e",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-les",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-les",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:56.306304+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Retire 83-Year-Old Les and Help Save His Home — Solenari Care",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e1d2-73f8-9be5-6d2c6f0b41b2",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-les",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-les",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "c3832554-8c05-44fa-99d8-535f9f8b9b09",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "olivia",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=olivia",
+      "sourceMessages": [
+        {
+          "name": "Emily Carter",
+          "message": "Your story touched my heart. I'm praying that you receive your new wheelchair and accessible van soon. God bless you and your wonderful mother. ❤️🙏"
+        },
+        {
+          "name": "Michael Anderson",
+          "message": "No mother should have to carry this burden alone. Wishing you both strength, hope, and brighter days ahead. ❤️"
+        },
+        {
+          "name": "Jessica Wilson",
+          "message": "I hope this donation helps even a little. Your mother's love is beautiful, and you both deserve so much support. 🙏"
+        },
+        {
+          "name": "Daniel Thompson",
+          "message": "Praying that God opens every door for your family. May your fundraiser reach its goal quickly. Stay strong! ❤️"
+        },
+        {
+          "name": "Amanda Brooks",
+          "message": "Your strength is inspiring, Olivia. I'm praying for comfort, peace, and many blessings for you and your amazing mom. ❤️🙏"
+        },
+        {
+          "name": "Christopher Hall",
+          "message": "Every young person deserves dignity and proper care. I hope you get the wheelchair and van your family needs. God bless you both."
+        },
+        {
+          "name": "Rachel Morgan",
+          "message": "Sending love, prayers, and hope from my family to yours. May God continue giving your mother strength every single day. ❤️"
+        },
+        {
+          "name": "David Miller",
+          "message": "You are stronger than you know, Olivia. Keeping you and your mom in my prayers. Better days are coming. 🙏❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Emily Carter",
+          "message": "Your story touched my heart. I'm praying that you receive your new wheelchair and accessible van soon. God bless you and your wonderful mother. ❤️🙏"
+        },
+        {
+          "name": "Michael Anderson",
+          "message": "No mother should have to carry this burden alone. Wishing you both strength, hope, and brighter days ahead. ❤️"
+        },
+        {
+          "name": "Jessica Wilson",
+          "message": "I hope this donation helps even a little. Your mother's love is beautiful, and you both deserve so much support. 🙏"
+        },
+        {
+          "name": "Daniel Thompson",
+          "message": "Praying that God opens every door for your family. May your fundraiser reach its goal quickly. Stay strong! ❤️"
+        },
+        {
+          "name": "Amanda Brooks",
+          "message": "Your strength is inspiring, Olivia. I'm praying for comfort, peace, and many blessings for you and your amazing mom. ❤️🙏"
+        },
+        {
+          "name": "Christopher Hall",
+          "message": "Every young person deserves dignity and proper care. I hope you get the wheelchair and van your family needs. God bless you both."
+        },
+        {
+          "name": "Rachel Morgan",
+          "message": "Sending love, prayers, and hope from my family to yours. May God continue giving your mother strength every single day. ❤️"
+        },
+        {
+          "name": "David Miller",
+          "message": "You are stronger than you know, Olivia. Keeping you and your mom in my prayers. Better days are coming. 🙏❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:56.306949+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help Olivia Live with Dignity — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e1d7-769b-9c08-724b661eaee0",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=olivia",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=olivia",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "090e8d24-be82-469c-b4f9-e5635c46e466",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "sarah",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=sarah",
+      "sourceMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "Praying for you, Sarah. No one should ever have to fight for life and finances at the same time. Donated and shared. ❤️🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Your strength is truly inspiring. I hope this donation helps you get the transplant you need. Everyone, please donate if you can."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "I don't know you, but I care about what you're going through. I pray Jehovah gives you the strength each day, and that those helping you have the wisdom, the knowledge, and the empathy needed to truly support you through this. I wanted to help, even in a small way. I look forward to the day when this is no longer your reality when \"… no resident will say: 'I am sick.'\" (Isa 33:24)"
+        },
+        {
+          "name": "William Gomes",
+          "message": "Cancer has already taken so much from you. I'm praying this transplant gives you the second chance you deserve. God bless you. ❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "Just donated. I hope many others join in. Together we can help Sarah receive this life-saving treatment."
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "You are not fighting alone, Sarah. Keeping you in my prayers every day. Stay strong. 🙏"
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "This broke my heart. Everyone who reads this, please consider donating or sharing. Every contribution matters."
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "I wish I could give more. Sending love, prayers, and hoping your fundraiser reaches its goal very soon. ❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "Praying for you, Sarah. No one should ever have to fight for life and finances at the same time. Donated and shared. ❤️🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Your strength is truly inspiring. I hope this donation helps you get the transplant you need. Everyone, please donate if you can."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "I don't know you, but I care about what you're going through. I pray Jehovah gives you the strength each day, and that those helping you have the wisdom, the knowledge, and the empathy needed to truly support you through this. I wanted to help, even in a small way. I look forward to the day when this is no longer your reality when \"… no resident will say: 'I am sick.'\" (Isa 33:24)"
+        },
+        {
+          "name": "William Gomes",
+          "message": "Cancer has already taken so much from you. I'm praying this transplant gives you the second chance you deserve. God bless you. ❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "Just donated. I hope many others join in. Together we can help Sarah receive this life-saving treatment."
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "You are not fighting alone, Sarah. Keeping you in my prayers every day. Stay strong. 🙏"
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "This broke my heart. Everyone who reads this, please consider donating or sharing. Every contribution matters."
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "I wish I could give more. Sending love, prayers, and hoping your fundraiser reaches its goal very soon. ❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:56.307855+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "title": "Help Save Sarah Jones: Her Only Chance Is a Second Stem Cell Transplant — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e1d9-742a-9a35-ef00a9656a88",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=sarah",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=sarah",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "53e1a110-a4eb-4b11-a90f-c6b7731f1cf1",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-ross",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-ross",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:56.308497+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "en-US",
+          "title": "Help Ross Access Critical Cancer Treatment — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e1d6-70b1-b6c3-9c9e02c0d915",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-ross",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-ross",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "6a0aad0f-466d-43f3-bb23-c63fa0297b3c",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "ayuda-cristian",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=ayuda-cristian",
+      "sourceMessages": [
+        {
+          "name": "Valentina Morales",
+          "message": "Ningún niño debería luchar contra el cáncer y el abandono al mismo tiempo. Estoy orando por ti, Cristian. No pierdas la esperanza. ❤️🙏"
+        },
+        {
+          "name": "María González",
+          "message": "Tu historia me rompió el corazón. Espero que esta pequeña ayuda sirva para tu tratamiento y tus necesidades diarias. Que Dios bendiga a toda tu familia. 🙏❤️"
+        },
+        {
+          "name": "José Martínez",
+          "message": "Te envío un fuerte abrazo y muchas oraciones. Deseo de todo corazón que muy pronto lleguen días mejores para ti. ❤️"
+        },
+        {
+          "name": "Ana Rodríguez",
+          "message": "No estás solo, Cristian. Hay muchas personas que creemos en tu recuperación y estamos contigo. Mucha fuerza. 🙏"
+        },
+        {
+          "name": "Carlos Hernández",
+          "message": "Rezo para que Dios te dé fuerzas para seguir luchando. Nunca pierdas la fe. ❤️"
+        },
+        {
+          "name": "Miguel Torres",
+          "message": "Tus abuelos son unos verdaderos héroes. Espero que esta ayuda les dé un poco de tranquilidad en estos momentos tan difíciles. 🙏"
+        },
+        {
+          "name": "Sofía Ramírez",
+          "message": "Nadie merece pasar por tanto sufrimiento. Que Dios te conceda salud, paz y esperanza. ❤️"
+        },
+        {
+          "name": "Alejandro López",
+          "message": "Tu historia me hizo llorar. Espero que esta donación ayude con tu silla de ruedas, tus pañales y tu tratamiento. Sigue luchando, campeón. 🙏❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Valentina Morales",
+          "message": "No child should have to fight cancer and abandonment at the same time. I'm praying for you, Cristian. Don't lose hope. ❤️🙏"
+        },
+        {
+          "name": "María González",
+          "message": "Your story broke my heart. I hope this small help goes toward your treatment and daily needs. God bless your whole family. 🙏❤️"
+        },
+        {
+          "name": "José Martínez",
+          "message": "I'm sending you a big hug and many prayers. I wish with all my heart that better days come for you very soon. ❤️"
+        },
+        {
+          "name": "Ana Rodríguez",
+          "message": "You're not alone, Cristian. There are many people who believe in your recovery and are with you. Much strength. 🙏"
+        },
+        {
+          "name": "Carlos Hernández",
+          "message": "I pray that God gives you strength to keep fighting. Never lose faith. ❤️"
+        },
+        {
+          "name": "Miguel Torres",
+          "message": "Your grandparents are true heroes. I hope this help brings them a little peace in such difficult times. 🙏"
+        },
+        {
+          "name": "Sofía Ramírez",
+          "message": "No one deserves to suffer so much. May God grant you health, peace, and hope. ❤️"
+        },
+        {
+          "name": "Alejandro López",
+          "message": "Your story made me cry. I hope this donation helps with your wheelchair, diapers, and treatment. Keep fighting, champion. 🙏❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:57.662407+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "es",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Ayuda a Cristian Sanchéz a Seguir Luchando por su Vida — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e747-72c8-86f2-d139b7223f51",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=ayuda-cristian",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=ayuda-cristian",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "855f1e23-91a4-4b25-afb8-9cbd3fcaaade",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-save-marks",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-save-marks",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:57.663100+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Please Donate to Stop Mark's Severe Pain and Help Save His Life — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e747-72ed-9285-bf562a40e981",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-save-marks",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-save-marks",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "4694331c-149f-472b-a369-82f29314e477",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "goyito",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=goyito",
+      "sourceMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "Stay strong, Goyito! 🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Sending so much love to you and your family. It’s heartbreaking to see you go through this, but please know you have an entire community rooting for your recovery. Don’t lose hope."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "God bless you, Goyito. Praying for a miracle. ✨"
+        },
+        {
+          "name": "William Gomes",
+          "message": "I’ve been following your story for a few days now and couldn’t sit idle. I know words are small compared to what you’re facing, but I hope this contribution helps ease the burden slightly. Keep fighting, Goyito. Your strength is inspiring."
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "Time is critical, so I acted fast. Hoping this helps speed up the process for you. Please keep us updated on your progress. We are all watching and hoping for the best."
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "Stay positive. Healing vibes coming your way! 💪"
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "It’s incredible to see how people come together in moments like this. I just made my donation and encouraged my friends to do the same. We are all behind you, Goyito. Keep your head up and focus on healing. We’ve got your back."
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "Small contribution from my side. It’s not much, but it’s sent with all my heart. Hope it helps with the treatment costs. You are not alone in this."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "Stay strong, Goyito! 🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Sending so much love to you and your family. It’s heartbreaking to see you go through this, but please know you have an entire community rooting for your recovery. Don’t lose hope."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "God bless you, Goyito. Praying for a miracle. ✨"
+        },
+        {
+          "name": "William Gomes",
+          "message": "I’ve been following your story for a few days now and couldn’t sit idle. I know words are small compared to what you’re facing, but I hope this contribution helps ease the burden slightly. Keep fighting, Goyito. Your strength is inspiring."
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "Time is critical, so I acted fast. Hoping this helps speed up the process for you. Please keep us updated on your progress. We are all watching and hoping for the best."
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "Stay positive. Healing vibes coming your way! 💪"
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "It’s incredible to see how people come together in moments like this. I just made my donation and encouraged my friends to do the same. We are all behind you, Goyito. Keep your head up and focus on healing. We’ve got your back."
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "Small contribution from my side. It’s not much, but it’s sent with all my heart. Hope it helps with the treatment costs. You are not alone in this."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:57.663614+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "💪 Goyito — Crawls Every Day Just to Survive and Care for His Mother — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e747-73cc-ab4a-5a06622922a8",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=goyito",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=goyito",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "22b24f0b-a033-42ac-ad8f-7f42700428c5",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "goyito-es",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=goyito-es",
+      "sourceMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "Acabo de donar. ¡Mantente fuerte, Goyito! 🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Envío mucho amor a ti y a tu familia. Es desgarrador ver lo que estás pasando, pero por favor sabe que tienes toda una comunidad rezando por tu recuperación. No pierdas la esperanza."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "¡Compartido con mi red de contactos! Ayudemos a correr la voz. 📢"
+        },
+        {
+          "name": "Juan Pérez",
+          "message": "He estado siguiendo tu historia estos días y no podía quedarme de brazos cruzados. Sé que las palabras son pequeñas comparadas con lo que enfrentas, pero espero que esta contribución ayude a aliviar un poco la carga. Sigue luchando, Goyito. Tu fuerza es inspiradora."
+        },
+        {
+          "name": "María García",
+          "message": "Dios te bendiga, Goyito. Rezo por un milagro. ✨"
+        },
+        {
+          "name": "Carlos Rodríguez",
+          "message": "Una pequeña contribución de mi parte. No es mucho, pero la envío con todo mi corazón. Espero que ayude con los gastos del tratamiento. No estás solo en esto."
+        },
+        {
+          "name": "Ana Martínez",
+          "message": "Es increíble ver cómo la gente se une en momentos como este. Acabo de hacer mi donación y animé a mis amigos a hacer lo mismo. Todos estamos contigo, Goyito. Mantén la cabeza alta y concéntrate en sanar. Te respaldamos."
+        },
+        {
+          "name": "Miguel Ángel Silva",
+          "message": "Mantén la positividad. ¡Te envío vibras de sana! 💪"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "I just donated. Stay strong, Goyito! 🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "I'm sending lots of love to you and your family. It's heartbreaking to see what you're going through, but please know you have an entire community praying for your recovery. Don't lose hope."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "Shared with my network! Let's help spread the word. 📢"
+        },
+        {
+          "name": "Juan Pérez",
+          "message": "I've been following your story these past few days and couldn't just stand by. I know words are small compared to what you're facing, but I hope this contribution helps ease the burden a little. Keep fighting, Goyito. Your strength is inspiring."
+        },
+        {
+          "name": "María García",
+          "message": "God bless you, Goyito. Praying for a miracle. ✨"
+        },
+        {
+          "name": "Carlos Rodríguez",
+          "message": "A small contribution from me. It's not much, but I'm sending it with all my heart. I hope it helps with the treatment costs. You are not alone in this."
+        },
+        {
+          "name": "Ana Martínez",
+          "message": "It's incredible to see how people come together in moments like this. I just made my donation and encouraged my friends to do the same. We're all with you, Goyito. Keep your head up and focus on healing. We've got your back."
+        },
+        {
+          "name": "Miguel Ángel Silva",
+          "message": "Stay positive. Sending you healing vibes! 💪"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:57.664600+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "es",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "💪 Goyito — Gatea todos los días solo para sobrevivir y cuidar de su madre — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e71f-7732-bc68-476a40112088",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=goyito-es",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=goyito-es",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "451b18b1-9440-46e4-9843-0122e7161500",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "ayuda-ricardo",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=ayuda-ricardo",
+      "sourceMessages": [
+        {
+          "name": "Ashley Moore",
+          "message": "Estoy orando por Ricardo y por toda su familia. Que Dios les dé fuerzas para seguir luchando. 🙏❤️"
+        },
+        {
+          "name": "Christopher Taylor",
+          "message": "Ningún padre debería vivir con el miedo de no ver crecer a su hijo. Espero que esta ayuda les sirva. Dios los bendiga."
+        },
+        {
+          "name": "Amanda Anderson",
+          "message": "Su historia me conmovió profundamente. Mucha fuerza para Ricardo, Ana y su pequeño hijo."
+        },
+        {
+          "name": "Matthew Thomas",
+          "message": "Estoy rezando por un milagro. Ricardo, sigue luchando. Tu hijo te necesita. ❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "No pude contener las lágrimas al leer su historia. Espero que pronto lleguen más personas a ayudar."
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "Que Dios bendiga a toda su familia. Nunca pierdan la esperanza. Estamos con ustedes."
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "Una pequeña ayuda con mucho cariño. Espero que Ricardo pueda continuar su tratamiento."
+        },
+        {
+          "name": "Christopher Taylor",
+          "message": "Estoy compartiendo esta campaña para que llegue a más personas. Mucha fuerza."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Ashley Moore",
+          "message": "I'm praying for Ricardo and his whole family. May God give you strength to keep fighting. 🙏❤️"
+        },
+        {
+          "name": "Christopher Taylor",
+          "message": "No parent should live in fear of not seeing their child grow up. I hope this help serves you. God bless you."
+        },
+        {
+          "name": "Amanda Anderson",
+          "message": "Your story moved me deeply. Much strength to Ricardo, Ana, and their little son."
+        },
+        {
+          "name": "Matthew Thomas",
+          "message": "I'm praying for a miracle. Ricardo, keep fighting. Your son needs you. ❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "I couldn't hold back my tears reading your story. I hope more people come to help soon."
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "May God bless your whole family. Never lose hope. We are with you."
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "A small help given with much love. I hope Ricardo can continue his treatment."
+        },
+        {
+          "name": "Christopher Taylor",
+          "message": "I'm sharing this campaign so it reaches more people. Much strength."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:57.665305+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Mi esposo no quiere morir. Solo quiere vivir para ver crecer a nuestro hijo. — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "es",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e746-728e-8f83-9142c223d637",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=ayuda-ricardo",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=ayuda-ricardo",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "ab141bd4-4760-486c-81d4-c39350722d07",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "armando",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=armando",
+      "sourceMessages": [
+        {
+          "name": "María González",
+          "message": "Lucía, no pude contener las lágrimas al leer la historia de Armando. Rezo para que Dios les dé fuerzas y que muy pronto pueda recibir la silla de ruedas y todos los medicamentos que necesita. ❤️🙏"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "Nadie debería pasar por tanto sufrimiento. Espero que esta pequeña ayuda alivie un poco la carga de su familia. Mucha fuerza, Armando. Dios está con ustedes. 🙏"
+        },
+        {
+          "name": "Sofía Herrera",
+          "message": "Qué difícil debe ser cuidar a la persona que amas viendo cómo sufre todos los días. Lucía, eres una mujer muy valiente. Que Dios los bendiga siempre. ❤️"
+        },
+        {
+          "name": "Miguel Torres",
+          "message": "Espero de todo corazón que puedan comprar la silla de ruedas y continuar con el tratamiento. Mucha fuerza para toda la familia. No pierdan la esperanza. 🙏❤️"
+        },
+        {
+          "name": "Andrea Castillo",
+          "message": "Aunque mi ayuda sea pequeña, la envío con mucho cariño. Estaré orando por la recuperación de Armando y por la fortaleza de Lucía. ❤️"
+        },
+        {
+          "name": "José Martínez",
+          "message": "Ninguna familia debería tener que elegir entre comprar medicamentos o llevar comida a casa. Espero que muchas personas se unan para ayudar a Armando. Dios los bendiga. 🙏"
+        },
+        {
+          "name": "Valentina Rojas",
+          "message": "Compartí su historia con toda mi familia. Confío en que llegarán muchas personas de buen corazón para apoyar esta causa. Mucha fuerza. ❤️"
+        },
+        {
+          "name": "Fernando López",
+          "message": "Que Dios haga un milagro en la vida de Armando. Espero que muy pronto pueda aliviar su dolor y recuperar un poco de calidad de vida. Un fuerte abrazo para ustedes. 🙏❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "María González",
+          "message": "Lucía, I couldn't hold back my tears reading Armando's story. I pray that God gives you strength and that he can soon receive the wheelchair and all the medications he needs. ❤️🙏"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "No one should go through so much suffering. I hope this small help eases your family's burden a little. Much strength, Armando. God is with you. 🙏"
+        },
+        {
+          "name": "Sofía Herrera",
+          "message": "How hard it must be to care for the person you love while watching them suffer every day. Lucía, you are a very brave woman. May God bless you always. ❤️"
+        },
+        {
+          "name": "Miguel Torres",
+          "message": "I hope with all my heart that you can buy the wheelchair and continue the treatment. Much strength to the whole family. Don't lose hope. 🙏❤️"
+        },
+        {
+          "name": "Andrea Castillo",
+          "message": "Even though my help is small, I'm sending it with much love. I'll be praying for Armando's recovery and Lucía's strength. ❤️"
+        },
+        {
+          "name": "José Martínez",
+          "message": "No family should have to choose between buying medicine or bringing food home. I hope many people join together to help Armando. God bless you. 🙏"
+        },
+        {
+          "name": "Valentina Rojas",
+          "message": "I shared your story with my whole family. I trust many kind-hearted people will come to support this cause. Much strength. ❤️"
+        },
+        {
+          "name": "Fernando López",
+          "message": "May God perform a miracle in Armando's life. I hope he can soon ease his pain and regain some quality of life. A big hug to you all. 🙏❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:57.666022+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Soy Lucía Fernández. Nunca imaginé que algún día tendría que pedir ayuda para salvar al hombre que amo. — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "es",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-e748-745b-9847-1ba3241925d8",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=armando",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=armando",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "32501cb4-5833-4c23-805c-c13db039543e",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "thiago",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=thiago",
+      "sourceMessages": [
+        {
+          "name": "María Fernández",
+          "message": "Lloré al leer la historia de Thiago. Ningún niño debería pasar por tanto dolor. Espero que mi pequeña ayuda les dé un poco de alivio. Dios los bendiga. ❤️🙏"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "Estoy orando por Thiago todos los días. Que Dios guíe a los médicos y le conceda una pronta recuperación. Mucha fuerza para ti, Lourdes. 🙏❤️"
+        },
+        {
+          "name": "Sofía Herrera",
+          "message": "No puedo imaginar el sufrimiento que están viviendo. Envío este aporte con todo mi cariño y mis oraciones. ❤️"
+        },
+        {
+          "name": "Javier Morales",
+          "message": "Los niños merecen una oportunidad para vivir y ser felices. Espero que esta donación ayude a Thiago a seguir luchando. Que Dios haga un milagro. 🙏"
+        },
+        {
+          "name": "Fernando Rojas",
+          "message": "Me rompió el corazón conocer todo lo que ha pasado Thiago. Oro para que muy pronto pueda volver a jugar como cualquier niño. 🙏❤️"
+        },
+        {
+          "name": "Camila Mendoza",
+          "message": "Dios está con ustedes incluso en los momentos más difíciles. Que nunca pierdan la esperanza. Un fuerte abrazo para Thiago y su mamá. ❤️"
+        },
+        {
+          "name": "Daniela Ortiz",
+          "message": "Mi hijo tiene casi la misma edad que Thiago y no pude contener las lágrimas. Estoy rezando por su sanación completa. ❤️🙏"
+        },
+        {
+          "name": "Andrés López",
+          "message": "Los niños como Thiago nos enseñan lo valientes que pueden ser incluso en medio del sufrimiento. Estoy con ustedes en oración. 💙🙏"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "María Fernández",
+          "message": "I cried reading Thiago's story. No child should go through so much pain. I hope my small help brings you a bit of relief. God bless you. ❤️🙏"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "I'm praying for Thiago every day. May God guide the doctors and grant him a quick recovery. Much strength to you, Lourdes. 🙏❤️"
+        },
+        {
+          "name": "Sofía Herrera",
+          "message": "I can't imagine the suffering you're living through. I'm sending this contribution with all my love and prayers. ❤️"
+        },
+        {
+          "name": "Javier Morales",
+          "message": "Children deserve a chance to live and be happy. I hope this donation helps Thiago keep fighting. May God perform a miracle. 🙏"
+        },
+        {
+          "name": "Fernando Rojas",
+          "message": "It broke my heart to learn everything Thiago has been through. I pray that he can soon play again like any other child. 🙏❤️"
+        },
+        {
+          "name": "Camila Mendoza",
+          "message": "God is with you even in the hardest moments. May you never lose hope. A big hug for Thiago and his mom. ❤️"
+        },
+        {
+          "name": "Daniela Ortiz",
+          "message": "My son is almost the same age as Thiago and I couldn't hold back my tears. I'm praying for his complete healing. ❤️🙏"
+        },
+        {
+          "name": "Andrés López",
+          "message": "Children like Thiago teach us how brave they can be even amid suffering. I'm with you in prayer. 💙🙏"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:59.106383+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Ayuda a Salvar la Vida de Mi Hijo Thiago — Solenari Care",
+          "language": "es",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-ece0-738a-80ed-a7cf2e0bb3ce",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=thiago",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=thiago",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "54349c9b-93fd-46f1-b098-d34633b244f6",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "save-castiel",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=save-castiel",
+      "sourceMessages": [
+        {
+          "name": "John Davis",
+          "message": "I hope this campaign reaches everyone who can help you continue your treatment. Stay strong, little warrior!"
+        },
+        {
+          "name": "Emily Carter",
+          "message": "No child should have to fight alone. I hope more people join this campaign and help Castiel and other families facing the same difficult journey."
+        },
+        {
+          "name": "Michael Anderson",
+          "message": "Sending love, strength, and prayers to Castiel and her family. Every contribution matters, so please help if you are able."
+        },
+        {
+          "name": "Sarah Thompson",
+          "message": "I cannot give much, but I believe many small acts of kindness can create something powerful. Keep fighting, Castiel!"
+        },
+        {
+          "name": "Daniel Martinez",
+          "message": "This campaign is not only about one child. It is about giving hope to families who cannot afford the treatment their children desperately need."
+        },
+        {
+          "name": "Olivia Wilson",
+          "message": "Castiel deserves the chance to grow, play, and experience a beautiful childhood. Please donate and share this campaign with others."
+        },
+        {
+          "name": "Victor Davis",
+          "message": "God bless you little one"
+        },
+        {
+          "name": "Udson Miller",
+          "message": "Jesus loves you❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "John Davis",
+          "message": "I hope this campaign reaches everyone who can help you continue your treatment. Stay strong, little warrior!"
+        },
+        {
+          "name": "Emily Carter",
+          "message": "No child should have to fight alone. I hope more people join this campaign and help Castiel and other families facing the same difficult journey."
+        },
+        {
+          "name": "Michael Anderson",
+          "message": "Sending love, strength, and prayers to Castiel and her family. Every contribution matters, so please help if you are able."
+        },
+        {
+          "name": "Sarah Thompson",
+          "message": "I cannot give much, but I believe many small acts of kindness can create something powerful. Keep fighting, Castiel!"
+        },
+        {
+          "name": "Daniel Martinez",
+          "message": "This campaign is not only about one child. It is about giving hope to families who cannot afford the treatment their children desperately need."
+        },
+        {
+          "name": "Olivia Wilson",
+          "message": "Castiel deserves the chance to grow, play, and experience a beautiful childhood. Please donate and share this campaign with others."
+        },
+        {
+          "name": "Victor Davis",
+          "message": "God bless you little one"
+        },
+        {
+          "name": "Udson Miller",
+          "message": "Jesus loves you❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:59.107655+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Help save Castiel’s life fighting Stage 4 Cancer — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-ecd3-70f2-935f-ac36b510503e",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=save-castiel",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=save-castiel",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "58f29f10-e49c-470f-976e-b782bb31165b",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "shamila",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=shamila",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:59.110613+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "en-US",
+          "title": "Please Donate to Stop Shamila's Severe Pain and Help Save Her Life — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-ecd3-72d0-8903-6ee859435ce8",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=shamila",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=shamila",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "18a1ff7d-70be-4363-bb58-f0d0829281df",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-save-gwen",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-save-gwen",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:59.119568+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Please Donate to Stop Lily's Severe Pain and Help Save Her Life — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-ecde-7777-929a-7befe7703a58",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-save-gwen",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-save-gwen",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "184f81a5-f25b-431e-9b33-3420e1e6a43b",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "kaleb",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=kaleb",
+      "sourceMessages": [
+        {
+          "name": "Emily Carter",
+          "message": "Praying for you, Kaleb. May God continue to protect you and give your family strength every single day. ❤️🙏"
+        },
+        {
+          "name": "Michael Thompson",
+          "message": "No child should have to fight a battle like this. I just donated and will keep your family in my prayers. Stay strong, little warrior. 💙"
+        },
+        {
+          "name": "Sarah Mitchell",
+          "message": "Sending love, prayers, and hope. Every donation makes a difference. God bless you, Kaleb. 🙏"
+        },
+        {
+          "name": "David Wilson",
+          "message": "Just made my donation. Wishing Kaleb continued strength and better days ahead. ❤️"
+        },
+        {
+          "name": "Jessica Brown",
+          "message": "I wish I could give more. Keeping Kaleb and his family in my prayers. May God watch over all of you. 🙏💙"
+        },
+        {
+          "name": "Ryan Anderson",
+          "message": "Let's show this family they are not alone. Every share and every donation helps bring hope. 💙"
+        },
+        {
+          "name": "Ashley Davis",
+          "message": "Your story touched my heart. Praying for healing, comfort, and brighter days ahead for sweet Kaleb. ❤️🙏"
+        },
+        {
+          "name": "Christopher Moore",
+          "message": "May God continue to bless and strengthen your family. Kaleb, you are an incredible little fighter. Keep believing. 💙🙏"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Emily Carter",
+          "message": "Praying for you, Kaleb. May God continue to protect you and give your family strength every single day. ❤️🙏"
+        },
+        {
+          "name": "Michael Thompson",
+          "message": "No child should have to fight a battle like this. I just donated and will keep your family in my prayers. Stay strong, little warrior. 💙"
+        },
+        {
+          "name": "Sarah Mitchell",
+          "message": "Sending love, prayers, and hope. Every donation makes a difference. God bless you, Kaleb. 🙏"
+        },
+        {
+          "name": "David Wilson",
+          "message": "Just made my donation. Wishing Kaleb continued strength and better days ahead. ❤️"
+        },
+        {
+          "name": "Jessica Brown",
+          "message": "I wish I could give more. Keeping Kaleb and his family in my prayers. May God watch over all of you. 🙏💙"
+        },
+        {
+          "name": "Ryan Anderson",
+          "message": "Let's show this family they are not alone. Every share and every donation helps bring hope. 💙"
+        },
+        {
+          "name": "Ashley Davis",
+          "message": "Your story touched my heart. Praying for healing, comfort, and brighter days ahead for sweet Kaleb. ❤️🙏"
+        },
+        {
+          "name": "Christopher Moore",
+          "message": "May God continue to bless and strengthen your family. Kaleb, you are an incredible little fighter. Keep believing. 💙🙏"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:59.120260+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help Kaleb Keep Fighting — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-ecd6-7727-bbcf-cc70cf78eaa6",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=kaleb",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=kaleb",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "4c789332-ff87-4a73-a609-c0b0b4faed90",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "alliyah",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=alliyah",
+      "sourceMessages": [
+        {
+          "name": "Michael Carter",
+          "message": "No child should have to endure so much pain. We are praying for you every day, Alliyah. May God bless you and your family. ❤️🙏"
+        },
+        {
+          "name": "Jessica Williams",
+          "message": "Your story touched my heart. Stay strong, sweet girl. I hope this small gift brings you one step closer to the treatment you deserve."
+        },
+        {
+          "name": "David Thompson",
+          "message": "Praying for a miracle for Alliyah. May God guide every doctor caring for her and give strength to her wonderful mother."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "No family should have to face this alone. Sending love, prayers, and support from my family to yours. ❤️"
+        },
+        {
+          "name": "Christopher Miller",
+          "message": "Keep believing. There is still hope, and there are people around the world praying for Alliyah's recovery. God bless your family."
+        },
+        {
+          "name": "Daniel Wilson",
+          "message": "May this donation help give Alliyah the opportunity she deserves. Never lose faith. God is with your family every step of the way."
+        },
+        {
+          "name": "Ashley Brown",
+          "message": "I wish I could do more. I will continue praying for you and sharing your story. Stay strong, beautiful girl. 🙏❤️"
+        },
+        {
+          "name": "Olivia Martinez",
+          "message": "Sending love from our family. We are praying that Alliyah receives the treatment she needs and has a brighter future ahead. ❤️🙏"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Michael Carter",
+          "message": "No child should have to endure so much pain. We are praying for you every day, Alliyah. May God bless you and your family. ❤️🙏"
+        },
+        {
+          "name": "Jessica Williams",
+          "message": "Your story touched my heart. Stay strong, sweet girl. I hope this small gift brings you one step closer to the treatment you deserve."
+        },
+        {
+          "name": "David Thompson",
+          "message": "Praying for a miracle for Alliyah. May God guide every doctor caring for her and give strength to her wonderful mother."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "No family should have to face this alone. Sending love, prayers, and support from my family to yours. ❤️"
+        },
+        {
+          "name": "Christopher Miller",
+          "message": "Keep believing. There is still hope, and there are people around the world praying for Alliyah's recovery. God bless your family."
+        },
+        {
+          "name": "Daniel Wilson",
+          "message": "May this donation help give Alliyah the opportunity she deserves. Never lose faith. God is with your family every step of the way."
+        },
+        {
+          "name": "Ashley Brown",
+          "message": "I wish I could do more. I will continue praying for you and sharing your story. Stay strong, beautiful girl. 🙏❤️"
+        },
+        {
+          "name": "Olivia Martinez",
+          "message": "Sending love from our family. We are praying that Alliyah receives the treatment she needs and has a brighter future ahead. ❤️🙏"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:57:59.121335+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "title": "Help Give Alliyah a Chance to Heal — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb8-eccf-745d-802c-5e9d1c1c5d8d",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=alliyah",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=alliyah",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "92728e42-703b-483a-89d6-7d6cfea277b7",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-emma-eb",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-emma-eb",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:09.804770+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "en-US",
+          "title": "Help Emma Access Specialized Epidermolysis Bullosa Care — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1689-703a-9325-677ea25c37cb",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-emma-eb",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-emma-eb",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "8d232b5e-4ff6-4621-a2e3-defa3b20d889",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-isa",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-isa",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:09.805365+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Help Isa Continue Her Cancer Treatment — Solenari Care",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-168a-732b-b4e0-f7c37ff22003",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-isa",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-isa",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "3a99d34d-5ae8-430c-8027-f089f67c6f00",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-laura-cancer",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-laura-cancer",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:09.806054+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "title": "Help Laura Access Specialized Skin and Wound Care — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-168a-730c-84a7-33b0b5ea2130",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-laura-cancer",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-laura-cancer",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "0a8d5f3d-a47c-4d95-afbd-ed7d51d12da1",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-lucas-leukemia",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-lucas-leukemia",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:09.806503+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help Lucas Continue His Leukemia Treatment — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1691-73a1-a9a6-dca5e3426e5e",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-lucas-leukemia",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-lucas-leukemia",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "b479f06c-474a-4868-983b-f6292fbd3892",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-olivia",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-olivia",
+      "sourceMessages": [
+        {
+          "name": "Claire Donovan",
+          "message": "It breaks my heart to see Olivia suffering, and I hope this helps bring her some relief."
+        },
+        {
+          "name": "Camila Duarte",
+          "message": "I wish I could have given more, but I know it will still make a difference for Olivia's treatment."
+        },
+        {
+          "name": "Alina Petrova",
+          "message": "Wishing Olivia a future full of health, happiness, and strength. 💖"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Claire Donovan",
+          "message": "It breaks my heart to see Olivia suffering, and I hope this helps bring her some relief."
+        },
+        {
+          "name": "Camila Duarte",
+          "message": "I wish I could have given more, but I know it will still make a difference for Olivia's treatment."
+        },
+        {
+          "name": "Alina Petrova",
+          "message": "Wishing Olivia a future full of health, happiness, and strength. 💖"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:09.806934+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "title": "Help Cure Olivia of Cancer — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1686-7249-9f33-b6f070cf9737",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-olivia",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-olivia",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "b63f036e-61ac-4fde-9db9-f2ee679a6f28",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-hilary",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-hilary",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:09.808220+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help Hilary Fight a Rare Cancer Relapse — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-168d-7387-8c3e-34386e0bd66f",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-hilary",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-hilary",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "510b075a-0129-417e-9ce9-504fcb6a5ecb",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "saves-joyce",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=saves-joyce",
+      "sourceMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "My heart breaks for you, Joyce. No child should have to live with this much pain. Praying for your healing every single day. ❤️🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "I hope these bandages and medicine bring you comfort. Stay strong, sweet girl. God is with you. ❤️"
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "Your courage at only 11 years old is truly inspiring. Sending love, prayers, and support from my family to yours."
+        },
+        {
+          "name": "William Gomes",
+          "message": "I can't imagine what you're going through. I hope this helps provide the care you need. You're not alone. ❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "Such a beautiful little girl. I wish I could do more. Keeping you in my prayers, Joyce."
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "Every child deserves to live without constant pain. Hoping many people come together to support you."
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "Your story moved me to tears. May God bless you with strength, healing, and many kind people along the way. 🙏❤️"
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "I pray these donations help ease your pain and give your family hope. Sending love from afar."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "My heart breaks for you, Joyce. No child should have to live with this much pain. Praying for your healing every single day. ❤️🙏"
+        },
+        {
+          "name": "Julian Brown",
+          "message": "I hope these bandages and medicine bring you comfort. Stay strong, sweet girl. God is with you. ❤️"
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "Your courage at only 11 years old is truly inspiring. Sending love, prayers, and support from my family to yours."
+        },
+        {
+          "name": "William Gomes",
+          "message": "I can't imagine what you're going through. I hope this helps provide the care you need. You're not alone. ❤️"
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "Such a beautiful little girl. I wish I could do more. Keeping you in my prayers, Joyce."
+        },
+        {
+          "name": "Uilson Ramirez",
+          "message": "Every child deserves to live without constant pain. Hoping many people come together to support you."
+        },
+        {
+          "name": "Vania Anderson",
+          "message": "Your story moved me to tears. May God bless you with strength, healing, and many kind people along the way. 🙏❤️"
+        },
+        {
+          "name": "Uesley Miller",
+          "message": "I pray these donations help ease your pain and give your family hope. Sending love from afar."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:11.921661+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "My Skin Hurts From the Smallest Touch. Please Help Me. — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1edb-758d-a996-baf084f4c37a",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=saves-joyce",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=saves-joyce",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "7b616c1f-ba4b-441f-8e53-6261422558a6",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-miguel",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-miguel",
+      "sourceMessages": [
+        {
+          "name": "Joe Frings",
+          "message": "Sending love and encouragement. Good luck guys"
+        },
+        {
+          "name": "Jonas Smith",
+          "message": "I made a prayer for Miguel. May God save"
+        },
+        {
+          "name": "Emily Garcia",
+          "message": "I set my part, it's painful to see this brothers growing together."
+        },
+        {
+          "name": "Will Miller",
+          "message": "Money raised from Leni’s raffle run by the amazing We Brought Beer in Tooting Market!"
+        },
+        {
+          "name": "Piter Garcia",
+          "message": "If we all help a little, we can save her from this."
+        },
+        {
+          "name": "United Lodge of Prudednce No.83",
+          "message": "On behalf of our Worshipful Master, Steve Pallett, and all the Brethren of the Lodge, we wish you well"
+        },
+        {
+          "name": "Vander Anderson",
+          "message": "God bless you little one"
+        },
+        {
+          "name": "Udson Estrella",
+          "message": "Sending love from Logan (Kido) and family."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Joe Frings",
+          "message": "Sending love and encouragement. Good luck guys"
+        },
+        {
+          "name": "Jonas Smith",
+          "message": "I made a prayer for Miguel. May God save"
+        },
+        {
+          "name": "Emily Garcia",
+          "message": "I set my part, it's painful to see this brothers growing together."
+        },
+        {
+          "name": "Will Miller",
+          "message": "Money raised from Leni’s raffle run by the amazing We Brought Beer in Tooting Market!"
+        },
+        {
+          "name": "Piter Garcia",
+          "message": "If we all help a little, we can save her from this."
+        },
+        {
+          "name": "United Lodge of Prudednce No.83",
+          "message": "On behalf of our Worshipful Master, Steve Pallett, and all the Brethren of the Lodge, we wish you well"
+        },
+        {
+          "name": "Vander Anderson",
+          "message": "God bless you little one"
+        },
+        {
+          "name": "Udson Estrella",
+          "message": "Sending love from Logan (Kido) and family."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:11.922163+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Don’t let Davi lose his brother Miguel. — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1ed9-7433-b4b9-5626e9b5b60a",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-miguel",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-miguel",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "c86653a5-8630-457d-83aa-04e65a51bf8f",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-save-laura",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-save-laura",
+      "sourceMessages": [
+        {
+          "name": "Jimmy Martinez",
+          "message": "Sending love and encouragement. Good luck guys"
+        },
+        {
+          "name": "Jordan Anderson",
+          "message": "All the best to you. We are all with you"
+        },
+        {
+          "name": "Sarah Davis",
+          "message": "I will keep you in my prayers, that if you have faith in Jesus that even if you aren’t healed in this life know that if you ask Jesus into your heart and believe, what awaits you in eternity will be far greater than any pain we experience here on earth. I pray for your healing in the mighty name of Jesus Christ amen."
+        },
+        {
+          "name": "We Brought Beer Tooting",
+          "message": "Through the difficulty of this storm the lord is with you. Lean on him in prayer and his word for strength. He will never forsake you or abandon you. There is no darkness his light can’t overcome and he will always be with your family. I hope and pray for beautiful moments to fill your lives together. Jesus loves you"
+        },
+        {
+          "name": "Philip Ayers",
+          "message": "If we all help a little, we can save her from this pain."
+        },
+        {
+          "name": "Uilson Rodriguez",
+          "message": "We hope that this helps your family and that you are able to get medical assistance that you need during this difficult time. We are sending you and your family positive vibes, and prayers your way!"
+        },
+        {
+          "name": "Vania Smith",
+          "message": "God bless you little Laura"
+        },
+        {
+          "name": "Udson Brown",
+          "message": "Sending love and prayers to your family. You are not alone."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jimmy Martinez",
+          "message": "Sending love and encouragement. Good luck guys"
+        },
+        {
+          "name": "Jordan Anderson",
+          "message": "All the best to you. We are all with you"
+        },
+        {
+          "name": "Sarah Davis",
+          "message": "I will keep you in my prayers, that if you have faith in Jesus that even if you aren’t healed in this life know that if you ask Jesus into your heart and believe, what awaits you in eternity will be far greater than any pain we experience here on earth. I pray for your healing in the mighty name of Jesus Christ amen."
+        },
+        {
+          "name": "We Brought Beer Tooting",
+          "message": "Through the difficulty of this storm the lord is with you. Lean on him in prayer and his word for strength. He will never forsake you or abandon you. There is no darkness his light can’t overcome and he will always be with your family. I hope and pray for beautiful moments to fill your lives together. Jesus loves you"
+        },
+        {
+          "name": "Philip Ayers",
+          "message": "If we all help a little, we can save her from this pain."
+        },
+        {
+          "name": "Uilson Rodriguez",
+          "message": "We hope that this helps your family and that you are able to get medical assistance that you need during this difficult time. We are sending you and your family positive vibes, and prayers your way!"
+        },
+        {
+          "name": "Vania Smith",
+          "message": "God bless you little Laura"
+        },
+        {
+          "name": "Udson Brown",
+          "message": "Sending love and prayers to your family. You are not alone."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:11.922592+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Aid Laura: 40 Years of Service, Now in Need — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1ed8-721a-b5ab-e0417bb5cddc",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-save-laura",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-save-laura",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "68e1df2e-3011-40ff-8ca9-95a98cf3e02a",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "save-erica",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=save-erica",
+      "sourceMessages": [
+        {
+          "name": "Jimmy Martinez",
+          "message": "Sending love and encouragement. Good luck Erica, we are Together"
+        },
+        {
+          "name": "Jordan Anderson",
+          "message": "All the best to you. We are all with you"
+        },
+        {
+          "name": "Sarah Davis",
+          "message": "I will keep you in my prayers, that if you have faith in Jesus that even if you aren’t healed in this life know that if you ask Jesus into your heart and believe, what awaits you in eternity will be far greater than any pain we experience here on earth. I pray for your healing in the mighty name of Jesus Christ amen."
+        },
+        {
+          "name": "We Brought Beer Tooting",
+          "message": "Through the difficulty of this storm the lord is with you. Lean on him in prayer and his word for strength. He will never forsake you or abandon you. There is no darkness his light can’t overcome and he will always be with your family. I hope and pray for beautiful moments to fill your lives together. Jesus loves you"
+        },
+        {
+          "name": "Philip Ayers",
+          "message": "If we all help a little, we can save her from this pain."
+        },
+        {
+          "name": "Uilson Rodriguez",
+          "message": "We hope that this helps your family and that you are able to get medical assistance that you need during this difficult time. We are sending you and your family positive vibes, and prayers your way!"
+        },
+        {
+          "name": "Vania Smith",
+          "message": "God bless you little Erica"
+        },
+        {
+          "name": "Udson Brown",
+          "message": "Sending love and prayers to your family. You are not alone Erica."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jimmy Martinez",
+          "message": "Sending love and encouragement. Good luck Erica, we are Together"
+        },
+        {
+          "name": "Jordan Anderson",
+          "message": "All the best to you. We are all with you"
+        },
+        {
+          "name": "Sarah Davis",
+          "message": "I will keep you in my prayers, that if you have faith in Jesus that even if you aren’t healed in this life know that if you ask Jesus into your heart and believe, what awaits you in eternity will be far greater than any pain we experience here on earth. I pray for your healing in the mighty name of Jesus Christ amen."
+        },
+        {
+          "name": "We Brought Beer Tooting",
+          "message": "Through the difficulty of this storm the lord is with you. Lean on him in prayer and his word for strength. He will never forsake you or abandon you. There is no darkness his light can’t overcome and he will always be with your family. I hope and pray for beautiful moments to fill your lives together. Jesus loves you"
+        },
+        {
+          "name": "Philip Ayers",
+          "message": "If we all help a little, we can save her from this pain."
+        },
+        {
+          "name": "Uilson Rodriguez",
+          "message": "We hope that this helps your family and that you are able to get medical assistance that you need during this difficult time. We are sending you and your family positive vibes, and prayers your way!"
+        },
+        {
+          "name": "Vania Smith",
+          "message": "God bless you little Erica"
+        },
+        {
+          "name": "Udson Brown",
+          "message": "Sending love and prayers to your family. You are not alone Erica."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:11.922985+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "title": "Help Erica Against Cancer and Brain Disease — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1ef1-7264-9b73-4c035e8082af",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=save-erica",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=save-erica",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "6586f118-de3e-447c-bcfb-8c94af0894ce",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "jesus-lopez",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=jesus-lopez",
+      "sourceMessages": [
+        {
+          "name": "María González",
+          "message": "Rezo por ti, Jesús. Espero que muy pronto puedas recibir la prótesis y seguir luchando. Dios los bendiga. 🙏❤️"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "Nadie merece pasar por algo así. Mucha fuerza para Jesús y para toda su familia. ❤️"
+        },
+        {
+          "name": "Lucía Fernández",
+          "message": "Lloré al leer esta historia. Espero que esta pequeña ayuda les acerque un poco más a la recuperación de Jesús. 🙏"
+        },
+        {
+          "name": "Javier Morales",
+          "message": "Mucha fuerza, campeón. No permitas que las burlas apaguen tu esperanza. Dios está contigo. ❤️"
+        },
+        {
+          "name": "Ana Rodríguez",
+          "message": "Como madre, esta historia rompió mi corazón. Que Dios bendiga a Jesús y le conceda una pronta recuperación. 🙏"
+        },
+        {
+          "name": "Miguel Herrera",
+          "message": "Espero que miles de personas se unan para ayudar a este joven. Mucha fe y mucha fuerza. ❤️"
+        },
+        {
+          "name": "Patricia Gómez",
+          "message": "Jesús merece una segunda oportunidad. Oro para que conserve la visión que le queda y pueda volver a sonreír. 🙏❤️"
+        },
+        {
+          "name": "Fernando Castillo",
+          "message": "Que Dios les dé fuerzas para seguir adelante. Compartí su historia con mi familia. ❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "María González",
+          "message": "I'm praying for you, Jesús. I hope you can receive the prosthesis very soon and keep fighting. God bless you all. 🙏❤️"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "No one deserves to go through something like this. Much strength to Jesús and his whole family. ❤️"
+        },
+        {
+          "name": "Lucía Fernández",
+          "message": "I cried reading this story. I hope this small help brings Jesús a little closer to recovery. 🙏"
+        },
+        {
+          "name": "Javier Morales",
+          "message": "Much strength, champion. Don't let the mockery extinguish your hope. God is with you. ❤️"
+        },
+        {
+          "name": "Ana Rodríguez",
+          "message": "As a mother, this story broke my heart. May God bless Jesús and grant him a quick recovery. 🙏"
+        },
+        {
+          "name": "Miguel Herrera",
+          "message": "I hope thousands of people join together to help this young man. Much faith and much strength. ❤️"
+        },
+        {
+          "name": "Patricia Gómez",
+          "message": "Jesús deserves a second chance. I pray that he keeps the vision he has left and can smile again. 🙏❤️"
+        },
+        {
+          "name": "Fernando Castillo",
+          "message": "May God give you strength to keep going. I shared your story with my family. ❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:11.924372+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Mi hijo perdió un ojo y parte de su cerebro… y tengo miedo de que también pierda las ganas de vivir. — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "es",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1edf-7641-9607-56ecb3df3ea6",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=jesus-lopez",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=jesus-lopez",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "909a7f85-763f-4d67-bf6e-c9c0e46dc41f",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "ricardo",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=ricardo",
+      "sourceMessages": [
+        {
+          "name": "María González",
+          "message": "Soy madre y no puedo imaginar el dolor que estás viviendo. Oro por Ricardo todos los días. Mucha fuerza para tu familia. ❤️🙏"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "Espero que esta pequeña ayuda sirva para que Ricardo continúe su tratamiento. Que Dios los bendiga y les dé mucha fortaleza."
+        },
+        {
+          "name": "Lucía Fernández",
+          "message": "Nadie debería ver sufrir a un niño de esta manera. Estoy orando por un milagro para Ricardo. ❤️"
+        },
+        {
+          "name": "José Herrera",
+          "message": "Mucha fuerza, pequeño campeón. Sigue luchando. Estoy seguro de que saldrás adelante. Dios está contigo."
+        },
+        {
+          "name": "Ana Martínez",
+          "message": "Tu historia me hizo llorar. Espero de todo corazón que muchas personas puedan ayudar a Ricardo. 🙏"
+        },
+        {
+          "name": "Miguel Torres",
+          "message": "Ningún niño debería pasar por tanto dolor. Que este aporte ayude a aliviar un poco esta difícil batalla. Dios los bendiga."
+        },
+        {
+          "name": "Sofía Navarro",
+          "message": "Estoy compartiendo esta campaña con todos mis amigos. Ricardo merece una oportunidad para vencer el cáncer. ❤️"
+        },
+        {
+          "name": "Valentina Rojas",
+          "message": "Acabo de hacer mi donación. Que Dios bendiga a Ricardo y les dé la fuerza necesaria para superar esta prueba. 🙏❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "María González",
+          "message": "I'm a mother and I can't imagine the pain you're living through. I pray for Ricardo every day. Much strength to your family. ❤️🙏"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "I hope this small help goes toward Ricardo's continued treatment. May God bless you and give you much strength."
+        },
+        {
+          "name": "Lucía Fernández",
+          "message": "No one should have to watch a child suffer this way. I'm praying for a miracle for Ricardo. ❤️"
+        },
+        {
+          "name": "José Herrera",
+          "message": "Much strength, little champion. Keep fighting. I'm sure you'll pull through. God is with you."
+        },
+        {
+          "name": "Ana Martínez",
+          "message": "Your story made me cry. I hope with all my heart that many people can help Ricardo. 🙏"
+        },
+        {
+          "name": "Miguel Torres",
+          "message": "No child should go through so much pain. May this contribution help ease this difficult battle a little. God bless you."
+        },
+        {
+          "name": "Sofía Navarro",
+          "message": "I'm sharing this campaign with all my friends. Ricardo deserves a chance to beat cancer. ❤️"
+        },
+        {
+          "name": "Valentina Rojas",
+          "message": "I just made my donation. May God bless Ricardo and give you the strength needed to overcome this trial. 🙏❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:11.924880+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "es",
+          "title": "Ayuda a Mi Hijo Ricardo Amparo a Seguir Luchando por su Vida — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-1ed9-7235-ad62-82c7bab8f618",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=ricardo",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=ricardo",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "dd3be99a-8b60-409e-9d37-bc685b5a6e04",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "savesmyfather",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=savesmyfather",
+      "sourceMessages": [
+        {
+          "name": "Emily R.",
+          "message": "My heart breaks for what Sarah and her father are going through. If you're able to help, even a small donation can make a real difference. Let's show them they're not alone. ❤️"
+        },
+        {
+          "name": "Michael T.",
+          "message": "No family should have to choose between medical care and putting food on the table. If this story touched your heart, please consider supporting them or sharing this fundraiser."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "I can't imagine how difficult this must be. Every contribution, no matter how small, helps bring them one step closer to getting through this. Let's come together and help."
+        },
+        {
+          "name": "William Gomes",
+          "message": "Life can change in an instant. Today it's their family, tomorrow it could be ours. If you have the ability to help, please consider donating or sharing this campaign."
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "Sarah showed incredible courage by asking for help during such a difficult time. Let's remind her that kindness still exists. Every donation and every share truly matters."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Emily R.",
+          "message": "My heart breaks for what Sarah and her father are going through. If you're able to help, even a small donation can make a real difference. Let's show them they're not alone. ❤️"
+        },
+        {
+          "name": "Michael T.",
+          "message": "No family should have to choose between medical care and putting food on the table. If this story touched your heart, please consider supporting them or sharing this fundraiser."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "I can't imagine how difficult this must be. Every contribution, no matter how small, helps bring them one step closer to getting through this. Let's come together and help."
+        },
+        {
+          "name": "William Gomes",
+          "message": "Life can change in an instant. Today it's their family, tomorrow it could be ours. If you have the ability to help, please consider donating or sharing this campaign."
+        },
+        {
+          "name": "Pamela Garcia",
+          "message": "Sarah showed incredible courage by asking for help during such a difficult time. Let's remind her that kindness still exists. Every donation and every share truly matters."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:13.613474+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Please Help My Dad Fight for His Life — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-258e-7420-b8e0-ed9632a0b688",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=savesmyfather",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=savesmyfather",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "140d16ab-bf5d-4e1f-9410-826092a5efa1",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "saves-susan",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=saves-susan",
+      "sourceMessages": [
+        {
+          "name": "Flavia Smith",
+          "message": "No child should ever have to go through this. Sending all my love and prayers to beautiful Anthee. ❤️"
+        },
+        {
+          "name": "Michael T",
+          "message": "Your daughter is stronger than most adults I know. I hope this surgery gives her the future she deserves. God bless your family."
+        },
+        {
+          "name": "Emily Williams",
+          "message": "Reading this brought me to tears. Praying that Anthee never loses her beautiful heart. ❤️🙏"
+        },
+        {
+          "name": "Daniel Harris",
+          "message": "Every child deserves to feel accepted and loved. I hope many people come together to help Anthee."
+        },
+        {
+          "name": "Jessica Moore",
+          "message": "Stay strong, Susan. Your daughter is absolutely precious, and brighter days are coming. ❤️"
+        },
+        {
+          "name": "Christopher Allen",
+          "message": "I can't imagine what your family has been through. Hoping this fundraiser reaches its goal very soon."
+        },
+        {
+          "name": "Amanda Scott",
+          "message": "Anthee, you are beautiful exactly as you are. Wishing you a successful surgery and a future filled with happiness. 💕"
+        },
+        {
+          "name": "David Wilson",
+          "message": "No mother should have to watch her child suffer like this. Keeping your family in my prayers. May God bless Anthee."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Flavia Smith",
+          "message": "No child should ever have to go through this. Sending all my love and prayers to beautiful Anthee. ❤️"
+        },
+        {
+          "name": "Michael T",
+          "message": "Your daughter is stronger than most adults I know. I hope this surgery gives her the future she deserves. God bless your family."
+        },
+        {
+          "name": "Emily Williams",
+          "message": "Reading this brought me to tears. Praying that Anthee never loses her beautiful heart. ❤️🙏"
+        },
+        {
+          "name": "Daniel Harris",
+          "message": "Every child deserves to feel accepted and loved. I hope many people come together to help Anthee."
+        },
+        {
+          "name": "Jessica Moore",
+          "message": "Stay strong, Susan. Your daughter is absolutely precious, and brighter days are coming. ❤️"
+        },
+        {
+          "name": "Christopher Allen",
+          "message": "I can't imagine what your family has been through. Hoping this fundraiser reaches its goal very soon."
+        },
+        {
+          "name": "Amanda Scott",
+          "message": "Anthee, you are beautiful exactly as you are. Wishing you a successful surgery and a future filled with happiness. 💕"
+        },
+        {
+          "name": "David Wilson",
+          "message": "No mother should have to watch her child suffer like this. Keeping your family in my prayers. May God bless Anthee."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:13.614053+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Please Help My Little Girl Smile Again — Solenari Care",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2572-710a-ad98-ebb86faca57e",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=saves-susan",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=saves-susan",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "b17abe75-9670-4a59-b488-94ac69f47965",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-jhonata",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-jhonata",
+      "sourceMessages": [
+        {
+          "name": "Robert Bailey",
+          "message": "Dono con amor y esperanza. Que encuentres la fuerza para superar este momento difícil."
+        },
+        {
+          "name": "Barbara Campbell",
+          "message": "Toda nuestra familia te apoya. Tienes más gente de tu lado de la que crees."
+        },
+        {
+          "name": "Evelyn Rodriguez",
+          "message": "Qué historia tan increíble. Muy agradecida de poder ayudar aunque sea un poco. Que Dios te bendiga."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Robert Bailey",
+          "message": "I'm donating with love and hope. May you find the strength to get through this difficult time."
+        },
+        {
+          "name": "Barbara Campbell",
+          "message": "Our whole family supports you. You have more people on your side than you think."
+        },
+        {
+          "name": "Evelyn Rodriguez",
+          "message": "What an incredible story. Very grateful to be able to help even a little. God bless you."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:13.614590+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "es",
+          "title": "Ayuda a Jhonata a conseguir prótesis de brazos — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-256d-72c9-862f-73104b3b5b0f",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-jhonata",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-jhonata",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "97c563ec-0897-47ee-8b16-7028d241d12d",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-save-alexa",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-save-alexa",
+      "sourceMessages": [
+        {
+          "name": "Joe Frings",
+          "message": "Sending love and encouragement. Good luck guys"
+        },
+        {
+          "name": "James Brown",
+          "message": "I made a prayer for Alexa. May God save"
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "I set my part, it's painful to see this woman going through this."
+        },
+        {
+          "name": "Will Miller",
+          "message": "Money raised from Leni's raffle run by the amazing We Brought Beer in Tooting Market!"
+        },
+        {
+          "name": "Piter Garcia",
+          "message": "If we all help a little, we can save her from this."
+        },
+        {
+          "name": "United Lodge of Prudednce No.83",
+          "message": "On behalf of our Worshipful Master, Steve Pallett, and all the Brethren of the Lodge, we wish you well"
+        },
+        {
+          "name": "Vander Anderson",
+          "message": "God bless you little one"
+        },
+        {
+          "name": "Udson Estrella",
+          "message": "Sending love from Logan (Kido) and family."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Joe Frings",
+          "message": "Sending love and encouragement. Good luck guys"
+        },
+        {
+          "name": "James Brown",
+          "message": "I made a prayer for Alexa. May God save"
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "I set my part, it's painful to see this woman going through this."
+        },
+        {
+          "name": "Will Miller",
+          "message": "Money raised from Leni's raffle run by the amazing We Brought Beer in Tooting Market!"
+        },
+        {
+          "name": "Piter Garcia",
+          "message": "If we all help a little, we can save her from this."
+        },
+        {
+          "name": "United Lodge of Prudednce No.83",
+          "message": "On behalf of our Worshipful Master, Steve Pallett, and all the Brethren of the Lodge, we wish you well"
+        },
+        {
+          "name": "Vander Anderson",
+          "message": "God bless you little one"
+        },
+        {
+          "name": "Udson Estrella",
+          "message": "Sending love from Logan (Kido) and family."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:13.615268+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Help save Alexa — support her fight against SCA3 — Solenari Care",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2576-7399-bc12-be797b1b930a",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-save-alexa",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-save-alexa",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "f96680ab-eeb3-4c8b-baa1-e0a2d15fe7fd",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-save-nora",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-save-nora",
+      "sourceMessages": [
+        {
+          "name": "Brandon Edwards",
+          "message": "Wishing you all the strength and courage you need. You are not alone in this journey. ❤️"
+        },
+        {
+          "name": "Linda Young",
+          "message": "Your story moved us deeply. We hope this small contribution helps make a difference."
+        },
+        {
+          "name": "Melissa Lee",
+          "message": "Thank you for sharing your story. We are honored to be part of your journey. Stay strong!"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Brandon Edwards",
+          "message": "Wishing you all the strength and courage you need. You are not alone in this journey. ❤️"
+        },
+        {
+          "name": "Linda Young",
+          "message": "Your story moved us deeply. We hope this small contribution helps make a difference."
+        },
+        {
+          "name": "Melissa Lee",
+          "message": "Thank you for sharing your story. We are honored to be part of your journey. Stay strong!"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:13.615895+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Urgent Help Needed for Nora’s Aggressive Facial Cancer — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2570-75b8-83be-118663dae84d",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-save-nora",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-save-nora",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "0dc5a53d-ea77-47f1-b2b8-01cdc4cf4d6b",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "joel",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=joel",
+      "sourceMessages": [
+        {
+          "name": "María González",
+          "message": "Acabo de hacer mi donación. Espero de todo corazón que Joel pueda recibir los medicamentos que tanto necesita. Dios los bendiga. ❤️"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "Ningún niño debería pasar por tanto dolor. Ya envié mi ayuda. Mucha fuerza para Joel y para su mamá."
+        },
+        {
+          "name": "Ana Rodríguez",
+          "message": "😢 Soy mamá y esta historia me hizo llorar. Espero que más personas puedan ayudar a esta hermosa familia."
+        },
+        {
+          "name": "José Martínez",
+          "message": "❤️ Donado. Que Dios acompañe a Joel en cada etapa de su tratamiento. Nunca pierdan la esperanza."
+        },
+        {
+          "name": "Laura Herrera",
+          "message": "🙏 Compartido con toda mi familia. Ojalá esta campaña llegue a miles de personas."
+        },
+        {
+          "name": "Miguel Torres",
+          "message": "Acabo de hacer mi aporte. Espero que puedan cubrir los gastos médicos y las necesidades básicas de su hogar."
+        },
+        {
+          "name": "Patricia Mendoza",
+          "message": "Muchísima fuerza, Lucía. Eres una madre admirable y Joel tiene mucha suerte de tenerte."
+        },
+        {
+          "name": "Fernando López",
+          "message": "Ya colaboré. Rezo para que Joel pueda vivir una infancia sin tanto sufrimiento."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "María González",
+          "message": "I've just donated. I sincerely hope Joel can receive the medications he needs so much. God bless you. ❤️"
+        },
+        {
+          "name": "Carlos Ramírez",
+          "message": "No child should have to endure so much pain. I have already sent my contribution. Stay strong, Joel and his mother."
+        },
+        {
+          "name": "Ana Rodríguez",
+          "message": "😢 I'm a mother, and this story made me cry. I hope more people can help this beautiful family."
+        },
+        {
+          "name": "José Martínez",
+          "message": "❤️ Donated. May God be with Joel at every stage of his treatment. Never lose hope."
+        },
+        {
+          "name": "Laura Herrera",
+          "message": "🙏 Shared with my whole family. I hope this campaign reaches thousands of people."
+        },
+        {
+          "name": "Miguel Torres",
+          "message": "I've just contributed. I hope you can cover the medical costs and your household’s basic needs."
+        },
+        {
+          "name": "Patricia Mendoza",
+          "message": "Stay strong, Lucía. You are an admirable mother, and Joel is very lucky to have you."
+        },
+        {
+          "name": "Fernando López",
+          "message": "I've already helped. I pray that Joel can have a childhood without so much suffering."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:13.616802+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "es",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Mi hijo Joel Pérez tiene solo 7 años y lucha contra una enfermedad renal. Solo les pido una oportunidad para seguir cuidándolo. — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2577-7548-b46a-cd15a3983730",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=joel",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=joel",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "0f6fbdfc-1614-4b07-b6cf-3377cdf676bc",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-will-survive",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-will-survive",
+      "sourceMessages": [
+        {
+          "name": "Barbara Lee",
+          "message": "Wishing you all the strength and courage you need. You are not alone in this journey. ❤️"
+        },
+        {
+          "name": "Anonymous",
+          "message": "Your story moved us deeply. We hope this small contribution helps make a difference."
+        },
+        {
+          "name": "Patricia Carter",
+          "message": "Thank you for sharing your story. We are honored to be part of your journey. Stay strong!"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Barbara Lee",
+          "message": "Wishing you all the strength and courage you need. You are not alone in this journey. ❤️"
+        },
+        {
+          "name": "Anonymous",
+          "message": "Your story moved us deeply. We hope this small contribution helps make a difference."
+        },
+        {
+          "name": "Patricia Carter",
+          "message": "Thank you for sharing your story. We are honored to be part of your journey. Stay strong!"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:14.954320+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help Will Survive Aggressive Gastrointestinal Cancer — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2aa4-76cb-a9f3-c5f72acdbe5f",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-will-survive",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-will-survive",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "44b2bc1a-1c95-464a-9ece-4dfa04a05409",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-joyce-jaw-cancer",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-joyce-jaw-cancer",
+      "sourceMessages": [
+        {
+          "name": "Jessica Green",
+          "message": "Donating with love and hope. May you find the strength to get through this difficult time."
+        },
+        {
+          "name": "Tyler Hill",
+          "message": "Our whole family is rooting for you. You have more people in your corner than you know."
+        },
+        {
+          "name": "Laura Lee",
+          "message": "What an incredible story. So grateful to be able to help in a small way. God bless you."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jessica Green",
+          "message": "Donating with love and hope. May you find the strength to get through this difficult time."
+        },
+        {
+          "name": "Tyler Hill",
+          "message": "Our whole family is rooting for you. You have more people in your corner than you know."
+        },
+        {
+          "name": "Laura Lee",
+          "message": "What an incredible story. So grateful to be able to help in a small way. God bless you."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:14.954836+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help Joyce Receive Her Second Jaw Cancer Surgery — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2aab-77bc-b855-6481bf47a684",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-joyce-jaw-cancer",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-joyce-jaw-cancer",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "39511bbd-3d4e-4d7f-aa01-da61b3a19dfd",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "ayuda-patricia",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=ayuda-patricia",
+      "sourceMessages": [
+        {
+          "name": "Nicole Howard",
+          "message": "Gracias por compartir tu historia. Es un honor ser parte de tu camino. ¡Mantente fuerte!"
+        },
+        {
+          "name": "Mark Moore",
+          "message": "Eres una inspiración. Sigue luchando — vienen días mejores. Enviamos oraciones desde nuestra familia."
+        },
+        {
+          "name": "Tyler Edwards",
+          "message": "Vimos tu campaña y no pudimos seguir de largo. Mereces todo el apoyo del mundo."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Nicole Howard",
+          "message": "Thank you for sharing your story. It's an honor to be part of your journey. Stay strong!"
+        },
+        {
+          "name": "Mark Moore",
+          "message": "You are an inspiration. Keep fighting — better days are coming. We're sending prayers from our family."
+        },
+        {
+          "name": "Tyler Edwards",
+          "message": "We saw your campaign and couldn't scroll past. You deserve all the support in the world."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:14.955184+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Ayuda a Patricia con morfina y tratamiento para su hijo — Solenari Care",
+          "language": "es",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2ab1-761a-a0fb-d61311a6d1fd",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=ayuda-patricia",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=ayuda-patricia",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "308be620-8c12-4fd8-a3aa-485fc547b477",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "akin",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=akin",
+      "sourceMessages": [
+        {
+          "name": "Rebecca T.",
+          "message": "I can't imagine what Akin is going through. Stay strong, little one! ❤️🙏"
+        },
+        {
+          "name": "James R.",
+          "message": "No child should suffer like this. Donated and shared with everyone I know."
+        },
+        {
+          "name": "Lauren C.",
+          "message": "Donated what I could. Please share this — Akin needs us!"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Rebecca T.",
+          "message": "I can't imagine what Akin is going through. Stay strong, little one! ❤️🙏"
+        },
+        {
+          "name": "James R.",
+          "message": "No child should suffer like this. Donated and shared with everyone I know."
+        },
+        {
+          "name": "Lauren C.",
+          "message": "Donated what I could. Please share this — Akin needs us!"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:14.955904+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Akin Has 6 Months to Live — Be His Only Hope — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2aad-723e-acf1-c14ca0246e9d",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=akin",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=akin",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "cfdd3c0e-5e39-4140-90d7-ce79563686f9",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-noah",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-noah",
+      "sourceMessages": [
+        {
+          "name": "Amanda Mitchell",
+          "message": "We saw your campaign and couldn't scroll past. You deserve all the support in the world."
+        },
+        {
+          "name": "Samantha Martinez",
+          "message": "Donating with love and hope. May you find the strength to get through this difficult time."
+        },
+        {
+          "name": "Amelia Ramirez",
+          "message": "Our whole family is rooting for you. You have more people in your corner than you know."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Amanda Mitchell",
+          "message": "We saw your campaign and couldn't scroll past. You deserve all the support in the world."
+        },
+        {
+          "name": "Samantha Martinez",
+          "message": "Donating with love and hope. May you find the strength to get through this difficult time."
+        },
+        {
+          "name": "Amelia Ramirez",
+          "message": "Our whole family is rooting for you. You have more people in your corner than you know."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:14.956362+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "en-US",
+          "title": "Help Noah Afford Scleral Lenses and Eye Surgery — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2aa3-73bb-85ee-24aa5e04ac91",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-noah",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-noah",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "72315448-effb-440f-b15c-1b6a25ac0381",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "ayuda-alejandro",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=ayuda-alejandro",
+      "sourceMessages": [
+        {
+          "name": "George Murphy",
+          "message": "Vimos tu campaña y no pudimos seguir de largo. Mereces todo el apoyo del mundo."
+        },
+        {
+          "name": "Karen Lewis",
+          "message": "Dono con amor y esperanza. Que encuentres la fuerza para superar este momento difícil."
+        },
+        {
+          "name": "Steven Hill",
+          "message": "Toda nuestra familia te apoya. Tienes más gente de tu lado de la que crees."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "George Murphy",
+          "message": "We saw your campaign and couldn't scroll past. You deserve all the support in the world."
+        },
+        {
+          "name": "Karen Lewis",
+          "message": "I'm donating with love and hope. May you find the strength to get through this difficult time."
+        },
+        {
+          "name": "Steven Hill",
+          "message": "Our whole family supports you. You have more people on your side than you think."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:14.957014+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Ayuda a Carmen a salvar a su hijo Alejandro — Solenari Care",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "language": "es",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-2aad-738f-aee2-ba52288aaf6d",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=ayuda-alejandro",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=ayuda-alejandro",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "e4be80f7-e36d-48c1-a1f9-92070bab4337",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "ayuda-gael",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=ayuda-gael",
+      "sourceMessages": [
+        {
+          "name": "Nicole Parker",
+          "message": "Te deseo toda la fuerza y el coraje que necesitas. No estás solo en este camino. ❤️"
+        },
+        {
+          "name": "Linda Davis",
+          "message": "Tu historia nos conmovió profundamente. Esperamos que esta contribución ayude a marcar la diferencia."
+        },
+        {
+          "name": "Michael Young",
+          "message": "Gracias por compartir tu historia. Es un honor ser parte de tu camino. ¡Mantente fuerte!"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Nicole Parker",
+          "message": "I wish you all the strength and courage you need. You are not alone on this journey. ❤️"
+        },
+        {
+          "name": "Linda Davis",
+          "message": "Your story moved us deeply. We hope this contribution helps make a difference."
+        },
+        {
+          "name": "Michael Young",
+          "message": "Thank you for sharing your story. It's an honor to be part of your journey. Stay strong!"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:16.344722+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "es",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Ayuda a Gael a luchar contra un cáncer agresivo — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-301f-77ca-bc12-d9a190758acd",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=ayuda-gael",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=ayuda-gael",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "460c7d9c-25d7-497c-b8a4-500bd14c076d",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-amelia",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-amelia",
+      "sourceMessages": [
+        {
+          "name": "Emily Carter",
+          "message": "Praying for you and your beautiful girls, Amelia. Stay strong. ❤️"
+        },
+        {
+          "name": "Jessica Morgan",
+          "message": "You are such a strong mama. Sending love, prayers, and strength to your family. 🙏❤️"
+        },
+        {
+          "name": "Ashley Evans",
+          "message": "Donated and shared. I hope this helps even a little. Stay strong! ❤️"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Emily Carter",
+          "message": "Praying for you and your beautiful girls, Amelia. Stay strong. ❤️"
+        },
+        {
+          "name": "Jessica Morgan",
+          "message": "You are such a strong mama. Sending love, prayers, and strength to your family. 🙏❤️"
+        },
+        {
+          "name": "Ashley Evans",
+          "message": "Donated and shared. I hope this helps even a little. Stay strong! ❤️"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:16.345252+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Help Amelia Fight Cancer for Her Two Little Girls — Solenari Care",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-3019-7208-a131-1e9b82ffe4fe",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-amelia",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-amelia",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "6df69167-d0dd-4947-b0db-84a98f9c2021",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-george",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-george",
+      "sourceMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "George's story is heartbreaking. I hope as many people as possible can come together to support him through his treatment and help him get the prosthetic arm he needs. Please donate or share if you can."
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Wishing George and his mum strength during such a difficult time. Every donation and every share can help this campaign reach more people."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "George has already been through so much. If you're able to help, please consider supporting his fundraiser. Even simply sharing his story can make a difference."
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Jane Cotta",
+          "message": "George's story is heartbreaking. I hope as many people as possible can come together to support him through his treatment and help him get the prosthetic arm he needs. Please donate or share if you can."
+        },
+        {
+          "name": "Julian Brown",
+          "message": "Wishing George and his mum strength during such a difficult time. Every donation and every share can help this campaign reach more people."
+        },
+        {
+          "name": "Emily Johnson",
+          "message": "George has already been through so much. If you're able to help, please consider supporting his fundraiser. Even simply sharing his story can make a difference."
+        }
+      ],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:16.345910+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help George Continue His Cancer Treatment and Get a Prosthetic Arm — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-3031-7720-9447-0ed90c21dfc5",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-george",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-george",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "05464366-2e40-4b43-a35c-9924cb0f9262",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-adrieli",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-adrieli",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:16.346707+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "title": "Help Adrieli Access Ongoing Epidermolysis Bullosa Care — Solenari Care",
+          "language": "en-US",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-301c-72fd-a7d2-2110a61706ca",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-adrieli",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-adrieli",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "68d22bd7-2219-48c1-8171-ca825f9f8f3b",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "help-arielle",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=help-arielle",
+      "sourceMessages": [],
+      "displayMessages": [],
+      "countMatches": true,
+      "verbatim": true,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:16.347241+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "A Desperate Girl — Arielle Feels Pain Even When the Wind Touches Her Skin — Solenari Care",
+          "language": "en-US",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-3020-7168-814a-9cb565e46375",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=help-arielle",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=help-arielle",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "02535598-ae8e-43da-bc7e-3e29d1f0b659",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    },
+    {
+      "slug": "ayuda-ollie",
+      "sourceUrl": "https://us.solenari-care.com/campaign-detail?slug=ayuda-ollie",
+      "sourceMessages": [
+        {
+          "name": "Donald Williams",
+          "message": "Te deseo toda la fuerza y el coraje que necesitas. No estás solo en este camino. ❤️"
+        },
+        {
+          "name": "Thomas Nelson",
+          "message": "Tu historia nos conmovió profundamente. Esperamos que esta pequeña contribución ayude a marcar la diferencia."
+        },
+        {
+          "name": "John Young",
+          "message": "Gracias por compartir tu historia. Es un honor ser parte de tu camino. ¡Mantente fuerte!"
+        }
+      ],
+      "displayMessages": [
+        {
+          "name": "Donald Williams",
+          "message": "I wish you all the strength and courage you need. You are not alone on this journey. ❤️"
+        },
+        {
+          "name": "Thomas Nelson",
+          "message": "Your story moved us deeply. We hope this small contribution helps make a difference."
+        },
+        {
+          "name": "John Young",
+          "message": "Thank you for sharing your story. It's an honor to be part of your journey. Stay strong!"
+        }
+      ],
+      "countMatches": true,
+      "verbatim": false,
+      "transactionEvidence": false,
+      "sourcePageRead": {
+        "success": true,
+        "requested_at": "2026-10-27T04:58:16.348249+00:00",
+        "gateway_http_status": "200",
+        "metadata": {
+          "language": "es",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "title": "Ayuda a Ollie a luchar contra su tumor cerebral — Solenari Care",
+          "favicon": "https://us.solenari-care.com/solenari-care-favicon.ico",
+          "scrapeId": "01a17bb9-301c-7599-9100-5aa1a08fcfb3",
+          "sourceURL": "https://us.solenari-care.com/campaign-detail?slug=ayuda-ollie",
+          "url": "https://us.solenari-care.com/campaign-detail?slug=ayuda-ollie",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "timezone": "America/New_York",
+          "proxyUsed": "basic",
+          "cacheState": "miss",
+          "indexId": "578cc40f-155c-446c-b386-38c7b2698d09",
+          "creditsUsed": 1,
+          "concurrencyLimited": false
+        }
+      }
+    }
+  ]
+}
