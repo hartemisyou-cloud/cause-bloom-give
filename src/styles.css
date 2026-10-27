@@ -463,6 +463,7 @@ h2>.title-icon{width:22px;height:22px}
 .detail-page .sharing-art-body>button,.detail-page .sharing-art-donate{font-size:11px;min-height:36px;padding:6px;width:100%}
 .detail-page .sharing-art-left .sharing-art-ring{display:none}.detail-page .sharing-art-left .sharing-art-funding{grid-template-columns:1fr}
 .detail-page .sharing-art-right .sharing-art-organizer{display:none}.detail-page .sharing-art-goal{font-size:9px;margin-top:0}
+.detail-page .sharing-art-right .sharing-art-funding{grid-template-columns:minmax(0,1fr)}.detail-page .sharing-art-right .sharing-art-ring{display:none}
 .detail-page .detail-related{max-width:1200px}
 @media(max-width:1100px){.detail-page .detail-layout{gap:28px}.detail-page .sharing-layout{gap:40px}.detail-page .sharing-copy h2{font-size:36px}.detail-page .campaign-social-buttons{gap:10px}.detail-page .social-circle{width:52px;height:52px;min-height:52px}}
 @media(max-width:860px){

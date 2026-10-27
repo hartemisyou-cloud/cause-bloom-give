@@ -9,7 +9,8 @@ describe('Floating donation visibility',()=>{
   vi.stubGlobal('IntersectionObserver',class { constructor(callback: IntersectionObserverCallback){notify=callback;} observe(){} disconnect(){} });
   const root=document.createElement('div');root.innerHTML='<div class="donation-actions"></div><section class="campaign-sharing-section"></section><section class="detail-related"></section>';
   const targets=[...root.children];
-  const hook=renderHook(()=>useDonationBar({current:root},'mateo','.campaign-sharing-section, .detail-related'));
+  const ref={current:root};
+  const hook=renderHook(()=>useDonationBar(ref,'mateo','.campaign-sharing-section, .detail-related'));
   const send=(flags:boolean[])=>act(()=>notify(targets.map((target,i)=>({target,isIntersecting:flags[i]} as IntersectionObserverEntry)),{} as IntersectionObserver));
   send([false,false,false]);expect(hook.result.current).toBe(true);
   send([false,true,false]);expect(hook.result.current).toBe(false);
