@@ -25,7 +25,7 @@
 
 - Implement reference-matched layouts through shared semantic CSS and design-system controls, with CDN-hosted public font subsets; this preserves consistent geometry without shipping archived source pages or scripts.
 - Keep campaign gallery and funding in focused presentation modules with campaign-keyed state and bounded reference geometry; this isolates page reconstruction from homepage and payment integrations.
-- Keep campaign-detail lower sections in a shared campaign-bound module with accessible action dialogs; absent donor records remain explicit empty states, social links use canonical campaign URLs, and contact/report only prepare user-sent support emails.
+- Keep campaign-bound lower sections focused: accessible dialogs, paged support, snap related rail and canonical sharing; absent donor records stay empty, contact/report prepare user-sent emails, and activity fixtures exist only in tests.
 - Render campaign stories through a safe rich-text component and exact source-path artwork map; this preserves inline photo order/captions and prevents serialization markers from appearing as prose.
 
 - Render expanding campaign panels in a dedicated accessible presentation module, keeping campaign data immutable and navigation shared with leaf routes.
