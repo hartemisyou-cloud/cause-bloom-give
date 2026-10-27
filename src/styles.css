@@ -767,3 +767,20 @@ body{background:var(--background)}
  .home-page .home-process-grid li{padding:24px}
 }
 @media(max-width:359px){.home-page .hero h1,.home-page .hero h1 em{font-size:30px}.home-page .hero-actions>a{font-size:11px}}
+
+/* Campaign color inversion: neutral canvas, green confined to framed surfaces. */
+:root{--campaign-canvas:oklch(.991 .001 90);--campaign-card-surface:color-mix(in oklab,var(--primary) 6%,var(--card));--campaign-panel-surface:color-mix(in oklab,var(--primary) 9%,var(--card));--campaign-neutral-surface:oklch(.968 .002 90)}
+body:has(.detail-page){background:var(--campaign-canvas)}
+body:has(.detail-page) .site-header{background:var(--campaign-canvas)}
+.detail-page{--background:var(--campaign-canvas);--surface-soft:var(--campaign-neutral-surface);background:var(--campaign-canvas)}
+.detail-page .breadcrumbs{background:var(--campaign-canvas)}
+.detail-page .detail-gallery,.detail-page .gallery-thumbnail{background:var(--campaign-neutral-surface)}
+.detail-page .donation-panel,.detail-page .mobile-funding{background:var(--campaign-panel-surface);border-color:color-mix(in oklab,var(--primary) 20%,var(--border))}
+.detail-page .organizer-row,.detail-page .campaign-card,.detail-page .proof-highlight{background:var(--campaign-card-surface)}
+.detail-page .campaign-social-proof .recent-donations,.detail-page .mobile-recent-donations .recent-donations{background:var(--campaign-card-surface)}
+.detail-page .campaign-trust-band,.detail-page .campaign-sharing-section{background:var(--campaign-canvas)}
+.detail-page .campaign-trust-grid>div>svg{color:var(--primary)}
+@media(max-width:760px){
+ .detail-page .detail-main>.story-section.first-story,.detail-page .campaign-support,.detail-page .campaign-organizer-footer{background:var(--campaign-canvas)}
+ .detail-page .campaign-social-proof{background:var(--campaign-card-surface)}
+}
