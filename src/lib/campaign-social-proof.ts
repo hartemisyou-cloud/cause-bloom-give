@@ -1,3 +1,5 @@
+import { campaignDonationExamples, type IllustrativeDonation } from './campaign-donation-examples';
+
 export type ActivityStatus = 'ready' | 'unavailable' | 'loading' | 'error';
 export type PublicDonation = {
   id: string; campaignSlug: string; status: 'confirmed' | 'pending' | 'refunded';
@@ -9,6 +11,7 @@ export type PublicSupportMessage = {
   message: string; createdAt?: string; donationId?: string;
 };
 export type CampaignActivity = {
+  campaignSlug?: string;
   status: ActivityStatus; donations: readonly PublicDonation[];
   messages: readonly PublicSupportMessage[];
 };
@@ -27,14 +30,23 @@ export function publicMessages(records: readonly PublicSupportMessage[], slug: s
     seen.add(m.id); return true;
   }).sort((a, b) => (Date.parse(b.createdAt ?? '') || 0) - (Date.parse(a.createdAt ?? '') || 0));
 }
-export function donationPage(records: readonly PublicDonation[], sort: 'recent' | 'top', page: number) {
-  const ordered = sort === 'top' ? records.filter(d => d.amountVisible).slice().sort((a, b) => b.amountCents - a.amountCents || Date.parse(b.confirmedAt) - Date.parse(a.confirmedAt)) : records.slice();
+export type DonationPresentation = PublicDonation | IllustrativeDonation;
+function presentationDate(record: DonationPresentation) { return 'illustratedAt' in record ? record.illustratedAt : record.confirmedAt; }
+export function donationPage<T extends DonationPresentation>(records: readonly T[], sort: 'recent' | 'top', page: number) {
+  const ordered = sort === 'top' ? records.filter(d => d.amountVisible).slice().sort((a, b) => b.amountCents - a.amountCents || Date.parse(presentationDate(b)) - Date.parse(presentationDate(a))) : records.slice();
   const pages = Math.max(1, Math.ceil(ordered.length / DONATION_PAGE_SIZE));
   const current = Math.min(pages, Math.max(1, Number.isFinite(page) ? Math.floor(page) : 1));
   return { items: ordered.slice((current - 1) * DONATION_PAGE_SIZE, current * DONATION_PAGE_SIZE), page: current, pages, total: ordered.length };
 }
 export function donationHighlights(records: readonly PublicDonation[]) {
   return { recent: records[0], top: donationPage(records, 'top', 1).items[0] };
+}
+export function recentDonationPresentation(activity: CampaignActivity, allowIllustrative = true): { illustrative: boolean; records: readonly DonationPresentation[] } {
+  if (activity.status === 'loading' || activity.status === 'error') return { illustrative: false, records: [] };
+  const slug = activity.campaignSlug;
+  const real = slug ? publicDonations(activity.donations, slug) : activity.donations;
+  if (real.length || !allowIllustrative || !slug) return { illustrative: false, records: real };
+  return { illustrative: true, records: campaignDonationExamples(slug) };
 }
 export function donorName(d: { anonymous: boolean; name: string }) { return d.anonymous || !d.name.trim() ? 'Anonymous' : d.name; }
 export function donationMoney(cents: number) {
@@ -63,5 +75,5 @@ export function campaignActivity(campaign: { slug?: string; support: readonly { 
     seen.add(key);
     return [{ ...m, id: `source-support-${index}`, campaignSlug: slug, public: true, anonymous: !m.name.trim() || m.name === 'Anonymous' }];
   });
-  return { status: 'unavailable', donations: [], messages };
+  return { campaignSlug: slug, status: 'unavailable', donations: [], messages };
 }

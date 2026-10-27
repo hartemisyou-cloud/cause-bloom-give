@@ -65,6 +65,7 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
           <details className="snapshot-note"><summary>Campaign information</summary><p>Source medical statements have not been independently verified. Beneficiary surnames are alternate display names; first names and story facts are retained.</p></details>
         </section>
         <CampaignStoryActions campaign={c} onShare={share} />
+        <div className="mobile-recent-donations"><RecentDonations activity={activity}/></div>
         <CampaignSocialProof activity={activity} />
         <CampaignSupport campaign={c} activity={activity} />
         <OrganizerFooter campaign={c} onAction={setAction} />
