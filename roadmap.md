@@ -1,8 +1,8 @@
 # Hope Human website
 ## Full frontend source migration
-- [ ] Audit uploaded Free Hearts source and map equivalent pages, data adapters and protected Hope Human integration boundaries.
-- [ ] Adapt shared presentation, homepage, campaign pages, donation appearance and compatible supporting pages in controlled stages.
-- [ ] Verify nine widths, interactions, immutable records, amount mapping and attribution without transactions; document evidence and limitations. No publication.
+- [x] Audit uploaded Free Hearts source and map equivalent pages, data adapters and protected Hope Human integration boundaries.
+- [x] Adapt shared presentation, homepage, campaign pages, donation appearance and compatible supporting pages in controlled stages.
+- [x] Verify nine widths, interactions, immutable records, amount mapping and attribution without transactions; 171 page checks and 73 tests passed. Evidence and limitations: outputs/frontend-migration/relatorio.md. No publication.
 ## Campaign screenshot refinement
 - [x] Compare the new screenshots against recovered HTTrack styles and checkpoint the current source; mapping in outputs/campaign-refinement/auditoria.md.
 - [x] Refine campaign funding, inline sharing, support pagination and the related-campaign rail without changing homepage, payment integrations or source records.

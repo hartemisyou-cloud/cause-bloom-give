@@ -1,13 +1,13 @@
 {
   "scope": "Frontend-only Free Hearts reference adaptation; preserve Hope Human services and records",
   "capabilities": [
-    {"capability":"frontend code and visual architecture","source":"uploaded free-hearts-project.zip","outcome":"adapt presentation only","status":"auditing","next_action":"map equivalent pages and implement approved stages"},
-    {"capability":"schema and campaign records","source":"Hope Human static campaign collection","outcome":"preserve; no source data import","status":"protected","next_action":"verify record hashes and all campaign routes"},
-    {"capability":"auth identities and authorization","source":"existing Hope Human configuration","outcome":"preserve; no new auth or backend","status":"protected","next_action":"complete call-site audit"},
-    {"capability":"campaign uploaded file bytes","source":"Hope Human CDN pointers and public mirrors","outcome":"preserve","status":"protected","next_action":"verify artwork loads and source assets are not substituted"},
-    {"capability":"external providers and secrets","source":"Hope Human checkout and analytics modules","outcome":"preserve; exclude Free Hearts provider settings","status":"protected","next_action":"verify amount mapping and attribution without transactions"},
-    {"capability":"public endpoints callbacks webhooks and schedules","source":"existing Hope Human runtime","outcome":"preserve; no source endpoint import","status":"protected","next_action":"record protected file boundaries"},
+    {"capability":"frontend code and visual architecture","source":"uploaded free-hearts-project.zip","outcome":"adapt presentation only","status":"verified","next_action":"none; 171 page-width checks and interactive preview checks passed"},
+    {"capability":"schema and campaign records","source":"Hope Human static campaign collection","outcome":"preserve; no source data import","status":"verified","next_action":"none; immutable hashes and 56 campaign routes checked"},
+    {"capability":"auth identities and authorization","source":"existing Hope Human configuration","outcome":"preserve; no new auth or backend","status":"verified","next_action":"none; no source auth or authorization imported"},
+    {"capability":"campaign uploaded file bytes","source":"Hope Human CDN pointers and public mirrors","outcome":"preserve","status":"verified","next_action":"none; pointers unchanged and rendered images loaded"},
+    {"capability":"external providers and secrets","source":"Hope Human checkout and analytics modules","outcome":"preserve; exclude Free Hearts provider settings","status":"preserved_not_live_verified","next_action":"owner-controlled provider confirmation remains external; no transaction attempted"},
+    {"capability":"public endpoints callbacks webhooks and schedules","source":"existing Hope Human runtime","outcome":"preserve; no source endpoint import","status":"verified","next_action":"none; protected runtime and deployment hashes unchanged"},
     {"capability":"cutover and publication","source":"current Hope Human URLs","outcome":"no publication or domain changes","status":"not_requested","next_action":"none"},
-    {"capability":"verification","source":"preview and existing tests","outcome":"nine-width visual and functional regression, no real payments","status":"pending","next_action":"run after each implementation stage; provider confirmation requires authorized sandbox"}
+    {"capability":"verification","source":"preview and existing tests","outcome":"171 page-width checks, 56 campaign routes, 73 tests; no transactions","status":"preview_verified","next_action":"production output and live provider verification outside this frontend-only task"}
   ]
 }
