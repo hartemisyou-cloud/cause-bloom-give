@@ -1,0 +1,88 @@
+{
+  "widths": [
+    {
+      "width": 320,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "gallery": true,
+      "copy": true,
+      "dialogFocus": true,
+      "carousel": true,
+      "filters": true
+    }
+  ],
+  "errors": [],
+  "unknownStatus": 404,
+  "checkoutOpened": false
+}
