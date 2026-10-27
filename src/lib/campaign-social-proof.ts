@@ -47,7 +47,11 @@ export function activityDate(value: string, now = Date.now()) {
   if (minutes < 1) return 'Just now';
   if (minutes < 60) return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} ago`;
   if (minutes < 1440) { const hours = Math.floor(minutes / 60); return `${hours} ${hours === 1 ? 'hour' : 'hours'} ago`; }
-  return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(date);
+  const days = Math.floor(minutes / 1440);
+  const relative = new Intl.RelativeTimeFormat('en-US', { numeric: 'always' });
+  if (days < 30) return relative.format(-days, 'day');
+  if (days < 365) return relative.format(-Math.floor(days / 30), 'month');
+  return relative.format(-Math.floor(days / 365), 'year');
 }
 // Static campaign records provide support prose only; historical totals never become donor entries.
 export function campaignActivity(campaign: { slug?: string; support: readonly { name: string; message: string }[] }): CampaignActivity {

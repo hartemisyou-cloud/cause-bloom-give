@@ -5,7 +5,7 @@ import { type CampaignActivity, type PublicDonation, activityDate, donationMoney
 
 export function DonationEntry({ donation: d, top = false }: { donation: PublicDonation; top?: boolean }) {
   const name = donorName(d);
-  return <article className="proof-entry"><span className="proof-avatar" aria-hidden="true">{name.split(' ').slice(0, 2).map(n => n[0]).join('').toUpperCase()}</span><div className="proof-person"><strong>{name}</strong><time dateTime={d.confirmedAt}>{activityDate(d.confirmedAt)}</time>{top && <small className="proof-top"><Crown aria-hidden="true"/>Top donation</small>}</div>{d.amountVisible && <span className="proof-amount">{donationMoney(d.amountCents)}</span>}</article>;
+  return <article className="proof-entry"><span className="proof-avatar" aria-hidden="true">{name.trim().split(/\s+/).slice(0, 2).map(n => n[0]).join('').toUpperCase()}</span><div className="proof-person"><strong>{name}</strong><div className="proof-entry-meta">{d.amountVisible && <span className="proof-amount">{donationMoney(d.amountCents)}</span>}<span className="proof-meta-dot" aria-hidden="true">·</span>{top ? <span className="proof-top">Top donation</span> : <time dateTime={d.confirmedAt} title={d.confirmedAt}>{activityDate(d.confirmedAt)}</time>}</div></div></article>;
 }
 
 export function ActivityEmpty({ status, messages = false }: { status: CampaignActivity['status']; messages?: boolean }) {
