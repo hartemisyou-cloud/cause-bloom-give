@@ -1,4 +1,7 @@
 # Hope Human website
+## Global illustrative Recent Donations fallback
+- [ ] Add deterministic campaign-specific 5–10 examples, explicitly labelled and separate from confirmed donations; preserve approved interface and all payment/tracking behavior.
+- [ ] Verify every current campaign and future-slug coverage, stable reloads, real-record precedence, filters/pagination, and mobile/desktop presentation.
 ## Recent Donations reference interface
 - [x] Refined the existing shared section with initial avatars, name-first hierarchy, amount/time metadata, top marker and mobile-friendly controls; confirmed-record boundaries preserved.
 - [x] Verified original-timestamp relative dates and USD formatting, filtering, pagination and privacy with 19 tests; public empty state and isolated TEST DATA controls passed at 375/639/1280px, automatic build OK.

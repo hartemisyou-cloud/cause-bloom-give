@@ -25,7 +25,7 @@
 
 - Implement reference-matched layouts through shared semantic CSS and design-system controls, with CDN-hosted public font subsets; this preserves consistent geometry without shipping archived source pages or scripts.
 - Keep campaign gallery and funding in focused presentation modules with campaign-keyed state and bounded reference geometry; this isolates page reconstruction from homepage and payment integrations.
-- Keep campaign-bound activity in a privacy-safe presentation adapter with confirmed eligible records only, never derive donors from historical totals or support prose; absent donor sources stay explicitly unavailable, and labelled fixtures live only in tests and a DEV-only standalone harness without analytics.
+- Keep confirmed campaign activity in a privacy-safe adapter and illustrative fallback in a separate deterministic slug-keyed generator; show examples only when no confirmed public history exists, label every example and its date, and exclude them from counts, funding, messages and analytics to prevent simulated records becoming payment evidence.
 - Calculate donation relative times from original confirmation timestamps in the shared activity formatter; never reuse source-relative labels as current activity.
 - Render campaign stories through a safe rich-text component and exact source-path artwork map; this preserves inline photo order/captions and prevents serialization markers from appearing as prose.
 
