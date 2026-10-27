@@ -1,7 +1,8 @@
 # Hope Human website
 ## Recent Donations reference interface
-- [ ] Refine the shared section with initial avatars, name-first hierarchy, amount/time metadata, top marker and mobile-friendly controls; preserve confirmed-record boundaries.
-- [ ] Verify relative dates from original timestamps, filtering, pagination, privacy and mobile/desktop presentation; real data integration remains blocked by the missing authoritative donation source.
+- [x] Refined the existing shared section with initial avatars, name-first hierarchy, amount/time metadata, top marker and mobile-friendly controls; confirmed-record boundaries preserved.
+- [x] Verified original-timestamp relative dates and USD formatting, filtering, pagination and privacy with 19 tests; public empty state and isolated TEST DATA controls passed at 375/639/1280px, automatic build OK.
+- [ ] Integrate real donor records: blocked by missing authoritative donation source; no generated transactions imported or publication performed.
 ## Solenari recent-donation synchronization
 - [x] Checked all 54 original campaign objects and page responses: no donors field exists; every page resets donors and generates its recent-donation list. Archived and current data assets are byte-identical.
 - [x] Documented all-campaign coverage in outputs/campaign-social-proof/solenari-donation-provenance-coverage.json and auditoria.md; payment and public content unchanged.
