@@ -1,5 +1,7 @@
 # Hope Human website
 ## Campaign social proof and recent donations
+- [x] Audit the owner's Free Hearts archive and public Liam/Cassiel pages: displayed entries match static mock arrays with fixed relative times; Fabi source paths return 404. Evidence in outputs/campaign-social-proof/auditoria.md; 14 activity tests passed.
+- [ ] Import Free Hearts reviews/donations only to matching campaigns: blocked by missing authentic dated records and publication choices; source mock entries are not payment evidence.
 - [x] Audited static campaign/support sources; no donor ledger found. Minimal safe upstream read proposal documented in outputs/campaign-social-proof/auditoria.md.
 - [x] Added campaign-bound recent donations, highlights, organizer contact and improved support states; checkout and global presentation preserved.
 - [x] Verified labelled DEV-only fixtures, nine public widths and 16 demo width/scenario combinations, privacy/filter/pagination/loading/error states; 87 tests and automatic build OK. No transactions or publication.
