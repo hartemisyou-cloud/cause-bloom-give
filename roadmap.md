@@ -1,4 +1,7 @@
 # Hope Human website
+## Solenari recent-donation synchronization
+- [ ] Check all original campaign objects for stored donor records and trace the current source site's recent-donation renderer; synchronize only genuine campaign-bound records, never generated entries.
+- [ ] Document campaign coverage and the precise blocker if the source has no authentic donor ledger; preserve payment and public content.
 ## Solenari campaign support reconstruction
 - [x] Read all 54 original URLs and compare source records with Hope Human: all 237 stored messages already present, including Emma's eight; 13 arrays retain English translations, names unchanged.
 - [x] Verify all 56 public campaign pages and all 237 rendered messages; 25 focused tests and automatic build OK. No source-backed message was missing, so public content was unchanged. Evidence: outputs/campaign-social-proof/solenari-support-comparison.json and solenari-page-audit.json.
