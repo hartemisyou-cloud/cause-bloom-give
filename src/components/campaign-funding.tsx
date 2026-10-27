@@ -13,7 +13,6 @@ export function CampaignGivePanel({ campaign: c, onShare }: { campaign: Campaign
     <p className="give-funded">{percentage(c)}% funded</p>
     <div className="give-amounts">{donationAmounts.map(value => <Link key={value} to="/donate" search={{ slug: c.slug, amount: value }} className={value === 50 ? 'is-suggested' : ''} aria-label={`Choose $${value}`}>{value === 50 && <small>Suggested</small>}${value}</Link>)}</div>
     <Button asChild variant="gold" className="give-donate"><Link to="/donate" search={{ slug: c.slug, amount: 50 }}><HandHeart aria-hidden="true" />Donate $50</Link></Button>
-    <Button variant="outline" className="give-share" onClick={onShare}><Share2 aria-hidden="true" />Share this campaign</Button>
     <p className="give-trust"><Lock aria-hidden="true" size={12} />SSL encrypted · Verified campaign</p>
   </div>;
 }
