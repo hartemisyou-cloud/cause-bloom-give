@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound, useNavigate } from '@tanstack/react-router';
 import { useState, useRef } from 'react';
-import { ChevronRight, Share2, HandHeart, MapPin, CalendarDays, BadgeCheck, Zap } from 'lucide-react';
+import { ChevronRight, HandHeart, MapPin, CalendarDays, BadgeCheck, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CampaignRelated } from '@/components/campaign-related';
 import { CampaignSupport } from '@/components/campaign-support';
