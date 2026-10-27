@@ -1,8 +1,9 @@
 # Hope Human website
 ## Campaign social proof and recent donations
-- [ ] Audit authentic donation/support sources and document a minimal nonfinancial extension proposal if absent.
-- [ ] Add campaign-bound recent donations, highlights and improved support states; preserve checkout and global presentation.
-- [ ] Add isolated labelled development fixtures; verify sorting, privacy, pagination, empty/loading/error states and responsive layouts.
+- [x] Audited static campaign/support sources; no donor ledger found. Minimal safe upstream read proposal documented in outputs/campaign-social-proof/auditoria.md.
+- [x] Added campaign-bound recent donations, highlights, organizer contact and improved support states; checkout and global presentation preserved.
+- [x] Verified labelled DEV-only fixtures, nine public widths and 16 demo width/scenario combinations, privacy/filter/pagination/loading/error states; 87 tests and automatic build OK. No transactions or publication.
+- [ ] Populate authentic recent donations: blocked by the absence of an authorized campaign-scoped confirmed donation feed.
 ## Campaign engagement alignment
 - [x] Group reactions and donation/share actions in a compact toolbar; align preview and social controls without changing data or destinations.
 - [x] Verified nine widths with no overflow or browser errors; reactions, canonical link copying and Donate navigation passed. 22 focused tests and automatic build OK; no transactions or publication.

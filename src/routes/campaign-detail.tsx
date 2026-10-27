@@ -14,7 +14,7 @@ import { CampaignSocialProof, RecentDonations } from '@/components/campaign-soci
 import { campaignActivity } from '@/lib/campaign-social-proof';
 import { CampaignStory } from '@/components/campaign-story';
 import { storyDescription } from '@/lib/campaign-story';
-import { OrganizerFooter, DonorOrganizerRail, CampaignTrustBand, CampaignSharingSection, CampaignActionDialog, campaignUrl, initials } from '@/components/campaign-detail-sections';
+import { OrganizerFooter, CampaignTrustBand, CampaignSharingSection, CampaignActionDialog, campaignUrl, initials } from '@/components/campaign-detail-sections';
 export const Route=createFileRoute('/campaign-detail')({validateSearch:(s:Record<string,unknown>)=>({slug:typeof s['slug']==='string'?s['slug']:''}),loaderDeps:({search})=>({slug:search.slug}),loader:({deps})=>{const c=getCampaign(deps['slug']);if(!c)throw notFound();return c;},head:({loaderData})=>loaderData?pageHead(loaderData.title,storyDescription(loaderData.story),`/campaign-detail?slug=${loaderData.slug}`):{...pageHead('Campaign not found','The requested Hope Human Foundation campaign is unavailable.','/campaign-detail'),meta:[...pageHead('Campaign not found','The requested Hope Human Foundation campaign is unavailable.','/campaign-detail').meta,{name:'robots',content:'noindex'}]},component:CampaignDetail});
 function CampaignDetail() {
   const c = Route.useLoaderData();
