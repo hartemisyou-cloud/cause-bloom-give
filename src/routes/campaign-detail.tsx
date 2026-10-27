@@ -1,4 +1,3 @@
-import { TitleIcon } from '@/components/title-icon';
 import { createFileRoute, Link, notFound, useNavigate } from '@tanstack/react-router';
 import { useState, useRef } from 'react';
 import { ChevronRight, Share2, HandHeart, MapPin, CalendarDays, BadgeCheck, Zap } from 'lucide-react';
@@ -46,7 +45,6 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
       setShared('Copy the page address to share this campaign.');
     }
   }
-  const actions = <div className="donation-actions"><Button variant="gold" className="gold-control" onClick={donate}><HandHeart aria-hidden="true" />Donate now</Button><Button variant="pill" onClick={share}><Share2 aria-hidden="true" />Share</Button></div>;
   return <div className="detail-page" ref={pageRef}>
     <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link><ChevronRight aria-hidden="true" size={12} /><Link to="/campaigns">Campaigns</Link><ChevronRight aria-hidden="true" size={12} /><span>{c.title}</span></nav>
     <div className="detail-layout">
@@ -55,7 +53,7 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
         <div className="detail-chips"><span className="chip-category">{categoryName(c.category)}</span><span className="chip-verified"><BadgeCheck aria-hidden="true" size={13} />Verified campaign</span>{c.urgent && <span className="chip-urgent"><Zap aria-hidden="true" size={13} />Urgent</span>}</div>
         <h1 className="detail-title">{c.title}</h1>
         <p className="detail-meta">{c.location && <span><MapPin aria-hidden="true" size={14} />{c.location}</span>}{c.createdAt && <span><CalendarDays aria-hidden="true" size={14} />Created {new Date(c.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</span>}</p>
-        <div className="mobile-funding"><CampaignFunding campaign={c} />{actions}</div>
+        <div className="mobile-funding"><CampaignGivePanel campaign={c} onShare={share} /></div>
         <div className="organizer-row"><span className="organizer-avatar">{initials(c.organizer)}</span><div className="organizer-copy"><small>Organized by</small><strong>{c.organizer}</strong>{c.location && <span>{c.location}</span>}</div>{c.beneficiary && <div className="organizer-beneficiary"><strong>Beneficiary</strong><span>{c.beneficiary}</span></div>}</div>
         <section className="story-section first-story" ref={storyRef} tabIndex={-1} aria-label="Campaign story">
           <h2 className="story-title">Their story — in their own words</h2>

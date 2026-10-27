@@ -41,3 +41,4 @@
 
 - Allocate homepage campaigns into disjoint category-interleaved collections with bounded, accessible pagination and local discovery filters; every authentic record remains reachable without duplicating highlights or mutating source data.
 - Keep reference-adapted homepage process sections and policy contents navigation in focused presentation modules; preserve destination-owned copy, routes and integrations instead of importing source services or institutional records.
+- Reuse the compact campaign amount panel across desktop and mobile; preset links select amounts on the existing donation page without starting checkout or changing provider behavior.
