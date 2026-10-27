@@ -19,3 +19,10 @@ An authorized upstream campaign-scoped public read service could supply confirme
 
 ## Demonstration isolation
 `http://localhost:8080/@fs/dev-server/dev/campaign-social-proof.html` is an independent Vite development entry guarded by `import.meta.env.DEV`, no public route/link, no root analytics and no production entry. Fixtures are labelled TEST DATA; counts, values, timestamps and messages never reach public campaign records.
+
+## Owner-requested Free Hearts import — October 27, 2026
+The owner authorized importing their Free Hearts reviews/donations. Authorization to reuse content does not establish confirmed transactions or make another campaign's testimonials applicable to Hope Human campaigns.
+
+The previously supplied Free Hearts archive defines its content in `src/data/mockData.ts`, explicitly described on lines 3–4 as mock content awaiting a real backend. Its `Donor` interface (lines 19–25) has name, amount, message and a fixed relative `timeAgo`, but no confirmation timestamp, transaction status or publication-permission record. A shared `donorSample` (lines 107–113) is reused across campaigns. Liam's entries (lines 936–943) and Cassiel's entries (lines 2848–2854) likewise contain fixed relative times, not dated transaction records. The campaign page initializes its displayed donors directly from those arrays (`src/routes/campaigns.$id.tsx:170`). These entries are not eligible for import as confirmed recent donations or verified reviews.
+
+No generated entries have been added to Hope Human, no existing financial totals have been changed, and no testimonial has been reassigned to another campaign. A confirmed campaign-scoped export with original dates and public-display choices remains necessary for recent donations.
