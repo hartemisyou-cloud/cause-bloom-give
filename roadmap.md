@@ -1,4 +1,8 @@
 # Hope Human website
+## Solenari recent-donation synchronization
+- [x] Checked all 54 original campaign objects and page responses: no donors field exists; every page resets donors and generates its recent-donation list. Archived and current data assets are byte-identical.
+- [x] Documented all-campaign coverage in outputs/campaign-social-proof/solenari-donation-provenance-coverage.json and auditoria.md; payment and public content unchanged.
+- [ ] Synchronize genuine recent donations: blocked by missing campaign-bound confirmed records with absolute dates; generated sidebar entries cannot be migrated as real donations.
 ## Solenari campaign support reconstruction
 - [x] Read all 54 original URLs and compare source records with Hope Human: all 237 stored messages already present, including Emma's eight; 13 arrays retain English translations, names unchanged.
 - [x] Verify all 56 public campaign pages and all 237 rendered messages; 25 focused tests and automatic build OK. No source-backed message was missing, so public content was unchanged. Evidence: outputs/campaign-social-proof/solenari-support-comparison.json and solenari-page-audit.json.
