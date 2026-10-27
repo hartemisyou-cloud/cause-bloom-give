@@ -501,6 +501,9 @@ h2>.title-icon{width:22px;height:22px}
 /* Screenshot refinement: strictly campaign-scoped presentation. */
 .detail-page{--related-surface:linear-gradient(180deg,var(--background),var(--secondary));--campaign-gold-start:color-mix(in oklab,var(--gold) 65%,var(--card));--campaign-gold-fill:linear-gradient(180deg,var(--campaign-gold-start),var(--gold))}
 .detail-page .donation-actions .gold-control{background:var(--campaign-gold-fill)}
+.detail-page .donation-actions>button:nth-child(2){background:var(--dark-green)}
+.detail-page .gallery-left,.detail-page .gallery-right{top:50%;transform:translateY(-50%)}
+.detail-page .gallery-summary-content{width:100%;border-radius:18px;background:var(--card);color:var(--foreground);padding:22px;box-shadow:var(--soft-shadow)}.detail-page .gallery-summary-content p{color:var(--detail-story-ink);margin-bottom:16px}.gallery-summary-author{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--slate);margin-bottom:16px}.gallery-summary-author .title-icon{width:20px;height:20px;margin:0}.detail-page .raised-label{font-weight:600;margin-top:2px}.detail-page .raised{line-height:1}
 .detail-page .story-action-buttons{padding:16px 0}.detail-page .story-action-buttons>*{background:var(--card)}
 .detail-page .story-share-block{padding:24px 0}.detail-page .story-share-block h2{font-size:16px;margin-bottom:6px}.detail-page .story-share-block>p{font-size:13.44px;line-height:1.6;margin-bottom:18px}
 .detail-page .share-preview{background:var(--background);grid-template-columns:80px minmax(0,1fr)}.detail-page .share-preview>span{min-width:0}.detail-page .share-preview strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.detail-page .share-preview small{font-size:12px}
