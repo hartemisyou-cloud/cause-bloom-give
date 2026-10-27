@@ -657,3 +657,25 @@ body{background:var(--background)}
 @media(max-width:1100px){.proof-highlights{grid-template-columns:1fr}}
 @media(max-width:1023px){.activity-demo-columns{grid-template-columns:1fr}}
 @media(max-width:600px){.detail-page .campaign-social-proof{padding:24px 16px}.detail-page .proof-heading h2{font-size:18px}.proof-highlight{padding:14px}.detail-page .campaign-social-proof .recent-donations{padding:14px}.detail-page .story-actions{padding:0}.detail-page .campaign-social-proof{padding-left:0;padding-right:0}}
+
+/* Mobile campaign organization (Free Hearts-like cards) */
+@media (max-width:760px){
+  .detail-page .detail-main>.story-section.first-story,
+  .detail-page .story-actions,
+  .detail-page .mobile-recent-donations .recent-donations,
+  .detail-page .campaign-social-proof,
+  .detail-page .campaign-support,
+  .detail-page .campaign-organizer-footer{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px 16px;box-shadow:0 4px 14px -10px color-mix(in oklab,var(--foreground) 30%,transparent);margin:16px 0}
+  .detail-page .story-actions{border-top:1px solid var(--border)}
+  .detail-page .story-title{font-size:22px;line-height:1.2;margin-bottom:12px}
+  .detail-page .mobile-recent-donations{margin:16px 0}
+  .detail-page .proof-entry{padding:12px 0;gap:12px}
+  .detail-page .proof-avatar{width:38px;height:38px;font-size:13px}
+  .detail-page .proof-entry-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
+  .detail-page .proof-highlights{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .detail-page .proof-highlight{margin:0}
+  .detail-page .support-word{padding:14px 0}
+  .detail-page .support-word p{margin-left:0;margin-top:8px;color:var(--foreground);font-size:15px;line-height:1.65}
+  .detail-page .gallery-thumbs button,.detail-page .gallery-thumb{width:72px;height:52px}
+  .detail-page .detail-title{font-size:28px;line-height:1.15}
+}
