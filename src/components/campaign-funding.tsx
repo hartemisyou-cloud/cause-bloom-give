@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import { HandHeart, Heart, Lock, Share2 } from 'lucide-react';
+import { HandHeart, Heart, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { donationAmounts } from '@/lib/checkout';
 import { money, percentage, progressValue, type Campaign } from '@/lib/campaigns';
