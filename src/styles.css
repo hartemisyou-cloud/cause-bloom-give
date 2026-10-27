@@ -426,6 +426,7 @@ h2>.title-icon{width:22px;height:22px}
 .detail-page .story-section{scroll-margin-top:96px}.detail-page .story-body p{color:var(--detail-story-ink)}
 .detail-page .story-body.collapsed{max-height:220px}
 .detail-page .mobile-campaign-rail{display:none}
+.detail-page .mobile-organizer-contact{display:none}
 .detail-page .campaign-organizer-footer{padding-top:24px;padding-bottom:24px}
 .detail-page .campaign-organizer-footer>h2{font-size:14px;margin-bottom:14px}
 .detail-page .footer-organizer{grid-template-columns:40px minmax(0,1fr);gap:12px}
@@ -467,6 +468,7 @@ h2>.title-icon{width:22px;height:22px}
  .detail-page .detail-layout{grid-template-columns:minmax(0,1fr);gap:24px}.detail-page .donation-panel{display:none}
  .detail-page .mobile-funding{display:block;padding:20px 0}.detail-page .mobile-funding .donation-actions{grid-template-columns:1fr 1fr}
  .detail-page .mobile-campaign-rail{display:block;margin-bottom:24px}.detail-page .mobile-campaign-rail .rail-organizer{display:none}
+ .detail-page .mobile-organizer-contact{display:inline-flex;border-radius:100px;margin-top:14px;min-height:44px;font-size:13px}
  .detail-page .campaign-trust-grid{grid-template-columns:1fr;gap:32px}.detail-page .campaign-trust-band h2{margin-bottom:32px}
  .detail-page .sharing-layout{grid-template-columns:minmax(0,1fr);gap:44px}.detail-page .sharing-card-composition{height:290px;max-width:450px;margin:auto}
  .detail-page .sharing-art-center{width:158px;height:262px}.detail-page .sharing-art-left,.detail-page .sharing-art-right{width:130px;height:224px}
