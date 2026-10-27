@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "./frontend-reference.css";
 @custom-variant dark (&:is(.dark *));
 @theme inline {
  --font-sans: "Plus Jakarta Sans", sans-serif;
