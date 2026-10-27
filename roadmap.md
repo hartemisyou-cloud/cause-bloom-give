@@ -1,4 +1,7 @@
 # Hope Human website
+## Solenari campaign support reconstruction
+- [ ] Compare each matching Solenari campaign with Hope Human support messages, including help-emma; preserve campaign associations and document missing sources.
+- [ ] Restore source-backed support messages where missing, without creating donation records or invented dates; verify public rendering and tests.
 ## Campaign social proof and recent donations
 - [x] Audit the owner's Free Hearts archive and public Liam/Cassiel pages: displayed entries match static mock arrays with fixed relative times; Fabi source paths return 404. Evidence in outputs/campaign-social-proof/auditoria.md; 14 activity tests passed.
 - [ ] Import Free Hearts reviews/donations only to matching campaigns: blocked by missing authentic dated records and publication choices; source mock entries are not payment evidence.
