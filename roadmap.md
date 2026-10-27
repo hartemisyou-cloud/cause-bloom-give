@@ -1,8 +1,8 @@
 # Hope Human website
 ## HTTrack campaign-page reconstruction
-- [ ] Inventory both uploaded archives and compare their campaign HTML, CSS, JavaScript and assets with the current page; present the mapping and prioritized differences before implementation.
-- [ ] Apply reference-backed campaign-page corrections only, preserving Hope Human identity, homepage, campaign data and existing integrations.
-- [ ] Verify the nine requested widths, campaign interactions and regressions without transactions or publishing; document evidence and unavailable reference behavior.
+- [x] Inventory both uploaded archives and compare their campaign HTML, CSS, JavaScript and assets with the current page; present the mapping and prioritized differences before implementation.
+- [x] Apply reference-backed campaign-page corrections only, preserving Hope Human identity, homepage, campaign data and existing integrations.
+- [x] Verify nine widths, all 56 campaign pages, gallery/swipes/keyboard, dialogs/focus, report email preparation and $20 selection without transactions or publishing; 65 tests passed and automatic build OK. Evidence and explicit reference limitations are in outputs/campaign-reconstruction/relatorio.md.
 ## Jazlyn campaign migration
 - [x] Import Liam's seven story paragraphs, four gallery photos and two inline photos; retain the $4,298/$7,500 source snapshot and audit Carter → Bennett display surnames. Acervo: 56 campaigns.
 - [x] Verify directory search, gallery, expanded story and $20 selection at 390px/1280px; no overflow or browser errors, five assets mirrored byte-identically, 61 tests passed and automatic build OK. No payments or publishing.
