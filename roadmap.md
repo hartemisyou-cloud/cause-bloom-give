@@ -1,4 +1,7 @@
 # Hope Human website
+## Homepage screenshot blend
+- [ ] Refine first-block composition, watermark, campaign rail and three-step surfaces from the three new screenshots while preserving identity, existing controls and all blocks.
+- [ ] Verify nine widths, featured navigation, expanding Trending panels, filters, search and donation navigation without payments or publication.
 ## Global illustrative Recent Donations fallback
 - [x] Add deterministic campaign-specific 5–10 examples, explicitly labelled and separate from confirmed donations; preserve approved interface and all payment/tracking behavior. Any eligible confirmed public history replaces examples; no contribution counts or totals include examples.
 - [x] Verified all 56 current campaign pages and future-slug tests, stable reloads, real-record precedence, filters/pagination at 375/639/1280px with no overflow/page errors; 102 tests passed and automatic build OK. No publication; authentic feed remains unavailable.
