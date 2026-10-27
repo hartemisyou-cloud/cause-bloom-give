@@ -1,0 +1,66 @@
+{
+  "controlledCssComparison": [
+    {
+      "width": 390,
+      "reference": {
+        "width": 390,
+        "gap": "44px",
+        "columns": "1fr"
+      },
+      "actual": {
+        "width": 390,
+        "gap": "24px",
+        "columns": "minmax(0px, 1fr)"
+      }
+    },
+    {
+      "width": 768,
+      "reference": {
+        "width": 768,
+        "gap": "44px",
+        "columns": "706.562px"
+      },
+      "actual": {
+        "width": 768,
+        "gap": "24px",
+        "columns": "706.562px"
+      }
+    },
+    {
+      "width": 1280,
+      "reference": {
+        "width": 1040,
+        "gap": "44px",
+        "columns": "553.625px 340px"
+      },
+      "actual": {
+        "width": 1040,
+        "gap": "44px",
+        "columns": "553.625px 340px"
+      }
+    },
+    {
+      "width": 1920,
+      "reference": {
+        "width": 1040,
+        "gap": "44px",
+        "columns": "502.406px 340px"
+      },
+      "actual": {
+        "width": 1040,
+        "gap": "44px",
+        "columns": "502.406px 340px"
+      }
+    }
+  ],
+  "campaignPagesChecked": 56,
+  "horizontalSwipe": "passed",
+  "verticalScrollGuard": "passed",
+  "reportEmailPreparation": "passed, no email sent",
+  "localReaction": "passed",
+  "homepageWidths": [
+    390,
+    1280
+  ],
+  "pageErrors": []
+}
