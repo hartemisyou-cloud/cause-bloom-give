@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { CampaignCard } from '@/components/campaign-card';
 import { TitleIcon } from '@/components/title-icon';
 import { campaignPage } from '@/lib/home-campaigns';
-import { categories, type Campaign } from '@/lib/campaigns';
+import { campaigns as allCampaigns, categories, type Campaign } from '@/lib/campaigns';
 
 export function CampaignPager({ current, pages, onChange, label }: { current: number; pages: number; onChange: (page: number) => void; label: string }) {
   return <nav className="home-campaign-pager" aria-label={label}>
@@ -23,7 +23,7 @@ export function HomeCampaignBrowser({ campaigns }: { campaigns: Campaign[] }) {
   const filtered = campaigns.filter(c => (category === 'all' || c.category === category) && `${c.title} ${c.beneficiary} ${c.location}`.toLowerCase().includes(query.trim().toLowerCase()));
   const { items, current, pages } = campaignPage(filtered, page, 8);
   return <section className="section container featured-section" aria-labelledby="home-featured-title">
-    <div className="section-heading"><div><div className="eyebrow">More stories to discover</div><h2 id="home-featured-title"><TitleIcon topic="Featured campaigns to support"/>Featured campaigns to support</h2></div><Link className="plain-link" to="/campaigns">All 54 campaigns <ArrowRight size={14}/></Link></div>
+    <div className="section-heading"><div><div className="eyebrow">More stories to discover</div><h2 id="home-featured-title"><TitleIcon topic="Featured campaigns to support"/>Featured campaigns to support</h2></div><Link className="plain-link" to="/campaigns">All {allCampaigns.length} campaigns <ArrowRight size={14}/></Link></div>
     <div className="home-discovery-toolbar"><div className="input-wrap"><Search size={18}/><input className="form-input" aria-label="Search featured campaigns" placeholder="Search campaigns…" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }}/></div><select className="form-input" aria-label="Featured campaign category" value={category} onChange={e => { setCategory(e.target.value); setPage(0); }}>{available.map(c => <option key={c.id} value={c.id}>{c.id === 'all' ? 'All categories' : c.name} ({c.id === 'all' ? campaigns.length : campaigns.filter(item => item.category === c.id).length})</option>)}</select></div>
     <p className="home-result-count" role="status">{filtered.length ? `${current * 8 + 1}–${current * 8 + items.length} of ${filtered.length} campaigns` : 'No campaigns found'}</p>
     <div className="campaign-grid four">{items.map(c => <CampaignCard key={c.slug} campaign={c}/>)}</div>
