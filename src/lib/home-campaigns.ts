@@ -26,7 +26,9 @@ export function homepageCollections(source: Campaign[] = campaigns) {
   const hero = ordered.filter(c => c.category !== 'animals').slice(0, 3);
   const heroSlugs = new Set(hero.map(c => c.slug));
   const remaining = ordered.filter(c => !heroSlugs.has(c.slug));
-  return { hero, trending: remaining.slice(0, 18), featured: remaining.slice(18) };
+  // Discovery filters cover every remaining campaign; health campaigns always lead the default view.
+  const discovery = [...remaining.filter(c => c.category === 'health'), ...remaining.filter(c => c.category !== 'health')];
+  return { hero, trending: remaining.slice(0, 18), featured: remaining.slice(18), discovery };
 }
 
 export function campaignPage(source: Campaign[], page: number, size: number) {
