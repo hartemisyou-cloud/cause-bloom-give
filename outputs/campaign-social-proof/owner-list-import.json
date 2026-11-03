@@ -1,46 +1,48 @@
 {
-  "sourceFilename": "Mateo_is_8_months_old_and_fighting_stage_four_pasted-3.md",
-  "sourceSha256": "625815d71fad5168d18d3624f3ffa81af6f3726ad4307acb82e1a07429d7f7e0",
-  "provenance": "Owner-supplied donation list; payment authenticity not independently verified. Calendar dates only, no confirmation time supplied. Does not update campaign funding totals or payment state.",
-  "recordCount": 1711,
+  "sourceFilename": "Mateo_is_8_months_old_and_fighting_stage_four_pasted.txt",
+  "sourceSha256": "34fa6eaa26220bbb90cbe671ad484621789c6646cbdc2419bf4e7fae20ba7155",
+  "provenance": "Owner-supplied replacement donation/comment list; payment authenticity not independently verified. Calendar dates only, no confirmation time supplied. Does not update campaign funding totals or payment state. [=] markers and MODE metadata are source formatting, not display content.",
+  "mode": "replace",
+  "recordCount": 2119,
+  "commentCount": 2119,
   "campaignCount": 147,
-  "previousRecordCount": 636,
-  "previousCampaignCount": 53,
+  "previousRecordCount": 1711,
+  "previousCampaignCount": 147,
   "sections": [
     {
       "heading": "Mateo is 8 months old and fighting stage four cancer",
       "campaignSlug": "mateo",
-      "count": 9
+      "count": 13
     },
     {
       "heading": "Urgent Help Needed for Graceline's Second Bone Marrow Transplant",
       "campaignSlug": "help-graceline-now",
-      "count": 15
+      "count": 16
     },
     {
       "heading": "Make a donation to ease Fabi's severe pain and help save her life!",
       "campaignSlug": "help-save-fabi",
-      "count": 13
+      "count": 14
     },
     {
       "heading": "Save Jazzy's life from brain cancer & being homeless",
       "campaignSlug": "jazzy",
-      "count": 9
+      "count": 17
     },
     {
       "heading": "Help 5-year-old Teddy Beat Brain Cancer",
       "campaignSlug": "help-teddy",
-      "count": 13
+      "count": 12
     },
     {
       "heading": "Hurricane Relief for Coastal Florida Families",
       "campaignSlug": "hurricane-relief-florida",
-      "count": 9
+      "count": 13
     },
     {
       "heading": "Support Emma Parker Fight Against Metastatic Melanoma",
       "campaignSlug": "help-emma",
-      "count": 13
+      "count": 16
     },
     {
       "heading": "Together for Teddy — help save a 3-year-old from cancer",
@@ -50,72 +52,72 @@
     {
       "heading": "Wildfire Recovery for Sonoma Families",
       "campaignSlug": "wildfire-recovery-california",
-      "count": 15
+      "count": 16
     },
     {
       "heading": "Help Daniel Get a Life-Saving Liver Transplant",
       "campaignSlug": "help-daniel",
-      "count": 12
+      "count": 15
     },
     {
       "heading": "Help Save My Daughter Vexanna",
       "campaignSlug": "help-vexanna",
-      "count": 11
+      "count": 12
     },
     {
       "heading": "Rebuild Lincoln Elementary After the Fire",
       "campaignSlug": "rebuild-lincoln-elementary",
-      "count": 9
+      "count": 15
     },
     {
       "heading": "Retire 83-Year-Old Les and Help Save His Home",
       "campaignSlug": "help-les",
-      "count": 10
+      "count": 16
     },
     {
       "heading": "Help Olivia Live with Dignity",
       "campaignSlug": "olivia",
-      "count": 12
+      "count": 14
     },
     {
       "heading": "Help Save Sarah Collins: Her Only Chance Is a Second Stem Cell Transplant",
       "campaignSlug": "sarah",
-      "count": 14
+      "count": 16
     },
     {
       "heading": "Help Ross Access Critical Cancer Treatment",
       "campaignSlug": "help-ross",
-      "count": 10
+      "count": 14
     },
     {
       "heading": "Support Melissa's fight against cancer",
       "campaignSlug": "support-melissas-fight-against-cancer",
-      "count": 8
+      "count": 12
     },
     {
       "heading": "Help Stephanie, 29, fight breast cancer for her son",
       "campaignSlug": "help-stephanie-fight-cancer-at-29",
-      "count": 10
+      "count": 16
     },
     {
       "heading": "Hector needs a lung transplant",
       "campaignSlug": "hector-lung-transplant",
-      "count": 10
+      "count": 15
     },
     {
       "heading": "Help Cristian Navarro Keep Fighting for His Life",
       "campaignSlug": "ayuda-cristian",
-      "count": 10
+      "count": 16
     },
     {
       "heading": "Support Tara's cancer treatment",
       "campaignSlug": "support-taras-cancer-treatment",
-      "count": 14
+      "count": 12
     },
     {
       "heading": "Please Donate to Stop Mark's Severe Pain and Help Save His Life",
       "campaignSlug": "help-save-marks",
-      "count": 9
+      "count": 12
     },
     {
       "heading": "Help Betty Access Life-Saving Cancer Treatment Abroad 🎗️",
@@ -125,22 +127,22 @@
     {
       "heading": "Standing with Mieke",
       "campaignSlug": "standing-with-mieke",
-      "count": 9
+      "count": 12
     },
     {
       "heading": "💪 Goyito — Crawls Every Day Just to Survive and Care for His Mother [slug: goyito]",
       "campaignSlug": "goyito",
-      "count": 14
+      "count": 16
     },
     {
       "heading": "💪 Goyito — Crawls Every Day Just to Survive and Care for His Mother [slug: goyito-es]",
       "campaignSlug": "goyito-es",
-      "count": 11
+      "count": 13
     },
     {
       "heading": "Support Pat Holloway in his fight against ALS",
       "campaignSlug": "pat-behan-als",
-      "count": 11
+      "count": 13
     },
     {
       "heading": "My Husband Doesn't Want to Die. He Just Wants to Live to See Our Son Grow Up.",
@@ -150,22 +152,22 @@
     {
       "heading": "Transitional Housing for Single Moms",
       "campaignSlug": "housing-for-single-moms",
-      "count": 12
+      "count": 14
     },
     {
       "heading": "Clean Water for Rural Appalachia",
       "campaignSlug": "clean-water-appalachia",
-      "count": 11
+      "count": 12
     },
     {
       "heading": "Find a cure for ME/CFS",
       "campaignSlug": "find-cure-mecfs",
-      "count": 15
+      "count": 13
     },
     {
       "heading": "I Am Lucía Fernández. I Never Imagined I Would One Day Have to Ask for Help to Save the Man I Love.",
       "campaignSlug": "armando",
-      "count": 13
+      "count": 16
     },
     {
       "heading": "Help Save My Son Thiago's Life",
@@ -175,12 +177,12 @@
     {
       "heading": "Help save Castiel’s life fighting Stage 4 Cancer",
       "campaignSlug": "save-castiel",
-      "count": 11
+      "count": 13
     },
     {
       "heading": "Support Savannah's healing journey",
       "campaignSlug": "savannah-healing-journey",
-      "count": 11
+      "count": 16
     },
     {
       "heading": "New Prosthetic for a Wounded Veteran",
@@ -190,7 +192,7 @@
     {
       "heading": "Lindsay Danforth's ALS fund",
       "campaignSlug": "lindsay-kervick-als",
-      "count": 9
+      "count": 17
     },
     {
       "heading": "Help Chika Beat Cancer – Surgery No.4 & Restart Immunotherapy",
@@ -200,97 +202,97 @@
     {
       "heading": "Itamar rehabilitation support",
       "campaignSlug": "itamar-rehabilitation",
-      "count": 11
+      "count": 17
     },
     {
       "heading": "Adaptive Bikes for Kids With Disabilities",
       "campaignSlug": "adaptive-bikes-for-kids",
-      "count": 15
+      "count": 12
     },
     {
       "heading": "Help Mia Fight Leukemia",
       "campaignSlug": "help-mia-fight-leukemia",
-      "count": 13
+      "count": 17
     },
     {
       "heading": "Standing with Caitie Marrow",
       "campaignSlug": "caitie-sokley",
-      "count": 8
+      "count": 17
     },
     {
       "heading": "Please Donate to Stop Shamila's Severe Pain and Help Save Her Life",
       "campaignSlug": "shamila",
-      "count": 11
+      "count": 17
     },
     {
       "heading": "Cameron's accessible life fund",
       "campaignSlug": "cameron-accessible-life",
-      "count": 10
+      "count": 13
     },
     {
       "heading": "Please Donate to Stop Lily's Severe Pain and Help Save Her Life",
       "campaignSlug": "help-save-gwen",
-      "count": 11
+      "count": 13
     },
     {
       "heading": "Help Kaleb Keep Fighting",
       "campaignSlug": "kaleb",
-      "count": 14
+      "count": 16
     },
     {
       "heading": "Help Give Alliyah a Chance to Heal",
       "campaignSlug": "alliyah",
-      "count": 10
+      "count": 16
     },
     {
       "heading": "Help Emma Access Specialized Epidermolysis Bullosa Care",
       "campaignSlug": "help-emma-eb",
-      "count": 15
+      "count": 13
     },
     {
       "heading": "Help Isa Continue Her Cancer Treatment",
       "campaignSlug": "help-isa",
-      "count": 10
+      "count": 15
     },
     {
       "heading": "Help Laura Access Specialized Skin and Wound Care",
       "campaignSlug": "help-laura-cancer",
-      "count": 10
+      "count": 14
     },
     {
       "heading": "Help Lucas Continue His Leukemia Treatment",
       "campaignSlug": "help-lucas-leukemia",
-      "count": 14
+      "count": 13
     },
     {
       "heading": "Help Cure Olivia of Cancer",
       "campaignSlug": "help-olivia",
-      "count": 11
+      "count": 14
     },
     {
       "heading": "Help Cassiel fight stage 4 neuroblastoma",
       "campaignSlug": "help-cassiel",
-      "count": 8
+      "count": 14
     },
     {
       "heading": "For Alana with Love",
       "campaignSlug": "for-alana-with-love",
-      "count": 14
+      "count": 16
     },
     {
       "heading": "Help Hilary Fight a Rare Cancer Relapse",
       "campaignSlug": "help-hilary",
-      "count": 9
+      "count": 12
     },
     {
       "heading": "My Skin Hurts From the Smallest Touch. Please Help Me.",
       "campaignSlug": "saves-joyce",
-      "count": 14
+      "count": 16
     },
     {
       "heading": "Baby Bowen — heart warrior",
       "campaignSlug": "baby-bowen-heart-warrior",
-      "count": 13
+      "count": 16
     },
     {
       "heading": "Help Kinslee fight leukemia",
@@ -300,12 +302,12 @@
     {
       "heading": "Shelter for 100 Rescue Dogs",
       "campaignSlug": "shelter-for-100-rescue-dogs",
-      "count": 15
+      "count": 16
     },
     {
       "heading": "Don’t let Davi lose his brother Miguel.",
       "campaignSlug": "help-miguel",
-      "count": 15
+      "count": 12
     },
     {
       "heading": "Free Coding Camp for Girls Ages 10-14",
@@ -315,87 +317,87 @@
     {
       "heading": "Ryder's rehab at Apex Brain Center",
       "campaignSlug": "ryders-rehab",
-      "count": 9
+      "count": 13
     },
     {
       "heading": "Help support Isla's journey through leukaemia",
       "campaignSlug": "help-support-isla-and-her-family",
-      "count": 9
+      "count": 16
     },
     {
       "heading": "Aid Laura: 40 Years of Service, Now in Need",
       "campaignSlug": "help-save-laura",
-      "count": 9
+      "count": 16
     },
     {
       "heading": "Help Erica Against Cancer and Brain Disease",
       "campaignSlug": "save-erica",
-      "count": 13
+      "count": 14
     },
     {
       "heading": "Sean's recovery from a head-on collision",
       "campaignSlug": "seans-accident",
-      "count": 10
+      "count": 15
     },
     {
       "heading": "Solar Panels for the Riverside Community Center",
       "campaignSlug": "solar-panels-community-center",
-      "count": 9
+      "count": 15
     },
     {
       "heading": "Help Ángel beat leukemia and finally have his hands",
       "campaignSlug": "help-angel-fight-leukemia-and-get-his-prosthetic-arms",
-      "count": 10
+      "count": 17
     },
     {
       "heading": "Recovering & rebuilding — Charlotte's story",
       "campaignSlug": "charlotte-recovering-rebuilding",
-      "count": 11
+      "count": 12
     },
     {
       "heading": "Lillie gets to walk",
       "campaignSlug": "lillie-gets-to-walk",
-      "count": 14
+      "count": 16
     },
     {
       "heading": "Reforest Oregon's Beloved Trails",
       "campaignSlug": "reforest-oregon-trails",
-      "count": 9
+      "count": 14
     },
     {
       "heading": "Nepal floods: emergency relief for families and children",
       "campaignSlug": "nepal-floods-emergency-relief-for-families-and-children",
-      "count": 14
+      "count": 16
     },
     {
       "heading": "My Son Lost an Eye and Part of His Brain… and I'm Afraid He'll Also Lose His Will to Live.",
       "campaignSlug": "jesus-lopez",
-      "count": 14
+      "count": 12
     },
     {
       "heading": "Help My Son Ricardo Salazar Keep Fighting for His Life",
       "campaignSlug": "ricardo",
-      "count": 12
+      "count": 15
     },
     {
       "heading": "Kari Lindholm medical support",
       "campaignSlug": "kari-erickson-medical",
-      "count": 8
+      "count": 15
     },
     {
       "heading": "Art Therapy for Teens in Foster Care",
       "campaignSlug": "art-therapy-for-teens",
-      "count": 9
+      "count": 15
     },
     {
       "heading": "Help Jeehye fight aggressive uterine sarcoma",
       "campaignSlug": "help-jeehye-fight-uterine-sarcoma",
-      "count": 9
+      "count": 16
     },
     {
       "heading": "Companions for Isolated Seniors",
       "campaignSlug": "senior-companions-program",
-      "count": 9
+      "count": 17
     },
     {
       "heading": "The gift of Grace",
@@ -410,12 +412,12 @@
     {
       "heading": "Please Help My Little Girl Smile Again",
       "campaignSlug": "saves-susan",
-      "count": 12
+      "count": 13
     },
     {
       "heading": "Help us prepare Julián for his liver transplant",
       "campaignSlug": "julian-liver-transplant",
-      "count": 14
+      "count": 17
     },
     {
       "heading": "Help Me Continue My Fight for Life – Stage 4 Metastatic Cancer",
@@ -425,62 +427,62 @@
     {
       "heading": "Help Hollis heal",
       "campaignSlug": "help-hollis-heal",
-      "count": 11
+      "count": 12
     },
     {
       "heading": "Warm Meals for 500 Veterans This Winter",
       "campaignSlug": "meals-for-veterans",
-      "count": 12
+      "count": 13
     },
     {
       "heading": "Help Jhonata Get Prosthetic Arms",
       "campaignSlug": "help-jhonata",
-      "count": 9
+      "count": 13
     },
     {
       "heading": "Help save Alexa — support her fight against SCA3",
       "campaignSlug": "help-save-alexa",
-      "count": 9
+      "count": 16
     },
     {
       "heading": "Help Us Save Bruno's Little Face",
       "campaignSlug": "ayudanos-a-salvar-la-carita-de-bruno",
-      "count": 9
+      "count": 17
     },
     {
       "heading": "Nicolas is 2 years old — his liver cancer has spread to his lungs",
       "campaignSlug": "nicolas-trujillo-2-year-old-battling-liver-and-lung-cancer",
-      "count": 14
+      "count": 13
     },
     {
       "heading": "Support Dan's recovery after serious accident",
       "campaignSlug": "dan-thienes-recovery",
-      "count": 9
+      "count": 17
     },
     {
       "heading": "Free Music Lessons in Title I Schools",
       "campaignSlug": "music-lessons-title-i-schools",
-      "count": 12
+      "count": 13
     },
     {
       "heading": "Noah is fighting for his life — without the bill paid, treatment stops",
       "campaignSlug": "help-noah-keep-fighting-cancer",
-      "count": 11
+      "count": 17
     },
     {
       "heading": "Help Colter come home safe and strong",
       "campaignSlug": "help-colter-come-home-safe-strong",
-      "count": 8
+      "count": 13
     },
     {
       "heading": "Save a life — help us save our little girl",
       "campaignSlug": "save-a-life-help-us-save-our-little-girl",
-      "count": 9
+      "count": 14
     },
     {
       "heading": "Urgent Help Needed for Nora’s Aggressive Facial Cancer",
       "campaignSlug": "help-save-nora",
-      "count": 9
+      "count": 17
     },
     {
       "heading": "My Son Joel Torres Is Only 7 Years Old and Fighting a Kidney Disease. I'm Only Asking for a Chance to Keep Caring for Him.",
@@ -490,132 +492,127 @@
     {
       "heading": "Support Luna's journey to recovery — help her beat cancer",
       "campaignSlug": "support-lunas-journey-to-recovery",
-      "count": 13
+      "count": 15
     },
     {
       "heading": "Help Aliyah save her family",
       "campaignSlug": "help-aliyah-save-her-family",
-      "count": 15
-    },
-    {
-      "heading": "Help Will Survive Aggressive Gastrointestinal Cancer",
-      "campaignSlug": "help-will-survive",
-      "count": 11
+      "count": 16
     },
     {
       "heading": "Support for baby Conor",
       "campaignSlug": "baby-conor-support",
-      "count": 12
+      "count": 17
     },
     {
       "heading": "Diabetes Supplies for Uninsured Kids",
       "campaignSlug": "diabetes-supplies-for-kids",
-      "count": 13
+      "count": 14
     },
     {
       "heading": "Fighting for Lucii Against Leukemia",
       "campaignSlug": "luchando-por-lucii-contra-la-leucemia",
-      "count": 15
+      "count": 17
     },
     {
       "heading": "Christmas for Charlotte",
       "campaignSlug": "christmas-for-charlotte",
-      "count": 8
+      "count": 13
     },
     {
       "heading": "Restock the Northside Food Pantry",
       "campaignSlug": "food-pantry-restock",
-      "count": 15
+      "count": 14
     },
     {
       "heading": "For Ella Rose",
       "campaignSlug": "ella-rose",
-      "count": 15
+      "count": 12
     },
     {
       "heading": "Help Joyce Receive Her Second Jaw Cancer Surgery",
       "campaignSlug": "help-joyce-jaw-cancer",
-      "count": 15
+      "count": 16
     },
     {
       "heading": "Help Patricia With Morphine and Treatment for Her Son",
       "campaignSlug": "ayuda-patricia",
-      "count": 14
+      "count": 13
     },
     {
       "heading": "Help my children survive in Gaza",
       "campaignSlug": "help-my-children-survive-in-gaza",
-      "count": 12
+      "count": 16
     },
     {
       "heading": "Help David get the mobility he deserves",
       "campaignSlug": "david-mobility",
-      "count": 11
+      "count": 16
     },
     {
       "heading": "27 new tumors — help Brittany keep fighting cancer",
       "campaignSlug": "support-for-brittanys-cancer-journey",
-      "count": 10
+      "count": 16
     },
     {
       "heading": "Akin Has 6 Months to Live — Be His Only Hope",
       "campaignSlug": "akin",
-      "count": 13
+      "count": 17
     },
     {
       "heading": "Medical and dental support for Randy",
       "campaignSlug": "randy-medical-dental",
-      "count": 10
+      "count": 13
     },
     {
       "heading": "Standing with Nurse Nyki in Her Cancer Battle",
       "campaignSlug": "standing-with-nurse-nyki-in-her-cancer-battle",
-      "count": 12
+      "count": 17
     },
     {
       "heading": "Help Julie Fight Cancer",
       "campaignSlug": "help-julie-fight-cancer",
-      "count": 13
+      "count": 16
     },
     {
       "heading": "40 orphans in Uganda are out of food — Redeemer's Hope is their only family",
       "campaignSlug": "redeemers-hope-orphanage-uganda",
-      "count": 10
+      "count": 15
     },
     {
       "heading": "Gabriel, age 5: a new chance to fight",
       "campaignSlug": "gabriel-5-years-new-chance-to-fight",
-      "count": 15
+      "count": 13
     },
     {
       "heading": "Help Noah Afford Scleral Lenses and Eye Surgery",
       "campaignSlug": "help-noah",
-      "count": 8
+      "count": 16
     },
     {
       "heading": "Help Carmen Save Her Son Alejandro",
       "campaignSlug": "ayuda-alejandro",
-      "count": 12
+      "count": 14
     },
     {
       "heading": "Emergency Surgery for Luna",
       "campaignSlug": "emergency-surgery-for-luna",
-      "count": 10
+      "count": 12
     },
     {
       "heading": "Help Gael Fight Aggressive Cancer",
       "campaignSlug": "ayuda-gael",
-      "count": 12
+      "count": 14
     },
     {
       "heading": "Help Atticus & Athena start their new life",
       "campaignSlug": "help-atticus-and-athena-start-their-new-life",
-      "count": 12
+      "count": 13
     },
     {
       "heading": "Help Charmaine after her ex-husband set her on fire",
       "campaignSlug": "help-charmaine-after-her-ex-husband-set-her-on-fire",
-      "count": 13
+      "count": 14
     },
     {
       "heading": "Help baby Liam fight lifelong medical issues!",
@@ -625,7 +622,7 @@
     {
       "heading": "Help Amelia Fight Cancer for Her Two Little Girls",
       "campaignSlug": "help-amelia",
-      "count": 12
+      "count": 17
     },
     {
       "heading": "Help George Continue His Cancer Treatment and Get a Prosthetic Arm",
@@ -635,47 +632,47 @@
     {
       "heading": "Help and shelter the vulnerable",
       "campaignSlug": "help-and-shelter-the-vulnerable",
-      "count": 11
+      "count": 12
     },
     {
       "heading": "Help Nicole fight cancer as a single mother",
       "campaignSlug": "help-nicole-fight-cancer-as-a-single-mother",
-      "count": 11
+      "count": 13
     },
     {
       "heading": "Support Jayvion’s Fight Against Leukemia",
       "campaignSlug": "support-jayvions-fight-against-leukemia",
-      "count": 8
+      "count": 13
     },
     {
       "heading": "Help Namulisa live with eye cancer",
       "campaignSlug": "help-namulisa-live-with-eye-cancer",
-      "count": 15
+      "count": 16
     },
     {
       "heading": "Catarina: help me live",
       "campaignSlug": "catarina-help-me-live",
-      "count": 11
+      "count": 17
     },
     {
       "heading": "Help Samuel fight AMC — a single father asking for help",
       "campaignSlug": "help-samuel-with-his-amc-treatment",
-      "count": 15
+      "count": 13
     },
     {
       "heading": "Sérgio: urgent surgery to fight pancreatic cancer",
       "campaignSlug": "sergio-pancreatic-cancer",
-      "count": 9
+      "count": 14
     },
     {
       "heading": "Prosthesis and medical expenses for Rodrigo",
       "campaignSlug": "prosthesis-medical-expenses-rodrigo",
-      "count": 9
+      "count": 12
     },
     {
       "heading": "Please help Lilly fight skin cancer",
       "campaignSlug": "please-donate-for-lillys-treatment",
-      "count": 10
+      "count": 17
     },
     {
       "heading": "Help Adrieli Access Ongoing Epidermolysis Bullosa Care",
@@ -685,62 +682,68 @@
     {
       "heading": "A Desperate Girl — Arielle Feels Pain Even When the Wind Touches Her Skin",
       "campaignSlug": "help-arielle",
-      "count": 9
+      "count": 15
     },
     {
       "heading": "Help Ollie Fight His Brain Tumor",
       "campaignSlug": "ayuda-ollie",
-      "count": 13
+      "count": 12
     },
     {
       "heading": "Help Babita survive stage IV cancer",
       "campaignSlug": "babita-help-to-survive-cancer",
-      "count": 9
+      "count": 12
     },
     {
       "heading": "Hope for Baby Axel's journey",
       "campaignSlug": "hope-for-baby-axels-journey",
-      "count": 15
+      "count": 13
     },
     {
       "heading": "Lilah, 3, danced through brain cancer — now she's fighting for every child who can't",
       "campaignSlug": "help-lilah-fight-rare-brain-cancer",
-      "count": 10
+      "count": 13
     },
     {
       "heading": "Urgent hip surgery for Mr. Francisco",
       "campaignSlug": "francisco-urgent-hip-surgery",
-      "count": 9
+      "count": 14
     },
     {
       "heading": "Help Leonor: a little fighter with FOXG1 syndrome",
       "campaignSlug": "leonor-foxg1-syndrome",
-      "count": 15
+      "count": 13
     },
     {
       "heading": "Help baby Sofia fight hydrocephalus",
       "campaignSlug": "baby-sofia-hydrocephalus",
-      "count": 13
+      "count": 17
     },
     {
       "heading": "Katrina is only 5 — help her survive leukaemia",
       "campaignSlug": "katrinas-cancer-journey",
-      "count": 15
+      "count": 14
     },
     {
       "heading": "Anita and Emilio's recovery after preeclampsia",
       "campaignSlug": "anita-emilio-preeclampsia",
-      "count": 12
+      "count": 17
     },
     {
       "heading": "Surgery for Idris — congenital heart disease (TGA)",
       "campaignSlug": "idris-congenital-heart-tga",
-      "count": 13
+      "count": 14
     },
     {
       "heading": "Help grandma face pulmonary fibrosis",
       "campaignSlug": "grandma-pulmonary-fibrosis",
-      "count": 13
+      "count": 17
+    },
+    {
+      "heading": "Help Will Survive Aggressive Gastroin=inal Cancer",
+      "campaignSlug": "help-will-survive",
+      "count": 14,
+      "matchedTitle": "Help Will Survive Aggressive Gastrointestinal Cancer"
     }
   ]
 }

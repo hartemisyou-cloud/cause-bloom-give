@@ -9,7 +9,7 @@ afterEach(cleanup);
 const donor: PublicDonation = {id:'valid',campaignSlug:'test',status:'confirmed',eligible:true,public:true,name:'Test donor',anonymous:false,amountVisible:true,amountCents:50000,confirmedAt:'2026-11-03'};
 describe('Information consistency', () => {
  it('counts eight examples separately without a contradictory zero support badge', () => {
-  render(<CampaignSupport campaign={{slug:'help-nicole-fight-cancer-as-a-single-mother',support:[]}} />);
+  render(<CampaignSupport campaign={{slug:'no-owner-list-test',support:[]}} />);
   expect(screen.getByLabelText('8 example messages')).toHaveTextContent('8');
   expect(screen.queryByLabelText('0 submitted support messages')).toBeNull();
   expect(screen.getAllByRole('article')).toHaveLength(8);

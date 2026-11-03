@@ -71,7 +71,7 @@ export function activityDate(value: string, now = Date.now()) {
   if (days < 365) return relative.format(-Math.floor(days / 30), 'month');
   return relative.format(-Math.floor(days / 365), 'year');
 }
-// Static campaign records provide support prose only; historical totals never become donor entries.
+// Owner-listed comments replace legacy prose for covered campaigns; totals never become donor entries.
 export function campaignActivity(campaign: { slug?: string; support: readonly { name: string; message: string }[] }): CampaignActivity {
   const slug = campaign.slug ?? '';
   const seen = new Set<string>();
@@ -82,7 +82,12 @@ export function campaignActivity(campaign: { slug?: string; support: readonly { 
     return [{ ...m, id: `source-support-${index}`, campaignSlug: slug, public: true, anonymous: !m.name.trim() || m.name === 'Anonymous' }];
   });
   const donations = publicDonations(donationRecords.map(r => ({ ...r, status: 'confirmed' as const, eligible: true, public: true, anonymous: false, amountVisible: true })), slug);
-  return { campaignSlug: slug, status: donations.length ? 'ready' : 'unavailable', donations, messages };
+  const listedMessages = donationRecords.filter(r => r.campaignSlug === slug && r.comment?.trim()).map(r => ({
+    id: `donation-comment-${r.id}`, campaignSlug: slug, public: true, name: r.name,
+    anonymous: !r.name.trim() || r.name === 'Anonymous', message: r.comment,
+    createdAt: r.confirmedAt, donationId: r.id,
+  }));
+  return { campaignSlug: slug, status: donations.length ? 'ready' : 'unavailable', donations, messages: listedMessages.length ? publicMessages(listedMessages, slug) : messages };
 }
 // Donation records carry a calendar date only, so show the date rather than an invented time of day.
 export function donationDate(value: string) {
