@@ -8,11 +8,11 @@ const policies = [{ to: '/privacy-policy', label: 'Privacy Policy' }, { to: '/te
 
 export function SiteFooter() {
   return <footer className="site-footer">
-    <img className="footer-watermark" src={logo.url} alt="" aria-hidden="true" loading="lazy" width="1920" height="640" />
+    <img className="footer-watermark" src={logo.url} alt="" aria-hidden="true" loading="lazy" width="1577" height="375" />
     <div className="container">
       <div className="footer-top">
         <div className="footer-brand">
-          <Link to="/" aria-label="Hope Human Foundation home"><img src={logo.url} alt="Hope Human Foundation" width="1920" height="640" loading="lazy" /></Link>
+          <Link to="/" aria-label="Hope Human Foundation home"><img src={logo.url} alt="Hope Human Foundation" width="1577" height="375" loading="lazy" /></Link>
           <p>Connecting compassionate people with causes that matter. Together, we can bring hope to someone’s tomorrow.</p>
         </div>
         <div className="footer-values"><Heart size={19} aria-hidden="true" /><span>Made for a kinder world</span></div>
