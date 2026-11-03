@@ -788,3 +788,4 @@ body:has(.detail-page) .site-header{background:var(--campaign-canvas);--gold:var
  .detail-page .detail-main>.story-section.first-story,.detail-page .campaign-support,.detail-page .campaign-organizer-footer{background:var(--card)}
  .detail-page .campaign-social-proof{background:var(--campaign-card-surface)}
 }
+.support-pagination:empty{display:none}.detail-page .support-examples{margin-top:0!important;padding-top:0!important;border-top:0!important}
