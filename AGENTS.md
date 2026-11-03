@@ -44,3 +44,4 @@
 - Keep reference-adapted homepage process sections and policy contents navigation in focused presentation modules; preserve destination-owned copy, routes and integrations instead of importing source services or institutional records.
 - Keep homepage watermark and assurance links in decorative, homepage-scoped layers using the authentic logo and existing content destinations; this prevents visual adaptations from changing shared navigation or checkout behavior.
 - Reuse the compact campaign amount panel across desktop and mobile; preset links select amounts on the existing donation page without starting checkout or changing provider behavior.
+- Keep additional support examples in a separate slug-keyed presentation module with independent pagination and explicit labels; this preserves source support counts and prevents fictional prose becoming activity records.
