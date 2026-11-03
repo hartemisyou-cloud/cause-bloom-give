@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { TitleIcon } from '@/components/title-icon';
-import { CampaignSupportExamples } from '@/components/campaign-support-examples';
 import { initials } from '@/components/campaign-detail-sections';
 import { visibleSupport } from '@/lib/campaign-activity';
 import { campaignActivity, publicMessages, publicDonations, donorName, donationMoney, activityDate, donationDate, type CampaignActivity } from '@/lib/campaign-social-proof';
@@ -21,7 +20,6 @@ export function CampaignSupport({ campaign, activity = campaignActivity(campaign
         return <article className="support-word" key={message.id}><div className="support-author"><span className="organizer-avatar" aria-hidden="true">{initials(name)}</span><div className="support-author-copy"><strong>{name}</strong><div className="support-message-meta">{donation?.amountVisible && <span>{donationMoney(donation.amountCents)}</span>}{message.createdAt && <time dateTime={message.createdAt}>{/^\d{4}-\d{2}-\d{2}$/.test(message.createdAt) ? donationDate(message.createdAt) : activityDate(message.createdAt)}</time>}</div></div></div><p>{message.message}</p></article>;
       })}</div>
     </>}
-    {activity.status !== 'loading' && activity.status !== 'error' && <CampaignSupportExamples key={campaign.slug} slug={campaign.slug ?? ''} />}
     {activity.status !== 'loading' && activity.status !== 'error' && (messages.length < all.length || page > 1) && <div className="support-pagination">{messages.length < all.length && <Button variant="outline" onClick={() => setPage(value => value + 1)}><ChevronDown aria-hidden="true" />Load more</Button>}{page > 1 && <Button variant="ghost" onClick={() => setPage(1)}><ChevronUp aria-hidden="true" />Show fewer</Button>}</div>}
   </section>;
 }
