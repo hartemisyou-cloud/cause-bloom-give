@@ -27,7 +27,7 @@
 
 - Implement reference-matched layouts through shared semantic CSS and design-system controls, with CDN-hosted public font subsets; this preserves consistent geometry without shipping archived source pages or scripts.
 - Keep campaign gallery and funding in focused presentation modules with campaign-keyed state and bounded reference geometry; this isolates page reconstruction from homepage and payment integrations.
-- On mobile, show donation highlights and a single contribution history together, without a second recent-donations list or nested history card; desktop retains its sidebar for quick access.
+- Show donation highlights and a single contribution history on mobile without a second list or nested history card; desktop shows donations only in the existing giving sidebar and hides the redundant left-side activity section.
 - Keep confirmed campaign activity in a privacy-safe adapter and illustrative fallback in a separate deterministic slug-keyed generator; show examples only when no confirmed public history exists, label every example and its date, and exclude them from counts, funding, messages and analytics to prevent simulated records becoming payment evidence.
 - Calculate donation relative times from original confirmation timestamps in the shared activity formatter; never reuse source-relative labels as current activity.
 - Import owner-supplied donation lists by exact campaign title or explicit slug, retaining calendar-date precision and a provenance audit without modifying fundraising totals; this prevents cross-campaign assignment, duplicate identifiers and invented confirmation times.

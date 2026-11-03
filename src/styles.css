@@ -796,6 +796,7 @@ body{background:var(--campaign-canvas)}
 .site-header{background:var(--campaign-canvas)}
 .home-page{--home-hero-background:var(--campaign-canvas)}
 /* Stable mobile header tracks keep the complete logo clear of both tools. */
+@media(min-width:1024px){.detail-page .campaign-social-proof{display:none}}
 @media(max-width:1023px){
  .site-header .header-inner{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;gap:8px;padding:0 12px}
  .site-header .header-inner .brand{grid-column:2;grid-row:1;order:0;min-width:0;width:100%;max-width:241px;margin:0;justify-self:center;display:flex;align-items:center;justify-content:center}
