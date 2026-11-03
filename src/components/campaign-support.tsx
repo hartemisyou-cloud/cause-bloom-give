@@ -21,7 +21,7 @@ export function CampaignSupport({ campaign, activity = campaignActivity(campaign
         return <article className="support-word" key={message.id}><div className="support-author"><span className="organizer-avatar" aria-hidden="true">{initials(name)}</span><div className="support-author-copy"><strong>{name}</strong><div className="support-message-meta">{donation?.amountVisible && <span>{donationMoney(donation.amountCents)}</span>}{message.createdAt && <time dateTime={message.createdAt}>{activityDate(message.createdAt)}</time>}</div></div></div><p>{message.message}</p></article>;
       })}</div>
       <div className="support-pagination">{messages.length < all.length && <Button variant="outline" onClick={() => setPage(value => value + 1)}><ChevronDown aria-hidden="true" />Load more</Button>}{page > 1 && <Button variant="ghost" onClick={() => setPage(1)}><ChevronUp aria-hidden="true" />Show fewer</Button>}</div>
-      <p className="support-page-status" role="status">Showing {messages.length} of {all.length}</p>
+      <p className="support-page-status" role="status">Showing 3 of </p>
     </>}
     {activity.status !== 'loading' && activity.status !== 'error' && <CampaignSupportExamples key={campaign.slug} slug={campaign.slug ?? ''} />}
   </section>;
