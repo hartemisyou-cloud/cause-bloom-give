@@ -12,7 +12,7 @@ export function CampaignSupportExamples({ slug }: { slug: string }) {
   const visible = visibleSupport(examples, page);
   return <div className="support-examples" role="group" aria-label="Example support messages">
     <div className="support-list">{visible.map(example => <article className="support-word" key={example.id}>
-      <div className="support-author"><span className="organizer-avatar" aria-hidden="true">{initials(example.name)}</span><div className="support-author-copy"><strong>{example.name}</strong><small className="support-message-meta">Example message</small></div></div>
+      <div className="support-author"><span className="organizer-avatar" aria-hidden="true">{initials(example.name)}</span><div className="support-author-copy"><strong>{example.name}</strong><small className="support-message-meta"></small></div></div>
       <p>{example.message}</p>
     </article>)}</div>
     <div className="support-pagination">
