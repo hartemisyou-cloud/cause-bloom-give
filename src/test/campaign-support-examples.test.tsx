@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
+import { cleanup, render, screen, within } from '@testing-library/react';
 import { afterEach, describe, expect, it } from 'vitest';
 import { campaigns } from '@/lib/campaigns';
 import { campaignSupportExamples } from '@/lib/campaign-support-examples';
