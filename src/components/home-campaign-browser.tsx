@@ -21,11 +21,11 @@ export function HomeCampaignBrowser({ campaigns }: { campaigns: Campaign[] }) {
   const [page, setPage] = useState(0);
   const available = categories.filter(c => c.id === 'all' || campaigns.some(item => item.category === c.id));
   const filtered = campaigns.filter(c => (category === 'all' || c.category === category) && `${c.title} ${c.beneficiary} ${c.location}`.toLowerCase().includes(query.trim().toLowerCase()));
-  const { items, current, pages } = campaignPage(filtered, page, 8);
+  const { items, current, pages } = campaignPage(filtered, page, 6);
   return <section className="section container featured-section" aria-labelledby="home-featured-title">
     <div className="section-heading"><div><div className="eyebrow">More stories. More ways to help.</div><h2 id="home-featured-title"><TitleIcon topic="Featured campaigns to support"/>Find the story that moves you</h2></div><Link className="plain-link" to="/campaigns">All {allCampaigns.length} campaigns <ArrowRight size={14}/></Link></div>
     <div className="home-discovery-toolbar"><div className="input-wrap"><Search size={18}/><input className="form-input" aria-label="Search featured campaigns" placeholder="Search campaigns…" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }}/></div><select className="form-input" aria-label="Featured campaign category" value={category} onChange={e => { setCategory(e.target.value); setPage(0); }}>{available.map(c => <option key={c.id} value={c.id}>{c.id === 'all' ? 'All categories' : c.name} ({c.id === 'all' ? campaigns.length : campaigns.filter(item => item.category === c.id).length})</option>)}</select></div>
-    <p className="home-result-count" role="status">{filtered.length ? `${current * 8 + 1}–${current * 8 + items.length} of ${filtered.length} campaigns` : 'No campaigns found'}</p>
+    <p className="home-result-count" role="status">{filtered.length ? `${current * 6 + 1}–${current * 6 + items.length} of ${filtered.length} campaigns` : 'No campaigns found'}</p>
     <div className="campaign-grid four">{items.map(c => <CampaignCard key={c.slug} campaign={c}/>)}</div>
     {!items.length && <div className="empty-state"><Button variant="outline" onClick={() => { setCategory('all'); setQuery(''); setPage(0); }}>Clear filters</Button></div>}
     <CampaignPager current={current} pages={pages} onChange={setPage} label="featured campaigns"/>

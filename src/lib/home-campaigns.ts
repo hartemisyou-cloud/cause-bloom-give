@@ -20,7 +20,8 @@ export function diversifyCampaigns(source: Campaign[]): Campaign[] {
 }
 
 export function homepageCollections(source: Campaign[] = campaigns) {
-  const ordered = diversifyCampaigns(source);
+  // goyito-es duplicates the goyito campaign (same story and photos); keep one on the homepage.
+  const ordered = diversifyCampaigns(source.filter(c => c.slug !== 'goyito-es'));
   // Keep the only animal campaign in the always-visible discovery section.
   const hero = ordered.filter(c => c.category !== 'animals').slice(0, 3);
   const heroSlugs = new Set(hero.map(c => c.slug));
