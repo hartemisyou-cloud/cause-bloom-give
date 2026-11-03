@@ -5,7 +5,7 @@ import { TitleIcon } from '@/components/title-icon';
 import { CampaignSupportExamples } from '@/components/campaign-support-examples';
 import { initials } from '@/components/campaign-detail-sections';
 import { visibleSupport } from '@/lib/campaign-activity';
-import { campaignActivity, publicMessages, publicDonations, donorName, donationMoney, activityDate, type CampaignActivity } from '@/lib/campaign-social-proof';
+import { campaignActivity, publicMessages, publicDonations, donorName, donationMoney, activityDate, donationDate, type CampaignActivity } from '@/lib/campaign-social-proof';
 
 export function CampaignSupport({ campaign, activity = campaignActivity(campaign) }: { campaign: { slug?: string; support: readonly { name: string; message: string }[] }; activity?: CampaignActivity }) {
   const [page, setPage] = useState(1);
@@ -18,7 +18,7 @@ export function CampaignSupport({ campaign, activity = campaignActivity(campaign
       <div className="support-list">{messages.map(message => {
         const name = donorName(message);
         const donation = donations.find(d => d.id === message.donationId);
-        return <article className="support-word" key={message.id}><div className="support-author"><span className="organizer-avatar" aria-hidden="true">{initials(name)}</span><div className="support-author-copy"><strong>{name}</strong><div className="support-message-meta">{donation?.amountVisible && <span>{donationMoney(donation.amountCents)}</span>}{message.createdAt && <time dateTime={message.createdAt}>{activityDate(message.createdAt)}</time>}</div></div></div><p>{message.message}</p></article>;
+        return <article className="support-word" key={message.id}><div className="support-author"><span className="organizer-avatar" aria-hidden="true">{initials(name)}</span><div className="support-author-copy"><strong>{name}</strong><div className="support-message-meta">{donation?.amountVisible && <span>{donationMoney(donation.amountCents)}</span>}{message.createdAt && <time dateTime={message.createdAt}>{/^\d{4}-\d{2}-\d{2}$/.test(message.createdAt) ? donationDate(message.createdAt) : activityDate(message.createdAt)}</time>}</div></div></div><p>{message.message}</p></article>;
       })}</div>
     </>}
     {activity.status !== 'loading' && activity.status !== 'error' && <CampaignSupportExamples key={campaign.slug} slug={campaign.slug ?? ''} />}

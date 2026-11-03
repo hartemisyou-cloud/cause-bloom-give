@@ -30,7 +30,7 @@
 - Show donation highlights and a single contribution history on mobile without a second list or nested history card; desktop shows donations only in the existing giving sidebar and hides the redundant left-side activity section.
 - Keep confirmed campaign activity in a privacy-safe adapter and illustrative fallback in a separate deterministic slug-keyed generator; show examples only when no confirmed public history exists, label every example and its date, and exclude them from counts, funding, messages and analytics to prevent simulated records becoming payment evidence.
 - Calculate donation relative times from original confirmation timestamps in the shared activity formatter; never reuse source-relative labels as current activity.
-- Import owner-supplied donation lists by exact campaign title or explicit slug, retaining calendar-date precision and a provenance audit without modifying fundraising totals; this prevents cross-campaign assignment, duplicate identifiers and invented confirmation times.
+- Import owner-supplied donation lists by exact campaign title or explicit slug, retaining calendar-date precision and a provenance audit without modifying fundraising totals; when replacement lists include comments, use those linked comments instead of legacy support for covered campaigns so names, amounts, dates and counts share one source.
 - Render campaign stories through a safe rich-text component and exact source-path artwork map; this preserves inline photo order/captions and prevents serialization markers from appearing as prose.
 
 - Render expanding campaign panels in a dedicated accessible presentation module, keeping campaign data immutable and navigation shared with leaf routes.
