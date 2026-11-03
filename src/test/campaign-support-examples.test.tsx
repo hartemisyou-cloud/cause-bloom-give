@@ -1,8 +1,8 @@
-import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
+import { cleanup, render, screen, within } from '@testing-library/react';
 import { afterEach, describe, expect, it } from 'vitest';
 import { campaigns } from '@/lib/campaigns';
 import { campaignSupportExamples } from '@/lib/campaign-support-examples';
-import { campaignActivity } from '@/lib/campaign-social-proof';
+import { campaignActivity, publicDonations } from '@/lib/campaign-social-proof';
 import { CampaignSupport } from '@/components/campaign-support';
 
 afterEach(cleanup);
@@ -16,7 +16,8 @@ describe('Identified support examples', () => {
       expect(new Set(examples.map(example => example.id)).size).toBe(8);
       expect(new Set(examples.map(example => example.message)).size).toBe(8);
       expect(activity.messages.some(message => examples.some(example => example.id === message.id))).toBe(false);
-      expect(activity.donations).toEqual([]);
+      expect(activity.donations.some(donation => examples.some(example => example.id === donation.id))).toBe(false);
+      expect(publicDonations(activity.donations, campaign.slug)).toEqual(activity.donations);
       expect(JSON.stringify(campaign)).toBe(before);
     }
   });
@@ -30,17 +31,14 @@ describe('Identified support examples', () => {
       expect(example).not.toHaveProperty('amountCents');
     }
   });
-  it('paginates examples independently from source messages', () => {
+  it('keeps all examples available without a second pagination control', () => {
     const campaign = campaigns[0];
     if (!campaign) throw new Error('Missing campaign');
     const activity = campaignActivity(campaign);
     render(<CampaignSupport campaign={campaign} activity={activity} />);
     const group = screen.getByRole('group', { name: 'Example support messages' });
-    expect(within(group).getAllByRole('article')).toHaveLength(6);
-    fireEvent.click(within(group).getByRole('button', { name: 'More examples' }));
     expect(within(group).getAllByRole('article')).toHaveLength(8);
-    fireEvent.click(within(group).getByRole('button', { name: 'Fewer examples' }));
-    expect(within(group).getAllByRole('article')).toHaveLength(6);
+    expect(within(group).queryByRole('button')).toBeNull();
     expect(document.querySelector('.support-count')?.textContent).toBe(String(activity.messages.length));
   });
   it.each(['loading', 'error'] as const)('does not replace %s states with examples', status => {
