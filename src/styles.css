@@ -788,7 +788,8 @@ body:has(.detail-page) .site-header{background:var(--campaign-canvas);--gold:var
  .detail-page .campaign-social-proof{background:var(--campaign-card-surface)}
  .detail-page .campaign-social-proof .recent-donations{background:transparent}
 }
-.support-pagination:empty{display:none}.detail-page .support-examples{margin-top:0!important;padding-top:0!important;border-top:0!important}
+.support-pagination:empty{display:none}.detail-page .support-examples{margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}
+.support-example-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;font-size:14px;font-weight:700;margin-bottom:6px}
 /* Site-wide campaign palette: warm cream canvas, white cards, muted green and soft gold */
 :root{--background:var(--campaign-canvas);--reference-surface:var(--campaign-canvas);--surface-soft:var(--campaign-neutral-surface);--muted:var(--campaign-neutral-surface);--secondary:var(--campaign-gold-soft);--gold:var(--campaign-gold);--gold-dark:oklch(.62 .1 85);--primary:var(--campaign-green);--dark-green:var(--campaign-ink);--foreground:var(--campaign-ink)}
 body{background:var(--campaign-canvas)}

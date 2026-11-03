@@ -1,6 +1,14 @@
 import records from '@/data/campaigns.json';
 export type Campaign = (typeof records)[number];
 export const campaigns = records;
+// Preserve legacy language-variant URLs without double-counting the same story.
+export function distinctCampaigns(source: Campaign[] = campaigns) {
+ return source.filter(c => c.slug !== 'goyito-es');
+}
+export function historicalCampaignSummary(source: Campaign[] = campaigns) {
+ const unique = distinctCampaigns(source);
+ return { count: unique.length, raisedCents: unique.reduce((sum, c) => sum + Math.round(c.raised * 100), 0) };
+}
 const categoryDefinitions = [{id:'children',name:'Children & Family'},{id:'animals',name:'Animals & Pets'},{id:'disaster',name:'Disaster Relief'},{id:'health',name:'Health'},{id:'education',name:'Education'},{id:'community',name:'Community'},{id:'environment',name:'Environment'},{id:'emergency',name:'Emergency'},{id:'housing',name:'Housing'}];
 export const categories = [{id:'all',name:'All campaigns',count:campaigns.length}, ...categoryDefinitions.map(c => ({...c,count:campaigns.filter(record => record.category === c.id).length}))];
 export const categoryName = (id:string) => categories.find(c=>c.id===id)?.name ?? 'Health';

@@ -13,8 +13,8 @@ export function CampaignSupport({ campaign, activity = campaignActivity(campaign
   const messages = visibleSupport(all, page);
   const donations = publicDonations(activity.donations, campaign.slug ?? '');
   return <section className="story-section campaign-support" aria-labelledby="campaign-support-title">
-    <h2 id="campaign-support-title"><TitleIcon topic="Words of support" />Words of support {activity.status !== 'loading' && activity.status !== 'error' && <span className="support-count">{all.length}</span>}</h2>
-    {activity.status === 'loading' ? <p role="status" aria-busy="true" className="support-empty">Loading messages…</p> : activity.status === 'error' ? <p role="alert" className="support-empty">Messages could not be loaded. Please try again later.</p> : !all.length ? <p className="support-empty">No messages yet.</p> : <>
+    <h2 id="campaign-support-title"><TitleIcon topic="Words of support" />Words of support {activity.status !== 'loading' && activity.status !== 'error' && all.length > 0 && <span className="support-count" aria-label={`${all.length} submitted support messages`}>{all.length}</span>}</h2>
+    {activity.status === 'loading' ? <p role="status" aria-busy="true" className="support-empty">Loading messages…</p> : activity.status === 'error' ? <p role="alert" className="support-empty">Messages could not be loaded. Please try again later.</p> : !all.length ? <p className="support-empty">No submitted support messages available.</p> : <>
       <div className="support-list">{messages.map(message => {
         const name = donorName(message);
         const donation = donations.find(d => d.id === message.donationId);

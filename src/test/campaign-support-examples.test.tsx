@@ -39,7 +39,8 @@ describe('Identified support examples', () => {
     const group = screen.getByRole('group', { name: 'Example support messages' });
     expect(within(group).getAllByRole('article')).toHaveLength(8);
     expect(within(group).queryByRole('button')).toBeNull();
-    expect(document.querySelector('.support-count')?.textContent).toBe(String(activity.messages.length));
+    expect(within(group).getByLabelText('8 example messages')).toBeVisible();
+    if (activity.messages.length) expect(screen.getByLabelText(`${activity.messages.length} submitted support messages`)).toHaveTextContent(String(activity.messages.length));
   });
   it.each(['loading', 'error'] as const)('does not replace %s states with examples', status => {
     const campaign = campaigns[0];

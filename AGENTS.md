@@ -11,6 +11,8 @@
 
 ## Hope Human architecture
 - Store campaigns as static JSON with a surname audit; derive UI totals and metadata counts from its length to prevent stale import counts.
+- Use the shared distinct-campaign selector for historical aggregates and homepage collections; keep legacy duplicate URLs accessible without counting the same fundraising snapshot twice.
+- Derive cause availability from the full category catalog and normalize contribution records before counts, highlights and history; these views must share eligibility and ordering rules.
 - Preserve reference funding totals only as clearly identified imported snapshots, never as new institution receipts.
 - Use TanStack leaf routes for supporting pages and query-compatible campaign details; the catch-all redirects legacy .html paths and returns real not-found responses for unknown paths.
 - Prerender only explicitly enumerated visitor-independent pages with link crawling off and failures fatal; campaign and donation query-string pages render on demand (crawling them broke external builds).
