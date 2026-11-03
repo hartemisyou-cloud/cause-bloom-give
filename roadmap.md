@@ -1,9 +1,9 @@
 # Hope Human website
 ## Information consistency corrections
-- [ ] Separate original support counts from identified examples and verify campaign pages.
-- [ ] Unify donation filtering and preserve top-donation dates; verify history controls.
-- [ ] Populate all cause categories and correct availability; remove duplicate historical aggregates from Most Loved.
-- [ ] Update stale tests, run the suite and verify affected pages without publishing.
+- [x] Separate original support counts from eight identified examples; verified Nicole and campaigns with 0, 3 and 8 original messages.
+- [x] Unify donation filtering and preserve top-donation dates; verified history sorting and pagination.
+- [x] Populate all nine cause categories and correct disaster availability; remove the duplicate $48,750 historical snapshot from Most Loved (146 distinct stories, 147 retained URLs).
+- [x] All 123 tests passed and automatic build OK; verified affected pages at 390/1280px without browser errors or publishing. Original records and payment behavior unchanged.
 ## Updated owner-supplied donation list
 - [x] Matched all 147 campaign headings and imported 1,711 supplied records, adding coverage for 94 campaigns; corrected separate Goyito slug associations and retained calendar dates without invented times.
 - [x] Nine focused tests passed; sidebar, contribution history, pagination and top ordering verified on four campaigns with no browser errors; automatic build OK. Payments and publication unchanged; payment authenticity remains independently unverified.
