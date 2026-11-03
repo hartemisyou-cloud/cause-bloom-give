@@ -1,0 +1,49 @@
+import { cleanup, render, screen } from '@testing-library/react';
+import { afterEach, describe, expect, it } from 'vitest';
+import { campaigns, categories, distinctCampaigns, historicalCampaignSummary } from '@/lib/campaigns';
+import { normalizedActivity, type PublicDonation } from '@/lib/campaign-social-proof';
+import { CampaignSupport } from '@/components/campaign-support';
+import { CampaignSocialProof, DonationEntry } from '@/components/campaign-social-proof';
+
+afterEach(cleanup);
+const donor: PublicDonation = {id:'valid',campaignSlug:'test',status:'confirmed',eligible:true,public:true,name:'Test donor',anonymous:false,amountVisible:true,amountCents:50000,confirmedAt:'2026-11-03'};
+describe('Information consistency', () => {
+ it('counts eight examples separately without a contradictory zero support badge', () => {
+  render(<CampaignSupport campaign={{slug:'help-nicole-fight-cancer-as-a-single-mother',support:[]}} />);
+  expect(screen.getByLabelText('8 example messages')).toHaveTextContent('8');
+  expect(screen.queryByLabelText('0 submitted support messages')).toBeNull();
+  expect(screen.getAllByRole('article')).toHaveLength(8);
+ });
+ it.each([3,8])('keeps %i submitted messages separate from eight examples', count => {
+  render(<CampaignSupport campaign={{slug:'test',support:Array.from({length:count},(_,i)=>({name:`Author ${i}`,message:`Support ${i}`}))}} />);
+  expect(screen.getByLabelText(`${count} submitted support messages`)).toHaveTextContent(String(count));
+  expect(screen.getByLabelText('8 example messages')).toHaveTextContent('8');
+ });
+ it('removes the exact $48,750 duplicate snapshot from aggregates while preserving 147 URLs', () => {
+  expect(campaigns).toHaveLength(147);
+  expect(distinctCampaigns()).toHaveLength(146);
+  expect(campaigns.reduce((sum,c)=>sum+Math.round(c.raised*100),0)-historicalCampaignSummary().raisedCents).toBe(4875000);
+  expect(historicalCampaignSummary().count).toBe(146);
+ });
+ it('derives the nine categories including three disaster and twelve previously hidden records', () => {
+  expect(categories.filter(c=>c.id!=='all')).toHaveLength(9);
+  expect(categories.find(c=>c.id==='disaster')?.count).toBe(3);
+  expect(categories.filter(c=>['education','community','environment','emergency','housing'].includes(c.id)).reduce((sum,c)=>sum+c.count,0)).toBe(12);
+ });
+ it('uses only two eligible sorted donations for highlights, counts and history', () => {
+  const recent={...donor,id:'recent',name:'Newest donor',amountCents:2000,confirmedAt:'2026-11-04'};
+  const activity={campaignSlug:'test',status:'ready' as const,messages:[],donations:[donor,{...donor,id:'pending',status:'pending' as const},{...donor,id:'private',public:false},{...donor,id:'other',campaignSlug:'other'},donor,recent]};
+  expect(normalizedActivity(activity).donations.map(d=>d.id)).toEqual(['recent','valid']);
+  render(<CampaignSocialProof activity={activity} />);
+  expect(screen.getByLabelText('2 public contributions')).toHaveTextContent('2');
+  expect(screen.getAllByText('Newest donor')).toHaveLength(2);
+ });
+ it('preserves the November 3 calendar date on the $500 top donation row', () => {
+  render(<DonationEntry donation={donor} top />);
+  expect(document.querySelector('time')?.getAttribute('datetime')).toBe('2026-11-03');
+  expect(screen.getByText('$500')).toBeVisible();
+ });
+ it.each(['loading','error'] as const)('does not show stale highlights during %s', status => {
+  expect(normalizedActivity({campaignSlug:'test',status,messages:[],donations:[donor]}).donations).toEqual([]);
+ });
+});
