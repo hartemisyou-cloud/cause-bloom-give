@@ -1,3 +1,4 @@
+import donationRecords from '@/data/public-donations.json';
 import { campaignDonationExamples, type IllustrativeDonation } from './campaign-donation-examples';
 
 export type ActivityStatus = 'ready' | 'unavailable' | 'loading' | 'error';
@@ -21,7 +22,7 @@ export function publicDonations(records: readonly PublicDonation[], slug: string
   return records.filter(d => {
     if (d.campaignSlug !== slug || d.status !== 'confirmed' || !d.eligible || !d.public || !d.id || seen.has(d.id) || !Number.isSafeInteger(d.amountCents) || d.amountCents <= 0 || !Number.isFinite(Date.parse(d.confirmedAt))) return false;
     seen.add(d.id); return true;
-  }).sort((a, b) => Date.parse(b.confirmedAt) - Date.parse(a.confirmedAt) || a.id.localeCompare(b.id));
+  }).sort((a, b) => Date.parse(b.confirmedAt) - Date.parse(a.confirmedAt) || a.id.localeCompare(b.id, 'en', { numeric: true }));
 }
 export function publicMessages(records: readonly PublicSupportMessage[], slug: string) {
   const seen = new Set<string>();
@@ -75,5 +76,11 @@ export function campaignActivity(campaign: { slug?: string; support: readonly { 
     seen.add(key);
     return [{ ...m, id: `source-support-${index}`, campaignSlug: slug, public: true, anonymous: !m.name.trim() || m.name === 'Anonymous' }];
   });
-  return { campaignSlug: slug, status: 'unavailable', donations: [], messages };
+  const donations = publicDonations(donationRecords.map(r => ({ ...r, status: 'confirmed' as const, eligible: true, public: true, anonymous: false, amountVisible: true })), slug);
+  return { campaignSlug: slug, status: donations.length ? 'ready' : 'unavailable', donations, messages };
+}
+// Donation records carry a calendar date only, so show the date rather than an invented time of day.
+export function donationDate(value: string) {
+  const date = Date.parse(value);
+  return Number.isFinite(date) ? new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }).format(date) : '';
 }

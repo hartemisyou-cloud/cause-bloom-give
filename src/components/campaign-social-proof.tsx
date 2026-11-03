@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Activity, ArrowLeft, ArrowRight, Clock3, Crown, Heart, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { type CampaignActivity, type DonationPresentation, activityDate, donationMoney, donorName, donationPage, donationHighlights, recentDonationPresentation } from '@/lib/campaign-social-proof';
+import { type CampaignActivity, type DonationPresentation, donationDate, donationMoney, donorName, donationPage, donationHighlights, recentDonationPresentation } from '@/lib/campaign-social-proof';
 import { illustrativeDate } from '@/lib/campaign-donation-examples';
 
 export function DonationEntry({ donation: d, top = false }: { donation: DonationPresentation; top?: boolean }) {
   const name = donorName(d);
   const illustrative = 'illustratedAt' in d;
-  return <article className="proof-entry"><span className="proof-avatar" aria-hidden="true">{name.trim().split(/\s+/).slice(0, 2).map(n => n[0]).join('').toUpperCase()}</span><div className="proof-person"><strong>{name}</strong><div className="proof-entry-meta">{d.amountVisible && <span className="proof-amount">{donationMoney(d.amountCents)}</span>}<span className="proof-meta-dot" aria-hidden="true">·</span>{top ? <span className="proof-top">{illustrative ? 'Top donation ' : 'Top donation'}</span> : !illustrative && <time dateTime={d.confirmedAt} title={d.confirmedAt}>{activityDate(d.confirmedAt)}</time>}</div>{illustrative && <small className="proof-example-label"><time dateTime={d.illustratedAt}>{illustrativeDate(d.illustratedAt)}</time></small>}</div></article>;
+  return <article className="proof-entry"><span className="proof-avatar" aria-hidden="true">{name.trim().split(/\s+/).slice(0, 2).map(n => n[0]).join('').toUpperCase()}</span><div className="proof-person"><strong>{name}</strong><div className="proof-entry-meta">{d.amountVisible && <span className="proof-amount">{donationMoney(d.amountCents)}</span>}<span className="proof-meta-dot" aria-hidden="true">·</span>{top ? <span className="proof-top">{illustrative ? 'Top donation ' : 'Top donation'}</span> : !illustrative && <time dateTime={d.confirmedAt} title={d.confirmedAt}>{donationDate(d.confirmedAt)}</time>}</div>{illustrative && <small className="proof-example-label"><time dateTime={d.illustratedAt}>{illustrativeDate(d.illustratedAt)}</time></small>}</div></article>;
 }
 
 export function ActivityEmpty({ status, messages = false }: { status: CampaignActivity['status']; messages?: boolean }) {
@@ -34,7 +34,7 @@ export function RecentDonations({ activity, heading = 'Recent donations', allowI
 export function CampaignSocialProof({ activity }: { activity: CampaignActivity }) {
   const highlights = donationHighlights(activity.donations);
   return <section className="campaign-social-proof" aria-label="People coming together"><div className="proof-heading"><h2><Users aria-hidden="true"/>People coming together</h2>{activity.status === 'ready' && <span className="support-count" aria-label={`${activity.donations.length} public contributions`}>{activity.donations.length}</span>}</div>
-    <div className="proof-highlights">{[{ label: 'Top donation', Icon: Crown, donation: highlights.top }, { label: 'Most recent', Icon: Clock3, donation: highlights.recent }].map(({ label, Icon, donation }) => <article className="proof-highlight" key={label}><span className="proof-highlight-icon"><Icon aria-hidden="true"/></span><div><small>{label}</small><strong>{donation ? donorName(donation) : 'Not available yet'}</strong>{donation && <time dateTime={donation.confirmedAt}>{activityDate(donation.confirmedAt)}</time>}</div>{donation?.amountVisible && <span className="proof-amount">{donationMoney(donation.amountCents)}</span>}</article>)}</div>
+    <div className="proof-highlights">{[{ label: 'Top donation', Icon: Crown, donation: highlights.top }, { label: 'Most recent', Icon: Clock3, donation: highlights.recent }].map(({ label, Icon, donation }) => <article className="proof-highlight" key={label}><span className="proof-highlight-icon"><Icon aria-hidden="true"/></span><div><small>{label}</small><strong>{donation ? donorName(donation) : 'Not available yet'}</strong>{donation && <time dateTime={donation.confirmedAt}>{donationDate(donation.confirmedAt)}</time>}</div>{donation?.amountVisible && <span className="proof-amount">{donationMoney(donation.amountCents)}</span>}</article>)}</div>
     <RecentDonations activity={activity} heading="Contribution history" allowIllustrative={false}/>
   </section>;
 }
