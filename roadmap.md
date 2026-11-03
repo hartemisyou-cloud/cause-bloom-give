@@ -1,7 +1,7 @@
 # Hope Human website
 ## Replacement donation and comment list
-- [ ] Replace the previous owner list with all 2,119 donation/comment pairs across 147 campaigns; retain exact associations, amounts and calendar dates without changing funding totals.
-- [ ] Verify comment counts, linked amounts, single expansion controls and donation/history displays; preserve provenance and do not publish.
+- [x] Replace the previous owner list with all 2,119 donation/comment pairs across 147 campaigns; retain exact associations, amounts and calendar dates without changing funding totals.
+- [x] Verify linked comments, counts, calendar dates and single expansion controls on Emma, Mateo, alternate Goyito and Will; preserve provenance, payments and publication state. Payment authenticity remains independently unverified.
 ## Information consistency corrections
 - [x] Separate original support counts from eight identified examples; verified Nicole and campaigns with 0, 3 and 8 original messages.
 - [x] Unify donation filtering and preserve top-donation dates; verified history sorting and pagination.
