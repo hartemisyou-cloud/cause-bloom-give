@@ -12,10 +12,18 @@ describe('Campaign support with isolated test records', () => {
     render(<CampaignSupport campaign={{ ...base, support }} />);
     expect(screen.getByText('TEST DATA message 6')).toBeVisible();
     expect(screen.queryByText('TEST DATA message 7')).toBeNull();
+    expect(screen.getAllByRole('button')).toHaveLength(1);
     while (screen.queryByRole('button', { name: 'Load more' })) fireEvent.click(screen.getByRole('button', { name: 'Load more' }));
     expect(screen.getByText(`TEST DATA message ${count}`)).toBeVisible();
+    expect(screen.getAllByRole('button')).toHaveLength(1);
     fireEvent.click(screen.getByRole('button', { name: 'Show fewer' }));
     expect(screen.queryByText('TEST DATA message 7')).toBeNull();
     expect(base.support).not.toEqual(support);
+  });
+  it.each([0, 3, 6])('does not offer expansion when all %i source messages are already visible', count => {
+    const support = Array.from({ length: count }, (_, index) => ({ name: `TEST ${index}`, message: `Message ${index}` }));
+    render(<CampaignSupport campaign={{ slug: 'pagination-test', support }} />);
+    expect(screen.queryByRole('button')).toBeNull();
+    expect(screen.getAllByRole('article')).toHaveLength(count + 8);
   });
 });
