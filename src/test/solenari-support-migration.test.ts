@@ -31,7 +31,7 @@ describe('Campaign-specific Solenari support preservation', () => {
   it('does not turn source prose into confirmed donations or invented dates', () => {
     for (const campaign of campaigns) {
       const activity = campaignActivity(campaign);
-      expect(activity.donations).toEqual([]);
+      expect(campaignActivity({slug:campaign.slug,support:[]}).donations).toEqual(activity.donations);
       for (const message of activity.messages) {
         expect(message).not.toHaveProperty('createdAt');
         expect(message).not.toHaveProperty('donationId');

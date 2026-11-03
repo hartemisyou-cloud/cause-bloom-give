@@ -42,10 +42,15 @@ export function donationPage<T extends DonationPresentation>(records: readonly T
 export function donationHighlights(records: readonly PublicDonation[]) {
   return { recent: records[0], top: donationPage(records, 'top', 1).items[0] };
 }
+export function normalizedActivity(activity: CampaignActivity): CampaignActivity {
+ if (activity.status === 'loading' || activity.status === 'error') return { ...activity, donations: [] };
+ const slug = activity.campaignSlug ?? activity.donations[0]?.campaignSlug ?? '';
+ return { ...activity, campaignSlug: slug, donations: publicDonations(activity.donations, slug) };
+}
 export function recentDonationPresentation(activity: CampaignActivity, allowIllustrative = true): { illustrative: boolean; records: readonly DonationPresentation[] } {
   if (activity.status === 'loading' || activity.status === 'error') return { illustrative: false, records: [] };
   const slug = activity.campaignSlug;
-  const real = slug ? publicDonations(activity.donations, slug) : activity.donations;
+  const real = normalizedActivity(activity).donations;
   if (real.length || !allowIllustrative || !slug) return { illustrative: false, records: real };
   return { illustrative: true, records: campaignDonationExamples(slug) };
 }

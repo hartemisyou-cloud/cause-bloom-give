@@ -6,14 +6,15 @@ import { campaignActivity, publicDonations, recentDonationPresentation, donation
 const real: PublicDonation = { id: 'confirmed-1', campaignSlug: 'future-campaign', status: 'confirmed', eligible: true, public: true, name: 'Actual donor', anonymous: false, amountVisible: true, amountCents: 2050, confirmedAt: '2026-10-25T12:00:00Z' };
 
 describe('Global illustrative donation fallback', () => {
-  it('provides 5–10 campaign-bound examples for every current campaign', () => {
+  it('keeps imported donations rather than examples for all 147 current campaigns', () => {
+    expect(campaigns).toHaveLength(147);
     for (const campaign of campaigns) {
       const activity = campaignActivity(campaign);
       const view = recentDonationPresentation(activity);
-      expect(view.illustrative).toBe(true);
-      expect(view.records.length).toBeGreaterThanOrEqual(5);
-      expect(view.records.length).toBeLessThanOrEqual(10);
-      expect(view.records.every(d => d.campaignSlug === campaign.slug && 'kind' in d && d.kind === 'illustrative')).toBe(true);
+      expect(view.illustrative).toBe(false);
+      expect(view.records).toEqual(publicDonations(activity.donations, campaign.slug));
+      expect(view.records.length).toBeGreaterThan(0);
+      expect(view.records.every(d => d.campaignSlug === campaign.slug && !('kind' in d))).toBe(true);
       expect(new Set(view.records.map(d => d.id)).size).toBe(view.records.length);
     }
   });
