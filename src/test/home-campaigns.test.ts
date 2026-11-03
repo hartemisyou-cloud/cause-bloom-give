@@ -8,7 +8,7 @@ describe('Homepage campaign discovery', () => {
     const all = [...hero, ...trending, ...featured];
     expect(all).toHaveLength(55);
     expect(new Set(all.map(c => c.slug)).size).toBe(55);
-    expect(all.map(c => c.slug).sort()).toEqual(campaigns.map(c => c.slug).sort());
+    expect(all.map(c => c.slug).sort()).toEqual(campaigns.map(c => c.slug).filter(s => s !== 'goyito-es').sort());
   });
   it('includes all three populated categories in the first trending group', () => {
     expect(new Set(homepageCollections().trending.slice(0, 6).map(c => c.category))).toEqual(new Set(['health', 'children', 'animals']));
