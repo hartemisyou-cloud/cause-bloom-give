@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { TitleIcon } from '@/components/title-icon';
+import { CampaignSupportExamples } from '@/components/campaign-support-examples';
 import { initials } from '@/components/campaign-detail-sections';
 import { visibleSupport } from '@/lib/campaign-activity';
 import { campaignActivity, publicMessages, publicDonations, donorName, donationMoney, activityDate, type CampaignActivity } from '@/lib/campaign-social-proof';
@@ -22,5 +23,6 @@ export function CampaignSupport({ campaign, activity = campaignActivity(campaign
       <div className="support-pagination">{messages.length < all.length && <Button variant="outline" onClick={() => setPage(value => value + 1)}><ChevronDown aria-hidden="true" />Load more</Button>}{page > 1 && <Button variant="ghost" onClick={() => setPage(1)}><ChevronUp aria-hidden="true" />Show fewer</Button>}</div>
       <p className="support-page-status" role="status">Showing {messages.length} of {all.length}</p>
     </>}
+    {activity.status !== 'loading' && activity.status !== 'error' && <CampaignSupportExamples key={campaign.slug} slug={campaign.slug ?? ''} />}
   </section>;
 }

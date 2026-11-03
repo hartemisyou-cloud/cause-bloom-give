@@ -1,4 +1,7 @@
 # Hope Human website
+## Additional identified support examples
+- [ ] Add campaign-specific labelled support examples to every campaign, retaining source messages and their counts.
+- [ ] Verify all campaign coverage, pagination and desktop/mobile presentation without changing payments or publishing.
 ## Homepage screenshot blend
 - [x] Refine first-block composition, watermark, campaign rail and three-step surfaces from the three new screenshots while preserving identity, existing controls and all blocks.
 - [x] Verified nine widths with no overflow or browser errors; carousel, category filters, pagination, search/reset, campaign details and donation selection passed. Nine focused tests and automatic build OK; no payments or publication.
