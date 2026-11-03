@@ -24,6 +24,16 @@ describe('Campaign support with isolated test records', () => {
     const support = Array.from({ length: count }, (_, index) => ({ name: `TEST ${index}`, message: `Message ${index}` }));
     render(<CampaignSupport campaign={{ slug: 'pagination-test', support }} />);
     expect(screen.queryByRole('button')).toBeNull();
-    expect(screen.getAllByRole('article')).toHaveLength(count + 8);
+    expect(screen.queryAllByRole('article')).toHaveLength(count);
+  });
+  it('renders only exported comments for every campaign', () => {
+    for (const campaign of campaigns) {
+      const { container, unmount } = render(<CampaignSupport campaign={campaign} />);
+      const words = container.querySelectorAll('.support-word');
+      expect(words.length).toBeGreaterThan(0);
+      expect(container.querySelector('.support-examples')).toBeNull();
+      expect(container.textContent).not.toContain('Example support messages');
+      unmount();
+    }
   });
 });
