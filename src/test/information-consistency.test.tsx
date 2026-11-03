@@ -8,16 +8,15 @@ import { CampaignSocialProof, DonationEntry } from '@/components/campaign-social
 afterEach(cleanup);
 const donor: PublicDonation = {id:'valid',campaignSlug:'test',status:'confirmed',eligible:true,public:true,name:'Test donor',anonymous:false,amountVisible:true,amountCents:50000,confirmedAt:'2026-11-03'};
 describe('Information consistency', () => {
- it('counts eight examples separately without a contradictory zero support badge', () => {
+ it('does not invent support when no messages are supplied', () => {
   render(<CampaignSupport campaign={{slug:'no-owner-list-test',support:[]}} />);
-  expect(screen.getByLabelText('8 example messages')).toHaveTextContent('8');
   expect(screen.queryByLabelText('0 submitted support messages')).toBeNull();
-  expect(screen.getAllByRole('article')).toHaveLength(8);
+  expect(screen.queryAllByRole('article')).toHaveLength(0);
  });
- it.each([3,8])('keeps %i submitted messages separate from eight examples', count => {
+ it.each([3,8])('counts only the %i supplied messages', count => {
   render(<CampaignSupport campaign={{slug:'test',support:Array.from({length:count},(_,i)=>({name:`Author ${i}`,message:`Support ${i}`}))}} />);
   expect(screen.getByLabelText(`${count} submitted support messages`)).toHaveTextContent(String(count));
-  expect(screen.getByLabelText('8 example messages')).toHaveTextContent('8');
+  expect(screen.queryAllByRole('article')).toHaveLength(Math.min(count, 6));
  });
  it('removes the exact $48,750 duplicate snapshot from aggregates while preserving 147 URLs', () => {
   expect(campaigns).toHaveLength(147);
