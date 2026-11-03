@@ -1,4 +1,7 @@
 # Hope Human website
+## Updated owner-supplied donation list
+- [ ] Match all headings to campaign identifiers, preserve supplied dates and cents, and replace overlapping records without duplication.
+- [ ] Verify sidebar and contribution history, campaign coverage and focused import tests; leave payments and publication unchanged.
 ## Additional identified support examples
 - [x] Add eight campaign-specific labelled support examples to every campaign, retaining source messages and their counts.
 - [x] Verified all 56 campaigns, independent pagination at 390/1280px, no overflow or browser errors; 11 focused tests passed and automatic build OK. Payments unchanged; no publication.
