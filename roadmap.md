@@ -1,7 +1,7 @@
 # Hope Human website
 ## Updated owner-supplied donation list
-- [ ] Match all headings to campaign identifiers, preserve supplied dates and cents, and replace overlapping records without duplication.
-- [ ] Verify sidebar and contribution history, campaign coverage and focused import tests; leave payments and publication unchanged.
+- [x] Matched all 147 campaign headings and imported 1,711 supplied records, adding coverage for 94 campaigns; corrected separate Goyito slug associations and retained calendar dates without invented times.
+- [x] Nine focused tests passed; sidebar, contribution history, pagination and top ordering verified on four campaigns with no browser errors; automatic build OK. Payments and publication unchanged; payment authenticity remains independently unverified.
 ## Additional identified support examples
 - [x] Add eight campaign-specific labelled support examples to every campaign, retaining source messages and their counts.
 - [x] Verified all 56 campaigns, independent pagination at 390/1280px, no overflow or browser errors; 11 focused tests passed and automatic build OK. Payments unchanged; no publication.
