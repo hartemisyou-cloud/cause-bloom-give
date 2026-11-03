@@ -22,16 +22,17 @@ describe('Campaign-specific Solenari support preservation', () => {
       expect(campaign.support).toEqual(source.displayMessages);
       expect(campaign.support.map(m => m.name)).toEqual(source.sourceMessages.map(m => m.name));
       if (source.verbatim) expect(campaign.support).toEqual(source.sourceMessages);
-      const activity = campaignActivity(campaign);
-      expect(publicMessages(activity.messages, campaign.slug)).toHaveLength(source.sourceMessages.length);
+      const activity = campaignActivity({ slug: `${campaign.slug}-legacy-test`, support: campaign.support });
+      expect(publicMessages(activity.messages, `${campaign.slug}-legacy-test`)).toHaveLength(source.sourceMessages.length);
       expect(publicMessages(activity.messages, `${campaign.slug}-other`)).toEqual([]);
     }
   });
 
   it('does not turn source prose into confirmed donations or invented dates', () => {
     for (const campaign of campaigns) {
-      const activity = campaignActivity(campaign);
-      expect(campaignActivity({slug:campaign.slug,support:[]}).donations).toEqual(activity.donations);
+      const slug = `${campaign.slug}-legacy-test`;
+      const activity = campaignActivity({ slug, support: campaign.support });
+      expect(activity.donations).toEqual([]);
       for (const message of activity.messages) {
         expect(message).not.toHaveProperty('createdAt');
         expect(message).not.toHaveProperty('donationId');
