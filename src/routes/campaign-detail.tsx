@@ -14,7 +14,7 @@ import { CampaignSocialProof, RecentDonations } from '@/components/campaign-soci
 import { campaignActivity } from '@/lib/campaign-social-proof';
 import { CampaignStory } from '@/components/campaign-story';
 import { storyDescription } from '@/lib/campaign-story';
-import { OrganizerFooter, CampaignTrustBand, CampaignSharingSection, CampaignActionDialog, campaignUrl, initials } from '@/components/campaign-detail-sections';
+import { OrganizerFooter, CampaignTrustBand, CampaignActionDialog, campaignUrl, initials } from '@/components/campaign-detail-sections';
 export const Route=createFileRoute('/campaign-detail')({validateSearch:(s:Record<string,unknown>)=>({slug:typeof s['slug']==='string'?s['slug']:''}),loaderDeps:({search})=>({slug:search.slug}),loader:({deps})=>{const c=getCampaign(deps['slug']);if(!c)throw notFound();return c;},head:({loaderData})=>loaderData?pageHead(loaderData.title,storyDescription(loaderData.story),`/campaign-detail?slug=${loaderData.slug}`):{...pageHead('Campaign not found','The requested Hope Human Foundation campaign is unavailable.','/campaign-detail'),meta:[...pageHead('Campaign not found','The requested Hope Human Foundation campaign is unavailable.','/campaign-detail').meta,{name:'robots',content:'noindex'}]},component:CampaignDetail});
 function CampaignDetail() {
   const c = Route.useLoaderData();
@@ -24,7 +24,7 @@ function CampaignDetail() {
 function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
   const pageRef = useRef<HTMLDivElement>(null);
   const storyRef = useRef<HTMLElement>(null);
-  const showDonationBar = useDonationBar(pageRef, c.slug, '.campaign-sharing-section, .detail-related');
+  const showDonationBar = useDonationBar(pageRef, c.slug, '.detail-related');
   const [expanded, setExpanded] = useState(false);
   const [shared, setShared] = useState('');
   const [action, setAction] = useState<'contact' | 'report' | 'all' | 'top' | 'instagram' | 'tiktok' | null>(null);
@@ -72,7 +72,6 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
       <aside className="donation-panel" aria-label="Support this campaign"><CampaignGivePanel campaign={c} onShare={share} /><RecentDonations activity={activity}/><div className="proof-organizer"><span className="organizer-avatar" aria-hidden="true">{initials(c.organizer)}</span><div><strong>{c.organizer}</strong><small>Campaign organizer</small></div><Button variant="outline" onClick={() => setAction('contact')}>Contact</Button></div></aside>
     </div>
     <CampaignTrustBand />
-    <CampaignSharingSection campaign={c} onDonate={donate} onAction={setAction} onShare={share} />
     {shared && <p className="sharing-status detail-wide-container" role="status">{shared}</p>}
     <CampaignRelated campaign={c} />
     <div className="mobile-donate" hidden={!showDonationBar}><CampaignFunding campaign={c} /><Button variant="gold" className="gold-control" onClick={donate}><HandHeart aria-hidden="true" />Donate now</Button></div>
