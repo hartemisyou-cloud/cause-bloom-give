@@ -167,5 +167,5 @@
 - [x] Verified 393px and 1280px: icon centred on the title, title breaks "Protected by Hope Human" / "Foundation Guarantee", divider measured full card width, no overflow or browser errors; 58 tests passed and automatic build OK. No publishing.
 
 ## Jeremiah campaign import
-- [ ] Import the supplied story, original available campaign photos and source funding snapshot, plus 13 campaign-bound owner-listed donations/comments.
-- [ ] Verify gallery, support expansion and donation records on desktop/mobile; preserve checkout and publication state.
+- [x] Imported the supplied story, four original photos (two inline), $122,528/$130,000 source snapshot and all 13 campaign-bound owner-listed donations/comments.
+- [x] Verified gallery, 13-comment expansion and donation records at 390/1280px with no overflow or page errors; all 157 tests passed and automatic build OK. Checkout and publication unchanged.
