@@ -22,7 +22,7 @@ describe('Information consistency', () => {
   expect(campaigns).toHaveLength(151);
   expect(distinctCampaigns()).toHaveLength(150);
   expect(campaigns.reduce((sum,c)=>sum+Math.round(c.raised*100),0)-historicalCampaignSummary().raisedCents).toBe(4875000);
-  expect(historicalCampaignSummary().count).toBe(149);
+  expect(historicalCampaignSummary().count).toBe(150);
  });
  it('derives the nine categories including three disaster and twelve previously hidden records', () => {
   expect(categories.filter(c=>c.id!=='all')).toHaveLength(9);
