@@ -7735,16 +7735,21 @@
     "active": true,
     "createdAt": "",
     "image": {
-      "url": "/__l5e/assets-v1/435a5188-00d4-4c7d-b8a6-1c27e8420e63/livia-garden.webp",
-      "width": 960,
-      "height": 1200
+      "url": "/__l5e/assets-v1/06e8f04a-3d99-4c13-a2fe-8800a5c38ebc/livia-hospital-chemotherapy.webp",
+      "width": 1200,
+      "height": 900
     },
     "thumbnail": {
-      "url": "/__l5e/assets-v1/ef7a4cd4-8cde-4c1a-82ee-b74c9305336a/livia-garden-thumb.webp",
-      "width": 256,
-      "height": 320
+      "url": "/__l5e/assets-v1/4a68ed77-a540-448f-a881-ef72a61a0eb4/livia-hospital-chemotherapy-thumb.webp",
+      "width": 320,
+      "height": 240
     },
     "gallery": [
+      {
+        "url": "/__l5e/assets-v1/06e8f04a-3d99-4c13-a2fe-8800a5c38ebc/livia-hospital-chemotherapy.webp",
+        "width": 1200,
+        "height": 900
+      },
       {
         "url": "/__l5e/assets-v1/435a5188-00d4-4c7d-b8a6-1c27e8420e63/livia-garden.webp",
         "width": 960,
@@ -7754,11 +7759,6 @@
         "url": "/__l5e/assets-v1/2aa560b5-6d94-4413-811c-0b1dec382e6a/livia-outdoors.webp",
         "width": 960,
         "height": 1200
-      },
-      {
-        "url": "/__l5e/assets-v1/06e8f04a-3d99-4c13-a2fe-8800a5c38ebc/livia-hospital-chemotherapy.webp",
-        "width": 1200,
-        "height": 900
       },
       {
         "url": "/__l5e/assets-v1/54265593-6199-48de-8b13-b26f8ac21c4b/livia-hospital-care.webp",
