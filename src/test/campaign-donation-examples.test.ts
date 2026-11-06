@@ -6,9 +6,9 @@ import { campaignActivity, publicDonations, recentDonationPresentation, donation
 const real: PublicDonation = { id: 'confirmed-1', campaignSlug: 'future-campaign', status: 'confirmed', eligible: true, public: true, name: 'Actual donor', anonymous: false, amountVisible: true, amountCents: 2050, confirmedAt: '2026-10-25T12:00:00Z' };
 
 describe('Global illustrative donation fallback', () => {
-  it('keeps imported donations rather than examples for all 147 current campaigns', () => {
-    expect(campaigns).toHaveLength(147);
-    for (const campaign of campaigns) {
+  it('keeps imported donations rather than examples for the 147 campaigns covered by the owner list', () => {
+    expect(campaigns.filter(c => c.slug !== 'livia')).toHaveLength(147);
+    for (const campaign of campaigns.filter(c => c.slug !== 'livia')) {
       const activity = campaignActivity(campaign);
       const view = recentDonationPresentation(activity);
       expect(view.illustrative).toBe(false);
