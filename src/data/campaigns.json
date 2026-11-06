@@ -7896,5 +7896,64 @@
     "sourceGoal": 130000,
     "fxDate": null,
     "surnameChange": null
+  },
+  {
+    "slug": "brittney",
+    "title": "Support Brittney's Fight Against Guillain-Barré",
+    "story": "# Help Brittney Fight Guillain-Barré Syndrome and Find Her Way Back to Recovery\n\n**Imagine waking up one day and discovering that your own body can no longer move. Imagine needing machines to help you breathe while your family waits, hoping for signs of improvement.**\n\nFor Brittney, this nightmare became a devastating reality.\n\nBrittney was diagnosed with Guillain-Barré syndrome, a rare and serious autoimmune condition in which the body's immune system attacks its own nerves.\n\n**Her condition progressed to complete paralysis. She was intubated and admitted to intensive care.**\n\nFor nearly three weeks, Brittney remained in the ICU in Santa Maria as her condition deteriorated.\n\nIMAGE:uploads/campaigns/brittney/brittney-3.webp|Brittney during her recovery\n\nHer family watched with growing concern, hoping that the next update from her doctors would finally bring better news.\n\nBut Brittney needed more specialized medical attention.\n\nOn August 2, 2026, she was transferred by ambulance to UCSF, where specialists could evaluate and treat her condition.\n\n**What most of us never have to think about — moving our bodies, taking a breath on our own, living independently — became the very things Brittney was fighting to regain.**\n\nAnd for her family, the uncertainty has been heartbreaking.\n\nHer brother Corey started this fundraiser because nobody should have to face such a frightening medical crisis without support.\n\n### Her journey toward recovery is not a simple one.\n\nIMAGE:uploads/campaigns/brittney/brittney-4.webp|Brittney with her family\n\nGuillain-Barré syndrome can require extensive medical care, neurological treatment, and prolonged physical rehabilitation.\n\nFor Brittney, her family was told to prepare for a long road ahead.\n\nAlongside the fear and uncertainty, there is another painful reality.\n\n**The hospital bills keep growing. And even when someone is critically ill, their everyday expenses don't stop.**\n\nMonthly bills still need to be paid. Medical expenses continue to accumulate. Her family wants to make sure financial worries do not become yet another burden during her recovery.\n\n**Brittney has already endured more than anyone should have to face. She deserves support, dignity, and the opportunity to focus on her health.**\n\n### Today, your kindness can make a difference.\n\nYour donation can help cover Brittney's hospital expenses and essential monthly bills, easing some of the financial pressure on her and her family.\n\nIMAGE:uploads/campaigns/brittney/brittney-5.webp|Brittney in the hospital\n\nWhether you can give $20, $50, $100, or any amount, every contribution can make a meaningful difference.\n\n**You cannot take away what Brittney has been through. But you can help make the road ahead less overwhelming.**\n\nPlease help her family through this incredibly difficult chapter.\n\nIf you can donate, your support will mean so much. And if you cannot contribute financially, sharing Brittney's story can help it reach someone who can.\n\n**Please donate today. Help Brittney face her recovery journey with the care and support she needs.**\n\nThank you for your generosity, compassion, and prayers.\n\n*With love and gratitude, Brittney's family.*",
+    "organizer": "Corey and Ashley",
+    "beneficiary": "Brittney",
+    "location": "San Francisco, CA",
+    "category": "health",
+    "raised": 38989,
+    "goal": 55000,
+    "currency": "USD",
+    "urgent": true,
+    "active": true,
+    "createdAt": "2026-08-03",
+    "image": {
+      "url": "/__l5e/assets-v1/08b2c337-6a77-4e73-8c8e-d1a9abaad546/brittney-1.webp",
+      "width": 1200,
+      "height": 678
+    },
+    "thumbnail": {
+      "url": "/__l5e/assets-v1/92b5f7a4-10e5-463f-a03b-93d14f31b496/brittney-1-thumb.webp",
+      "width": 320,
+      "height": 181
+    },
+    "gallery": [
+      {
+        "url": "/__l5e/assets-v1/08b2c337-6a77-4e73-8c8e-d1a9abaad546/brittney-1.webp",
+        "width": 1200,
+        "height": 678
+      },
+      {
+        "url": "/__l5e/assets-v1/83222bae-bbb7-4907-8632-cb9dd6b405c4/brittney-2.webp",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "/__l5e/assets-v1/185e7041-d9f6-4faf-9be5-a8bcb866daf3/brittney-3.webp",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "url": "/__l5e/assets-v1/fdb2e4bb-6264-484f-a9c9-c6ad453d6b16/brittney-4.webp",
+        "width": 1141,
+        "height": 1600
+      },
+      {
+        "url": "/__l5e/assets-v1/0a79b718-47e0-4914-a063-c9310660c0ac/brittney-5.webp",
+        "width": 1135,
+        "height": 1600
+      }
+    ],
+    "support": [],
+    "snapshotDate": "2026-11-06",
+    "sourceCurrency": "USD",
+    "sourceRaised": 38989,
+    "sourceGoal": 55000,
+    "fxDate": null,
+    "surnameChange": null
   }
 ]
