@@ -4,10 +4,10 @@ import campaigns from '@/data/campaigns.json';
 import { campaignActivity, donationDate, recentDonationPresentation } from '@/lib/campaign-social-proof';
 
 describe('Updated owner-supplied donation list', () => {
-  it('covers all 149 campaigns with 2145 supplied donation/comment pairs', () => {
-    expect(records).toHaveLength(2145);
+  it('covers all 150 campaigns with 2158 supplied donation/comment pairs', () => {
+    expect(records).toHaveLength(2158);
     expect(new Set(records.map(record => record.campaignSlug))).toEqual(new Set(campaigns.map(campaign => campaign.slug)));
-    expect(new Set(records.map(record => record.id)).size).toBe(2145);
+    expect(new Set(records.map(record => record.id)).size).toBe(2158);
     expect(records.every(record => record.comment.trim().length > 0)).toBe(true);
   });
 
