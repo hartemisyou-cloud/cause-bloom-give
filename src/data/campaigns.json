@@ -7723,7 +7723,7 @@
   {
     "slug": "livia",
     "title": "Help Livia Through Stage 4 Pancreatic Cancer",
-    "story": "A cancer diagnosis can change a family's entire world in a single moment.\n\nFor Livia and their loved ones, that moment came with devastating news: Stage 4 pancreatic cancer.\n\nSuddenly, the future became uncertain. The everyday moments that once seemed so ordinary — sharing meals, spending time together, making plans for tomorrow — took on an entirely new meaning.\n\nNo family is ever truly prepared to hear that someone they love is facing advanced cancer.\n\nAlongside the emotional weight of this diagnosis comes another challenge: the financial burden of medical care.\n\nCancer treatment can involve chemotherapy, medications, hospital appointments, transportation, and other essential expenses. When these costs become overwhelming, families may find themselves worrying about money at the very moment they most need to focus on care and one another.\n\nThis fundraiser is about giving a person facing a devastating illness the support, comfort, and dignity they deserve.\n\nEvery contribution can help ease the burden of eligible medical and everyday expenses, making this difficult journey a little less overwhelming.\n\nYour generosity cannot erase a cancer diagnosis, but it can help a family feel less alone in facing it.\n\nPlease, give what you can today.\n\nWhether you donate $20, $50, or any amount you can afford, your kindness can become part of a community standing beside someone during an extraordinarily difficult time.\n\nIf you cannot donate, sharing this story can also make a meaningful difference.\n\nHelp Livia receive the care and support they need. Together, we can bring compassion and practical relief when it matters most.\n\nThank you for every donation, prayer, and message of encouragement.",
+    "story": "A cancer diagnosis can change a family's entire world in a single moment.\n\nFor Livia and their loved ones, that moment came with devastating news: Stage 4 pancreatic cancer.\n\nSuddenly, the future became uncertain. The everyday moments that once seemed so ordinary — sharing meals, spending time together, making plans for tomorrow — took on an entirely new meaning.\n\nIMAGE:uploads/campaigns/livia/livia-hospital-chemotherapy.webp|Livia in the hospital\n\nNo family is ever truly prepared to hear that someone they love is facing advanced cancer.\n\nAlongside the emotional weight of this diagnosis comes another challenge: the financial burden of medical care.\n\nCancer treatment can involve chemotherapy, medications, hospital appointments, transportation, and other essential expenses. When these costs become overwhelming, families may find themselves worrying about money at the very moment they most need to focus on care and one another.\n\nIMAGE:uploads/campaigns/livia/livia-hospital-care.webp|Livia receiving hospital care\n\nThis fundraiser is about giving a person facing a devastating illness the support, comfort, and dignity they deserve.\n\nEvery contribution can help ease the burden of eligible medical and everyday expenses, making this difficult journey a little less overwhelming.\n\nYour generosity cannot erase a cancer diagnosis, but it can help a family feel less alone in facing it.\n\nIMAGE:uploads/campaigns/livia/livia-hospital-infusion.webp|Livia during treatment\n\nPlease, give what you can today.\n\nWhether you donate $20, $50, or any amount you can afford, your kindness can become part of a community standing beside someone during an extraordinarily difficult time.\n\nIf you cannot donate, sharing this story can also make a meaningful difference.\n\nHelp Livia receive the care and support they need. Together, we can bring compassion and practical relief when it matters most.\n\nThank you for every donation, prayer, and message of encouragement.",
     "organizer": "David",
     "beneficiary": "Livia",
     "location": "",
@@ -7735,20 +7735,40 @@
     "active": true,
     "createdAt": "",
     "image": {
-      "url": "/__l5e/assets-v1/21e0746c-0a44-4317-852c-40ae636277f6/livia-solidarity.webp",
-      "width": 1080,
-      "height": 610
+      "url": "/__l5e/assets-v1/435a5188-00d4-4c7d-b8a6-1c27e8420e63/livia-garden.webp",
+      "width": 960,
+      "height": 1200
     },
     "thumbnail": {
-      "url": "/__l5e/assets-v1/59e52671-5c77-4fec-a6da-e09b7a38c790/livia-solidarity-640.webp",
-      "width": 640,
-      "height": 361
+      "url": "/__l5e/assets-v1/ef7a4cd4-8cde-4c1a-82ee-b74c9305336a/livia-garden-thumb.webp",
+      "width": 256,
+      "height": 320
     },
     "gallery": [
       {
-        "url": "/__l5e/assets-v1/21e0746c-0a44-4317-852c-40ae636277f6/livia-solidarity.webp",
-        "width": 1080,
-        "height": 610
+        "url": "/__l5e/assets-v1/435a5188-00d4-4c7d-b8a6-1c27e8420e63/livia-garden.webp",
+        "width": 960,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/2aa560b5-6d94-4413-811c-0b1dec382e6a/livia-outdoors.webp",
+        "width": 960,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/06e8f04a-3d99-4c13-a2fe-8800a5c38ebc/livia-hospital-chemotherapy.webp",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "/__l5e/assets-v1/54265593-6199-48de-8b13-b26f8ac21c4b/livia-hospital-care.webp",
+        "width": 1000,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/9b2d7022-df50-4c7f-b3b7-900707aa0d50/livia-hospital-infusion.webp",
+        "width": 960,
+        "height": 1200
       }
     ],
     "support": [],
