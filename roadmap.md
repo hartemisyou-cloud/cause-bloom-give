@@ -1,4 +1,9 @@
 # Hope Human website
+## Production consistency audit — November 6, 2026
+- [ ] Compare public production and preview pages, Livia content, images, sessions and cache headers.
+- [ ] Audit source configuration, metadata, asset mirroring and visitor variants; correct only evidenced defects.
+- [ ] Verify GitHub/Vercel deployment provenance and synchronize/deploy if authorized access is available; otherwise document exact blockers.
+- [ ] Run the full test suite and deliver an evidence-based production report.
 ## Replacement donation and comment list
 - [x] Replace the previous owner list with all 2,119 donation/comment pairs across 147 campaigns; retain exact associations, amounts and calendar dates without changing funding totals.
 - [x] Verify linked comments, counts, calendar dates and single expansion controls on Emma, Mateo, alternate Goyito and Will; preserve provenance, payments and publication state. Payment authenticity remains independently unverified.
