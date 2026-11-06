@@ -9,7 +9,7 @@ import { Progress } from '@/components/campaign-card';
 import { getCampaign, categoryName, shortMoney } from '@/lib/campaigns';
 import { pageHead, trackEvent } from '@/lib/site';
 import { pixelDonationEvent } from '@/lib/meta-pixel';
-import { bookPurchaseUrl, donationAmounts, parseDonationAmount } from '@/lib/checkout';
+import { bookPurchaseUrl, donationAmounts, parseDonationAmount, readMetaFbp } from '@/lib/checkout';
 import { donationInformation } from '@/lib/donation-content';
 
 export const Route = createFileRoute('/donate')({
@@ -19,7 +19,10 @@ export const Route = createFileRoute('/donate')({
   },
   loaderDeps: ({ search }) => ({ slug: search.slug }),
   loader: ({ deps }) => { if (!deps.slug) throw redirect({ to: '/campaigns', search: { category: 'all' } }); const campaign = getCampaign(deps.slug); if (!campaign) throw notFound(); return campaign; },
-  head: ({ loaderData }) => pageHead(loaderData ? `Choose an amount for ${loaderData.title}` : 'Choose your amount', 'Choose an amount to support this campaign and review the donation terms at secure checkout.', `/donate${loaderData ? `?slug=${loaderData.slug}` : ''}`),
+  head: ({ loaderData }) => {
+    const head = pageHead(loaderData ? `Choose an amount for ${loaderData.title}` : 'Choose your amount', 'Choose an amount to support this campaign and review the donation terms at secure checkout.', `/donate${loaderData ? `?slug=${loaderData.slug}` : ''}`);
+    return { ...head, links: [...head.links, { rel: 'preconnect', href: 'https://hopehumanbooks.com' }, { rel: 'preconnect', href: 'https://checkout.stripe.com' }] };
+  },
   component: DonatePage,
 });
 function DonatePage() {
@@ -33,7 +36,7 @@ function DonatePage() {
   function select(value: number) { if (checkoutSent.current) return; setAmount(value); try { pixelDonationEvent('AddToCart', value); } catch { /* Selection remains available without analytics. */ } }
   function proceed() {
     if (amount === null || checkoutSent.current) return;
-    const url = bookPurchaseUrl(amount, { campaignSlug: c.slug, search: window.location.search });
+    const url = bookPurchaseUrl(amount, { campaignSlug: c.slug, search: window.location.search, fbp: readMetaFbp(), esrc: window.location.href });
     checkoutSent.current = true; setOpening(true); setError('');
     try { pixelDonationEvent('InitiateCheckout', amount); } catch { /* Optional analytics cannot block navigation. */ }
     trackEvent('checkout_navigation', { slug: c.slug, amount });
