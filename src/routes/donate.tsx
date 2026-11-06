@@ -1,5 +1,3 @@
-// ============= Full file contents =============
-
 import { TitleIcon } from '@/components/title-icon';
 import { createFileRoute, Link, notFound, redirect } from '@tanstack/react-router';
 import { useEffect, useRef, useState } from 'react';
@@ -9,7 +7,7 @@ import { Progress } from '@/components/campaign-card';
 import { getCampaign, categoryName, shortMoney } from '@/lib/campaigns';
 import { pageHead, trackEvent } from '@/lib/site';
 import { pixelDonationEvent } from '@/lib/meta-pixel';
-import { bookPurchaseUrl, donationAmounts, parseDonationAmount, readMetaFbp } from '@/lib/checkout';
+import { bookPurchaseUrl, donationAmounts, parseDonationAmount, readMetaFbc, readMetaFbp } from '@/lib/checkout';
 import { donationInformation } from '@/lib/donation-content';
 
 export const Route = createFileRoute('/donate')({
@@ -36,7 +34,7 @@ function DonatePage() {
   function select(value: number) { if (checkoutSent.current) return; setAmount(value); try { pixelDonationEvent('AddToCart', value); } catch { /* Selection remains available without analytics. */ } }
   function proceed() {
     if (amount === null || checkoutSent.current) return;
-    const url = bookPurchaseUrl(amount, { campaignSlug: c.slug, search: window.location.search, fbp: readMetaFbp(), esrc: window.location.href });
+    const url = bookPurchaseUrl(amount, { campaignSlug: c.slug, search: window.location.search, fbp: readMetaFbp(), fbc: readMetaFbc(), esrc: window.location.href });
     checkoutSent.current = true; setOpening(true); setError('');
     try { pixelDonationEvent('InitiateCheckout', amount); } catch { /* Optional analytics cannot block navigation. */ }
     trackEvent('checkout_navigation', { slug: c.slug, amount });

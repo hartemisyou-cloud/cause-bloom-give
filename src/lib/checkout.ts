@@ -31,17 +31,27 @@ export function parseDonationAmount(raw: unknown): number | undefined {
 export const campaignRefCodes: Record<string, string> = {};
 /** Attribution keys forwarded from the donate page URL to the store. */
 export const forwardedAttributionKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'] as const;
-/** Read an existing Meta browser identifier without setting a cookie. */
+/** Shape of a Meta browser/click identifier (fb.1.<timestamp>.<id>). */
+const metaBrowserIdPattern = /^fb\.1\.\d+\.\d+$/;
+/** Read an existing Meta browser identifier (_fbp) without setting a cookie. */
 export function readMetaFbp(): string | null {
+  return readMetaCookie('_fbp');
+}
+/** Read the existing Meta click identifier (_fbc) so paid-click matching uses the real value. */
+export function readMetaFbc(): string | null {
+  return readMetaCookie('_fbc');
+}
+function readMetaCookie(name: string): string | null {
   if (typeof document === 'undefined') return null;
   try {
-    const cookie = document.cookie.split(';').map(value => value.trim()).find(value => value.startsWith('_fbp='));
-    const value = cookie?.slice('_fbp='.length);
-    return value && /^fb\.1\.\d+\.\d+$/.test(value) ? value : null;
+    const prefix = `${name}=`;
+    const cookie = document.cookie.split(';').map(value => value.trim()).find(value => value.startsWith(prefix));
+    const value = cookie?.slice(prefix.length);
+    return value && metaBrowserIdPattern.test(value) ? value : null;
   } catch { return null; }
 }
 /** Destination for a selected amount; the foundation site only redirects, never calls a payment provider. */
-export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; search?: string; refCodes?: Record<string, string>; fbp?: string | null; esrc?: string | null } = {}): string {
+export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; search?: string; refCodes?: Record<string, string>; fbp?: string | null; fbc?: string | null; esrc?: string | null } = {}): string {
   if (!isDonationAmount(amount)) throw new Error('Select a supported amount.');
   const base = `${bookPurchaseBase}/${bookSlugByAmount[amount]}`;
   const parts: string[] = [];
@@ -51,7 +61,8 @@ export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; s
   add('ref', ref);
   const current = new URLSearchParams(opts.search ?? '');
   for (const k of forwardedAttributionKeys) add(k, current.get(k)?.trim());
-  if (opts.fbp && /^fb\.1\.\d+\.\d+$/.test(opts.fbp)) add('fbp', opts.fbp);
+  if (opts.fbp && metaBrowserIdPattern.test(opts.fbp)) add('fbp', opts.fbp);
+  if (opts.fbc && metaBrowserIdPattern.test(opts.fbc)) add('fbc', opts.fbc);
   if (opts.esrc) {
     try {
       const source = new URL(opts.esrc);
