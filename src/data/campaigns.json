@@ -7719,5 +7719,44 @@
     "sourceGoal": 150000,
     "fxDate": "2026-11-03",
     "surnameChange": null
+  },
+  {
+    "slug": "livia",
+    "title": "Help Livia Through Stage 4 Pancreatic Cancer",
+    "story": "A cancer diagnosis can change a family's entire world in a single moment.\n\nFor Livia and their loved ones, that moment came with devastating news: Stage 4 pancreatic cancer.\n\nSuddenly, the future became uncertain. The everyday moments that once seemed so ordinary — sharing meals, spending time together, making plans for tomorrow — took on an entirely new meaning.\n\nNo family is ever truly prepared to hear that someone they love is facing advanced cancer.\n\nAlongside the emotional weight of this diagnosis comes another challenge: the financial burden of medical care.\n\nCancer treatment can involve chemotherapy, medications, hospital appointments, transportation, and other essential expenses. When these costs become overwhelming, families may find themselves worrying about money at the very moment they most need to focus on care and one another.\n\nThis fundraiser is about giving a person facing a devastating illness the support, comfort, and dignity they deserve.\n\nEvery contribution can help ease the burden of eligible medical and everyday expenses, making this difficult journey a little less overwhelming.\n\nYour generosity cannot erase a cancer diagnosis, but it can help a family feel less alone in facing it.\n\nPlease, give what you can today.\n\nWhether you donate $20, $50, or any amount you can afford, your kindness can become part of a community standing beside someone during an extraordinarily difficult time.\n\nIf you cannot donate, sharing this story can also make a meaningful difference.\n\nHelp Livia receive the care and support they need. Together, we can bring compassion and practical relief when it matters most.\n\nThank you for every donation, prayer, and message of encouragement.",
+    "organizer": "David",
+    "beneficiary": "Livia",
+    "location": "",
+    "category": "health",
+    "raised": 4943,
+    "goal": 68000,
+    "currency": "USD",
+    "urgent": false,
+    "active": true,
+    "createdAt": "",
+    "image": {
+      "url": "/__l5e/assets-v1/21e0746c-0a44-4317-852c-40ae636277f6/livia-solidarity.webp",
+      "width": 1080,
+      "height": 610
+    },
+    "thumbnail": {
+      "url": "/__l5e/assets-v1/59e52671-5c77-4fec-a6da-e09b7a38c790/livia-solidarity-640.webp",
+      "width": 640,
+      "height": 361
+    },
+    "gallery": [
+      {
+        "url": "/__l5e/assets-v1/21e0746c-0a44-4317-852c-40ae636277f6/livia-solidarity.webp",
+        "width": 1080,
+        "height": 610
+      }
+    ],
+    "support": [],
+    "snapshotDate": "2026-11-06",
+    "sourceCurrency": "USD",
+    "sourceRaised": 4943,
+    "sourceGoal": 68000,
+    "fxDate": null,
+    "surnameChange": null
   }
 ]

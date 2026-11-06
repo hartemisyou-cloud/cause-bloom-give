@@ -4,9 +4,9 @@ import campaigns from '@/data/campaigns.json';
 import { campaignActivity, donationDate, recentDonationPresentation } from '@/lib/campaign-social-proof';
 
 describe('Updated owner-supplied donation list', () => {
-  it('covers every campaign with all 2119 replacement donation/comment pairs', () => {
+  it('covers the original 147 campaigns with all 2119 replacement donation/comment pairs', () => {
     expect(records).toHaveLength(2119);
-    expect(new Set(records.map(record => record.campaignSlug))).toEqual(new Set(campaigns.map(campaign => campaign.slug)));
+    expect(new Set(records.map(record => record.campaignSlug))).toEqual(new Set(campaigns.filter(c => c.slug !== 'livia').map(campaign => campaign.slug)));
     expect(new Set(records.map(record => record.id)).size).toBe(2119);
     expect(records.every(record => record.comment.trim().length > 0)).toBe(true);
   });
@@ -28,7 +28,7 @@ describe('Updated owner-supplied donation list', () => {
   });
 
   it('uses all supplied entries for both history and sidebar instead of generated fallback', () => {
-    for (const campaign of campaigns) {
+    for (const campaign of campaigns.filter(c => c.slug !== 'livia')) {
       const activity = campaignActivity(campaign);
       expect(activity.donations.length).toBe(records.filter(record => record.campaignSlug === campaign.slug).length);
       expect(activity.messages.length).toBe(activity.donations.length);
