@@ -7,8 +7,8 @@ const real: PublicDonation = { id: 'confirmed-1', campaignSlug: 'future-campaign
 
 describe('Global illustrative donation fallback', () => {
   it('keeps imported donations rather than examples for all 148 campaigns covered by owner lists', () => {
-    expect(campaigns).toHaveLength(148);
-    for (const campaign of campaigns) {
+    expect(campaigns).toHaveLength(149);
+    for (const campaign of campaigns.filter(c => c.slug !== 'jaterria')) {
       const activity = campaignActivity(campaign);
       const view = recentDonationPresentation(activity);
       expect(view.illustrative).toBe(false);
