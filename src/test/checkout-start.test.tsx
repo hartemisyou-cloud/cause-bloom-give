@@ -1,9 +1,16 @@
 import { describe, expect, it, vi } from 'vitest';
-import { bookPurchaseUrl, bookSlugByAmount, donationAmounts, parseDonationAmount, readMetaFbp } from '@/lib/checkout';
+import { bookPurchaseUrl, bookSlugByAmount, donationAmounts, parseDonationAmount, readMetaFbc, readMetaFbp } from '@/lib/checkout';
 describe('Book purchase redirect', () => {
   it('appends a valid fbp after unchanged referral and attribution keys', () => {
     expect(bookPurchaseUrl(20, { campaignSlug: 'mateo', refCodes: { mateo: 'MAT01' }, search: '?utm_source=facebook&utm_medium=paid&utm_campaign=test&utm_content=creative&utm_term=term&fbclid=f1&gclid=g1', fbp: 'fb.1.1793924640000.123456' }))
       .toBe('https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?ref=MAT01&utm_source=facebook&utm_medium=paid&utm_campaign=test&utm_content=creative&utm_term=term&fbclid=f1&gclid=g1&fbp=fb.1.1793924640000.123456');
+  });
+  it('appends a valid fbc after fbp', () => {
+    expect(bookPurchaseUrl(20, { search: '?fbclid=f1', fbp: 'fb.1.1793924640000.123456', fbc: 'fb.1.1793924640001.987' }))
+      .toBe('https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?fbclid=f1&fbp=fb.1.1793924640000.123456&fbc=fb.1.1793924640001.987');
+  });
+  it.each([null, '', 'fb.2.123.456', 'fb.1.abc.456', ' fb.1.123.456'])('omits invalid fbc %s', fbc => {
+    expect(bookPurchaseUrl(50, { fbc })).toBe(bookPurchaseUrl(50));
   });
   it.each([null, '', 'fb.2.123.456', 'fb.1.abc.456', 'fb.1.123.456.extra', ' fb.1.123.456'])('omits invalid fbp %s', fbp => {
     expect(bookPurchaseUrl(50, { fbp })).toBe(bookPurchaseUrl(50));
@@ -26,6 +33,18 @@ describe('Book purchase redirect', () => {
       expect(readMetaFbp()).toBeNull();
       vi.stubGlobal('document', { cookie: 'other_fbp=fb.1.123.456' });
       expect(readMetaFbp()).toBeNull();
+    } finally { vi.unstubAllGlobals(); }
+  });
+  it('reads only a valid existing _fbc cookie and is SSR-safe', () => {
+    try {
+      vi.stubGlobal('document', undefined);
+      expect(readMetaFbc()).toBeNull();
+      vi.stubGlobal('document', { cookie: 'other=1; _fbc=fb.1.179.456; last=2' });
+      expect(readMetaFbc()).toBe('fb.1.179.456');
+      vi.stubGlobal('document', { cookie: '_fbc=invalid' });
+      expect(readMetaFbc()).toBeNull();
+      vi.stubGlobal('document', { cookie: 'other_fbc=fb.1.123.456' });
+      expect(readMetaFbc()).toBeNull();
     } finally { vi.unstubAllGlobals(); }
   });
   it('maps each preset to the exact Hope Human Books slug', () => {
