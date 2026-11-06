@@ -4,8 +4,8 @@ import { campaignActivity, donationHighlights, recentDonationPresentation } from
 import { parseCampaignStory } from '@/lib/campaign-story';
 
 describe('Jeremiah campaign import', () => {
-  it('preserves the source goal and previous fundraising separately from the supplied donations', () => {
-    expect(getCampaign('jeremiah')).toMatchObject({ beneficiary: 'Jeremiah', organizer: 'Jj Chiles and Niecy Rickerson', goal: 130000, raised: 122528, sourceGoal: 130000, sourceRaised: 122528, snapshotDate: '2026-11-06' });
+  it('preserves the owner-corrected fundraising and goal separately from the supplied donations', () => {
+    expect(getCampaign('jeremiah')).toMatchObject({ beneficiary: 'Jeremiah', organizer: 'Jj Chiles and Niecy Rickerson', goal: 130000, raised: 12435, sourceGoal: 130000, sourceRaised: 12435, snapshotDate: '2026-11-06' });
   });
   it('includes four original photos and two hospital/recovery story photos', () => {
     const campaign = getCampaign('jeremiah');

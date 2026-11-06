@@ -7851,7 +7851,7 @@
     "beneficiary": "Jeremiah",
     "location": "Grovetown, GA",
     "category": "health",
-    "raised": 122528,
+    "raised": 12435,
     "goal": 130000,
     "currency": "USD",
     "urgent": false,
@@ -7892,7 +7892,7 @@
     "support": [],
     "snapshotDate": "2026-11-06",
     "sourceCurrency": "USD",
-    "sourceRaised": 122528,
+    "sourceRaised": 12435,
     "sourceGoal": 130000,
     "fxDate": null,
     "surnameChange": null
