@@ -18,11 +18,11 @@ describe('Information consistency', () => {
   expect(screen.getByLabelText(`${count} submitted support messages`)).toHaveTextContent(String(count));
   expect(screen.queryAllByRole('article')).toHaveLength(Math.min(count, 6));
  });
- it('removes the exact $48,750 duplicate snapshot from aggregates while preserving 148 URLs', () => {
-  expect(campaigns).toHaveLength(148);
-  expect(distinctCampaigns()).toHaveLength(147);
+ it('removes the exact $48,750 duplicate snapshot from aggregates while preserving 149 URLs', () => {
+  expect(campaigns).toHaveLength(149);
+  expect(distinctCampaigns()).toHaveLength(148);
   expect(campaigns.reduce((sum,c)=>sum+Math.round(c.raised*100),0)-historicalCampaignSummary().raisedCents).toBe(4875000);
-  expect(historicalCampaignSummary().count).toBe(147);
+  expect(historicalCampaignSummary().count).toBe(148);
  });
  it('derives the nine categories including three disaster and twelve previously hidden records', () => {
   expect(categories.filter(c=>c.id!=='all')).toHaveLength(9);
