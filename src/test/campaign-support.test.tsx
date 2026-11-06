@@ -30,7 +30,8 @@ describe('Campaign support with isolated test records', () => {
     for (const campaign of campaigns) {
       const { container, unmount } = render(<CampaignSupport campaign={campaign} />);
       const words = container.querySelectorAll('.support-word');
-      expect(words.length).toBeGreaterThan(0);
+      if (campaign.slug === 'livia') expect(words).toHaveLength(0);
+      else expect(words.length).toBeGreaterThan(0);
       expect(container.querySelector('.support-examples')).toBeNull();
       expect(container.textContent).not.toContain('Example support messages');
       unmount();

@@ -1,4 +1,4 @@
-import { cleanup, render, screen, within } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it } from 'vitest';
 import { campaigns } from '@/lib/campaigns';
 import { campaignSupportExamples } from '@/lib/campaign-support-examples';
@@ -31,15 +31,14 @@ describe('Identified support examples', () => {
       expect(example).not.toHaveProperty('amountCents');
     }
   });
-  it('keeps all examples available without a second pagination control', () => {
+  it('does not render generated examples alongside the exported comments', () => {
     const campaign = campaigns[0];
     if (!campaign) throw new Error('Missing campaign');
     const activity = campaignActivity(campaign);
     render(<CampaignSupport campaign={campaign} activity={activity} />);
-    const group = screen.getByRole('group', { name: 'Example support messages' });
-    expect(within(group).getAllByRole('article')).toHaveLength(8);
-    expect(within(group).queryByRole('button')).toBeNull();
-    expect(within(group).getByLabelText('8 example messages')).toBeVisible();
+    expect(screen.queryByRole('group', { name: 'Example support messages' })).toBeNull();
+    expect(screen.queryByLabelText('8 example messages')).toBeNull();
+    expect(screen.getAllByRole('article')).toHaveLength(Math.min(activity.messages.length, 6));
     if (activity.messages.length) expect(screen.getByLabelText(`${activity.messages.length} submitted support messages`)).toHaveTextContent(String(activity.messages.length));
   });
   it.each(['loading', 'error'] as const)('does not replace %s states with examples', status => {
