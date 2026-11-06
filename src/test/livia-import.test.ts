@@ -1,8 +1,22 @@
 import { describe, expect, it } from 'vitest';
 import { getCampaign, filterCampaigns } from '@/lib/campaigns';
 import { campaignActivity, donationHighlights, recentDonationPresentation } from '@/lib/campaign-social-proof';
+import { parseCampaignStory } from '@/lib/campaign-story';
 
 describe('Owner-supplied Livia campaign', () => {
+  it('includes all five uploaded photos and places the three hospital photos within the story', () => {
+    const campaign = getCampaign('livia');
+    if (!campaign) throw new Error('Livia campaign missing');
+    expect(campaign.gallery).toHaveLength(5);
+    expect(campaign.image).toEqual(campaign.gallery[0]);
+    const photos = parseCampaignStory(campaign.story).filter(block => block.kind === 'photo');
+    expect(photos.map(block => block.photo)).toEqual(campaign.gallery.slice(2));
+    expect(photos.map(block => block.sourcePath)).toEqual([
+      'uploads/campaigns/livia/livia-hospital-chemotherapy.webp',
+      'uploads/campaigns/livia/livia-hospital-care.webp',
+      'uploads/campaigns/livia/livia-hospital-infusion.webp',
+    ]);
+  });
   it('retains Livia as beneficiary and David as organizer', () => {
     expect(getCampaign('livia')).toMatchObject({ beneficiary: 'Livia', organizer: 'David', category: 'health' });
   });
