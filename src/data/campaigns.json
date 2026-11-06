@@ -7778,5 +7778,69 @@
     "sourceGoal": 68000,
     "fxDate": null,
     "surnameChange": null
+  },
+  {
+    "slug": "jaterria",
+    "title": "Help Jaterria Survive Her Health Battles and Rebuild Her Future",
+    "story": "# Help Jaterria Survive Her Health Battles and Rebuild Her Future\n\n**At just 24 years old, Jaterria has already endured more medical emergencies and heartbreak than anyone should have to face in a lifetime. And now, she needs our help.**\n\nHer life changed after a devastating stroke left her struggling to do things most of us take for granted.\n\nShe had to relearn basic movements, including how to crawl and turn over.\n\n**Imagine having to fight to regain control of your own body, only to lose your mother to cancer while you're still recovering.**\n\nThat is what Jaterria experienced.\n\nBut her suffering didn't end there.\n\nOver the following years, she was placed on life support three times. She suffered a second stroke in August 2026. Then, on October 11, 2026, she experienced a heart attack.\n\nIMAGE:uploads/campaigns/jaterria/jaterria-4.webp|Jaterria during her recovery\n\nToday, Jaterria continues to face heart failure, pulmonary complications, and significant vision loss.\n\n**And now, at only 24, she is preparing for her second heart surgery.**\n\nDespite everything, Jaterria has refused to abandon her dreams.\n\nShe earned her associate degree in computer science, obtained her barbering license, and continues working toward her bachelor's degree in computer engineering technology.\n\n**She has worked so hard to build a future, even when her health has made everyday life incredibly difficult.**\n\nBut determination alone cannot pay medical bills.\n\nThe cost of medical care, essential living expenses, and continuing her education has become an overwhelming burden.\n\n**Jaterria has already fought through two strokes, a heart attack, and the loss of her mother. She shouldn't have to face the financial burden of recovery alone.**\n\nIMAGE:uploads/campaigns/jaterria/jaterria-5.webp|Jaterria continuing to fight\n\n### Today, you can be part of her story.\n\nYour donation can help Jaterria cover medical expenses, essential bills, and college costs as she prepares for heart surgery and continues her recovery.\n\nWhether you can give $20, $50, $100, or any amount, your generosity can offer meaningful support.\n\n**Please, help Jaterria keep moving toward the future she has worked so hard to build.**\n\nShe deserves the opportunity to focus on her health, continue her education, and pursue the life she dreams of.\n\nEvery contribution matters. Every share matters.\n\n**Donate today. Stand with Jaterria through her recovery and help her keep her dreams alive.**\n\nThank you for your kindness, compassion, and support.",
+    "organizer": "Jaterria",
+    "beneficiary": "Jaterria",
+    "location": "",
+    "category": "health",
+    "raised": 10035,
+    "goal": 30000,
+    "currency": "USD",
+    "urgent": true,
+    "active": true,
+    "createdAt": "",
+    "image": {
+      "url": "/__l5e/assets-v1/74693710-f65e-4074-adbf-18dac220b45b/jaterria-1.webp",
+      "width": 1200,
+      "height": 678
+    },
+    "thumbnail": {
+      "url": "/__l5e/assets-v1/3ca252fe-4bd3-4b85-8f86-3aa2309feea6/jaterria-1-thumb.webp",
+      "width": 320,
+      "height": 181
+    },
+    "gallery": [
+      {
+        "url": "/__l5e/assets-v1/74693710-f65e-4074-adbf-18dac220b45b/jaterria-1.webp",
+        "width": 1200,
+        "height": 678
+      },
+      {
+        "url": "/__l5e/assets-v1/4f4e0c88-d26d-48d1-bc40-46d77d4abce6/jaterria-2.webp",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/46677216-c2b7-408e-a0d6-7e9b0ec377ce/jaterria-3.webp",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/3417721e-f9f4-478e-b023-bc73d64b7660/jaterria-4.webp",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/33c9cf05-6b9e-449d-8798-c5d5fc2e19c9/jaterria-5.webp",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "url": "/__l5e/assets-v1/7c8e142b-ed54-422c-8281-140897fc12a0/jaterria-6.webp",
+        "width": 901,
+        "height": 1200
+      }
+    ],
+    "support": [],
+    "snapshotDate": "2026-11-06",
+    "sourceCurrency": "USD",
+    "sourceRaised": 10035,
+    "sourceGoal": 30000,
+    "fxDate": null,
+    "surnameChange": null
   }
 ]
