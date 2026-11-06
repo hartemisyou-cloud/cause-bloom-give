@@ -26,17 +26,17 @@ describe('Owner-supplied Livia campaign', () => {
     if (!campaign) throw new Error('Livia campaign missing');
     const activity = campaignActivity(campaign);
     expect(activity.donations.map(d => [d.name, d.amountCents, d.confirmedAt])).toEqual([
-      ['Test Donor 01', 25000, '2026-11-06'], ['Test Donor 02', 5000, '2026-11-06'],
-      ['Test Donor 03', 3000, '2026-11-06'], ['Test Donor 04', 10000, '2026-11-05'],
-      ['Test Donor 05', 2000, '2026-11-05'], ['Test Donor 06', 50000, '2026-11-05'],
-      ['Test Donor 07', 5000, '2026-11-04'], ['Test Donor 08', 3000, '2026-11-04'],
-      ['Test Donor 09', 25000, '2026-11-03'], ['Test Donor 10', 2000, '2026-11-03'],
-      ['Test Donor 11', 10000, '2026-11-02'], ['Test Donor 12', 5000, '2026-11-02'],
-      ['Test Donor 13', 3000, '2026-11-01'],
+      ['Emily Carter', 25000, '2026-11-06'], ['James Anderson', 5000, '2026-11-06'],
+      ['Olivia Bennett', 3000, '2026-11-06'], ['Michael Thompson', 10000, '2026-11-05'],
+      ['Sarah Mitchell', 2000, '2026-11-05'], ['William Parker', 50000, '2026-11-05'],
+      ['Jessica Morgan', 5000, '2026-11-04'], ['Daniel Brooks', 3000, '2026-11-04'],
+      ['Charlotte Evans', 25000, '2026-11-03'], ['Benjamin Foster', 2000, '2026-11-03'],
+      ['Rachel Sullivan', 10000, '2026-11-02'], ['Christopher Hayes', 5000, '2026-11-02'],
+      ['Lauren Phillips', 3000, '2026-11-01'],
     ]);
     expect(activity.messages.every(m => activity.donations.some(d => d.id === m.donationId && d.name === m.name && d.confirmedAt === m.createdAt))).toBe(true);
     expect(activity.messages[0]?.message).toBe('Sending strength and love to this family. I hope this helps ease the burden of cancer treatment.');
     expect(recentDonationPresentation(activity)).toEqual({ illustrative: false, records: activity.donations });
-    expect(donationHighlights(activity.donations).top?.name).toBe('Test Donor 06');
+    expect(donationHighlights(activity.donations).top?.name).toBe('William Parker');
   });
 });
