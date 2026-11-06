@@ -62,7 +62,7 @@ function CampaignDetailContent({ campaign: c }: { campaign: Campaign }) {
           <h2 className="story-title">Their story — in their own words</h2>
           <CampaignStory story={c.story} expanded={expanded} />
           {c.story.length > 900 && <Button variant="link" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>{expanded ? 'Read less' : 'Read more'}<ChevronRight aria-hidden="true" size={14} /></Button>}
-          <details className="snapshot-note"><summary>Campaign information</summary><p>Source medical statements have not been independently verified. Beneficiary surnames are alternate display names; first names and story facts are retained.</p></details>
+          <details className="snapshot-note"><summary>{'\n'}</summary><p>{'\n'}</p></details>
         </section>
         <CampaignSocialProof activity={activity} />
         <CampaignSupport campaign={c} activity={activity} />
