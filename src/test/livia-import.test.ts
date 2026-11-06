@@ -10,7 +10,8 @@ describe('Owner-supplied Livia campaign', () => {
     expect(campaign.gallery).toHaveLength(5);
     expect(campaign.image).toEqual(campaign.gallery[0]);
     const photos = parseCampaignStory(campaign.story).filter(block => block.kind === 'photo');
-    expect(photos.map(block => block.photo)).toEqual(campaign.gallery.slice(2));
+    expect(campaign.image.url).toContain('livia-hospital-chemotherapy.webp');
+    expect(photos.map(block => block.photo)).toEqual([campaign.gallery[0], ...campaign.gallery.slice(3)]);
     expect(photos.map(block => block.sourcePath)).toEqual([
       'uploads/campaigns/livia/livia-hospital-chemotherapy.webp',
       'uploads/campaigns/livia/livia-hospital-care.webp',
