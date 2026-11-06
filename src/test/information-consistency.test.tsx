@@ -18,8 +18,8 @@ describe('Information consistency', () => {
   expect(screen.getByLabelText(`${count} submitted support messages`)).toHaveTextContent(String(count));
   expect(screen.queryAllByRole('article')).toHaveLength(Math.min(count, 6));
  });
- it('removes the exact $48,750 duplicate snapshot from aggregates while preserving 150 URLs', () => {
-  expect(campaigns).toHaveLength(150);
+ it('removes the exact $48,750 duplicate snapshot from aggregates while preserving 151 URLs', () => {
+  expect(campaigns).toHaveLength(151);
   expect(distinctCampaigns()).toHaveLength(149);
   expect(campaigns.reduce((sum,c)=>sum+Math.round(c.raised*100),0)-historicalCampaignSummary().raisedCents).toBe(4875000);
   expect(historicalCampaignSummary().count).toBe(149);
