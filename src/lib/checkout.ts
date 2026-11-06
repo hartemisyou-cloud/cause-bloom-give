@@ -31,8 +31,17 @@ export function parseDonationAmount(raw: unknown): number | undefined {
 export const campaignRefCodes: Record<string, string> = {};
 /** Attribution keys forwarded from the donate page URL to the store. */
 export const forwardedAttributionKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'] as const;
+/** Read an existing Meta browser identifier without setting a cookie. */
+export function readMetaFbp(): string | null {
+  if (typeof document === 'undefined') return null;
+  try {
+    const cookie = document.cookie.split(';').map(value => value.trim()).find(value => value.startsWith('_fbp='));
+    const value = cookie?.slice('_fbp='.length);
+    return value && /^fb\.1\.\d+\.\d+$/.test(value) ? value : null;
+  } catch { return null; }
+}
 /** Destination for a selected amount; the foundation site only redirects, never calls a payment provider. */
-export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; search?: string; refCodes?: Record<string, string> } = {}): string {
+export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; search?: string; refCodes?: Record<string, string>; fbp?: string | null; esrc?: string | null } = {}): string {
   if (!isDonationAmount(amount)) throw new Error('Select a supported amount.');
   const base = `${bookPurchaseBase}/${bookSlugByAmount[amount]}`;
   const parts: string[] = [];
@@ -42,5 +51,12 @@ export function bookPurchaseUrl(amount: number, opts: { campaignSlug?: string; s
   add('ref', ref);
   const current = new URLSearchParams(opts.search ?? '');
   for (const k of forwardedAttributionKeys) add(k, current.get(k)?.trim());
+  if (opts.fbp && /^fb\.1\.\d+\.\d+$/.test(opts.fbp)) add('fbp', opts.fbp);
+  if (opts.esrc) {
+    try {
+      const source = new URL(opts.esrc);
+      if (source.protocol === 'https:' && (source.hostname === 'hopehumanfoundation.org' || source.hostname.endsWith('.hopehumanfoundation.org'))) add('esrc', opts.esrc);
+    } catch { /* Invalid source URLs are omitted without interrupting checkout. */ }
+  }
   return parts.length ? `${base}?${parts.join('&')}` : base;
 }

@@ -1,6 +1,33 @@
-import { describe, expect, it } from 'vitest';
-import { bookPurchaseUrl, bookSlugByAmount, donationAmounts, parseDonationAmount } from '@/lib/checkout';
+import { describe, expect, it, vi } from 'vitest';
+import { bookPurchaseUrl, bookSlugByAmount, donationAmounts, parseDonationAmount, readMetaFbp } from '@/lib/checkout';
 describe('Book purchase redirect', () => {
+  it('appends a valid fbp after unchanged referral and attribution keys', () => {
+    expect(bookPurchaseUrl(20, { campaignSlug: 'mateo', refCodes: { mateo: 'MAT01' }, search: '?utm_source=facebook&utm_medium=paid&utm_campaign=test&utm_content=creative&utm_term=term&fbclid=f1&gclid=g1', fbp: 'fb.1.1793924640000.123456' }))
+      .toBe('https://hopehumanbooks.com/comprar/the-adventures-of-tom-sawyer?ref=MAT01&utm_source=facebook&utm_medium=paid&utm_campaign=test&utm_content=creative&utm_term=term&fbclid=f1&gclid=g1&fbp=fb.1.1793924640000.123456');
+  });
+  it.each([null, '', 'fb.2.123.456', 'fb.1.abc.456', 'fb.1.123.456.extra', ' fb.1.123.456'])('omits invalid fbp %s', fbp => {
+    expect(bookPurchaseUrl(50, { fbp })).toBe(bookPurchaseUrl(50));
+  });
+  it.each(['https://hopehumanfoundation.org/donate?slug=mateo&amount=50', 'https://www.hopehumanfoundation.org/donate?slug=mateo'])('appends a foundation HTTPS source %s after fbp', esrc => {
+    const url = new URL(bookPurchaseUrl(50, { fbp: 'fb.1.123.456', esrc }));
+    expect([...url.searchParams.keys()]).toEqual(['fbp', 'esrc']);
+    expect(url.searchParams.get('esrc')).toBe(esrc);
+  });
+  it.each([null, '', 'not a URL', 'http://hopehumanfoundation.org/donate', 'https://foreign.org/donate', 'https://hopehumanfoundation.org.evil.org/donate', 'https://fakehopehumanfoundation.org/donate'])('omits invalid source %s without throwing', esrc => {
+    expect(bookPurchaseUrl(50, { esrc })).toBe(bookPurchaseUrl(50));
+  });
+  it('reads only a valid existing _fbp cookie and is SSR-safe', () => {
+    try {
+      vi.stubGlobal('document', undefined);
+      expect(readMetaFbp()).toBeNull();
+      vi.stubGlobal('document', { cookie: 'other=1; _fbp=fb.1.123.456; last=2' });
+      expect(readMetaFbp()).toBe('fb.1.123.456');
+      vi.stubGlobal('document', { cookie: '_fbp=invalid' });
+      expect(readMetaFbp()).toBeNull();
+      vi.stubGlobal('document', { cookie: 'other_fbp=fb.1.123.456' });
+      expect(readMetaFbp()).toBeNull();
+    } finally { vi.unstubAllGlobals(); }
+  });
   it('maps each preset to the exact Hope Human Books slug', () => {
     expect(bookSlugByAmount).toEqual({
       20: 'the-adventures-of-tom-sawyer',
