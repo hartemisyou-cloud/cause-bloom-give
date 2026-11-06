@@ -413,5 +413,20 @@
     "url": "/__l5e/assets-v1/37f6180b-ae5f-49ec-9fd5-322124a7ee0c/fh-melissa-3-1200.webp",
     "width": 1200,
     "height": 784
+  },
+  "uploads/campaigns/livia/livia-hospital-chemotherapy.webp": {
+    "url": "/__l5e/assets-v1/06e8f04a-3d99-4c13-a2fe-8800a5c38ebc/livia-hospital-chemotherapy.webp",
+    "width": 1200,
+    "height": 900
+  },
+  "uploads/campaigns/livia/livia-hospital-care.webp": {
+    "url": "/__l5e/assets-v1/54265593-6199-48de-8b13-b26f8ac21c4b/livia-hospital-care.webp",
+    "width": 1000,
+    "height": 1200
+  },
+  "uploads/campaigns/livia/livia-hospital-infusion.webp": {
+    "url": "/__l5e/assets-v1/9b2d7022-df50-4c7f-b3b7-900707aa0d50/livia-hospital-infusion.webp",
+    "width": 960,
+    "height": 1200
   }
 }

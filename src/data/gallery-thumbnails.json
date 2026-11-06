@@ -3650,5 +3650,60 @@
   "size": 21842,
   "content_type": "image/webp",
   "created_at": "2026-11-03T03:17:22Z"
- }
+ },
+  "/__l5e/assets-v1/435a5188-00d4-4c7d-b8a6-1c27e8420e63/livia-garden.webp": {
+    "version": 1,
+    "asset_id": "ef7a4cd4-8cde-4c1a-82ee-b74c9305336a",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/ef7a4cd4-8cde-4c1a-82ee-b74c9305336a/livia-garden-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/ef7a4cd4-8cde-4c1a-82ee-b74c9305336a/livia-garden-thumb.webp",
+    "original_filename": "livia-garden-thumb.webp",
+    "size": 23522,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T06:51:42Z"
+  },
+  "/__l5e/assets-v1/2aa560b5-6d94-4413-811c-0b1dec382e6a/livia-outdoors.webp": {
+    "version": 1,
+    "asset_id": "ad5280cd-9c76-49b2-82ee-bcd54211791f",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/ad5280cd-9c76-49b2-82ee-bcd54211791f/livia-outdoors-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/ad5280cd-9c76-49b2-82ee-bcd54211791f/livia-outdoors-thumb.webp",
+    "original_filename": "livia-outdoors-thumb.webp",
+    "size": 25292,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T06:51:42Z"
+  },
+  "/__l5e/assets-v1/06e8f04a-3d99-4c13-a2fe-8800a5c38ebc/livia-hospital-chemotherapy.webp": {
+    "version": 1,
+    "asset_id": "4a68ed77-a540-448f-a881-ef72a61a0eb4",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/4a68ed77-a540-448f-a881-ef72a61a0eb4/livia-hospital-chemotherapy-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/4a68ed77-a540-448f-a881-ef72a61a0eb4/livia-hospital-chemotherapy-thumb.webp",
+    "original_filename": "livia-hospital-chemotherapy-thumb.webp",
+    "size": 13542,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T06:51:47Z"
+  },
+  "/__l5e/assets-v1/54265593-6199-48de-8b13-b26f8ac21c4b/livia-hospital-care.webp": {
+    "version": 1,
+    "asset_id": "7a86d6f1-34ee-4ba3-b15c-fedd11c29a4b",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/7a86d6f1-34ee-4ba3-b15c-fedd11c29a4b/livia-hospital-care-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/7a86d6f1-34ee-4ba3-b15c-fedd11c29a4b/livia-hospital-care-thumb.webp",
+    "original_filename": "livia-hospital-care-thumb.webp",
+    "size": 18690,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T06:51:47Z"
+  },
+  "/__l5e/assets-v1/9b2d7022-df50-4c7f-b3b7-900707aa0d50/livia-hospital-infusion.webp": {
+    "version": 1,
+    "asset_id": "42349e60-1b32-4e48-9204-f1b7d6221605",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/42349e60-1b32-4e48-9204-f1b7d6221605/livia-hospital-infusion-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/42349e60-1b32-4e48-9204-f1b7d6221605/livia-hospital-infusion-thumb.webp",
+    "original_filename": "livia-hospital-infusion-thumb.webp",
+    "size": 15846,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T06:51:47Z"
+  }
 }
