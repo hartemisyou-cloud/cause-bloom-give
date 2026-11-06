@@ -7842,5 +7842,59 @@
     "sourceGoal": 30000,
     "fxDate": null,
     "surnameChange": null
+  },
+  {
+    "slug": "jeremiah",
+    "title": "Help Jeremiah Fight Stage 4 Bone Cancer",
+    "story": "# Help 19-Year-Old Jeremiah Fight Stage 4 Bone Cancer\n\n**At just 19 years old, Jeremiah is fighting a devastating battle against Stage 4 bone cancer. And his family needs your help.**\n\nWhile most teenagers are making plans for college, their careers, and the future, Jeremiah has spent some of the most important years of his life facing surgeries, chemotherapy, radiation, and the painful uncertainty of cancer.\n\nIt all began during his senior year of high school.\n\nWhat started as severe back pain and difficulty walking turned into a diagnosis that changed everything.\n\n**Doctors discovered an extremely rare and aggressive cancer that had spread from his spine to his chest, jaw, and hip.**\n\nJeremiah underwent multiple spinal surgeries and exhausting rounds of treatment.\n\nIMAGE:uploads/campaigns/jeremiah/jeremiah-3.webp|Jeremiah in the hospital\n\nThen came another devastating moment.\n\n**After surgery, Jeremiah became paralyzed.**\n\nHe was told his chances of walking again were very small.\n\nImagine being a teenager and suddenly having to fight to regain something as simple as taking a step.\n\nBut Jeremiah refused to give up.\n\nThrough countless hours of rehabilitation, determination, and hope, he began learning to walk again.\n\nEven while battling cancer, he achieved something extraordinary: **he graduated from high school in June 2024.**\n\nHis courage is remarkable. But his medical journey is far from over.\n\nIMAGE:uploads/campaigns/jeremiah/jeremiah-4.webp|Jeremiah during his recovery\n\n### Then came another heartbreaking setback.\n\nIn February 2025, after 14 cycles of chemotherapy, Jeremiah learned that his cancer had returned and continued to spread.\n\nHis doctors have explained that he will need ongoing treatment, potentially for the rest of his life.\n\nMore chemotherapy. More radiation. More rehabilitation. And possibly more surgeries.\n\n**No 19-year-old should have to carry so much pain and uncertainty while trying to build a future.**\n\nAnd as Jeremiah continues his treatment, his family faces another enormous challenge: the financial burden.\n\nThe cost of medical care, ongoing treatment, rehabilitation, and everyday expenses continues to grow.\n\n**His family wants to focus on helping him through this difficult journey, but they cannot carry the financial weight alone.**\n\n### This is where your kindness can make a difference.\n\nYour donation can help ease the costs of Jeremiah's ongoing medical care and provide his family with much-needed financial support.\n\nWhether you give $20, $50, $100, or any amount you can afford, your compassion can make a meaningful difference.\n\n**Jeremiah has already fought through cancer, paralysis, multiple surgeries, and a devastating relapse.**\n\nHe is still working toward recovery. Still holding on to his dreams. Still trying to build a life beyond hospital walls.\n\n**Please, help Jeremiah continue receiving the care and support he needs.**\n\nEvery donation matters. And because his treatment needs are ongoing, even a small recurring contribution can provide valuable support.\n\nIf you cannot donate, please share his story.\n\n**Donate today. Stand with Jeremiah and help him face the difficult road ahead.**\n\nThank you for showing him and his family that they are not alone.",
+    "organizer": "Jj Chiles and Niecy Rickerson",
+    "beneficiary": "Jeremiah",
+    "location": "Grovetown, GA",
+    "category": "health",
+    "raised": 122528,
+    "goal": 130000,
+    "currency": "USD",
+    "urgent": false,
+    "active": true,
+    "createdAt": "2026-10-01",
+    "image": {
+      "url": "/__l5e/assets-v1/68b30b06-ef7c-4e41-a7b4-d36005ff8388/jeremiah-1.webp",
+      "width": 785,
+      "height": 444
+    },
+    "thumbnail": {
+      "url": "/__l5e/assets-v1/e40894bd-69b2-48a6-ba56-e13d54a35ff4/jeremiah-1-thumb.webp",
+      "width": 320,
+      "height": 181
+    },
+    "gallery": [
+      {
+        "url": "/__l5e/assets-v1/68b30b06-ef7c-4e41-a7b4-d36005ff8388/jeremiah-1.webp",
+        "width": 785,
+        "height": 444
+      },
+      {
+        "url": "/__l5e/assets-v1/131e0138-fd24-4eca-a37d-61a156889d2b/jeremiah-2.webp",
+        "width": 923,
+        "height": 1176
+      },
+      {
+        "url": "/__l5e/assets-v1/8a8bd489-2d67-4d0a-866b-e02adb3fd14d/jeremiah-3.webp",
+        "width": 785,
+        "height": 854
+      },
+      {
+        "url": "/__l5e/assets-v1/a6aac8ec-face-4347-90c4-3fc637143f17/jeremiah-4.webp",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "support": [],
+    "snapshotDate": "2026-11-06",
+    "sourceCurrency": "USD",
+    "sourceRaised": 122528,
+    "sourceGoal": 130000,
+    "fxDate": null,
+    "surnameChange": null
   }
 ]

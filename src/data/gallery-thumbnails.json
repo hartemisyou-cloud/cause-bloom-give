@@ -3771,5 +3771,49 @@
     "size": 13840,
     "content_type": "image/webp",
     "created_at": "2026-11-06T07:21:39Z"
+  },
+  "/__l5e/assets-v1/68b30b06-ef7c-4e41-a7b4-d36005ff8388/jeremiah-1.webp": {
+    "version": 1,
+    "asset_id": "e40894bd-69b2-48a6-ba56-e13d54a35ff4",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/e40894bd-69b2-48a6-ba56-e13d54a35ff4/jeremiah-1-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/e40894bd-69b2-48a6-ba56-e13d54a35ff4/jeremiah-1-thumb.webp",
+    "original_filename": "jeremiah-1-thumb.webp",
+    "size": 12374,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T08:39:33Z"
+  },
+  "/__l5e/assets-v1/131e0138-fd24-4eca-a37d-61a156889d2b/jeremiah-2.webp": {
+    "version": 1,
+    "asset_id": "0cc8e1a6-9e06-4028-a0e2-0d93795ca562",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/0cc8e1a6-9e06-4028-a0e2-0d93795ca562/jeremiah-2-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/0cc8e1a6-9e06-4028-a0e2-0d93795ca562/jeremiah-2-thumb.webp",
+    "original_filename": "jeremiah-2-thumb.webp",
+    "size": 9310,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T08:39:33Z"
+  },
+  "/__l5e/assets-v1/8a8bd489-2d67-4d0a-866b-e02adb3fd14d/jeremiah-3.webp": {
+    "version": 1,
+    "asset_id": "b1335d7d-9067-4a0e-8705-aa2ba3a67688",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/b1335d7d-9067-4a0e-8705-aa2ba3a67688/jeremiah-3-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/b1335d7d-9067-4a0e-8705-aa2ba3a67688/jeremiah-3-thumb.webp",
+    "original_filename": "jeremiah-3-thumb.webp",
+    "size": 23528,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T08:39:33Z"
+  },
+  "/__l5e/assets-v1/a6aac8ec-face-4347-90c4-3fc637143f17/jeremiah-4.webp": {
+    "version": 1,
+    "asset_id": "8f3bea3e-05f7-4b30-b2f7-8a518aa757b8",
+    "project_id": "5dc3b815-88ea-4da6-b1d3-a58fa6079440",
+    "url": "/__l5e/assets-v1/8f3bea3e-05f7-4b30-b2f7-8a518aa757b8/jeremiah-4-thumb.webp",
+    "r2_key": "a/v1/5dc3b815-88ea-4da6-b1d3-a58fa6079440/8f3bea3e-05f7-4b30-b2f7-8a518aa757b8/jeremiah-4-thumb.webp",
+    "original_filename": "jeremiah-4-thumb.webp",
+    "size": 16312,
+    "content_type": "image/webp",
+    "created_at": "2026-11-06T08:39:33Z"
   }
 }

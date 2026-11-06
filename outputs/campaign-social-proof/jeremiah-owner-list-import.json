@@ -1,0 +1,120 @@
+{
+  "campaignSlug": "jeremiah",
+  "ownerCampaignId": "=-JEREMIAH-001",
+  "importDate": "2026-11-06",
+  "source": "Owner message containing 13 campaign-associated donation/comment records",
+  "count": 13,
+  "records": [
+    {
+      "id": "jeremiah-1",
+      "campaignSlug": "jeremiah",
+      "name": "Amanda Reynolds",
+      "amountCents": 25000,
+      "confirmedAt": "2026-11-06",
+      "comment": "Jeremiah, your determination to walk again is incredible. Wishing you strength through every step of your recovery."
+    },
+    {
+      "id": "jeremiah-2",
+      "campaignSlug": "jeremiah",
+      "name": "Brandon Mitchell",
+      "amountCents": 5000,
+      "confirmedAt": "2026-11-06",
+      "comment": "No young person should have to face so much. I hope this contribution helps with your treatment."
+    },
+    {
+      "id": "jeremiah-3",
+      "campaignSlug": "jeremiah",
+      "name": "Sophia Bennett",
+      "amountCents": 10000,
+      "confirmedAt": "2026-11-06",
+      "comment": "Your story touched my heart. Sending love and encouragement to you and your family."
+    },
+    {
+      "id": "jeremiah-4",
+      "campaignSlug": "jeremiah",
+      "name": "Nathan Brooks",
+      "amountCents": 3000,
+      "confirmedAt": "2026-11-06",
+      "comment": "Keep holding on to your dreams, Jeremiah. You deserve all the support you can get."
+    },
+    {
+      "id": "jeremiah-5",
+      "campaignSlug": "jeremiah",
+      "name": "Olivia Harrison",
+      "amountCents": 2000,
+      "confirmedAt": "2026-11-05",
+      "comment": "Praying for your health and hoping more people come together to support your recovery."
+    },
+    {
+      "id": "jeremiah-6",
+      "campaignSlug": "jeremiah",
+      "name": "Christopher Wilson",
+      "amountCents": 50000,
+      "confirmedAt": "2026-11-05",
+      "comment": "Your courage throughout surgery, chemotherapy, and rehabilitation deserves recognition. Wishing you the best."
+    },
+    {
+      "id": "jeremiah-7",
+      "campaignSlug": "jeremiah",
+      "name": "Emily Parker",
+      "amountCents": 5000,
+      "confirmedAt": "2026-11-05",
+      "comment": "I hope this helps ease some of the financial pressure on your family. Sending strength."
+    },
+    {
+      "id": "jeremiah-8",
+      "campaignSlug": "jeremiah",
+      "name": "Matthew Collins",
+      "amountCents": 10000,
+      "confirmedAt": "2026-11-04",
+      "comment": "The fact that you graduated while facing cancer is remarkable. Keep pursuing your future."
+    },
+    {
+      "id": "jeremiah-9",
+      "campaignSlug": "jeremiah",
+      "name": "Rachel Thompson",
+      "amountCents": 3000,
+      "confirmedAt": "2026-11-04",
+      "comment": "Your journey is heartbreaking, but your determination is inspiring. Sending you kindness and support."
+    },
+    {
+      "id": "jeremiah-10",
+      "campaignSlug": "jeremiah",
+      "name": "Daniel Foster",
+      "amountCents": 25000,
+      "confirmedAt": "2026-11-03",
+      "comment": "I hope this donation contributes toward your continued medical care and rehabilitation."
+    },
+    {
+      "id": "jeremiah-11",
+      "campaignSlug": "jeremiah",
+      "name": "Jessica Morgan",
+      "amountCents": 2000,
+      "confirmedAt": "2026-11-03",
+      "comment": "Every step of recovery matters. Wishing you comfort and strength during treatment."
+    },
+    {
+      "id": "jeremiah-12",
+      "campaignSlug": "jeremiah",
+      "name": "William Anderson",
+      "amountCents": 5000,
+      "confirmedAt": "2026-11-02",
+      "comment": "I cannot imagine everything your family has been through. Hoping this support helps lighten the burden."
+    },
+    {
+      "id": "jeremiah-13",
+      "campaignSlug": "jeremiah",
+      "name": "Lauren Edwards",
+      "amountCents": 10000,
+      "confirmedAt": "2026-11-01",
+      "comment": "Jeremiah, I hope your story reaches many more people who can help you continue receiving care."
+    }
+  ],
+  "paymentAuthenticity": "Owner-supplied records; independently unverified",
+  "fundraisingTotalsModified": false,
+  "sourceUrl": "https://www.gofundme.com/f/help-jeremiah-fight-stage-4-bone-cancer",
+  "sourceBeneficiary": "Jeremiah Jones",
+  "displayBeneficiary": "Jeremiah",
+  "sourceRaised": 122528,
+  "sourceGoal": 130000
+}

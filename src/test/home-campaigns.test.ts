@@ -3,11 +3,11 @@ import { campaigns } from '@/lib/campaigns';
 import { campaignPage, diversifyCampaigns, homepageCollections } from '@/lib/home-campaigns';
 
 describe('Homepage campaign discovery', () => {
-  it('makes all 148 homepage campaigns reachable (goyito-es duplicate excluded) without duplicates across collections', () => {
+  it('makes all 149 homepage campaigns reachable (goyito-es duplicate excluded) without duplicates across collections', () => {
     const { hero, trending, featured } = homepageCollections();
     const all = [...hero, ...trending, ...featured];
-    expect(all).toHaveLength(148);
-    expect(new Set(all.map(c => c.slug)).size).toBe(148);
+    expect(all).toHaveLength(149);
+    expect(new Set(all.map(c => c.slug)).size).toBe(149);
     expect(all.map(c => c.slug).sort()).toEqual(campaigns.map(c => c.slug).filter(s => s !== 'goyito-es').sort());
   });
   it('includes all three populated categories in the first trending group', () => {

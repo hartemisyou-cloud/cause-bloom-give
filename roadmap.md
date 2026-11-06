@@ -165,3 +165,7 @@
 ## Assurance card alignment
 - [x] Put the shield tile inline with the guarantee title, let the guarantee sentence span the full card width and keep the paragraph, divider and terms row on one shared left edge, with balanced title wrapping.
 - [x] Verified 393px and 1280px: icon centred on the title, title breaks "Protected by Hope Human" / "Foundation Guarantee", divider measured full card width, no overflow or browser errors; 58 tests passed and automatic build OK. No publishing.
+
+## Jeremiah campaign import
+- [x] Imported the supplied story, four original photos (two inline), $122,528/$130,000 source snapshot and all 13 campaign-bound owner-listed donations/comments.
+- [x] Verified gallery, 13-comment expansion and donation records at 390/1280px with no overflow or page errors; all 157 tests passed and automatic build OK. Checkout and publication unchanged.
