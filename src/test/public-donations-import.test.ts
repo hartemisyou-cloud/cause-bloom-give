@@ -4,10 +4,10 @@ import campaigns from '@/data/campaigns.json';
 import { campaignActivity, donationDate, recentDonationPresentation } from '@/lib/campaign-social-proof';
 
 describe('Updated owner-supplied donation list', () => {
-  it('covers all 148 campaigns with 2132 supplied donation/comment pairs', () => {
-    expect(records).toHaveLength(2132);
-    expect(new Set(records.map(record => record.campaignSlug))).toEqual(new Set(campaigns.filter(c => c.slug !== 'jaterria').map(campaign => campaign.slug)));
-    expect(new Set(records.map(record => record.id)).size).toBe(2132);
+  it('covers all 149 campaigns with 2145 supplied donation/comment pairs', () => {
+    expect(records).toHaveLength(2145);
+    expect(new Set(records.map(record => record.campaignSlug))).toEqual(new Set(campaigns.map(campaign => campaign.slug)));
+    expect(new Set(records.map(record => record.id)).size).toBe(2145);
     expect(records.every(record => record.comment.trim().length > 0)).toBe(true);
   });
 
@@ -28,7 +28,7 @@ describe('Updated owner-supplied donation list', () => {
   });
 
   it('uses all supplied entries for both history and sidebar instead of generated fallback', () => {
-    for (const campaign of campaigns.filter(c => c.slug !== 'jaterria')) {
+    for (const campaign of campaigns) {
       const activity = campaignActivity(campaign);
       expect(activity.donations.length).toBe(records.filter(record => record.campaignSlug === campaign.slug).length);
       expect(activity.messages.length).toBe(activity.donations.length);
